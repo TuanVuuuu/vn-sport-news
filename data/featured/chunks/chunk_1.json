@@ -430,5 +430,41 @@
     "link": "https://vnexpress.net/chinh-sach-noi-bat-co-hieu-luc-tu-thang-6-5079589.html",
     "published_at": "Mon, 01 Jun 2026 00:00:00 +0700",
     "createAt": "2026-05-31T17:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/xang-e10-ban-dai-tra-tren-toan-quoc-tu-hom-nay-5080252.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress RSS",
+    "title": "Xăng E10 bán đại trà trên toàn quốc từ hôm nay",
+    "description": "Từ 1/6, thị trường xăng dầu bước vào giai đoạn chuyển đổi lớn khi xăng sinh học E10 được bán đại trà trên toàn quốc, thay thế các loại xăng khoáng truyền thống.",
+    "thumbnail_url": "https://vcdn1-kinhdoanh.vnecdn.net/2026/05/31/c91r3229jpg-1780206267-5968-1780208268.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SsWl3FVGaIDVEk6yL2fvlQ",
+    "link": "https://vnexpress.net/xang-e10-ban-dai-tra-tren-toan-quoc-tu-hom-nay-5080252.html",
+    "published_at": "Mon, 01 Jun 2026 00:06:43 +0700",
+    "createAt": "2026-05-31T17:06:43.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/hang-nghin-tan-phe-thai-xay-dung-cho-di-doi-o-ha-noi-5079102.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress RSS",
+    "title": "Hàng nghìn tấn phế thải xây dựng chờ di dời ở Hà Nội",
+    "description": "Hà Nội đang triển khai hàng loạt công trình giao thông, thoát nước, mỗi ngày thải ra hàng nghìn tấn phế thải xây dựng, gây áp lực lớn trong khâu xử lý.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/05/29/huy-1780046239.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6XgAI_4jautt1WkaPxmXLg",
+    "link": "https://vnexpress.net/hang-nghin-tan-phe-thai-xay-dung-cho-di-doi-o-ha-noi-5079102.html",
+    "published_at": "Mon, 01 Jun 2026 01:01:01 +0700",
+    "createAt": "2026-05-31T18:01:01.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/su-bat-an-voi-ai-5078124.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress RSS",
+    "title": "Sự bất an với AI",
+    "description": "Phản đối xây dựng trung tâm dữ liệu, la ó, thậm chí có hành động quá khích đang là cách nhiều người, đặc biệt là giới trẻ, phản ứng với làn sóng AI.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/05/28/img-1779932316-8405-1779932331.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=RE5QNNPawuiTvsoUgK7eVw",
+    "link": "https://vnexpress.net/su-bat-an-voi-ai-5078124.html",
+    "published_at": "Mon, 01 Jun 2026 05:00:00 +0700",
+    "createAt": "2026-05-31T22:00:00.000Z"
   }
 ]
