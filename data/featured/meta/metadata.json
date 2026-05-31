@@ -1,5 +1,14 @@
 {
-  "total_articles": 0,
-  "files": [],
-  "channel": null
+  "total_articles": 26,
+  "files": [
+    "chunk_1.json"
+  ],
+  "channel": {
+    "title": "Tin nổi bật - VnExpress RSS",
+    "description": "VnExpress RSS",
+    "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
+    "link": "https://vnexpress.net/rss/tin-noi-bat.rss",
+    "last_updated": "Sun, 31 May 2026 22:12:15 +0700"
+  },
+  "last_updated": "2026-05-31T15:12:15.837Z"
 }
