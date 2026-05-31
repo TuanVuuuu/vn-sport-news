@@ -89,25 +89,25 @@ app.get('/api/news', (req, res) => {
  * GET /api/news/search
  * Query params:
  *   - category:     ID danh mục (default first in config)
- *   - link:         tìm bài viết có link chứa chuỗi này
- *   - published_at: tìm bài viết có published_at chứa chuỗi này
- *   - day/month/year: lọc theo ngày, tháng, năm phát hành
- *   - page:         page number (default 1)
- *   - limit:        items per page (default 20, max 100)
+ *   - link:         optional, tìm bài viết có link chứa chuỗi này
+ *   - published_at: optional, tìm bài viết có published_at chứa chuỗi này
+ *   - day/month/year: optional, lọc theo ngày, tháng, năm phát hành
+ *   - page:         zero-based page number (default 0)
+ *   - size:         items per page (default 20, max 100)
  */
 app.get('/api/news/search', (req, res) => {
     const categoryId = req.query.category || categories[0].id;
-    const page = Math.max(1, parseInt(req.query.page) || 1);
-    const requestedLimit = parseInt(req.query.limit) || 20;
+    const page = Math.max(0, parseInt(req.query.page) || 0);
+    const requestedSize = Math.max(1, parseInt(req.query.size || req.query.limit) || 20);
 
-    const limitError = validateLimit(requestedLimit);
-    if (limitError) {
+    const sizeError = validateLimit(requestedSize);
+    if (sizeError) {
         return res.json({
             status: 0,
-            message: limitError
+            message: sizeError.replace('"limit"', '"size"')
         });
     }
-    const limit = requestedLimit;
+    const size = requestedSize;
 
     const category = getCategory(categoryId);
     if (!category) {
@@ -125,14 +125,6 @@ app.get('/api/news/search', (req, res) => {
         year: parseDateFilter(req.query.year),
     };
 
-    const hasFilter = filters.link || filters.published_at || filters.day || filters.month || filters.year;
-    if (!hasFilter) {
-        return res.json({
-            status: 0,
-            message: 'Vui lòng truyền ít nhất một điều kiện search: link, published_at, day, month hoặc year.'
-        });
-    }
-
     const metadata = loadMetadata(categoryId);
     if (!metadata || metadata.total_articles === 0) {
         return res.json({
@@ -141,7 +133,7 @@ app.get('/api/news/search', (req, res) => {
         });
     }
 
-    const result = searchItems(categoryId, metadata, filters, page, limit);
+    const result = searchItems(categoryId, metadata, filters, page, size);
     return res.json({
         status: 1,
         data: result.data,

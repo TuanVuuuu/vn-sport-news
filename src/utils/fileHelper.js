@@ -284,10 +284,10 @@ function loadAllItems(categoryId, metadata) {
  * @param {object} metadata
  * @param {{ link?: string, published_at?: string, day?: number, month?: number, year?: number }} filters
  * @param {number} page
- * @param {number} limit
+ * @param {number} size
  * @returns {{ data: Array, pagination: object }}
  */
-function searchItems(categoryId, metadata, filters, page, limit) {
+function searchItems(categoryId, metadata, filters, page, size) {
     const normalizedLink = filters.link ? filters.link.toLowerCase().trim() : '';
     const normalizedPublishedAt = filters.published_at ? filters.published_at.toLowerCase().trim() : '';
 
@@ -302,26 +302,28 @@ function searchItems(categoryId, metadata, filters, page, limit) {
             }
 
             const { day, month, year } = getPublishedDateParts(item);
-            if (filters.day && day !== filters.day) return false;
-            if (filters.month && month !== filters.month) return false;
-            if (filters.year && year !== filters.year) return false;
+            if (filters.day !== null && day !== filters.day) return false;
+            if (filters.month !== null && month !== filters.month) return false;
+            if (filters.year !== null && year !== filters.year) return false;
 
             return true;
         })
         .sort((a, b) => new Date(getCreateAt(b)) - new Date(getCreateAt(a)));
 
     const totalItems = filteredItems.length;
-    const totalPages = Math.ceil(totalItems / limit);
-    const startIndex = (page - 1) * limit;
-    const data = filteredItems.slice(startIndex, startIndex + limit).map(formatArticle);
+    const totalPages = Math.ceil(totalItems / size);
+    const startIndex = page * size;
+    const data = filteredItems.slice(startIndex, startIndex + size).map(formatArticle);
 
     return {
         data,
         pagination: {
+            page,
+            size,
             current_page: page,
             total_pages: totalPages,
             total_items: totalItems,
-            has_next: page < totalPages,
+            has_next: page + 1 < totalPages,
         },
     };
 }
