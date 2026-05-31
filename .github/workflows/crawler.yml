@@ -1,9 +1,12 @@
 name: RSS Auto Crawler
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # Chạy mỗi 10 phút
-    - cron: '*/10 * * * *'
+    # Chạy mỗi 6 phút
+    - cron: '*/6 * * * *'
   # Cho phép kích hoạt thủ công từ tab Actions
   workflow_dispatch:
 
