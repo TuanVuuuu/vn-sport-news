@@ -13,6 +13,11 @@ const categories = [
         rssUrl: 'https://vnexpress.net/rss/tin-noi-bat.rss',
     },
     {
+        id: 'latest',
+        name: 'Tin mới nhất',
+        rssUrl: 'https://vnexpress.net/rss/tin-moi-nhat.rss',
+    },
+    {
         id: 'sports',
         name: 'Thể thao',
         rssUrl: 'https://vnexpress.net/rss/the-thao.rss',
