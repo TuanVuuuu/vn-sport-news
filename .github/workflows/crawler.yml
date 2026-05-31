@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - main
-  schedule:
-    # Chạy mỗi 6 phút
-    - cron: '*/6 * * * *'
   # Cho phép kích hoạt thủ công từ tab Actions
   workflow_dispatch:
+
+concurrency:
+  group: rss-auto-crawler-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   crawl-and-commit:
