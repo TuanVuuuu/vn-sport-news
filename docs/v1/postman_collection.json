@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "a7f84d90-80a2-4d8c-9a12-4c1c0d6d55f1",
     "name": "SportNews API v1",
-    "description": "Postman Collection cho các API SportNews v1. API hiện trả HTTP 200 cho cả thành công và lỗi nghiệp vụ, mobile kiểm tra field `status` để xử lý.",
+    "description": "Postman Collection cho các API SportNews v1. API hiện trả HTTP 200 cho cả thành công và lỗi nghiệp vụ, mobile kiểm tra field status để xử lý.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -19,153 +19,44 @@
   ],
   "item": [
     {
-      "name": "News",
-      "item": [
-        {
-          "name": "Lấy danh sách tin",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "description": "Lấy danh sách tin theo danh mục. `page` bắt đầu từ 1, `limit` tối đa 100.",
-            "url": {
-              "raw": "{{baseUrl}}/api/news?category={{category}}&page=1&limit=20",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "news"
-              ],
-              "query": [
-                {
-                  "key": "category",
-                  "value": "{{category}}",
-                  "description": "ID danh mục. Giá trị hiện có: sports, featured."
-                },
-                {
-                  "key": "page",
-                  "value": "1",
-                  "description": "Số trang, bắt đầu từ 1."
-                },
-                {
-                  "key": "limit",
-                  "value": "20",
-                  "description": "Số bài viết mỗi trang, tối đa 100."
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Tìm kiếm/lọc tin",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "description": "Tìm kiếm hoặc lọc tin theo link, published_at, ngày, tháng, năm. `page` bắt đầu từ 0, `size` tối đa 100.",
-            "url": {
-              "raw": "{{baseUrl}}/api/news/search?category={{category}}&year=2026&month=5&page=0&size=20",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "news",
-                "search"
-              ],
-              "query": [
-                {
-                  "key": "category",
-                  "value": "{{category}}",
-                  "description": "ID danh mục. Giá trị hiện có: sports, featured."
-                },
-                {
-                  "key": "link",
-                  "value": "",
-                  "disabled": true,
-                  "description": "Lọc bài viết có link chứa chuỗi này."
-                },
-                {
-                  "key": "published_at",
-                  "value": "",
-                  "disabled": true,
-                  "description": "Lọc bài viết có published_at chứa chuỗi này."
-                },
-                {
-                  "key": "day",
-                  "value": "",
-                  "disabled": true,
-                  "description": "Lọc theo ngày phát hành."
-                },
-                {
-                  "key": "month",
-                  "value": "5",
-                  "description": "Lọc theo tháng phát hành."
-                },
-                {
-                  "key": "year",
-                  "value": "2026",
-                  "description": "Lọc theo năm phát hành."
-                },
-                {
-                  "key": "page",
-                  "value": "0",
-                  "description": "Số trang, bắt đầu từ 0."
-                },
-                {
-                  "key": "size",
-                  "value": "20",
-                  "description": "Số bài viết mỗi trang, tối đa 100."
-                }
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
+      "name": "GET /api/news - Lấy danh sách tin",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "Lấy danh sách tin theo danh mục. page bắt đầu từ 1, limit tối đa 100.",
+        "url": "{{baseUrl}}/api/news?category={{category}}&page=1&limit=20"
+      },
+      "response": []
     },
     {
-      "name": "System",
-      "item": [
-        {
-          "name": "Lấy danh sách danh mục",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "description": "Lấy danh sách danh mục tin đang hỗ trợ.",
-            "url": {
-              "raw": "{{baseUrl}}/api/categories",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "categories"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Kiểm tra tình trạng server",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "description": "Kiểm tra server và thông tin runtime cơ bản.",
-            "url": {
-              "raw": "{{baseUrl}}/api/ping",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "api",
-                "ping"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
+      "name": "GET /api/news/search - Tìm kiếm/lọc tin",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "Tìm kiếm hoặc lọc tin theo link, published_at, ngày, tháng, năm. page bắt đầu từ 0, size tối đa 100.",
+        "url": "{{baseUrl}}/api/news/search?category={{category}}&year=2026&month=5&page=0&size=20"
+      },
+      "response": []
+    },
+    {
+      "name": "GET /api/categories - Lấy danh sách danh mục",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "Lấy danh sách danh mục tin đang hỗ trợ.",
+        "url": "{{baseUrl}}/api/categories"
+      },
+      "response": []
+    },
+    {
+      "name": "GET /api/ping - Kiểm tra server",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "Kiểm tra server và thông tin runtime cơ bản.",
+        "url": "{{baseUrl}}/api/ping"
+      },
+      "response": []
     }
   ]
 }
