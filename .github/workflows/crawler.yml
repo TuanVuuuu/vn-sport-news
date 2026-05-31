@@ -2,8 +2,8 @@ name: RSS Auto Crawler
 
 on:
   schedule:
-    # Chạy mỗi 20 phút
-    - cron: '*/20 * * * *'
+    # Chạy mỗi 10 phút
+    - cron: '*/10 * * * *'
   # Cho phép kích hoạt thủ công từ tab Actions
   workflow_dispatch:
 
@@ -27,12 +27,12 @@ jobs:
         run: npm install
 
       - name: Chạy Crawler cập nhật dữ liệu
-        run: node index.js
+        run: node src/index.js
 
       - name: Commit và Push dữ liệu mới
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/articles.json
+          git add data/
           # Nếu có thay đổi (bài viết mới) thì mới commit và push
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update articles [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update articles (Chunked) [skip ci]" && git push)
