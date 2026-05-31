@@ -20,7 +20,7 @@ async function crawlCategory(category) {
     ensureDirs(id);
 
     const xmlData = await fetchRSS(rssUrl);
-    const { items: newItems, channel: channelInfo } = await parseRSS(xmlData);
+    const { items: newItems, channel: channelInfo } = await parseRSS(xmlData, category);
 
     const metadata = loadMetadata(id);
     metadata.channel = channelInfo;

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const categories = require('../config/categories');
 
 const CHUNK_SIZE = 100;
 const BASE_DATA_DIR = path.join(__dirname, '../../data');
@@ -113,13 +114,36 @@ function getPublishedDateParts(item) {
 }
 
 /**
- * Format article response để luôn có createAt.
+ * Lấy thông tin danh mục từ cấu hình hiện tại.
+ * @param {string} categoryId
+ * @returns {{ id: string, name: string }}
+ */
+function getCategoryInfo(categoryId) {
+    const category = categories.find(c => c.id === categoryId);
+    return {
+        id: category ? category.id : categoryId,
+        name: category ? category.name : '',
+    };
+}
+
+/**
+ * Format article response để luôn có createAt, nguồn và thông tin danh mục.
  * @param {object} item
+ * @param {string} categoryId
+ * @param {object} metadata
  * @returns {object}
  */
-function formatArticle(item) {
+function formatArticle(item, categoryId, metadata = {}) {
+    const category = getCategoryInfo(categoryId);
+    const source = metadata.channel && metadata.channel.title
+        ? metadata.channel.title
+        : '';
+
     return {
         ...item,
+        category_id: item.category_id || category.id,
+        category_name: item.category_name || category.name,
+        source: item.source || source,
         createAt: getCreateAt(item),
     };
 }
@@ -242,7 +266,7 @@ function getPaginatedItems(categoryId, metadata, page, limit) {
     const offset = startChunk * CHUNK_SIZE;
     let finalData = collectedItems.slice(fileStartIdx - offset, fileEndIdx - offset + 1);
     finalData.reverse(); // Bài mới nhất lên đầu
-    finalData = finalData.map(formatArticle);
+    finalData = finalData.map(item => formatArticle(item, categoryId, metadata));
 
     return {
         data: finalData,
@@ -313,7 +337,8 @@ function searchItems(categoryId, metadata, filters, page, size) {
     const totalItems = filteredItems.length;
     const totalPages = Math.ceil(totalItems / size);
     const startIndex = page * size;
-    const data = filteredItems.slice(startIndex, startIndex + size).map(formatArticle);
+    const data = filteredItems.slice(startIndex, startIndex + size)
+        .map(item => formatArticle(item, categoryId, metadata));
 
     return {
         data,

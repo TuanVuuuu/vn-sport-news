@@ -37,6 +37,22 @@ function getMemoryUsage() {
     };
 }
 
+function successResponse(body) {
+    return {
+        status: 1,
+        body,
+    };
+}
+
+function errorResponse(message) {
+    return {
+        status: 0,
+        body: {
+            message,
+        },
+    };
+}
+
 /**
  * GET /api/news
  * Query params:
@@ -44,8 +60,8 @@ function getMemoryUsage() {
  *   - page:     page number (default 1)
  *   - limit:    items per page (default 20, max 100)
  *
- * Always HTTP 200. Returns { status: 1, data, pagination } on success,
- * or { status: 0, message } on error.
+ * Always HTTP 200. Returns { status: 1, body: { data, pagination } } on success,
+ * or { status: 0, body: { message } } on error.
  */
 app.get('/api/news', (req, res) => {
     const categoryId = req.query.category || categories[0].id;
@@ -54,35 +70,25 @@ app.get('/api/news', (req, res) => {
 
     const limitError = validateLimit(requestedLimit);
     if (limitError) {
-        return res.json({
-            status: 0,
-            message: limitError
-        });
+        return res.json(errorResponse(limitError));
     }
     const limit = requestedLimit;
 
     const category = getCategory(categoryId);
     if (!category) {
-        return res.json({
-            status: 0,
-            message: `Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`
-        });
+        return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
     }
 
     const metadata = loadMetadata(categoryId);
     if (!metadata || metadata.total_articles === 0) {
-        return res.json({
-            status: 0,
-            message: 'Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'
-        });
+        return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
     }
 
     const result = getPaginatedItems(categoryId, metadata, page, limit);
-    return res.json({
-        status: 1,
+    return res.json(successResponse({
         data: result.data,
         pagination: result.pagination
-    });
+    }));
 });
 
 /**
@@ -102,19 +108,13 @@ app.get('/api/news/search', (req, res) => {
 
     const sizeError = validateLimit(requestedSize);
     if (sizeError) {
-        return res.json({
-            status: 0,
-            message: sizeError.replace('"limit"', '"size"')
-        });
+        return res.json(errorResponse(sizeError.replace('"limit"', '"size"')));
     }
     const size = requestedSize;
 
     const category = getCategory(categoryId);
     if (!category) {
-        return res.json({
-            status: 0,
-            message: `Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`
-        });
+        return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
     }
 
     const filters = {
@@ -127,18 +127,14 @@ app.get('/api/news/search', (req, res) => {
 
     const metadata = loadMetadata(categoryId);
     if (!metadata || metadata.total_articles === 0) {
-        return res.json({
-            status: 0,
-            message: 'Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'
-        });
+        return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
     }
 
     const result = searchItems(categoryId, metadata, filters, page, size);
-    return res.json({
-        status: 1,
+    return res.json(successResponse({
         data: result.data,
         pagination: result.pagination
-    });
+    }));
 });
 
 /**
@@ -146,8 +142,7 @@ app.get('/api/news/search', (req, res) => {
  * Returns basic server health and runtime information.
  */
 app.get('/api/ping', (req, res) => {
-    return res.json({
-        status: 1,
+    return res.json(successResponse({
         message: 'pong',
         data: {
             service: packageInfo.name,
@@ -161,7 +156,7 @@ app.get('/api/ping', (req, res) => {
             arch: process.arch,
             memory: getMemoryUsage(),
         },
-    });
+    }));
 });
 
 /**
@@ -170,7 +165,7 @@ app.get('/api/ping', (req, res) => {
  */
 app.get('/api/categories', (req, res) => {
     const result = categories.map(c => ({ id: c.id, name: c.name }));
-    return res.json({ status: 1, data: result });
+    return res.json(successResponse({ data: result }));
 });
 
 app.listen(port, () => {

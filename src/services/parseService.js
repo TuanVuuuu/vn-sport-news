@@ -44,9 +44,10 @@ function toCreateAt(publishedAt) {
 /**
  * Parse một chuỗi XML RSS thành object JavaScript chuẩn hóa.
  * @param {string} xmlData - Chuỗi XML thô từ RSS feed.
+ * @param {{ id?: string, name?: string }} category - Thông tin danh mục của RSS feed.
  * @returns {Promise<{channel: object, items: Array}>}
  */
-function parseRSS(xmlData) {
+function parseRSS(xmlData, category = {}) {
     return new Promise((resolve, reject) => {
         // Loại bỏ ký tự rác trước thẻ XML đầu tiên
         const xmlStartIndex = xmlData.indexOf('<');
@@ -76,6 +77,9 @@ function parseRSS(xmlData) {
 
                     return {
                         id: item.guid ? item.guid[0] : (item.link ? item.link[0] : ''),
+                        category_id: category.id || '',
+                        category_name: category.name || '',
+                        source: channelInfo.title,
                         title: item.title ? item.title[0] : '',
                         description: cleanHTML(item.description ? item.description[0] : ''),
                         thumbnail_url: extractImage(item),

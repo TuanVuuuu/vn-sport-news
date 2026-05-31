@@ -12,12 +12,11 @@ const categories = [
         name: 'Thể thao',
         rssUrl: 'https://vnexpress.net/rss/the-thao.rss',
     },
-    // Ví dụ mở rộng thêm danh mục trong tương lai:
-    // {
-    //     id: 'football',
-    //     name: 'Bóng đá',
-    //     rssUrl: 'https://vnexpress.net/rss/bong-da.rss',
-    // },
+    {
+        id: 'featured',
+        name: 'Tin nổi bật',
+        rssUrl: 'https://vnexpress.net/rss/tin-noi-bat.rss',
+    },
 ];
 
 module.exports = categories;
