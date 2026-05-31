@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const categories = require('./src/config/categories');
 const { loadMetadata, getPaginatedItems, searchItems } = require('./src/utils/fileHelper');
+const packageInfo = require('./package.json');
 
 const app = express();
 const port = process.env.PORT || 3005;
@@ -23,6 +24,17 @@ function validateLimit(requestedLimit) {
 function parseDateFilter(value) {
     const parsed = parseInt(value, 10);
     return Number.isNaN(parsed) ? null : parsed;
+}
+
+function getMemoryUsage() {
+    const memoryUsage = process.memoryUsage();
+
+    return {
+        rss_mb: Math.round(memoryUsage.rss / 1024 / 1024),
+        heap_total_mb: Math.round(memoryUsage.heapTotal / 1024 / 1024),
+        heap_used_mb: Math.round(memoryUsage.heapUsed / 1024 / 1024),
+        external_mb: Math.round(memoryUsage.external / 1024 / 1024),
+    };
 }
 
 /**
@@ -134,6 +146,29 @@ app.get('/api/news/search', (req, res) => {
         status: 1,
         data: result.data,
         pagination: result.pagination
+    });
+});
+
+/**
+ * GET /api/ping
+ * Returns basic server health and runtime information.
+ */
+app.get('/api/ping', (req, res) => {
+    return res.json({
+        status: 1,
+        message: 'pong',
+        data: {
+            service: packageInfo.name,
+            version: packageInfo.version,
+            environment: process.env.NODE_ENV || 'development',
+            port: Number(port),
+            uptime_seconds: Math.floor(process.uptime()),
+            server_time: new Date().toISOString(),
+            node_version: process.version,
+            platform: process.platform,
+            arch: process.arch,
+            memory: getMemoryUsage(),
+        },
     });
 });
 
