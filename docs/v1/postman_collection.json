@@ -53,7 +53,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "description": "Lấy danh sách danh mục, mỗi danh mục kèm thông tin metadata và 10 bài viết mới nhất.",
+        "description": "Lấy danh sách danh mục, mỗi danh mục kèm tổng số bài và 10 bài viết mới nhất.",
         "url": "{{baseUrl}}/api/discover"
       },
       "response": []

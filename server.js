@@ -39,9 +39,9 @@ function getDiscoverCategory(category) {
         : { data: [] };
 
     return {
-        ...category,
+        id: category.id,
+        name: category.name,
         total_articles: metadata ? metadata.total_articles : 0,
-        channel: metadata ? metadata.channel : null,
         latest_articles: latestResult.data,
     };
 }
