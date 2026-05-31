@@ -43,8 +43,8 @@
       "request": {
         "method": "GET",
         "header": [],
-        "description": "Lấy danh sách danh mục tin đang hỗ trợ.",
-        "url": "{{baseUrl}}/api/categories"
+        "description": "Lấy danh sách danh mục tin đang hỗ trợ. Truyền type=home để chỉ lấy Tin nổi bật, Tin mới nhất và Thể thao.",
+        "url": "{{baseUrl}}/api/categories?type=home"
       },
       "response": []
     },

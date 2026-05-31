@@ -6,6 +6,8 @@ const packageInfo = require('./package.json');
 
 const app = express();
 const port = process.env.PORT || 3005;
+const HIDDEN_DISCOVER_CATEGORY_IDS = new Set(['featured', 'latest']);
+const HOME_CATEGORY_IDS = new Set(['featured', 'latest', 'sports']);
 
 app.use(cors());
 
@@ -162,7 +164,9 @@ app.get('/api/news/search', (req, res) => {
  * Returns all categories with category info and 10 latest articles for each category.
  */
 app.get('/api/discover', (req, res) => {
-    const result = categories.map(getDiscoverCategory);
+    const result = categories
+        .filter(category => !HIDDEN_DISCOVER_CATEGORY_IDS.has(category.id))
+        .map(getDiscoverCategory);
     return res.json(successResponse({ data: result }));
 });
 
@@ -190,10 +194,16 @@ app.get('/api/ping', (req, res) => {
 
 /**
  * GET /api/categories
+ * Query params:
+ *   - type: optional, use "home" to return home categories only.
+ *
  * Returns list of categories. Always status = 1.
  */
 app.get('/api/categories', (req, res) => {
-    const result = categories.map(c => ({ id: c.id, name: c.name }));
+    const sourceCategories = req.query.type === 'home'
+        ? categories.filter(c => HOME_CATEGORY_IDS.has(c.id))
+        : categories;
+    const result = sourceCategories.map(c => ({ id: c.id, name: c.name }));
     return res.json(successResponse({ data: result }));
 });
 
