@@ -1,0 +1,38 @@
+name: RSS Auto Crawler
+
+on:
+  schedule:
+    # Chạy mỗi 20 phút
+    - cron: '*/20 * * * *'
+  # Cho phép kích hoạt thủ công từ tab Actions
+  workflow_dispatch:
+
+jobs:
+  crawl-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Cấp quyền cho GITHUB_TOKEN để push code
+
+    steps:
+      - name: Checkout mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Cài đặt Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Cài đặt thư viện
+        run: npm install
+
+      - name: Chạy Crawler cập nhật dữ liệu
+        run: node index.js
+
+      - name: Commit và Push dữ liệu mới
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          # Nếu có thay đổi (bài viết mới) thì mới commit và push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update articles [skip ci]" && git push)
