@@ -8,14 +8,14 @@
  */
 const categories = [
     {
-        id: 'sports',
-        name: 'Thể thao',
-        rssUrl: 'https://vnexpress.net/rss/the-thao.rss',
-    },
-    {
         id: 'featured',
         name: 'Tin nổi bật',
         rssUrl: 'https://vnexpress.net/rss/tin-noi-bat.rss',
+    },
+    {
+        id: 'sports',
+        name: 'Thể thao',
+        rssUrl: 'https://vnexpress.net/rss/the-thao.rss',
     },
 ];
 
