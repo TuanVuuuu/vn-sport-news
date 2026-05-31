@@ -26,6 +26,26 @@ function parseDateFilter(value) {
     return Number.isNaN(parsed) ? null : parsed;
 }
 
+function getDiscoverCategory(category) {
+    const metadata = loadMetadata(category.id);
+    const latestResult = metadata && metadata.total_articles > 0
+        ? searchItems(category.id, metadata, {
+            link: null,
+            published_at: null,
+            day: null,
+            month: null,
+            year: null,
+        }, 0, 10)
+        : { data: [] };
+
+    return {
+        ...category,
+        total_articles: metadata ? metadata.total_articles : 0,
+        channel: metadata ? metadata.channel : null,
+        latest_articles: latestResult.data,
+    };
+}
+
 function getMemoryUsage() {
     const memoryUsage = process.memoryUsage();
 
@@ -135,6 +155,15 @@ app.get('/api/news/search', (req, res) => {
         data: result.data,
         pagination: result.pagination
     }));
+});
+
+/**
+ * GET /api/discover
+ * Returns all categories with category info and 10 latest articles for each category.
+ */
+app.get('/api/discover', (req, res) => {
+    const result = categories.map(getDiscoverCategory);
+    return res.json(successResponse({ data: result }));
 });
 
 /**

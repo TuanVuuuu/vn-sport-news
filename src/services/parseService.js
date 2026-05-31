@@ -79,7 +79,7 @@ function parseRSS(xmlData, category = {}) {
                         id: item.guid ? item.guid[0] : (item.link ? item.link[0] : ''),
                         category_id: category.id || '',
                         category_name: category.name || '',
-                        source: channelInfo.title,
+                        source: channelInfo.description,
                         title: item.title ? item.title[0] : '',
                         description: cleanHTML(item.description ? item.description[0] : ''),
                         thumbnail_url: extractImage(item),

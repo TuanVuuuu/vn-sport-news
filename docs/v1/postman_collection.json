@@ -49,6 +49,16 @@
       "response": []
     },
     {
+      "name": "GET /api/discover - Khám phá danh mục",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "Lấy danh sách danh mục, mỗi danh mục kèm thông tin metadata và 10 bài viết mới nhất.",
+        "url": "{{baseUrl}}/api/discover"
+      },
+      "response": []
+    },
+    {
       "name": "GET /api/ping - Kiểm tra server",
       "request": {
         "method": "GET",

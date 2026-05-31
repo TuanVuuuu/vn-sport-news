@@ -135,8 +135,8 @@ function getCategoryInfo(categoryId) {
  */
 function formatArticle(item, categoryId, metadata = {}) {
     const category = getCategoryInfo(categoryId);
-    const source = metadata.channel && metadata.channel.title
-        ? metadata.channel.title
+    const source = metadata.channel && metadata.channel.description
+        ? metadata.channel.description
         : '';
 
     return {
