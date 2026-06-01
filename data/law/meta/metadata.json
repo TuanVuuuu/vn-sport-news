@@ -1,5 +1,5 @@
 {
-  "total_articles": 60,
+  "total_articles": 63,
   "files": [
     "chunk_1.json"
   ],
@@ -8,7 +8,7 @@
     "description": "VnExpress RSS",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/phap-luat.rss",
-    "last_updated": "Mon, 01 Jun 2026 22:20:08 +0700"
+    "last_updated": "Tue, 02 Jun 2026 00:50:50 +0700"
   },
-  "last_updated": "2026-06-01T15:20:09.256Z"
+  "last_updated": "2026-06-01T18:01:19.253Z"
 }
