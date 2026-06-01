@@ -718,5 +718,29 @@
     "link": "https://vnexpress.net/san-bay-long-thanh-du-kien-khai-thac-thu-nghiem-tu-thang-9-5080789.html",
     "published_at": "Mon, 01 Jun 2026 20:47:10 +0700",
     "createAt": "2026-06-01T13:47:10.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/noi-an-nghi-cua-me-vua-khai-dinh-5078560.html",
+    "category_id": "current-affairs",
+    "category_name": "Thời sự",
+    "source": "VnExpress RSS",
+    "title": "Nơi an nghỉ của mẹ vua Khải Định",
+    "description": "Nằm phường An Cựu, Tư Thông lăng hay lăng Vạn Vạn là nơi an nghỉ của Hựu Thiên Thuần hoàng hậu Dương Thị Thục, mẹ vua Khải Định.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/05/26/l8-1779809417.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=TwZlqwNVKFDk-DOvPKHWkA",
+    "link": "https://vnexpress.net/noi-an-nghi-cua-me-vua-khai-dinh-5078560.html",
+    "published_at": "Fri, 29 May 2026 00:00:00 +0700",
+    "createAt": "2026-05-28T17:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/the-nha-bao-tich-hop-ma-qr-xac-thuc-truc-tuyen-5079867.html",
+    "category_id": "current-affairs",
+    "category_name": "Thời sự",
+    "source": "VnExpress RSS",
+    "title": "Thẻ nhà báo tích hợp mã QR xác thực trực tuyến",
+    "description": "Mẫu thẻ nhà báo mới được tích hợp mã QR để tra cứu theo thời gian thực tình trạng hiệu lực của thẻ, thông tin người được cấp và cơ quan báo chí công tác.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/05/29/14a2c09927aea6f0ffbf-178006137-2826-6276-1780061461.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Nosy6WClXEmBFfx6OwYWAg",
+    "link": "https://vnexpress.net/the-nha-bao-tich-hop-ma-qr-xac-thuc-truc-tuyen-5079867.html",
+    "published_at": "Fri, 29 May 2026 20:46:57 +0700",
+    "createAt": "2026-05-29T13:46:57.000Z"
   }
 ]
