@@ -718,5 +718,41 @@
     "link": "https://vnexpress.net/nhung-dong-xe-nen-uu-tien-xang-e5-ron92-5080554.html",
     "published_at": "Mon, 01 Jun 2026 13:47:24 +0700",
     "createAt": "2026-06-01T06:47:24.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ngay-cang-nhieu-nguoi-my-doi-xe-xang-sang-xe-dien-5080372.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress RSS",
+    "title": "Ngày càng nhiều người Mỹ đổi xe xăng sang xe điện",
+    "description": "Giá xe điện trung bình tăng và không còn các khoản hỗ trợ, nhưng số người chuyển từ xe động cơ đốt trong sang xe xanh ngày càng nhiều.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/01/ChevroletSilverado1-1780286629-7926-1780286754.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CaOqcsUvsByRN2WKgczOIQ",
+    "link": "https://vnexpress.net/ngay-cang-nhieu-nguoi-my-doi-xe-xang-sang-xe-dien-5080372.html",
+    "published_at": "Tue, 02 Jun 2026 05:00:00 +0700",
+    "createAt": "2026-06-01T22:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/hai-nguoi-di-xe-may-dam-vao-hong-xe-tai-o-nga-tu-5080609.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress RSS",
+    "title": "Hai người đi xe máy đâm vào hông xe tải ở ngã tư",
+    "description": "Cùng lao nhanh qua ngã tư, xe máy đâm vào hông xe tải, hôm 31/5 ở ngã 4 cổng chào thôn Thành Phú, Yên Định.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/01/ezgif34036148de7b4718-17802954-3016-6462-1780295495.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=NCM2vCVcmjPqBaSlxYdQzg&t=image",
+    "link": "https://vnexpress.net/hai-nguoi-di-xe-may-dam-vao-hong-xe-tai-o-nga-tu-5080609.html",
+    "published_at": "Tue, 02 Jun 2026 05:30:00 +0700",
+    "createAt": "2026-06-01T22:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/rezvani-fortress-phao-dai-off-road-gia-285-000-usd-5079689.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress RSS",
+    "title": "Rezvani Fortress - 'pháo đài' off-road giá 285.000 USD",
+    "description": "Mẫu bán tải hầm hố dựa trên Ford F-150 Raptor, tùy chọn bọc thép, lắp động cơ V8 công suất 850 mã lực, sản xuất giới hạn 100 xe.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/01/RezvaniFortress20263-178028704-6701-2709-1780287099.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oSzfEflixOxfFjwSKSbDAg",
+    "link": "https://vnexpress.net/rezvani-fortress-phao-dai-off-road-gia-285-000-usd-5079689.html",
+    "published_at": "Tue, 02 Jun 2026 06:00:00 +0700",
+    "createAt": "2026-06-01T23:00:00.000Z"
   }
 ]
