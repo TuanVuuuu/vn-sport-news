@@ -730,5 +730,17 @@
     "link": "https://vnexpress.net/pgs-ts-nguyen-tan-tran-minh-khang-lam-hieu-truong-dai-hoc-cong-nghe-thong-tin-5080821.html",
     "published_at": "Mon, 01 Jun 2026 22:32:22 +0700",
     "createAt": "2026-06-01T15:32:22.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tranh-luan-ve-bai-toan-0-5-diem-trong-de-thi-lop-10-ha-noi-5080487.html",
+    "category_id": "education",
+    "category_name": "Giáo dục",
+    "source": "VnExpress RSS",
+    "title": "Tranh luận về bài toán 0,5 điểm trong đề thi lớp 10 Hà Nội",
+    "description": "Với giả thiết có x công nhân, mỗi ngày làm được 5x sản phẩm, còn y là số ngày thuê xưởng để làm được 1.000 sản phẩm, nhiều giáo viên bất đồng quan điểm về việc đặt điều kiện 5xy = 1000 hay 5xy &gt;= 1000.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/01/z7884749937229dd6d0bc7b2d4b368-1292-5848-1780327517.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=kOBZgwWphkC-DlPr20Cofg",
+    "link": "https://vnexpress.net/tranh-luan-ve-bai-toan-0-5-diem-trong-de-thi-lop-10-ha-noi-5080487.html",
+    "published_at": "Tue, 02 Jun 2026 05:00:00 +0700",
+    "createAt": "2026-06-01T22:00:00.000Z"
   }
 ]
