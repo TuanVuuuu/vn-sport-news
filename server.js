@@ -117,6 +117,7 @@ app.get('/api/news', (req, res) => {
  * GET /api/news/search
  * Query params:
  *   - category:     ID danh mục (default first in config)
+ *   - text:         optional, tìm trong title/description; hỗ trợ tiếng Việt không dấu và bỏ dấu phân cách
  *   - link:         optional, tìm bài viết có link chứa chuỗi này
  *   - published_at: optional, tìm bài viết có published_at chứa chuỗi này
  *   - day/month/year: optional, lọc theo ngày, tháng, năm phát hành
@@ -140,6 +141,7 @@ app.get('/api/news/search', (req, res) => {
     }
 
     const filters = {
+        text: req.query.text,
         link: req.query.link,
         published_at: req.query.published_at,
         day: parseDateFilter(req.query.day),

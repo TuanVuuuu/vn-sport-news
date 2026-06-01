@@ -127,6 +127,41 @@ function getCategoryInfo(categoryId) {
 }
 
 /**
+ * Chuẩn hóa text để search tiếng Việt không dấu và không phụ thuộc dấu phân cách.
+ * Ví dụ: "ngân-hàng", "ngan hang", "nganhang" có thể match cùng một bài viết.
+ * @param {string} value
+ * @returns {{ spaced: string, compact: string }}
+ */
+function normalizeSearchText(value) {
+    const spaced = String(value || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'd')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim()
+        .replace(/\s+/g, ' ');
+
+    return {
+        spaced,
+        compact: spaced.replace(/\s+/g, ''),
+    };
+}
+
+/**
+ * Lấy text có thể search được của bài viết.
+ * @param {object} item
+ * @returns {{ spaced: string, compact: string }}
+ */
+function getSearchableArticleText(item) {
+    return normalizeSearchText([
+        item.title,
+        item.description,
+    ].filter(Boolean).join(' '));
+}
+
+/**
  * Format article response để luôn có createAt, nguồn và thông tin danh mục.
  * @param {object} item
  * @param {string} categoryId
@@ -303,20 +338,28 @@ function loadAllItems(categoryId, metadata) {
 }
 
 /**
- * Search bài viết theo link hoặc ngày/tháng/năm phát hành.
+ * Search bài viết theo text, link hoặc ngày/tháng/năm phát hành.
  * @param {string} categoryId
  * @param {object} metadata
- * @param {{ link?: string, published_at?: string, day?: number, month?: number, year?: number }} filters
+ * @param {{ text?: string, link?: string, published_at?: string, day?: number, month?: number, year?: number }} filters
  * @param {number} page
  * @param {number} size
  * @returns {{ data: Array, pagination: object }}
  */
 function searchItems(categoryId, metadata, filters, page, size) {
+    const normalizedText = normalizeSearchText(filters.text);
     const normalizedLink = filters.link ? filters.link.toLowerCase().trim() : '';
     const normalizedPublishedAt = filters.published_at ? filters.published_at.toLowerCase().trim() : '';
 
     const filteredItems = loadAllItems(categoryId, metadata)
         .filter(item => {
+            if (normalizedText.spaced) {
+                const articleText = getSearchableArticleText(item);
+                if (!articleText.spaced.includes(normalizedText.spaced) && !articleText.compact.includes(normalizedText.compact)) {
+                    return false;
+                }
+            }
+
             if (normalizedLink && !(item.link || '').toLowerCase().includes(normalizedLink)) {
                 return false;
             }
