@@ -1,0 +1,14 @@
+{
+  "total_articles": 60,
+  "files": [
+    "chunk_1.json"
+  ],
+  "channel": {
+    "title": "Kinh doanh - VnExpress RSS",
+    "description": "VnExpress RSS",
+    "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
+    "link": "https://vnexpress.net/rss/kinh-doanh.rss",
+    "last_updated": "Mon, 01 Jun 2026 20:54:03 +0700"
+  },
+  "last_updated": "2026-06-01T15:19:55.953Z"
+}

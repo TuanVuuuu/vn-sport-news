@@ -1,0 +1,14 @@
+{
+  "total_articles": 60,
+  "files": [
+    "chunk_1.json"
+  ],
+  "channel": {
+    "title": "Tin xem nhiều - VnExpress RSS",
+    "description": "VnExpress RSS",
+    "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
+    "link": "https://vnexpress.net/rss/tin-xem-nhieu.rss",
+    "last_updated": "Mon, 01 Jun 2026 22:19:51 +0700"
+  },
+  "last_updated": "2026-06-01T15:19:52.613Z"
+}

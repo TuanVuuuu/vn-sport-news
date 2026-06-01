@@ -1,0 +1,14 @@
+{
+  "total_articles": 60,
+  "files": [
+    "chunk_1.json"
+  ],
+  "channel": {
+    "title": "Thời sự - VnExpress RSS",
+    "description": "VnExpress RSS",
+    "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
+    "link": "https://vnexpress.net/rss/thoi-su.rss",
+    "last_updated": "Mon, 01 Jun 2026 20:54:03 +0700"
+  },
+  "last_updated": "2026-06-01T15:19:54.381Z"
+}
