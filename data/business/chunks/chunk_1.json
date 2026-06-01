@@ -766,5 +766,41 @@
     "link": "https://vnexpress.net/ong-nguyen-duc-tai-va-lanh-dao-mwg-se-mua-co-phieu-dien-may-xanh-5079353.html",
     "published_at": "Thu, 28 May 2026 19:44:00 +0700",
     "createAt": "2026-05-28T12:44:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/luong-ban-xang-e10-on-dinh-trong-nhung-ngay-dau-chuyen-doi-5080727.html",
+    "category_id": "business",
+    "category_name": "Kinh doanh",
+    "source": "VnExpress RSS",
+    "title": "Lượng bán xăng E10 ổn định trong những ngày đầu chuyển đổi",
+    "description": "Lượng bán xăng E10 tại nhiều cửa hàng duy trì ổn định trong những ngày đầu chuyển đổi, dù một số người tiêu dùng vẫn theo dõi thêm trước khi sẵn sàng sử dụng.",
+    "thumbnail_url": "https://vcdn1-kinhdoanh.vnecdn.net/2026/06/01/xange1016-1780301603-5271-1780304957.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Tufi3ymlxiovumxifYYoBQ",
+    "link": "https://vnexpress.net/luong-ban-xang-e10-on-dinh-trong-nhung-ngay-dau-chuyen-doi-5080727.html",
+    "published_at": "Mon, 01 Jun 2026 22:39:13 +0700",
+    "createAt": "2026-06-01T15:39:13.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/softbank-vuot-toyota-thanh-cong-ty-gia-tri-nhat-nhat-ban-5080811.html",
+    "category_id": "business",
+    "category_name": "Kinh doanh",
+    "source": "VnExpress RSS",
+    "title": "SoftBank vượt Toyota thành công ty giá trị nhất Nhật Bản",
+    "description": "Vốn hóa của tập đoàn đầu tư SoftBank vượt mốc 300 tỷ USD, soán ngôi Toyota, thành công ty giá trị nhất Nhật Bản hôm 1/6.",
+    "thumbnail_url": "https://vcdn1-kinhdoanh.vnecdn.net/2026/06/01/afp-b2np89e-v1-highres-japanec-8334-6464-1780325118.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=pvLb8dtLLY-rCVk5Q2uonQ",
+    "link": "https://vnexpress.net/softbank-vuot-toyota-thanh-cong-ty-gia-tri-nhat-nhat-ban-5080811.html",
+    "published_at": "Tue, 02 Jun 2026 00:00:00 +0700",
+    "createAt": "2026-06-01T17:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cac-nuoc-phat-trien-nha-cho-thue-nhu-the-nao-5080742.html",
+    "category_id": "business",
+    "category_name": "Kinh doanh",
+    "source": "VnExpress RSS",
+    "title": "Các nước phát triển nhà cho thuê như thế nào?",
+    "description": "Vienna (Áo) dành quỹ đất riêng 3 triệu m2 để xây nhà xã hội cho thuê, còn Trung Quốc tích cực làm nhà giá rẻ cho người trẻ lên thành phố làm việc.",
+    "thumbnail_url": "https://vcdn1-kinhdoanh.vnecdn.net/2026/06/01/screenshot-1780307678-4480-1780307702.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=H5ik6M8WR8tjbiTQ6j57RA",
+    "link": "https://vnexpress.net/cac-nuoc-phat-trien-nha-cho-thue-nhu-the-nao-5080742.html",
+    "published_at": "Tue, 02 Jun 2026 00:07:00 +0700",
+    "createAt": "2026-06-01T17:07:00.000Z"
   }
 ]
