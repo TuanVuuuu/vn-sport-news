@@ -1,0 +1,16 @@
+{
+  "total_articles": 25,
+  "files": [
+    "chunk_1.json"
+  ],
+  "channel": {
+    "title": "Bóng đá Việt Nam",
+    "description": "Theo dõi tin tức mới nhất về bóng đá Việt Nam trên Thể Thao 247. Xem lịch thi đấu, trực tiếp, kết quả và nhiều thông tin khác về bóng đá Việt Nam.",
+    "generator": "",
+    "copyright": "Thể thao 247",
+    "logo_url": "https://thethao247.vn/frontend/images/logo.png",
+    "link": "https://thethao247.vn",
+    "last_updated": "Wed, 03 Jun 2026 00:54:27 +0700"
+  },
+  "last_updated": "2026-06-02T17:54:27.614Z"
+}
