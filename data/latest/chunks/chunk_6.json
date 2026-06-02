@@ -670,5 +670,89 @@
     "link": "https://vnexpress.net/mitsubishi-hoi-sinh-huyen-thoai-pajero-5081004.html",
     "published_at": "Tue, 02 Jun 2026 16:09:48 +0700",
     "createAt": "2026-06-02T09:09:48.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/minh-chay-kpi-tim-nguoi-yeu-kip-truoc-luc-sinh-nhat-tuoi-40-5080970.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Mình chạy KPI tìm người yêu kịp trước lúc sinh nhật tuổi 40",
+    "description": "Mình là single mom thế hệ 8x, sinh ra và lớn lên ở một tỉnh miền Trung.",
+    "thumbnail_url": null,
+    "link": "https://vnexpress.net/minh-chay-kpi-tim-nguoi-yeu-kip-truoc-luc-sinh-nhat-tuoi-40-5080970.html",
+    "published_at": "Tue, 02 Jun 2026 16:10:56 +0700",
+    "createAt": "2026-06-02T09:10:56.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tim-thay-gia-dinh-sau-60-nam-du-song-cach-5-km-5081055.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Tìm thấy gia đình sau 60 năm dù sống cách 5 km",
+    "description": "Bà Zheng Zhaolian, 64 tuổi, ở tỉnh Chiết Giang vừa tìm được anh chị ruột sau 60 năm thất lạc dù sống cách họ gần 5 km.",
+    "thumbnail_url": "https://vcdn1-giadinh.vnecdn.net/2026/06/02/a-nh-ma-n-hi-nh-lu-c-178038475-7146-8153-1780384775.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=2VPkkmGbcxKPkOzeIOZPfg",
+    "link": "https://vnexpress.net/tim-thay-gia-dinh-sau-60-nam-du-song-cach-5-km-5081055.html",
+    "published_at": "Tue, 02 Jun 2026 16:13:44 +0700",
+    "createAt": "2026-06-02T09:13:44.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tuong-iran-tai-chien-voi-my-la-khong-the-tranh-khoi-5081111.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Tướng Iran: Tái chiến với Mỹ là không thể tránh khỏi",
+    "description": "Tướng cấp cao Iran cho biết xung đột với Mỹ tái bùng phát là \"điều không thể tránh khỏi\", giữa lúc đàm phán giữa hai bên đang bế tắc.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/tuong-iran-jpeg-1780389688-3874-1780390123.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=pgyKw5kIgTZ0OXm1a9fBig",
+    "link": "https://vnexpress.net/tuong-iran-tai-chien-voi-my-la-khong-the-tranh-khoi-5081111.html",
+    "published_at": "Tue, 02 Jun 2026 16:24:34 +0700",
+    "createAt": "2026-06-02T09:24:34.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ha-noi-tiep-tuc-lui-thong-qua-de-an-vung-phat-thai-thap-5081040.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Hà Nội tiếp tục lùi thông qua đề án vùng phát thải thấp",
+    "description": "Tại kỳ họp ngày 2/6, HĐND TP Hà Nội tiếp tục chưa thông qua đề án vùng phát thải thấp và chính sách hỗ trợ chuyển đổi xanh, đề nghị hoàn thiện thêm trước khi trình lại vào giữa tháng 6.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/xemay-1780384893-1862-1780388997.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_A3AfS3etzzW7nePwXOCaQ",
+    "link": "https://vnexpress.net/ha-noi-tiep-tuc-lui-thong-qua-de-an-vung-phat-thai-thap-5081040.html",
+    "published_at": "Tue, 02 Jun 2026 16:24:56 +0700",
+    "createAt": "2026-06-02T09:24:56.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nvidia-ra-mat-sieu-chip-ai-cho-pc-5081115.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Nvidia ra mắt 'siêu chip' AI cho PC",
+    "description": "RTX Spark được Nvidia mô tả là \"chip PC hiệu quả nhất từng chế tạo\", thiết kế để vận hành các Tác nhân AI (AI Agent) cục bộ thay vì chỉ dựa vào điện toán đám mây.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/nvidia-rtx-spark-ogx630-178039-3414-1676-1780390116.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=2e2GvHOyhLLdPng_LXSPjA",
+    "link": "https://vnexpress.net/nvidia-ra-mat-sieu-chip-ai-cho-pc-5081115.html",
+    "published_at": "Tue, 02 Jun 2026 16:29:28 +0700",
+    "createAt": "2026-06-02T09:29:28.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/quan-niem-sai-lam-ve-dinh-duong-gay-hai-suc-khoe-5080961.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Quan niệm sai lầm về dinh dưỡng gây hại sức khỏe",
+    "description": "Loại bỏ hoàn toàn chất béo, áp dụng một chế độ ăn kiêng và ăn càng ít càng tốt để giảm cân là những cách hiểu chưa đúng, có thể dẫn đến thiếu chất.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/Cacthucphamgiaucanxiomega3tura-7072-7788-1780375358.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=YO88DOQlsmqGLt_BBojqkg",
+    "link": "https://vnexpress.net/quan-niem-sai-lam-ve-dinh-duong-gay-hai-suc-khoe-5080961.html",
+    "published_at": "Tue, 02 Jun 2026 16:30:00 +0700",
+    "createAt": "2026-06-02T09:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ket-hop-da-phuong-phap-trong-dieu-tri-nam-5079707.html",
+    "category_id": "latest",
+    "category_name": "Tin mới nhất",
+    "source": "VnExpress RSS",
+    "title": "Kết hợp đa phương pháp trong điều trị nám",
+    "description": "Thạc sĩ, BSCKII Nguyễn Phương Thảo - Giám đốc chuyên môn phòng khám Pensilia Clinic cho rằng điều trị nám cần phối hợp đa phương thức nhằm kiểm soát viêm, phục hồi da và tối ưu hiệu quả lâu dài.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/pensilia-clinic1-1780392231-8168-1780392421.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=HIKEAXk8ksNaMvkEcpOr7w",
+    "link": "https://vnexpress.net/ket-hop-da-phuong-phap-trong-dieu-tri-nam-5079707.html",
+    "published_at": "Tue, 02 Jun 2026 16:30:00 +0700",
+    "createAt": "2026-06-02T09:30:00.000Z"
   }
 ]
