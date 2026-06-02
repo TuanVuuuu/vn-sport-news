@@ -66,11 +66,14 @@ function parseRSS(xmlData, category = {}) {
                 const channelInfo = {
                     title: channel.title ? channel.title[0] : '',
                     description: channel.description ? channel.description[0] : '',
+                    generator: channel.generator ? channel.generator[0] : '',
                     logo_url: channel.image && channel.image[0] && channel.image[0].url
                         ? channel.image[0].url[0] : '',
                     link: channel.link ? channel.link[0] : '',
                     last_updated: channel.pubDate ? channel.pubDate[0] : '',
                 };
+
+                const channelSource = channelInfo.generator || channelInfo.description;
 
                 const parsedItems = items.map(item => {
                     const publishedAt = item.pubDate ? item.pubDate[0] : '';
@@ -79,7 +82,7 @@ function parseRSS(xmlData, category = {}) {
                         id: item.guid ? item.guid[0] : (item.link ? item.link[0] : ''),
                         category_id: category.id || '',
                         category_name: category.name || '',
-                        source: channelInfo.description,
+                        source: channelSource,
                         title: item.title ? item.title[0] : '',
                         description: cleanHTML(item.description ? item.description[0] : ''),
                         thumbnail_url: extractImage(item),

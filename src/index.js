@@ -30,6 +30,8 @@ async function crawlCategory(category) {
     let itemsToAdd = newItems.filter(item => !existingIds.has(item.id));
 
     if (itemsToAdd.length === 0) {
+        metadata.last_updated = new Date().toISOString();
+        saveMetadata(id, metadata);
         console.log(`[${name}] Không có bài viết mới nào. Bỏ qua.`);
         return;
     }

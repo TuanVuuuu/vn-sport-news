@@ -170,15 +170,15 @@ function getSearchableArticleText(item) {
  */
 function formatArticle(item, categoryId, metadata = {}) {
     const category = getCategoryInfo(categoryId);
-    const source = metadata.channel && metadata.channel.description
-        ? metadata.channel.description
+    const channelSource = metadata.channel
+        ? (metadata.channel.generator || metadata.channel.description || '')
         : '';
 
     return {
         ...item,
         category_id: item.category_id || category.id,
         category_name: item.category_name || category.name,
-        source: item.source || source,
+        source: channelSource || item.source || '',
         createAt: getCreateAt(item),
     };
 }
