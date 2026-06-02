@@ -946,5 +946,41 @@
     "link": "https://vnexpress.net/bac-si-cuu-qua-than-dut-roi-cua-nguoi-dan-ong-5080960.html",
     "published_at": "Tue, 02 Jun 2026 11:29:06 +0700",
     "createAt": "2026-06-02T04:29:06.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nang-nong-hai-nao-the-nao-5080869.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Nắng nóng hại não thế nào",
+    "description": "Tiếp xúc nhiệt độ cao kéo dài có thể làm tổn thương tế bào não, phù não, thiếu oxy, tăng nguy cơ đột quỵ ở người lớn tuổi nhiều bệnh nền.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/nang-1780363667-5323-1780363777.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZiKc3oePXdaePlZU8al2Aw",
+    "link": "https://vnexpress.net/nang-nong-hai-nao-the-nao-5080869.html",
+    "published_at": "Tue, 02 Jun 2026 12:00:00 +0700",
+    "createAt": "2026-06-02T05:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ai-nen-bo-sung-vitamin-tong-hop-5080856.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Ai nên bổ sung vitamin tổng hợp?",
+    "description": "Nhiều người uống vitamin tổng hợp hằng ngày, còn tôi ăn uống khá đầy đủ có cần bổ sung vitamin này không? (Quỳnh, tỉnh Thái Bình)",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/vitamintonghop-1780359230-8631-1780359380.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=EeoAdTwXm5A57BujS-HDUg",
+    "link": "https://vnexpress.net/ai-nen-bo-sung-vitamin-tong-hop-5080856.html",
+    "published_at": "Tue, 02 Jun 2026 12:00:00 +0700",
+    "createAt": "2026-06-02T05:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/phat-hien-ung-thu-noi-mac-tu-cung-sau-nua-nam-ra-mau-bat-thuong-5080854.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Phát hiện ung thư nội mạc tử cung sau nửa năm ra máu bất thường",
+    "description": "Bà Hà, 62 tuổi, đã mãn kinh song nay chảy máu âm đạo từng đợt nửa năm nay, bác sĩ chẩn đoán ung thư tử cung giai đoạn 1B.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/image001-1780358595-4893-1780358730.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=JLTr519ke1OeOjDwwtR0qw",
+    "link": "https://vnexpress.net/phat-hien-ung-thu-noi-mac-tu-cung-sau-nua-nam-ra-mau-bat-thuong-5080854.html",
+    "published_at": "Tue, 02 Jun 2026 12:00:00 +0700",
+    "createAt": "2026-06-02T05:00:00.000Z"
   }
 ]
