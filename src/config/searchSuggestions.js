@@ -21,6 +21,8 @@ const searchSuggestionSources = [
         id: 'sports',
         name: 'Thể thao',
         url: 'https://vnexpress.net/the-thao',
+        // 'all' = tìm trong mọi danh mục, hoặc chỉ định id như 'sports', 'featured'
+        validateCategory: 'all',
     },
 ];
 

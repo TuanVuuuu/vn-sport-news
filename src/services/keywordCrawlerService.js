@@ -7,6 +7,7 @@ const {
     normalizeKeyword,
     normalizeLink,
     isExternalLink,
+    filterKeywordsWithResults,
     loadSearchSuggestions,
     saveSearchSuggestions,
 } = require('../utils/searchSuggestionHelper');
@@ -57,11 +58,22 @@ async function crawlSearchSuggestions() {
     console.log(`\n[Gợi ý search] Đang crawl từ "${source.name}" (${source.url})`);
 
     const html = await fetchPage(source.url);
-    const keywords = parseSportsKeywords(html);
+    const parsedKeywords = parseSportsKeywords(html);
+
+    if (parsedKeywords.length === 0) {
+        const existing = loadSearchSuggestions();
+        console.log('[Gợi ý search] Không parse được từ khóa nào. Giữ nguyên dữ liệu cũ.');
+        return existing;
+    }
+
+    const validateCategory = source.validateCategory || 'all';
+    console.log(`[Gợi ý search] Đang kiểm tra ${parsedKeywords.length} từ khóa (category: ${validateCategory})`);
+
+    const keywords = filterKeywordsWithResults(parsedKeywords, validateCategory);
 
     if (keywords.length === 0) {
         const existing = loadSearchSuggestions();
-        console.log('[Gợi ý search] Không parse được từ khóa nào. Giữ nguyên dữ liệu cũ.');
+        console.log('[Gợi ý search] Không có từ khóa nào pass validate. Giữ nguyên dữ liệu cũ.');
         return existing;
     }
 
@@ -70,7 +82,7 @@ async function crawlSearchSuggestions() {
         keywords,
     });
 
-    console.log(`[Gợi ý search] Đã cập nhật ${keywords.length} từ khóa.`);
+    console.log(`[Gợi ý search] Đã cập nhật ${keywords.length}/${parsedKeywords.length} từ khóa.`);
     return saved;
 }
 

@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const categories = require('../config/categories');
 const { defaultSearchSuggestions } = require('../config/searchSuggestions');
+const { loadMetadata, searchItems } = require('./fileHelper');
 
 const SUGGESTIONS_FILE = path.join(__dirname, '../../data/search_suggestions.json');
 
@@ -79,6 +81,57 @@ function saveSearchSuggestions(payload) {
 }
 
 /**
+ * Kiểm tra từ khóa có trả về kết quả search thật trong dữ liệu app.
+ * @param {string} keyword
+ * @param {string} validateCategory - 'all' hoặc id danh mục cụ thể
+ * @returns {boolean}
+ */
+function keywordHasSearchResults(keyword, validateCategory = 'all') {
+    const categoryIds = validateCategory === 'all'
+        ? categories.map(category => category.id)
+        : [validateCategory];
+
+    for (const categoryId of categoryIds) {
+        const metadata = loadMetadata(categoryId);
+        if (!metadata || metadata.total_articles === 0) {
+            continue;
+        }
+
+        const result = searchItems(categoryId, metadata, {
+            text: keyword,
+            day: null,
+            month: null,
+            year: null,
+        }, 0, 1);
+        if (result.data.length > 0) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+/**
+ * Chỉ giữ keyword có kết quả search thật.
+ * @param {Array<{ keyword: string, link: string }>} keywords
+ * @param {string} validateCategory
+ * @returns {Array<{ keyword: string, link: string }>}
+ */
+function filterKeywordsWithResults(keywords, validateCategory = 'all') {
+    const valid = [];
+
+    for (const item of keywords) {
+        if (keywordHasSearchResults(item.keyword, validateCategory)) {
+            valid.push(item);
+        } else {
+            console.log(`[Gợi ý search] Bỏ "${item.keyword}" — không có kết quả search`);
+        }
+    }
+
+    return valid;
+}
+
+/**
  * Lấy danh sách fallback từ config.
  * @returns {Array<{ keyword: string, source: string }>}
  */
@@ -141,6 +194,8 @@ module.exports = {
     normalizeKeyword,
     normalizeLink,
     isExternalLink,
+    keywordHasSearchResults,
+    filterKeywordsWithResults,
     loadSearchSuggestions,
     saveSearchSuggestions,
     getSearchSuggestionsForApi,
