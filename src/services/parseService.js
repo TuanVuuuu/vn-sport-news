@@ -11,6 +11,18 @@ function cleanHTML(html) {
 }
 
 /**
+ * Nâng kích thước ảnh CDN Thể Thao 247 lên 760x460 (RSS thường trả resize_180x115).
+ * @param {string|null} url
+ * @returns {string|null}
+ */
+function normalizeThumbnailUrl(url) {
+    if (!url || !url.includes('cdn-img.thethao247.vn')) {
+        return url;
+    }
+    return url.replace(/resize_\d+x\d+/i, 'resize_760x460');
+}
+
+/**
  * Trích xuất URL ảnh thumbnail từ một item RSS.
  * Ưu tiên thẻ <enclosure>, fallback sang thẻ <img> trong description.
  * @param {object} item - Một item RSS đã được xml2js parse.
@@ -19,14 +31,14 @@ function cleanHTML(html) {
 function extractImage(item) {
     if (item.enclosure && item.enclosure[0] && item.enclosure[0].$) {
         if (item.enclosure[0].$.url) {
-            return item.enclosure[0].$.url;
+            return normalizeThumbnailUrl(item.enclosure[0].$.url);
         }
     }
     const desc = item.description ? item.description[0] : '';
     const imgRegex = /<img[^>]+src="([^">]+)"/g;
     const match = imgRegex.exec(desc);
     if (match && match[1]) {
-        return match[1];
+        return normalizeThumbnailUrl(match[1]);
     }
     return null;
 }
@@ -67,13 +79,17 @@ function parseRSS(xmlData, category = {}) {
                     title: channel.title ? channel.title[0] : '',
                     description: channel.description ? channel.description[0] : '',
                     generator: channel.generator ? channel.generator[0] : '',
+                    copyright: channel.copyright ? channel.copyright[0] : '',
                     logo_url: channel.image && channel.image[0] && channel.image[0].url
                         ? channel.image[0].url[0] : '',
                     link: channel.link ? channel.link[0] : '',
                     last_updated: channel.pubDate ? channel.pubDate[0] : '',
                 };
 
-                const channelSource = channelInfo.generator || channelInfo.description;
+                const channelSource = channelInfo.generator
+                    || channelInfo.copyright
+                    || channelInfo.title
+                    || channelInfo.description;
 
                 const parsedItems = items.map(item => {
                     const publishedAt = item.pubDate ? item.pubDate[0] : '';
@@ -83,7 +99,7 @@ function parseRSS(xmlData, category = {}) {
                         category_id: category.id || '',
                         category_name: category.name || '',
                         source: channelSource,
-                        title: item.title ? item.title[0] : '',
+                        title: (item.title ? item.title[0] : '').trim(),
                         description: cleanHTML(item.description ? item.description[0] : ''),
                         thumbnail_url: extractImage(item),
                         link: item.link ? item.link[0] : '',

@@ -1,615 +1,476 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<rss version="2.0">
+<rss xmlns:content="https://purl.org/rss/1.0/modules/content/" xmlns:wfw="https://wellformedweb.org/CommentAPI/" xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:sy="https://purl.org/rss/1.0/modules/syndication/" version="2.0">
 <channel>
-<title>Góc nhìn - VnExpress RSS</title>
-<description>VnExpress RSS</description>
+<title>World Cup 2026 - Tin tức nổi bật và mới nhất | Thể Thao 247</title>
+<copyright>Thể thao 247</copyright>
+<link>https://thethao247.vn</link>
+<description>Trọn vẹn cảm xúc cùng với World Cup 2026 trên Thể Thao 247. Xem tin tức, lịch thi đấu, link trực tiếp, bảng xếp hạng của World Cup 2026 từ 20/11/2022.</description>
+<language>vi-vn</language>
+<pubDate>Wed, 03 Jun 2026 00:28:34 +0700</pubDate>
+<lastBuildDate>Wed, 03 Jun 2026 00:28:34 +0700</lastBuildDate>
+<docs>https://thethao247.vn/rss.html</docs>
+<managingEditor>truong@thethao247.vn(Thethao247)</managingEditor>
+<webMaster>truong@thethao247.vn(Thethao247)</webMaster>
+<ttl>5</ttl>
 <image>
-<url>https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png</url>
-<title>Tin nhanh VnExpress - Đọc báo, tin tức online 24h</title>
-<link>https://vnexpress.net</link>
+<url>https://thethao247.vn/frontend/images/logo.png</url>
+<title>World Cup 2026 - Tin tức nổi bật và mới nhất | Thể Thao 247</title>
+<link>https://thethao247.vn</link>
 </image>
-<pubDate>Mon, 01 Jun 2026 22:08:30 +0700</pubDate>
-<generator>VnExpress</generator>
-<link>https://vnexpress.net/rss/goc-nhin.rss</link>
+<atom:link href="https://thethao247.vn/world-cup.rss" rel="self" type="application/rss+xml"/>
 <item>
-<title>Giới hạn của quyền cha mẹ</title>
+<title>
+<![CDATA[ CHÍNH THỨC: ĐT Anh công bố số áo đá World Cup, lộ diện đội hình chính ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/gioi-han-cua-quyen-cha-me-5080345.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/31/tre-1780243797-1692-1780243824.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jQJd-LWyb03Ubg2DucQVmg"></a></br>Một đứa trẻ ba tuổi được đưa vào phòng cấp cứu Bệnh viện Đại học Y Hà Nội với cơ thể đầy thương tích. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/175391-chinh-thuc-dt-anh-cong-bo-so-ao-da-world-cup-lo-dien-doi-hinh-chinh-d422262.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/nhatbinh02112002/2026/06/02/vp-02_06-england-world-cup_comp-6a1ef39c56ac7.jpg" width="180" height="115"/> </a> Số áo của đội tuyển Anh tại FIFA World Cup 2026 tổ chức ở Bắc Mỹ đã chính thức được công bố, trước khi giải đấu khởi tranh vào ngày 12/6 (giờ Việt Nam). ]]>
 </description>
-<pubDate>Mon, 01 Jun 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/gioi-han-cua-quyen-cha-me-5080345.html</link>
-<guid>https://vnexpress.net/gioi-han-cua-quyen-cha-me-5080345.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/31/tre-1780243797-1692-1780243824.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=jQJd-LWyb03Ubg2DucQVmg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/175391-chinh-thuc-dt-anh-cong-bo-so-ao-da-world-cup-lo-dien-doi-hinh-chinh-d422262.html</link>
+<pubDate>Tue, 02 Jun 2026 21:14:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/175391-chinh-thuc-dt-anh-cong-bo-so-ao-da-world-cup-lo-dien-doi-hinh-chinh-d422262.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/175391-chinh-thuc-dt-anh-cong-bo-so-ao-da-world-cup-lo-dien-doi-hinh-chinh-d422262.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Tiếng Việt sáo ngữ</title>
+<title>
+<![CDATA[ Ứng viên vô địch World Cup 2026 bất ngờ bị FIFA kiểm tra ráo riết ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/tieng-viet-sao-ngu-5079466.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/29/af-1779988652-3060-1779988664.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DpAdXpryR45RdALDN1rZ3w"></a></br>Tôi vừa đọc tin tuyển sinh ngành mới của một trường đại học. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/461-ung-vien-vo-dich-world-cup-2026-bat-ngo-bi-fifa-kiem-tra-rao-riet-d422285.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/btvttqt4/2026/06/02/1-6a1ed988a428f.jpg" width="180" height="115"/> </a> Đội tuyển Tây Ban Nha bất ngờ trải qua cuộc kiểm tra doping đột xuất ngay trước thềm World Cup 2026, khi FIFA tăng cường giám sát với các ứng viên hàng đầu cho chức vô địch. ]]>
 </description>
-<pubDate>Sun, 31 May 2026 00:00:10 +0700</pubDate>
-<link>https://vnexpress.net/tieng-viet-sao-ngu-5079466.html</link>
-<guid>https://vnexpress.net/tieng-viet-sao-ngu-5079466.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/29/af-1779988652-3060-1779988664.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DpAdXpryR45RdALDN1rZ3w"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/461-ung-vien-vo-dich-world-cup-2026-bat-ngo-bi-fifa-kiem-tra-rao-riet-d422285.html</link>
+<pubDate>Tue, 02 Jun 2026 20:06:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/461-ung-vien-vo-dich-world-cup-2026-bat-ngo-bi-fifa-kiem-tra-rao-riet-d422285.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/461-ung-vien-vo-dich-world-cup-2026-bat-ngo-bi-fifa-kiem-tra-rao-riet-d422285.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Sông Hồng: dải đất hay dòng nước?</title>
+<title>
+<![CDATA[ Tuyển Brazil gây chú ý với nghi thức độc lạ trước giờ xuất quân World Cup ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/song-hong-dai-dat-hay-dong-nuoc-5079877.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/29/bvc-1780067661-2322-1780067664.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=F1BIqI54AtLbAQMO__DU2w"></a></br>Có những ngày tháng 8, sông Hồng đỏ như gạch non. Nước dâng nhanh, xóa sạch bãi cát, áp sát chân đê, ngập ngang cửa sổ những căn nhà ngoài bãi. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/503-tuyen-brazil-gay-chu-y-voi-nghi-thuc-doc-la-truoc-gio-xuat-quan-world-cup-d422269.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/hoangvinh/2026/06/02/1780284148883_brazil-6a1eb9ddef6d2.jpg" width="180" height="115"/> </a> Nghi thức đặc biệt này là cách người Brazil gửi gắm niềm tin vào chiếc cúp vàng thứ 6, trở thành điểm tựa tâm linh lớn nhất với hy vọng Neymar sớm bình phục chấn thương. ]]>
 </description>
-<pubDate>Sat, 30 May 2026 06:00:00 +0700</pubDate>
-<link>https://vnexpress.net/song-hong-dai-dat-hay-dong-nuoc-5079877.html</link>
-<guid>https://vnexpress.net/song-hong-dai-dat-hay-dong-nuoc-5079877.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/29/bvc-1780067661-2322-1780067664.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=F1BIqI54AtLbAQMO__DU2w"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/503-tuyen-brazil-gay-chu-y-voi-nghi-thuc-doc-la-truoc-gio-xuat-quan-world-cup-d422269.html</link>
+<pubDate>Tue, 02 Jun 2026 18:35:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/503-tuyen-brazil-gay-chu-y-voi-nghi-thuc-doc-la-truoc-gio-xuat-quan-world-cup-d422269.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/503-tuyen-brazil-gay-chu-y-voi-nghi-thuc-doc-la-truoc-gio-xuat-quan-world-cup-d422269.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Đốt nóng bằng điều hòa</title>
+<title>
+<![CDATA[ CHÍNH THỨC: Thổ Nhĩ Kỳ công bố danh sách tham dự World Cup 2026, khởi đầu thế hệ vàng ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/dot-nong-bang-dieu-hoa-5079470.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/29/Dbv-1780010386-1297-1780010391.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DabR6I7qgh-tMD9q4l_jLg"></a></br>Văn phòng của tôi nằm trên đường Lê Duẩn ở phường Sài Gòn, một tòa nhà kính có hệ thống điều hòa trung tâm chạy gần như cả ngày. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/461-chinh-thuc-tho-nhi-ky-cong-bo-danh-sach-tham-du-world-cup-2026-khoi-dau-the-he-vang-d422281.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/btvttqt4/2026/06/02/3-6a1ec32a58870.jpg" width="180" height="115"/> </a> Huấn luyện viên Vincenzo Montella vừa chính thức công bố danh sách 26 cầu thủ đội tuyển Thổ Nhĩ Kỳ tham dự World Cup 2026, đánh dấu sự trở lại đầy kiêu hãnh của một thế hệ vàng mới. ]]>
 </description>
-<pubDate>Fri, 29 May 2026 06:08:57 +0700</pubDate>
-<link>https://vnexpress.net/dot-nong-bang-dieu-hoa-5079470.html</link>
-<guid>https://vnexpress.net/dot-nong-bang-dieu-hoa-5079470.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/29/Dbv-1780010386-1297-1780010391.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DabR6I7qgh-tMD9q4l_jLg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/461-chinh-thuc-tho-nhi-ky-cong-bo-danh-sach-tham-du-world-cup-2026-khoi-dau-the-he-vang-d422281.html</link>
+<pubDate>Tue, 02 Jun 2026 18:34:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/461-chinh-thuc-tho-nhi-ky-cong-bo-danh-sach-tham-du-world-cup-2026-khoi-dau-the-he-vang-d422281.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/461-chinh-thuc-tho-nhi-ky-cong-bo-danh-sach-tham-du-world-cup-2026-khoi-dau-the-he-vang-d422281.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Bất bình đẳng điều hòa</title>
+<title>
+<![CDATA[ VIDEO: Giám đốc và HLV trưởng của 'ông lớn' ở Serie A lao vào đấm nhau ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/bat-binh-dang-dieu-hoa-5078938.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/27/aoieuhoa-1779881487-1112-1779881623.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=r9efZLDf6jJZcDKq-PcsUA"></a></br>Một đồng nghiệp ở Việt Nam hỏi tôi về một loại áo, được quảng cáo là “áo điều hòa công nghệ Nhật Bản”. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/395-video-giam-doc-va-hlv-truong-cua-doi-bong-o-serie-a-lao-vao-dam-nhau-d261876.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/tranvutung/2022/07/28/video-giam-doc-va-hlv-truong-cua-ong-lon-o-serie-a-lao-vao-dam-nhau-163371.jpg" width="180" height="115"/> </a> Mới đây, Davide Vagnati - GĐTT của CLB Torino và HLV trưởng của đội bóng thành Turin, ông Ivan Juric đã bị bắt gặp đang bàn bạc kế hoạch phát triển CLB trong mùa giải mới bằng "nắm đấm" ở một bãi đỗ xe. ]]>
 </description>
-<pubDate>Thu, 28 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/bat-binh-dang-dieu-hoa-5078938.html</link>
-<guid>https://vnexpress.net/bat-binh-dang-dieu-hoa-5078938.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/27/aoieuhoa-1779881487-1112-1779881623.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=r9efZLDf6jJZcDKq-PcsUA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/395-video-giam-doc-va-hlv-truong-cua-doi-bong-o-serie-a-lao-vao-dam-nhau-d261876.html</link>
+<pubDate>Thu, 28 Jul 2022 16:20:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/395-video-giam-doc-va-hlv-truong-cua-doi-bong-o-serie-a-lao-vao-dam-nhau-d261876.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/395-video-giam-doc-va-hlv-truong-cua-doi-bong-o-serie-a-lao-vao-dam-nhau-d261876.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>'Kỳ thi sống còn' của con tôi</title>
+<title>
+<![CDATA[ Highlight bóng đá Man City vs MU: Mưa bàn thắng tại Etihad ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/ky-thi-song-con-cua-con-toi-5078559.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/26/Kythi-1779811857-1276-1779811995.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=AkllMRcOlhozPyOH39ja3g"></a></br>Vào buổi sáng con tôi thi kỳ cuối quyết định của năm nhất Y khoa, căn nhà gia đình bạn cho ngủ nhờ gần trường Paris-Saclay có bốn lần báo thức. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/395-highlight-bong-da-man-city-vs-mu-mua-ban-thang-tai-etihad-d251603.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/tranvutung/2022/03/07/gettyimages-1381441938-612x612-1646597807.jpg" width="180" height="115"/> </a> (Video bóng đá Ngoại hạng Anh, Man City vs MU) - Trận cầu tâm điểm vòng 28 giải Ngoại hạng Anh ]]>
 </description>
-<pubDate>Wed, 27 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/ky-thi-song-con-cua-con-toi-5078559.html</link>
-<guid>https://vnexpress.net/ky-thi-song-con-cua-con-toi-5078559.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/26/Kythi-1779811857-1276-1779811995.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=AkllMRcOlhozPyOH39ja3g"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/395-highlight-bong-da-man-city-vs-mu-mua-ban-thang-tai-etihad-d251603.html</link>
+<pubDate>Mon, 07 Mar 2022 03:15:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/395-highlight-bong-da-man-city-vs-mu-mua-ban-thang-tai-etihad-d251603.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/395-highlight-bong-da-man-city-vs-mu-mua-ban-thang-tai-etihad-d251603.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Quay mặt ra sông Hồng</title>
+<title>
+<![CDATA[ Highlight bóng đá Crystal Palace vs Chelsea: The Blues thắng nghẹt thở ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/quay-mat-ra-song-hong-5078125.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/25/av-1779728062-8000-1779728066.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=VOfDBXfXQS4pZfUyHwiGtQ"></a></br>Ngày 11/9/2024, giữa lúc cơn lũ do bão Yagi lên mức đỉnh, nhìn cảnh nước dâng ngập các khu dân cư ngoài đê, tôi viết bài báo “Sông Hồng nước lên to”. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/395-highlight-bong-da-crystal-palace-vs-chelsea-the-blues-thang-nghet-tho-d250747.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/tranvutung/2022/02/20/highlight-bong-da-crystal-palace-vs-chelsea-the-blues-thang-nghet-tho-113191.jpg" width="180" height="115"/> </a> (Video bóng đá Ngoại hạng Anh, Palace vs Chelsea). Mặc dù được đánh giá cao hơn nhưng Chelsea đã có ngày thi đấu vô cùng chật vật. ]]>
 </description>
-<pubDate>Tue, 26 May 2026 00:00:08 +0700</pubDate>
-<link>https://vnexpress.net/quay-mat-ra-song-hong-5078125.html</link>
-<guid>https://vnexpress.net/quay-mat-ra-song-hong-5078125.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/25/av-1779728062-8000-1779728066.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=VOfDBXfXQS4pZfUyHwiGtQ"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/395-highlight-bong-da-crystal-palace-vs-chelsea-the-blues-thang-nghet-tho-d250747.html</link>
+<pubDate>Sun, 20 Feb 2022 01:24:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/395-highlight-bong-da-crystal-palace-vs-chelsea-the-blues-thang-nghet-tho-d250747.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/395-highlight-bong-da-crystal-palace-vs-chelsea-the-blues-thang-nghet-tho-d250747.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Học bơi, học nổi</title>
+<title>
+<![CDATA[ Màn trình diễn nhạt nhòa của Messi và đồng đội trước Paraguay ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/hoc-boi-hoc-noi-5077661.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/24/nbva-1779639318-4516-1779639358.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=rY4PLRrw0tLRHlTEHQEayg"></a></br>Tôi lớn lên ở thành phố và chưa từng được học bơi bài bản. Trong nhiều năm, điều đó không phải vấn đề lớn, cho đến khi tôi có con. Mỗi lần đưa con đi biển hay du lịch ở những vùng sông nước, tôi luôn bồn chồn, lo lắng. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/386-man-trinh-dien-nhat-nhoa-cua-messi-va-dong-doi-truoc-paraguay-d242010.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/thangmv/2021/10/08/downloaderla-61604df46369d-1633701430.jpg" width="180" height="115"/> </a> Argentina đã có một trận đấu khó khăn trước Paraguay ở vòng loại World Cup 2022 khu vực Nam Mỹ. ]]>
 </description>
-<pubDate>Mon, 25 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/hoc-boi-hoc-noi-5077661.html</link>
-<guid>https://vnexpress.net/hoc-boi-hoc-noi-5077661.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/24/nbva-1779639318-4516-1779639358.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=rY4PLRrw0tLRHlTEHQEayg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/386-man-trinh-dien-nhat-nhoa-cua-messi-va-dong-doi-truoc-paraguay-d242010.html</link>
+<pubDate>Fri, 08 Oct 2021 20:56:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/386-man-trinh-dien-nhat-nhoa-cua-messi-va-dong-doi-truoc-paraguay-d242010.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/386-man-trinh-dien-nhat-nhoa-cua-messi-va-dong-doi-truoc-paraguay-d242010.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Tin giả 'giá 50 triệu'</title>
+<title>
+<![CDATA[ VIDEO: Son Heung-min và đồng đội phung phí cơ hội, bất lực trước Iraq ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/tin-gia-gia-50-trieu-5077495.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/24/b-1779586358-1785-1779586364.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yJaDDKXuqtbB8JOqO7yQ9Q"></a></br>Chủ doanh nghiệp tìm đến tôi sau khi công ty anh bị một tài khoản Facebook đăng tin sai sự thật, gây hiểu nhầm rằng họ cố ý lừa dối khách hàng. Bài viết lan nhanh. Đối tác trì hoãn ký hợp đồng. Bạn hàng cũ ngại nghe máy. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/358-video-son-heung-min-va-dong-doi-phung-phi-co-hoi-bat-luc-truoc-iraq-d239892.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/anhtuan/2021/06/13/toa-sang-o-vl-world-cup-son-heung-min-an-mung-day-cam-xuc-tri-an-eriksen-53639.jpg" width="180" height="115"/> </a> Hàn Quốc đã gây thất vọng khi chỉ có được 1 điểm trước Iraq trong ngày ra quân AFC Asian Qualifiers - Road to Qatar (Vòng loại 3 World Cup - Khu vực châu Á). ]]>
 </description>
-<pubDate>Sun, 24 May 2026 07:41:56 +0700</pubDate>
-<link>https://vnexpress.net/tin-gia-gia-50-trieu-5077495.html</link>
-<guid>https://vnexpress.net/tin-gia-gia-50-trieu-5077495.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/24/b-1779586358-1785-1779586364.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yJaDDKXuqtbB8JOqO7yQ9Q"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/358-video-son-heung-min-va-dong-doi-phung-phi-co-hoi-bat-luc-truoc-iraq-d239892.html</link>
+<pubDate>Thu, 02 Sep 2021 22:55:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/358-video-son-heung-min-va-dong-doi-phung-phi-co-hoi-bat-luc-truoc-iraq-d239892.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/358-video-son-heung-min-va-dong-doi-phung-phi-co-hoi-bat-luc-truoc-iraq-d239892.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Nhậu, kiếm tiền và nằm viện</title>
+<title>
+<![CDATA[ ĐT Anh lộ số áo, Argentina gặp 'hung thần', HLV báo tin vui về Yamal,... và những tin tức World Cup nóng nhất hôm nay ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/nhau-kiem-tien-va-nam-vien-5076715.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/22/bva-1779468846-2942-1779468850.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UeRFy214IaDFJIvpMiSmEQ"></a></br>Chỉ trong hai tuần, tôi sút mất 15 kg, không phải nhờ kỷ luật, mà vì một biến cố sức khỏe. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-dt-anh-lo-so-ao-argentina-gap-hung-than-hlv-bao-tin-vui-ve-yamal-va-nhung-tin-tuc-world-cup-nong-nhat-hom-nay-d422275.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/messi_862x485-6a1e434254760-6a1eb5aab0a68.jpg" width="180" height="115"/> </a> Tin tức về World Cup ngày 2/6 vô cùng nóng hổi với nhiều câu chuyện xoay quanh các đội tuyển lớn Anh, Argentina, Tây Ban Nha,... cùng những dự đoán về ngôi vô địch. ]]>
 </description>
-<pubDate>Sat, 23 May 2026 00:00:21 +0700</pubDate>
-<link>https://vnexpress.net/nhau-kiem-tien-va-nam-vien-5076715.html</link>
-<guid>https://vnexpress.net/nhau-kiem-tien-va-nam-vien-5076715.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/22/bva-1779468846-2942-1779468850.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UeRFy214IaDFJIvpMiSmEQ"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-dt-anh-lo-so-ao-argentina-gap-hung-than-hlv-bao-tin-vui-ve-yamal-va-nhung-tin-tuc-world-cup-nong-nhat-hom-nay-d422275.html</link>
+<pubDate>Tue, 02 Jun 2026 18:31:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-dt-anh-lo-so-ao-argentina-gap-hung-than-hlv-bao-tin-vui-ve-yamal-va-nhung-tin-tuc-world-cup-nong-nhat-hom-nay-d422275.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-dt-anh-lo-so-ao-argentina-gap-hung-than-hlv-bao-tin-vui-ve-yamal-va-nhung-tin-tuc-world-cup-nong-nhat-hom-nay-d422275.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Bỏ cuộc vì giá nhà</title>
+<title>
+<![CDATA[ Cầu thủ ghi bàn nhanh nhất lịch sử ĐTQG lỡ hẹn World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/bo-cuoc-vi-gia-nha-5076759.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/22/nhtrnVnE-1779412403-1406-1779412406.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8xasec6lh9s3FsE_VYeyng"></a></br>Có một phép tính mà rất nhiều người trẻ Việt Nam đang âm thầm làm - rồi âm thầm bỏ cuộc. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/175391-cau-thu-ghi-ban-nhanh-nhat-lich-su-dtqg-lo-hen-world-cup-2026-d422272.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/nhatbinh02112002/2026/06/02/anh-17-6a1eb1d847995.jpg" width="180" height="115"/> </a> Tuyển Áo vừa đón nhận cú sốc cực lớn ngay trước thềm World Cup 2026 khi tiền vệ tấn công Christoph Baumgartner chính thức phải nói lời chia tay giải đấu vì chấn thương.  ]]>
 </description>
-<pubDate>Fri, 22 May 2026 00:26:43 +0700</pubDate>
-<link>https://vnexpress.net/bo-cuoc-vi-gia-nha-5076759.html</link>
-<guid>https://vnexpress.net/bo-cuoc-vi-gia-nha-5076759.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/22/nhtrnVnE-1779412403-1406-1779412406.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8xasec6lh9s3FsE_VYeyng"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/175391-cau-thu-ghi-ban-nhanh-nhat-lich-su-dtqg-lo-hen-world-cup-2026-d422272.html</link>
+<pubDate>Tue, 02 Jun 2026 18:21:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/175391-cau-thu-ghi-ban-nhanh-nhat-lich-su-dtqg-lo-hen-world-cup-2026-d422272.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/175391-cau-thu-ghi-ban-nhanh-nhat-lich-su-dtqg-lo-hen-world-cup-2026-d422272.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Lãng phí bằng đại học?</title>
+<title>
+<![CDATA[ HLV Tuchel tất tay, tuyển Anh đứng trước ngã rẽ lịch sử tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/lang-phi-bang-dai-hoc-5075867.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/20/c-1779232171-8368-1779232174.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oNKUqoriVDt8jNtI9xLf3Q"></a></br>"Học đại học ra chỉ để làm việc này thôi sao? Đúng là lãng phí tiền bạc của bố mẹ". ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-canh-bac-tat-tay-cua-hlv-tuchel-tuyen-anh-dung-truoc-nga-re-lich-su-tai-world-cup-2026-d422256.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/skysports-thomas-tuchel-england_6717807-6a1ea1cb2398c.jpg" width="180" height="115"/> </a> Sau 60 năm chờ đợi trong vô vọng, tuyển Anh lại bước vào một kỳ World Cup với niềm tin mãnh liệt. Nhưng lần này, mọi ánh mắt đều đổ dồn vào một người đàn ông sẵn sàng đưa ra những quyết định gây tranh cãi để theo đuổi mục tiêu duy nhất. ]]>
 </description>
-<pubDate>Wed, 20 May 2026 00:00:37 +0700</pubDate>
-<link>https://vnexpress.net/lang-phi-bang-dai-hoc-5075867.html</link>
-<guid>https://vnexpress.net/lang-phi-bang-dai-hoc-5075867.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/20/c-1779232171-8368-1779232174.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oNKUqoriVDt8jNtI9xLf3Q"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-canh-bac-tat-tay-cua-hlv-tuchel-tuyen-anh-dung-truoc-nga-re-lich-su-tai-world-cup-2026-d422256.html</link>
+<pubDate>Tue, 02 Jun 2026 17:19:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-canh-bac-tat-tay-cua-hlv-tuchel-tuyen-anh-dung-truoc-nga-re-lich-su-tai-world-cup-2026-d422256.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-canh-bac-tat-tay-cua-hlv-tuchel-tuyen-anh-dung-truoc-nga-re-lich-su-tai-world-cup-2026-d422256.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>'Bóc lột' trên YouTube</title>
+<title>
+<![CDATA[ Nhà chiêm tinh tiên đoán sốc về tuyển Anh tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/boc-lot-tren-youtube-5075384.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/18/ContentID-1779119212-1340-1779120113.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=vVwIzDqTJ-Mu2ul84SUs2g"></a></br>Cuối năm ngoái, tôi hỗ trợ pháp lý cho một nghệ sĩ chống lại hành vi xâm phạm quyền sở hữu công nghiệp với một doanh nghiệp khai thác nội dung số. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/426-nha-chiem-tinh-tien-doan-soc-ve-tuyen-anh-tai-world-cup-2026-d422266.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/camhm/2026/06/02/skysports-england-world-cup-26_7-6a1eaccd9094d.jpg" width="180" height="115"/> </a> Trước thềm World Cup 2026, một nhà chiêm tinh học đưa ra dự đoán gây tranh cãi về tuyển Anh khi cho rằng thầy trò Thomas Tuchel sẽ đối mặt nhiều sóng gió, thậm chí nhận tới hai thẻ đỏ. ]]>
 </description>
-<pubDate>Tue, 19 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/boc-lot-tren-youtube-5075384.html</link>
-<guid>https://vnexpress.net/boc-lot-tren-youtube-5075384.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/18/ContentID-1779119212-1340-1779120113.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=vVwIzDqTJ-Mu2ul84SUs2g"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/426-nha-chiem-tinh-tien-doan-soc-ve-tuyen-anh-tai-world-cup-2026-d422266.html</link>
+<pubDate>Tue, 02 Jun 2026 17:16:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/426-nha-chiem-tinh-tien-doan-soc-ve-tuyen-anh-tai-world-cup-2026-d422266.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/426-nha-chiem-tinh-tien-doan-soc-ve-tuyen-anh-tai-world-cup-2026-d422266.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Phim tổng tài và cái hũ vô tri</title>
+<title>
+<![CDATA[ Tiền đạo ĐT Anh lộ tình tiết 'gây choáng' ngoài sân cỏ ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/phim-tong-tai-va-cai-hu-vo-tri-5074348.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/17/AnhtrenVnE1-1778985286-9656-1778985576.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=LfnLud1Kcoi1dlnH8b7gDA"></a></br>Tôi hỏi người bạn - tiến sĩ, hiệu trưởng một trường đại học lớn phía Nam - rằng anh thường làm gì sau giờ làm việc. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-tien-dao-dt-anh-lo-tinh-tiet-gay-soc-ngoai-san-co-d422251.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/ivan-toney-da-pen-cuc-di-6a1e95d04b1b4.jpg" width="180" height="115"/> </a> Được trao cơ hội trở lại đội tuyển Anh sau thời gian dài vắng bóng, Ivan Toney bất ngờ trở thành tâm điểm chú ý bởi một diễn biến bên ngoài sân cỏ ngay trước ngày lên đường dự World Cup 2026. ]]>
 </description>
-<pubDate>Mon, 18 May 2026 00:00:03 +0700</pubDate>
-<link>https://vnexpress.net/phim-tong-tai-va-cai-hu-vo-tri-5074348.html</link>
-<guid>https://vnexpress.net/phim-tong-tai-va-cai-hu-vo-tri-5074348.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/17/AnhtrenVnE1-1778985286-9656-1778985576.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=LfnLud1Kcoi1dlnH8b7gDA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-tien-dao-dt-anh-lo-tinh-tiet-gay-soc-ngoai-san-co-d422251.html</link>
+<pubDate>Tue, 02 Jun 2026 16:28:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-tien-dao-dt-anh-lo-tinh-tiet-gay-soc-ngoai-san-co-d422251.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-tien-dao-dt-anh-lo-tinh-tiet-gay-soc-ngoai-san-co-d422251.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>'Đàn ông phải thế'</title>
+<title>
+<![CDATA[ 'Dị nhân tiên đoán' gọi tên nhà vô địch World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/dan-ong-phai-the-5074350.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/16/AnhtrenVnE-1778942867-3317-1778943326.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6gE8jma33VbgBWmtPJDrlg"></a></br>Tôi thường tham gia những chuyến phiêu lưu, trekking, chạy bộ, rong ruổi đường xa. Từ cộng đồng này, tôi quan sát được một điều khá thú vị: ở tuổi tôi, nhiều ông bắt đầu thu hẹp thế giới của mình quanh công việc, tài chính và những trách nhiệm phải hoàn thành. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/426-di-nhan-tien-doan-goi-ten-nha-vo-dich-world-cup-2026-d422257.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/camhm/2026/06/02/cristiano-ronaldo-portugal-fifa-6a1e9f43ceb7a.jpg" width="180" height="115"/> </a> Chỉ còn chưa đầy 10 ngày trước giờ khai mạc World Cup 2026, "nhà tiên tri World Cup" Michael Bruno gây xôn xao khi dự đoán Bồ Đào Nha vô địch, Cristiano Ronaldo tỏa sáng rực rỡ còn Argentina của Lionel Messi dừng bước từ tứ kết. ]]>
 </description>
-<pubDate>Sun, 17 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/dan-ong-phai-the-5074350.html</link>
-<guid>https://vnexpress.net/dan-ong-phai-the-5074350.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/16/AnhtrenVnE-1778942867-3317-1778943326.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6gE8jma33VbgBWmtPJDrlg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/426-di-nhan-tien-doan-goi-ten-nha-vo-dich-world-cup-2026-d422257.html</link>
+<pubDate>Tue, 02 Jun 2026 16:25:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/426-di-nhan-tien-doan-goi-ten-nha-vo-dich-world-cup-2026-d422257.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/426-di-nhan-tien-doan-goi-ten-nha-vo-dich-world-cup-2026-d422257.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Cho thuê vỉa hè, ai hưởng lợi?</title>
+<title>
+<![CDATA[ HLV Tây Ban Nha báo tin vui về Yamal trước World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/cho-thue-via-he-ai-huong-loi-5074416.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/15/viahe-1778840052-6042-1778840464.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=k9LafFkT7Guxd-L61K2T8w"></a></br>Cùng một mét vuông vỉa hè, hôm trước bị xem là lấn chiếm, hôm sau có thể trở thành mặt bằng hợp pháp nếu đủ điều kiện và nộp phí thuê. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/493-hlv-tay-ban-nha-tiet-lo-tin-vui-ve-yamal-truoc-world-cup-d422255.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/anhnghia01052002/2026/06/02/hjuivjlx0am5wig-6a1e9955f244e.jpg" width="180" height="115"/> </a> Người hâm mộ ĐT Tây Ban Nha vẫn đang hồi hộp chờ đợi thông tin về chấn thương của Lamine Yamal trước thềm World Cup 2026, và mới đây HLV Luis de la Fuente đã đưa ra những cập nhật mới nhất. ]]>
 </description>
-<pubDate>Fri, 15 May 2026 20:00:00 +0700</pubDate>
-<link>https://vnexpress.net/cho-thue-via-he-ai-huong-loi-5074416.html</link>
-<guid>https://vnexpress.net/cho-thue-via-he-ai-huong-loi-5074416.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/15/viahe-1778840052-6042-1778840464.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=k9LafFkT7Guxd-L61K2T8w"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/493-hlv-tay-ban-nha-tiet-lo-tin-vui-ve-yamal-truoc-world-cup-d422255.html</link>
+<pubDate>Tue, 02 Jun 2026 15:50:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/493-hlv-tay-ban-nha-tiet-lo-tin-vui-ve-yamal-truoc-world-cup-d422255.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/493-hlv-tay-ban-nha-tiet-lo-tin-vui-ve-yamal-truoc-world-cup-d422255.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Những đề Toán phi lý</title>
+<title>
+<![CDATA[ Không phải Ronaldo, đây mới là siêu sao có thể đưa Bồ Đào Nha lên ngôi ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/nhung-de-toan-phi-ly-5073935.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/14/etoanphily-1778773283-6546-1778773287.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=gNgrL-OnBzsLmPJnj_Jmlg"></a></br>Hai năm trước, nhiều diễn đàn giáo dục Trung Quốc dậy sóng về một bài toán đơn giản. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/193267-khong-phai-ronaldo-day-moi-la-ngoi-no-co-the-dua-bo-dao-nha-den-cup-vang-d422248.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/qa19081999/2026/06/02/jogadores-de-portugal-comemoram-gol-marcado-sobre-a-hungria-nas-eliminatorias-scaled-aspect-ratio-512-320-6a1e961f7b2b3.jpg" width="180" height="115"/> </a> Trong hơn nửa thập kỷ qua, Bruno Fernandes đã khẳng định vị thế là một trong những tiền vệ xuất sắc nhất châu Âu. Không chỉ sở hữu khả năng sáng tạo hàng đầu, ngôi sao người Bồ Đào Nha còn là biểu tượng về tinh thần chiến đấu, tố chất lãnh đạo và sự ổn định đáng kinh ngạc trong màu áo Manchester United cũng như đội tuyển quốc gia. ]]>
 </description>
-<pubDate>Fri, 15 May 2026 00:00:52 +0700</pubDate>
-<link>https://vnexpress.net/nhung-de-toan-phi-ly-5073935.html</link>
-<guid>https://vnexpress.net/nhung-de-toan-phi-ly-5073935.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/14/etoanphily-1778773283-6546-1778773287.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=gNgrL-OnBzsLmPJnj_Jmlg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/193267-khong-phai-ronaldo-day-moi-la-ngoi-no-co-the-dua-bo-dao-nha-den-cup-vang-d422248.html</link>
+<pubDate>Tue, 02 Jun 2026 15:50:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/193267-khong-phai-ronaldo-day-moi-la-ngoi-no-co-the-dua-bo-dao-nha-den-cup-vang-d422248.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/193267-khong-phai-ronaldo-day-moi-la-ngoi-no-co-the-dua-bo-dao-nha-den-cup-vang-d422248.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>'Chuyện quốc gia' nói qua nhóm chat</title>
+<title>
+<![CDATA[ Messi cùng Argentina gặp 'hung thần' không ai ngờ đến tại World Cup ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/chuyen-quoc-gia-noi-qua-nhom-chat-5073590.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/13/a-1778680610-4040-1778680743.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aLFVx_9NZ10qAZAzeRNRew"></a></br>Tôi mê cờ vua từ nhỏ. Người chơi cờ trước khi đi một nước sẽ luôn tự hỏi nếu nước này sai thì hậu quả đến đâu. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/426-messi-cung-argentina-gap-hung-than-khong-ai-ngo-den-tai-world-cup-d422253.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/camhm/2026/06/02/argentina-tiet-lo-messi-1680158714-141004-6a153a1be7050-6a1e98bd189a0.jpg" width="180" height="115"/> </a> Đội tuyển Argentina đã điều chỉnh lịch tập luyện tại Mỹ trước thềm World Cup 2026, khi HLV Lionel Scaloni quyết định cho toàn đội tập vào buổi chiều nhằm thích nghi với thời tiết cực kỳ khắc nghiệt tại Kansas. ]]>
 </description>
-<pubDate>Wed, 13 May 2026 20:51:00 +0700</pubDate>
-<link>https://vnexpress.net/chuyen-quoc-gia-noi-qua-nhom-chat-5073590.html</link>
-<guid>https://vnexpress.net/chuyen-quoc-gia-noi-qua-nhom-chat-5073590.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/13/a-1778680610-4040-1778680743.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aLFVx_9NZ10qAZAzeRNRew"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/426-messi-cung-argentina-gap-hung-than-khong-ai-ngo-den-tai-world-cup-d422253.html</link>
+<pubDate>Tue, 02 Jun 2026 15:47:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/426-messi-cung-argentina-gap-hung-than-khong-ai-ngo-den-tai-world-cup-d422253.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/426-messi-cung-argentina-gap-hung-than-khong-ai-ngo-den-tai-world-cup-d422253.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Mất gì cho vỉa hè sạch?</title>
+<title>
+<![CDATA[ Lịch trực tiếp World Cup 2026 trên VTV (MỚI NHẤT) ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/mat-gi-cho-via-he-sach-5073069.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/12/Vah-1778575993-5456-1778576003.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=YDM1cxPBL3taPbuAqN_lgw"></a></br>Tôi đang trong đợt công tác vài tháng tại Chiba, một thành phố nhỏ gần Tokyo. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/426-lich-phat-song-world-cup-2026-tren-vtv-moi-nhat-d421816.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/camhm/2026/05/29/vtv-chinh-thuc-chieu-mien-phi-wo-6a195cb647320.jpg" width="180" height="115"/> </a> Lịch trực tiếp World Cup 2026 trên VTV cập nhật mới nhất và chính xác nhất 104 trận đấu. ]]>
 </description>
-<pubDate>Wed, 13 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/mat-gi-cho-via-he-sach-5073069.html</link>
-<guid>https://vnexpress.net/mat-gi-cho-via-he-sach-5073069.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/12/Vah-1778575993-5456-1778576003.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=YDM1cxPBL3taPbuAqN_lgw"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/426-lich-phat-song-world-cup-2026-tren-vtv-moi-nhat-d421816.html</link>
+<pubDate>Tue, 02 Jun 2026 15:26:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/426-lich-phat-song-world-cup-2026-tren-vtv-moi-nhat-d421816.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/426-lich-phat-song-world-cup-2026-tren-vtv-moi-nhat-d421816.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Người ngoài bãi sông Hồng</title>
+<title>
+<![CDATA[ Danh sách cầu thủ 48 ĐTQG dự World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/nguoi-ngoai-bai-song-hong-5072553.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/11/bai-1778513935-3155-1778513956.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=231OWR2Zy7rNYFR_QJNaTA"></a></br>Gia đình tôi mấy đời sống ở Hà Nội, có nhiều ký ức với đất bãi sông Hồng. Bà ngoại tôi lúc còn nhỏ vẫn thường chạy lên đê, chỗ phố Chợ Gạo, xem nước sông Hồng lên to. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/461-danh-sach-cau-thu-48-dtqg-tham-du-world-cup-2026-d420644.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/btvttqt4/2026/05/19/3-6a0bcf1e25d09.jpg" width="180" height="115"/> </a> Cập nhật danh sách cầu thủ tham dự World Cup 2026 của 48 đội tuyển quốc gia, thông tin mới nhất và chính xác nhất [FULL]. ]]>
 </description>
-<pubDate>Tue, 12 May 2026 06:00:00 +0700</pubDate>
-<link>https://vnexpress.net/nguoi-ngoai-bai-song-hong-5072553.html</link>
-<guid>https://vnexpress.net/nguoi-ngoai-bai-song-hong-5072553.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/11/bai-1778513935-3155-1778513956.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=231OWR2Zy7rNYFR_QJNaTA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/461-danh-sach-cau-thu-48-dtqg-tham-du-world-cup-2026-d420644.html</link>
+<pubDate>Tue, 02 Jun 2026 15:19:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/461-danh-sach-cau-thu-48-dtqg-tham-du-world-cup-2026-d420644.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/461-danh-sach-cau-thu-48-dtqg-tham-du-world-cup-2026-d420644.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Già rồi, ai nuôi mình?</title>
+<title>
+<![CDATA[ CHÍNH THỨC: Sao trẻ 2K4 đi vào lịch sử bóng đá Argentina tại World Cup ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/gia-roi-ai-nuoi-minh-5072169.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/10/Quyhuutribosung-1778406580-3585-1778406613.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=cKJAamJGn52OqExHF17wBQ"></a></br>Có một câu hỏi tưởng còn xa nhưng sẽ đến nhanh hơn nhiều người nghĩ: tôi sẽ sống bằng gì trong hơn 20 năm cuối đời, khi sức khỏe đã yếu đi và khả năng lao động không còn như trước? ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/493-chinh-thuc-sao-tre-2k4-di-vao-lich-su-bong-da-argentina-tai-world-cup-d422242.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/anhnghia01052002/2026/06/02/hjwdxhgwoaa2lis-6a1e8f878b6e2.jpg" width="180" height="115"/> </a> Nico Paz chuẩn bị đi vào lịch sử bóng đá Argentina khi trở thành cầu thủ đầu tiên dự World Cup mà chưa từng khoác áo bất kỳ CLB nào tại quê nhà, kể cả cấp độ trẻ. ]]>
 </description>
-<pubDate>Mon, 11 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/gia-roi-ai-nuoi-minh-5072169.html</link>
-<guid>https://vnexpress.net/gia-roi-ai-nuoi-minh-5072169.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/10/Quyhuutribosung-1778406580-3585-1778406613.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=cKJAamJGn52OqExHF17wBQ"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/493-chinh-thuc-sao-tre-2k4-di-vao-lich-su-bong-da-argentina-tai-world-cup-d422242.html</link>
+<pubDate>Tue, 02 Jun 2026 15:09:15 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/493-chinh-thuc-sao-tre-2k4-di-vao-lich-su-bong-da-argentina-tai-world-cup-d422242.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/493-chinh-thuc-sao-tre-2k4-di-vao-lich-su-bong-da-argentina-tai-world-cup-d422242.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Cái chết ở nơi an toàn nhất</title>
+<title>
+<![CDATA[ Thomas Tuchel: 'Mục tiêu của ĐT Anh là vô địch World Cup 2026' ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/cai-chet-o-noi-an-toan-nhat-5072005.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/10/Begai4tuoi-1778378746-1204-1778378749.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=o0iWTSbPes_asrzb-Ibu3Q"></a></br>Có những bản tin mà sau khi đọc xong, tôi không thể chuyển sang tin tiếp theo như một thói quen thường ngày. Cảm giác để lại quá nặng nề. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-tuchel-yeu-cau-hoc-tro-dt-anh-noi-thang-ve-world-cup-2026-d422235.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/thomas-tuchel-den-florida-wc26-6a1e865708844.jpg" width="180" height="115"/> </a> Sau hai lần gục ngã trước ngưỡng cửa vinh quang tại EURO, đội tuyển Anh bước vào World Cup 2026 với khát vọng lớn nhất trong hơn nửa thế kỷ. Thomas Tuchel ngay từ khi nhậm chức đã đặt ra tiêu chuẩn rõ ràng cho khát vọng của các học trò. ]]>
 </description>
-<pubDate>Sun, 10 May 2026 00:00:07 +0700</pubDate>
-<link>https://vnexpress.net/cai-chet-o-noi-an-toan-nhat-5072005.html</link>
-<guid>https://vnexpress.net/cai-chet-o-noi-an-toan-nhat-5072005.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/10/Begai4tuoi-1778378746-1204-1778378749.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=o0iWTSbPes_asrzb-Ibu3Q"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-tuchel-yeu-cau-hoc-tro-dt-anh-noi-thang-ve-world-cup-2026-d422235.html</link>
+<pubDate>Tue, 02 Jun 2026 15:05:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-tuchel-yeu-cau-hoc-tro-dt-anh-noi-thang-ve-world-cup-2026-d422235.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-tuchel-yeu-cau-hoc-tro-dt-anh-noi-thang-ve-world-cup-2026-d422235.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Ảo tưởng 'tôi biết tuốt'</title>
+<title>
+<![CDATA[ Con trai Zinedine Zidane lần đầu được triệu tập tham dự World Cup ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/ao-tuong-toi-biet-tuot-5071665.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/08/AIb-1778241014-9072-1778241340.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=RVYMYJAmgaorMkLsWYT0sg"></a></br>Một cuốn sách về các loài nấm ở vùng Saskatchewan (Canada), từng được xuất bản trên Amazon, có thể trở thành lời hướng dẫn chết người nếu thực hiện theo. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/193267-con-trai-zinedine-zidane-lan-dau-duoc-trieu-tap-tham-du-world-cup-d422241.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/qa19081999/2026/06/02/luca-zidane-6a1e8d0943283.jpg" width="180" height="115"/> </a> Tuy nhiên, điều bất ngờ là Luca Zidane, con trai của Zinedine Zidane, sẽ không đại diện cho đội tuyển Pháp mà sẽ góp mặt trong màu áo Algeria tại World Cup 2026. ]]>
 </description>
-<pubDate>Sat, 09 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/ao-tuong-toi-biet-tuot-5071665.html</link>
-<guid>https://vnexpress.net/ao-tuong-toi-biet-tuot-5071665.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/08/AIb-1778241014-9072-1778241340.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=RVYMYJAmgaorMkLsWYT0sg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/193267-con-trai-zinedine-zidane-lan-dau-duoc-trieu-tap-tham-du-world-cup-d422241.html</link>
+<pubDate>Tue, 02 Jun 2026 15:02:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/193267-con-trai-zinedine-zidane-lan-dau-duoc-trieu-tap-tham-du-world-cup-d422241.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/193267-con-trai-zinedine-zidane-lan-dau-duoc-trieu-tap-tham-du-world-cup-d422241.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Nợ thuế 'trên trời rơi xuống'</title>
+<title>
+<![CDATA[ Argentina nguy cơ mất 'người hùng' tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/no-thue-tren-troi-roi-xuong-5071257.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/07/DN-1778158519-5262-1778158522.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=obMAUmikYsKJVaneGl9opA"></a></br>Tôi bỗng nhận được thông báo nợ thuế - một khoản 9 triệu đồng tiền thuế TNCN phát sinh trong năm 2025. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/501-argentina-nguy-co-mat-nguoi-hung-tai-world-cup-2026-d422236.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/ngocduc03/2026/06/02/345572-6a1e8da968978.jpg" width="180" height="115"/> </a> Thủ môn Emiliano Martinez được xác định là gãy ngón tay và phải phẫu thuật ngay lập tức, nhưng người hùng Argentina quyết định trì hoãn ca mổ để tập trung cho World Cup 2026. ]]>
 </description>
-<pubDate>Thu, 07 May 2026 19:50:24 +0700</pubDate>
-<link>https://vnexpress.net/no-thue-tren-troi-roi-xuong-5071257.html</link>
-<guid>https://vnexpress.net/no-thue-tren-troi-roi-xuong-5071257.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/07/DN-1778158519-5262-1778158522.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=obMAUmikYsKJVaneGl9opA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/501-argentina-nguy-co-mat-nguoi-hung-tai-world-cup-2026-d422236.html</link>
+<pubDate>Tue, 02 Jun 2026 15:02:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/501-argentina-nguy-co-mat-nguoi-hung-tai-world-cup-2026-d422236.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/501-argentina-nguy-co-mat-nguoi-hung-tai-world-cup-2026-d422236.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Nghịch lý 'giấy phép con'</title>
+<title>
+<![CDATA[ Tây Ban Nha sở hữu 'kho báu' cả thế giới khao khát ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/nghich-ly-giay-phep-con-5070657.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/07/nhtrnVnE-1778119868-7766-1778119872.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=W1Vsb6Xd8Dr-4Pd3Drc-vA"></a></br>Cách đây mấy năm, tôi tham gia cuộc họp về điều kiện kinh doanh của một ngành cụ thể. Trên thị trường lúc đó chỉ có hai doanh nghiệp đã được cấp phép. Có hai quy định được thảo luận rất kỹ là thủ tục để xin phép kinh doanh lần đầu, và thủ tục để mở rộng quy mô kinh doanh. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/501-tay-ban-nha-so-huu-kho-bau-ca-the-gioi-khao-khat-d422222.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/ngocduc03/2026/06/02/fabian-y-pedri-euro-2024-6a1e7f6892b5d.jpg" width="180" height="115"/> </a> Từ Xavi, Iniesta đến Rodri, Pedri, Tây Ban Nha chưa bao giờ thiếu những tiền vệ đẳng cấp thế giới, đằng sau thành công ấy là một lò đào tạo đặc biệt giúp La Roja liên tục sản sinh ra những "bộ não" sân cỏ. ]]>
 </description>
-<pubDate>Wed, 06 May 2026 23:58:00 +0700</pubDate>
-<link>https://vnexpress.net/nghich-ly-giay-phep-con-5070657.html</link>
-<guid>https://vnexpress.net/nghich-ly-giay-phep-con-5070657.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/07/nhtrnVnE-1778119868-7766-1778119872.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=W1Vsb6Xd8Dr-4Pd3Drc-vA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/501-tay-ban-nha-so-huu-kho-bau-ca-the-gioi-khao-khat-d422222.html</link>
+<pubDate>Tue, 02 Jun 2026 14:54:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/501-tay-ban-nha-so-huu-kho-bau-ca-the-gioi-khao-khat-d422222.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/501-tay-ban-nha-so-huu-kho-bau-ca-the-gioi-khao-khat-d422222.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Túi gạo 5 cân, rào cản 'nghìn tấn'</title>
+<title>
+<![CDATA[ ĐT Anh nhận gợi ý bất ngờ về những cái tên đá luân lưu tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/tui-gao-5-can-rao-can-nghin-tan-5070339.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/06/Tun-1778036580-3201-1778036584.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=LvCK8E56ug7i7R6hp3hMqQ"></a></br>Tôi gần đây gặp một doanh nhân trẻ khởi nghiệp ở Sóc Trăng, làm gạo thơm chất lượng cao, đóng gói 2 kg và 5 kg. Một chuỗi siêu thị ở Đức ngỏ ý mua đều đặn 30 đến 50 tấn mỗi tháng. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-dt-anh-nhan-goi-y-bat-ngo-ve-nhung-cai-ten-da-luan-luu-tai-world-cup-2026-d422220.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/250376-6a1e60ee99dfb.jpg" width="180" height="115"/> </a> World Cup 2026 đang đến gần và đội tuyển Anh hiểu rằng những khoảnh khắc định đoạt đôi khi không đến trong 90 phút. Một cuộc tranh luận thú vị vừa nổ ra về những nhân tố có thể gánh vác trọng trách lớn nhất. ]]>
 </description>
-<pubDate>Wed, 06 May 2026 00:00:07 +0700</pubDate>
-<link>https://vnexpress.net/tui-gao-5-can-rao-can-nghin-tan-5070339.html</link>
-<guid>https://vnexpress.net/tui-gao-5-can-rao-can-nghin-tan-5070339.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/06/Tun-1778036580-3201-1778036584.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=LvCK8E56ug7i7R6hp3hMqQ"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-dt-anh-nhan-goi-y-bat-ngo-ve-nhung-cai-ten-da-luan-luu-tai-world-cup-2026-d422220.html</link>
+<pubDate>Tue, 02 Jun 2026 14:16:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-dt-anh-nhan-goi-y-bat-ngo-ve-nhung-cai-ten-da-luan-luu-tai-world-cup-2026-d422220.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-dt-anh-nhan-goi-y-bat-ngo-ve-nhung-cai-ten-da-luan-luu-tai-world-cup-2026-d422220.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Đông mà không vui</title>
+<title>
+<![CDATA[ Siêu máy tính Opta dự đoán nhà vô địch World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/dong-ma-khong-vui-5069841.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/04/dulich-1777912455-7568-1777912463.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=-QCzutzu4R3BbrWpsgaX0A"></a></br>Kỳ nghỉ 30/4-1/5, du lịch nội địa lại đông kỷ lục. TP HCM đón 1,6 triệu lượt khách; Hà Nội 1,35 triệu; Đà Nẵng 1,46 triệu; Khánh Hòa công suất phòng nhiều khu vực chạm ngưỡng 90-95%. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/461-sieu-may-tinh-opta-du-doan-nha-vo-dich-world-cup-2026-ty-le-vuot-troi-d422227.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/btvttqt4/2026/06/02/2-6a1e6ee3ea720.jpg" width="180" height="115"/> </a> Siêu máy tính Opta vừa công bố dự đoán trước thềm World Cup 2026, trong đó Tây Ban Nha được đánh giá là ứng viên số một cho chức vô địch, vượt qua hàng loạt ông lớn như Pháp, Anh và Argentina. ]]>
 </description>
-<pubDate>Tue, 05 May 2026 00:01:29 +0700</pubDate>
-<link>https://vnexpress.net/dong-ma-khong-vui-5069841.html</link>
-<guid>https://vnexpress.net/dong-ma-khong-vui-5069841.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/04/dulich-1777912455-7568-1777912463.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=-QCzutzu4R3BbrWpsgaX0A"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/461-sieu-may-tinh-opta-du-doan-nha-vo-dich-world-cup-2026-ty-le-vuot-troi-d422227.html</link>
+<pubDate>Tue, 02 Jun 2026 12:42:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/461-sieu-may-tinh-opta-du-doan-nha-vo-dich-world-cup-2026-ty-le-vuot-troi-d422227.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/461-sieu-may-tinh-opta-du-doan-nha-vo-dich-world-cup-2026-ty-le-vuot-troi-d422227.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Luật lơ lửng 'thiếu chân'</title>
+<title>
+<![CDATA[ ĐT Anh lộ nhánh đấu tử thần, phải liên hoàn đại chiến tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/luat-lo-lung-thieu-chan-5069198.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/04/Lut-1777859575-9755-1777859583.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=M1_roW9SR9-mVEO1H7Ug6Q"></a></br>Một đồng nghiệp hỏi tôi rằng: trải qua hơn hàng thập kỷ theo dõi cải cách pháp luật ở Việt Nam, tôi mong đợi điều gì trong những thập kỷ kế tiếp? ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-dt-anh-lo-nhanh-dau-tu-than-phai-lien-hoan-dai-chien-tai-world-cup-2026-d422203.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/road-to-champion-of-the-world-cup-2026-england-6a1e51b283b39.jpg" width="180" height="115"/> </a> Siêu máy tính Opta vừa phác họa hành trình tiềm năng của tuyển Anh tại World Cup 2026. Trên con đường hướng tới chiếc cúp vàng đầu tiên sau 60 năm, Tam Sư có thể phải vượt qua hàng loạt đối thủ đầy duyên nợ. ]]>
 </description>
-<pubDate>Mon, 04 May 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/luat-lo-lung-thieu-chan-5069198.html</link>
-<guid>https://vnexpress.net/luat-lo-lung-thieu-chan-5069198.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/04/Lut-1777859575-9755-1777859583.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=M1_roW9SR9-mVEO1H7Ug6Q"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-dt-anh-lo-nhanh-dau-tu-than-phai-lien-hoan-dai-chien-tai-world-cup-2026-d422203.html</link>
+<pubDate>Tue, 02 Jun 2026 11:52:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-dt-anh-lo-nhanh-dau-tu-than-phai-lien-hoan-dai-chien-tai-world-cup-2026-d422203.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-dt-anh-lo-nhanh-dau-tu-than-phai-lien-hoan-dai-chien-tai-world-cup-2026-d422203.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Lại 'hoán đổi, nghỉ bù'</title>
+<title>
+<![CDATA[ Lịch thi đấu của các cầu thủ MU tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/lai-hoan-doi-nghi-bu-5069066.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/02/hoandoi-1777693275-8857-1777693335.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=5CbyHsVXH7V9NjtxYjtKUw"></a></br>Mỗi lần Việt Nam điều chỉnh lịch nghỉ lễ theo phương án hoán đổi, Dũng lại phải dành cả buổi sáng giải thích với đối tác Mỹ. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/175391-lich-thi-dau-cua-cac-cau-thu-mu-tai-world-cup-2026-d422218.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/nhatbinh02112002/2026/06/02/anh-68-6a1e5c1695b69.jpg" width="180" height="115"/> </a> World Cup 2026 đang đến rất gần và Manchester United sẽ có tổng cộng 13 cầu thủ góp mặt tại ngày hội bóng đá lớn nhất hành tinh diễn ra ở Bắc Mỹ. ]]>
 </description>
-<pubDate>Sat, 02 May 2026 12:00:00 +0700</pubDate>
-<link>https://vnexpress.net/lai-hoan-doi-nghi-bu-5069066.html</link>
-<guid>https://vnexpress.net/lai-hoan-doi-nghi-bu-5069066.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/02/hoandoi-1777693275-8857-1777693335.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=5CbyHsVXH7V9NjtxYjtKUw"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/175391-lich-thi-dau-cua-cac-cau-thu-mu-tai-world-cup-2026-d422218.html</link>
+<pubDate>Tue, 02 Jun 2026 11:36:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/175391-lich-thi-dau-cua-cac-cau-thu-mu-tai-world-cup-2026-d422218.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/175391-lich-thi-dau-cua-cac-cau-thu-mu-tai-world-cup-2026-d422218.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Đêm đầy sao giá bao nhiêu?</title>
+<title>
+<![CDATA[ World Cup 2026 chưa khai màn, Mexico đã tạo cơn sốt đặc biệt ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/dem-day-sao-gia-bao-nhieu-5068813.html"><img src="https://i1-vnexpress.vnecdn.net/2026/05/01/AnhtrenVnE-1777601957-7020-1777601960.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aDk4bxo0Nr2Ui0U3AptQsQ"></a></br>Nghỉ lễ 30/4 năm 2022, tôi lần đầu tận mắt thấy và tự tay chụp được dải Ngân Hà. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/501-mexico-choi-lon-truoc-them-world-cup-2026-d422194.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/ngocduc03/2026/06/02/worldcup2026_mexicocity_1200x900_under1mb-6a1e508b1349d.jpg" width="180" height="115"/> </a> Chính quyền Mexico City thúc đẩy kế hoạch biến ngày khai mạc World Cup 2026 thành ngày nghỉ đặc biệt nhằm giảm áp lực giao thông, hỗ trợ công tác tổ chức và tạo điều kiện cho người dân hòa mình vào bầu không khí lễ hội bóng đá lớn nhất hành tinh. ]]>
 </description>
-<pubDate>Fri, 01 May 2026 09:10:56 +0700</pubDate>
-<link>https://vnexpress.net/dem-day-sao-gia-bao-nhieu-5068813.html</link>
-<guid>https://vnexpress.net/dem-day-sao-gia-bao-nhieu-5068813.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/05/01/AnhtrenVnE-1777601957-7020-1777601960.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aDk4bxo0Nr2Ui0U3AptQsQ"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/501-mexico-choi-lon-truoc-them-world-cup-2026-d422194.html</link>
+<pubDate>Tue, 02 Jun 2026 11:04:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/501-mexico-choi-lon-truoc-them-world-cup-2026-d422194.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/501-mexico-choi-lon-truoc-them-world-cup-2026-d422194.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>'Bác sĩ' AI</title>
+<title>
+<![CDATA[ HLV Thomas Tuchel khiến người Anh dậy sóng với phát biểu về World Cup ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/bac-si-ai-5067895.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/30/Hien-1777487029-1724-1777487035.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=tFEW19_us4nOUwAZZFDkwg"></a></br>Nhiều người đã quen “hỏi bác sĩ Google” mỗi khi gặp vấn đề về sức khỏe. Gần đây, họ còn tiến thêm một bước: sử dụng AI để tự “chẩn bệnh”. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/503-ha-quyet-tam-cuc-lon-thomas-tuchel-tu-tin-dua-tuyen-anh-cham-dinh-the-gioi-d422205.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/hungtm/2026/06/02/dtanh-6a1e595c556b6.jpg" width="180" height="115"/> </a> HLV Thomas Tuchel khẳng định ông cùng học trò sở hữu niềm tin tuyệt đối vào cơ hội vô địch World Cup 2026, bất chấp thử thách thời tiết khắc nghiệt tại Bắc Mỹ. Chính phát biểu này đã khiến người Anh lâng lâng, mơ về ngai vàng thế giới! ]]>
 </description>
-<pubDate>Thu, 30 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/bac-si-ai-5067895.html</link>
-<guid>https://vnexpress.net/bac-si-ai-5067895.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/30/Hien-1777487029-1724-1777487035.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=tFEW19_us4nOUwAZZFDkwg"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/503-ha-quyet-tam-cuc-lon-thomas-tuchel-tu-tin-dua-tuyen-anh-cham-dinh-the-gioi-d422205.html</link>
+<pubDate>Tue, 02 Jun 2026 10:58:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/503-ha-quyet-tam-cuc-lon-thomas-tuchel-tu-tin-dua-tuyen-anh-cham-dinh-the-gioi-d422205.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/503-ha-quyet-tam-cuc-lon-thomas-tuchel-tu-tin-dua-tuyen-anh-cham-dinh-the-gioi-d422205.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Trên cắt giảm, dưới mọc ra</title>
+<title>
+<![CDATA[ 21 ngôi sao ĐT Anh đầu tiên hội quân tại Mỹ trước World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/tren-cat-giam-duoi-moc-ra-5068051.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/29/bnea-1777424571-1404-1777424575.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ELqYrRVq5KzxzWwsffyWhA"></a></br>Một hãng sản xuất các sản phẩm từ sữa của Australia tìm đến tôi để được tư vấn về giải pháp logistics cho dự định nhập khẩu và phân phối hàng hóa tại Việt Nam. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/175391-21-ngoi-sao-dt-anh-dau-tien-hoi-quan-tai-my-truoc-world-cup-2026-d422209.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/nhatbinh02112002/2026/06/02/anh-67-6a1e5327e7a3a.jpg" width="180" height="115"/> </a> Đội tuyển Anh đã chính thức đặt chân tới Mỹ để bắt đầu giai đoạn tập huấn chuẩn bị cho World Cup 2026. ]]>
 </description>
-<pubDate>Wed, 29 Apr 2026 00:03:15 +0700</pubDate>
-<link>https://vnexpress.net/tren-cat-giam-duoi-moc-ra-5068051.html</link>
-<guid>https://vnexpress.net/tren-cat-giam-duoi-moc-ra-5068051.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/29/bnea-1777424571-1404-1777424575.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ELqYrRVq5KzxzWwsffyWhA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/175391-21-ngoi-sao-dt-anh-dau-tien-hoi-quan-tai-my-truoc-world-cup-2026-d422209.html</link>
+<pubDate>Tue, 02 Jun 2026 10:50:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/175391-21-ngoi-sao-dt-anh-dau-tien-hoi-quan-tai-my-truoc-world-cup-2026-d422209.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/175391-21-ngoi-sao-dt-anh-dau-tien-hoi-quan-tai-my-truoc-world-cup-2026-d422209.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>'Học làm gì khi việc làm biến mất?'</title>
+<title>
+<![CDATA[ Ronaldo làm điều đặc biệt cho sao Brazil trước thềm World Cup ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/hoc-lam-gi-khi-viec-lam-bien-mat-5067564.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/27/AI-1777282626-2111-1777282671.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DfS5hc473xbzy6JDUL65jA"></a></br>Học kỳ vừa rồi, một sinh viên nộp bài tiểu luận xuất sắc. Lập luận chặt, dẫn chứng phong phú, hành văn trôi chảy. Tôi hỏi em đã lên ý tưởng thế nào khi viết bài. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/493-ronaldo-lam-dieu-dac-biet-cho-sao-brazil-truoc-them-world-cup-d422202.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/anhnghia01052002/2026/06/02/hjv_sv5wwaa9qk0-6a1e4f5d08a0a.jpg" width="180" height="115"/> </a> Rodrygo nhận món quà đặc biệt từ Cristiano Ronaldo trong thời gian dưỡng thương dài hạn. Lời nhắn từ thần tượng giúp ngôi sao Real Madrid có thêm động lực vượt qua cú sốc lỡ hẹn World Cup 2026. ]]>
 </description>
-<pubDate>Tue, 28 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/hoc-lam-gi-khi-viec-lam-bien-mat-5067564.html</link>
-<guid>https://vnexpress.net/hoc-lam-gi-khi-viec-lam-bien-mat-5067564.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/27/AI-1777282626-2111-1777282671.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DfS5hc473xbzy6JDUL65jA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/493-ronaldo-lam-dieu-dac-biet-cho-sao-brazil-truoc-them-world-cup-d422202.html</link>
+<pubDate>Tue, 02 Jun 2026 10:35:47 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/493-ronaldo-lam-dieu-dac-biet-cho-sao-brazil-truoc-them-world-cup-d422202.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/493-ronaldo-lam-dieu-dac-biet-cho-sao-brazil-truoc-them-world-cup-d422202.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Thạc sĩ mất giá?</title>
+<title>
+<![CDATA[ HLV Tây Ban Nha tuyên bố đanh thép trước World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/thac-si-mat-gia-5067430.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/26/Hung-1777216490-9134-1777216494.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=v0kkWI_YKpbaZ2C94ZE-_w"></a></br>Thông tư 34 đang bị nhiều người hiểu như một thông điệp 'hạ giá' thạc sĩ. Tôi nghĩ khác. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/502-de-la-fuente-tuyen-bo-danh-thep-truoc-world-cup-2026-d422189.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/duyhai/2026/06/02/de-la-fuente-pvan-mundo-deportivo-6a1e44d62f32b.jpg" width="180" height="115"/> </a> Trước thềm World Cup 2026, HLV Luis de la Fuente đã đưa ra những đánh giá đáng chú ý về sức mạnh của tuyển Tây Ban Nha, đồng thời cập nhật tình hình một số ngôi sao quan trọng đang nhận được sự quan tâm đặc biệt. ]]>
 </description>
-<pubDate>Mon, 27 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/thac-si-mat-gia-5067430.html</link>
-<guid>https://vnexpress.net/thac-si-mat-gia-5067430.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/26/Hung-1777216490-9134-1777216494.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=v0kkWI_YKpbaZ2C94ZE-_w"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/502-de-la-fuente-tuyen-bo-danh-thep-truoc-world-cup-2026-d422189.html</link>
+<pubDate>Tue, 02 Jun 2026 10:14:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/502-de-la-fuente-tuyen-bo-danh-thep-truoc-world-cup-2026-d422189.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/502-de-la-fuente-tuyen-bo-danh-thep-truoc-world-cup-2026-d422189.html" rel="self" type="application/rss+xml"/>
 </item>
 <item>
-<title>Chat sex và án tù</title>
+<title>
+<![CDATA[ ĐT Tây Ban Nha chốt số áo chính thức tại World Cup 2026 ]]>
+</title>
 <description>
-<![CDATA[ <a href="https://vnexpress.net/chat-sex-va-an-tu-5067185.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/25/abv-1777133996-3798-1777134003.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=7p7IPu-uOg_QIHZvJqYxHg"></a></br>Hành vi 'dụ dỗ trẻ em chat sex' có thể bị phạt tù. Đây là một trong các đề xuất đang được lấy ý kiến cho Dự án sửa đổi Bộ luật Hình sự năm 2026. ]]>
+<![CDATA[ <a href="https://thethao247.vn/world-cup/193267-dt-tay-ban-nha-chot-so-ao-chinh-thuc-tai-world-cup-2026-d422195.html"> <img src="https://cdn-img.thethao247.vn/resize_180x115/storage/files/qa19081999/2026/06/02/d44e77f0-8986-11ef-ae9e-d5137bb1fc62-1728885139956-6a1e4330ee079.jpg" width="180" height="115"/> </a> Đội tuyển Tây Ban Nha đã chính thức công bố danh sách số áo của 26 cầu thủ tham dự FIFA World Cup 2026, qua đó thu hút sự chú ý đặc biệt từ người hâm mộ khi tài năng trẻ Lamine Yamal không được trao chiếc áo số 10 mang tính biểu tượng. ]]>
 </description>
-<pubDate>Sun, 26 Apr 2026 00:01:13 +0700</pubDate>
-<link>https://vnexpress.net/chat-sex-va-an-tu-5067185.html</link>
-<guid>https://vnexpress.net/chat-sex-va-an-tu-5067185.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/25/abv-1777133996-3798-1777134003.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=7p7IPu-uOg_QIHZvJqYxHg"/>
-</item>
-<item>
-<title>Quê quán và định kiến vùng miền</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/que-quan-va-dinh-kien-vung-mien-5066899.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/25/bn-1777087209-5449-1777087213.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Ii3nI8PBE-A_sbVbAE07Og"></a></br>Hai chữ “quê quán” ở Việt Nam đôi khi có sức nặng hơn nhiều người tưởng. Tôi hiểu điều đó trong một lần ra Hà Nội làm giấy tờ nhiều năm trước. ]]>
-</description>
-<pubDate>Sat, 25 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/que-quan-va-dinh-kien-vung-mien-5066899.html</link>
-<guid>https://vnexpress.net/que-quan-va-dinh-kien-vung-mien-5066899.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/25/bn-1777087209-5449-1777087213.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Ii3nI8PBE-A_sbVbAE07Og"/>
-</item>
-<item>
-<title>Thuế: ngưỡng nào mới là ngưỡng cuối?</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/thue-nguong-nao-moi-la-nguong-cuoi-5066234.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/23/Ngngthu-1776935492-9608-1776935514.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8xCXSV4hbLgnzIFvy1uVtQ"></a></br>Sau bốn thập kỷ, chúng ta vẫn miệt mài tranh luận về hộ kinh doanh, về địa vị pháp lý cho họ, về sắc thuế và cách tính thuế với khu vực đang đóng góp tới 32% GDP này. ]]>
-</description>
-<pubDate>Fri, 24 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/thue-nguong-nao-moi-la-nguong-cuoi-5066234.html</link>
-<guid>https://vnexpress.net/thue-nguong-nao-moi-la-nguong-cuoi-5066234.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/23/Ngngthu-1776935492-9608-1776935514.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8xCXSV4hbLgnzIFvy1uVtQ"/>
-</item>
-<item>
-<title>Doanh nghiệp và rủi ro hình sự</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/doanh-nghiep-va-rui-ro-hinh-su-5065922.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/22/gnhh-1776875833-8240-1776875840.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=sq9f_H19NlfC10n1uuhORA"></a></br>“Vậy là có cơ chế cho doanh nhân sửa sai rồi đúng không?”. ]]>
-</description>
-<pubDate>Thu, 23 Apr 2026 00:01:11 +0700</pubDate>
-<link>https://vnexpress.net/doanh-nghiep-va-rui-ro-hinh-su-5065922.html</link>
-<guid>https://vnexpress.net/doanh-nghiep-va-rui-ro-hinh-su-5065922.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/22/gnhh-1776875833-8240-1776875840.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=sq9f_H19NlfC10n1uuhORA"/>
-</item>
-<item>
-<title>Đốt đuốc tìm chuyên gia</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/dot-duoc-tim-chuyen-gia-5065404.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/21/a-1776786499-5151-1776786503.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_-o2Fj-fzIZtxhjiIuaj3w"></a></br>Tại một hội thảo quốc tế về lĩnh vực lập pháp, một diễn giả nêu thực trạng rằng các nghị sĩ ngày càng phải xem xét những vấn đề phức tạp mà họ không có nhiều kiến thức chuyên môn, và do đó phải dựa vào chuyên gia. ]]>
-</description>
-<pubDate>Wed, 22 Apr 2026 00:00:32 +0700</pubDate>
-<link>https://vnexpress.net/dot-duoc-tim-chuyen-gia-5065404.html</link>
-<guid>https://vnexpress.net/dot-duoc-tim-chuyen-gia-5065404.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/21/a-1776786499-5151-1776786503.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_-o2Fj-fzIZtxhjiIuaj3w"/>
-</item>
-<item>
-<title>Thi đủ thứ, từ Tết sang thu</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/thi-du-thu-tu-tet-sang-thu-5064870.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/20/Hung-1776700672-3761-1776700695.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_AHYjK-KkhFS4H2IQjbIgg"></a></br>Mùa hè không còn là khoảng thời gian duy nhất để thi vào đại học, học sinh bây giờ thi từ Tết sang thu. ]]>
-</description>
-<pubDate>Tue, 21 Apr 2026 06:00:00 +0700</pubDate>
-<link>https://vnexpress.net/thi-du-thu-tu-tet-sang-thu-5064870.html</link>
-<guid>https://vnexpress.net/thi-du-thu-tu-tet-sang-thu-5064870.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/20/Hung-1776700672-3761-1776700695.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_AHYjK-KkhFS4H2IQjbIgg"/>
-</item>
-<item>
-<title>Trí khôn lười nhác</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/tri-khon-luoi-nhac-5064389.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/20/AI-1776640773-7548-1776640782.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=W0cThIvq_VxYFPGmf_gCng"></a></br>Tôi vừa phê duyệt cho nhân viên công ty mình gia hạn mua token AI để hỗ trợ code và thiết kế sản phẩm. ]]>
-</description>
-<pubDate>Mon, 20 Apr 2026 06:45:20 +0700</pubDate>
-<link>https://vnexpress.net/tri-khon-luoi-nhac-5064389.html</link>
-<guid>https://vnexpress.net/tri-khon-luoi-nhac-5064389.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/20/AI-1776640773-7548-1776640782.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=W0cThIvq_VxYFPGmf_gCng"/>
-</item>
-<item>
-<title>Công chứng và hàng rào địa hạt</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/cong-chung-va-hang-rao-dia-hat-5064320.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/19/bds-1776595074-4711-1776595080.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FYSqQW60tCIt6V3UK-WoIw"></a></br>Người dân bước vào phòng công chứng không chỉ để hoàn tất một thủ tục. Nhiều người mang theo cả số tiền tích cóp nhiều năm, căn nhà cha mẹ để lại hay mảnh đất là tài sản lớn nhất của gia đình. ]]>
-</description>
-<pubDate>Sun, 19 Apr 2026 17:07:05 +0700</pubDate>
-<link>https://vnexpress.net/cong-chung-va-hang-rao-dia-hat-5064320.html</link>
-<guid>https://vnexpress.net/cong-chung-va-hang-rao-dia-hat-5064320.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/19/bds-1776595074-4711-1776595080.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FYSqQW60tCIt6V3UK-WoIw"/>
-</item>
-<item>
-<title>Cấm trẻ dùng mạng, được không?</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/cam-tre-dung-mang-duoc-khong-5064081.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/18/ManhDung-1776501471-2046-1776501497.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6Vpc8VK8R4edK6y-u7L2pg"></a></br>Người lớn thường nhanh tay dựng hàng rào khi thấy mối nguy mới tiến về phía trẻ em. Mạng xã hội hôm nay đang trở thành một mối nguy như thế. ]]>
-</description>
-<pubDate>Sat, 18 Apr 2026 15:39:38 +0700</pubDate>
-<link>https://vnexpress.net/cam-tre-dung-mang-duoc-khong-5064081.html</link>
-<guid>https://vnexpress.net/cam-tre-dung-mang-duoc-khong-5064081.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/18/ManhDung-1776501471-2046-1776501497.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6Vpc8VK8R4edK6y-u7L2pg"/>
-</item>
-<item>
-<title>Cấm không nổi dạy thêm</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/cam-khong-noi-day-them-5063090.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/16/Daythem-1776353241-4052-1776353260.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=5GoazgS4ErKB17HpWy4F6g"></a></br>Quản lý một lớp học thêm thì dễ, quản lý cái thị trường sinh ra lớp học thêm mới khó. ]]>
-</description>
-<pubDate>Fri, 17 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/cam-khong-noi-day-them-5063090.html</link>
-<guid>https://vnexpress.net/cam-khong-noi-day-them-5063090.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/16/Daythem-1776353241-4052-1776353260.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=5GoazgS4ErKB17HpWy4F6g"/>
-</item>
-<item>
-<title>Nơi sinh hay quê quán?</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/noi-sinh-hay-que-quan-5062940.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/16/ScreenShot20260416at213215-177-3835-8764-1776350091.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=OG40m2or-_yTn29tAVVbBw"></a></br>Bữa cơm ngày Tết của gia đình bạn tôi đang vui bỗng chùng xuống. ]]>
-</description>
-<pubDate>Thu, 16 Apr 2026 00:00:48 +0700</pubDate>
-<link>https://vnexpress.net/noi-sinh-hay-que-quan-5062940.html</link>
-<guid>https://vnexpress.net/noi-sinh-hay-que-quan-5062940.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/16/ScreenShot20260416at213215-177-3835-8764-1776350091.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=OG40m2or-_yTn29tAVVbBw"/>
-</item>
-<item>
-<title>'Không uống là không nể anh'</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/khong-uong-la-khong-ne-anh-5062425.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/15/nhtrnVnE-1776221016-7743-1776221021.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9Wt6Bq6ph2WtpXZyJ2br5Q"></a></br>Mùi tanh, chua và ngai ngái xộc lên khi chị vừa mở cửa. Chồng chị nằm dài trên sofa, đầu ngoẹo sang một bên, miệng thổi hơi lên không trung thành nhịp. Một bãi nôn dài chạy từ phòng khách đến cửa toilet. ]]>
-</description>
-<pubDate>Wed, 15 Apr 2026 08:47:27 +0700</pubDate>
-<link>https://vnexpress.net/khong-uong-la-khong-ne-anh-5062425.html</link>
-<guid>https://vnexpress.net/khong-uong-la-khong-ne-anh-5062425.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/15/nhtrnVnE-1776221016-7743-1776221021.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=9Wt6Bq6ph2WtpXZyJ2br5Q"/>
-</item>
-<item>
-<title>Web đen vào sách lớp 3</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/web-den-vao-sach-lop-3-5062076.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/14/Weben-1776151867-8418-1776151872.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=MTBsu0XBeQ6CZtY7m9st4Q"></a></br>Cách đây hai năm, khi cuốn “Một thoáng ta rực rỡ ở nhân gian” của Ocean Vuong được đưa vào chương trình đọc cho học sinh lớp 11, tôi đã viết một bài trên Góc nhìn về khoảng trống mênh mông trong việc dán nhãn tuổi sách. ]]>
-</description>
-<pubDate>Tue, 14 Apr 2026 13:00:00 +0700</pubDate>
-<link>https://vnexpress.net/web-den-vao-sach-lop-3-5062076.html</link>
-<guid>https://vnexpress.net/web-den-vao-sach-lop-3-5062076.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/14/Weben-1776151867-8418-1776151872.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=MTBsu0XBeQ6CZtY7m9st4Q"/>
-</item>
-<item>
-<title>Tiến thoái lưỡng nan ở Cần Giờ</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/tien-thoai-luong-nan-o-can-gio-5061373.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/12/AnhtrenVnE-1775966430-1937-1775966706.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zmPGBWEoyClkuhSND7e2Qw"></a></br>Một chuyên gia quốc tế ngành cảng trao đổi với tôi rằng, với những diễn biến liên quan đến các thương vụ M&amp;A trong ngành gần đây, triển vọng hãng tàu lớn nhất thế giới MSC đầu tư phát triển cảng ở Cần Giờ có thể không rõ ràng. ]]>
-</description>
-<pubDate>Mon, 13 Apr 2026 13:59:34 +0700</pubDate>
-<link>https://vnexpress.net/tien-thoai-luong-nan-o-can-gio-5061373.html</link>
-<guid>https://vnexpress.net/tien-thoai-luong-nan-o-can-gio-5061373.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/12/AnhtrenVnE-1775966430-1937-1775966706.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zmPGBWEoyClkuhSND7e2Qw"/>
-</item>
-<item>
-<title>25 tỷ USD 'cua trong lỗ'</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/25-ty-usd-cua-trong-lo-5061491.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/12/Tuan2-1775990289-1566-1775990296.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8g4q773gGymLfsMB0G6glQ"></a></br>Một doanh nhân ở London chuyển cho tôi những ý kiến cho rằng Việt Nam sẽ có thể nhận 25 tỷ USD sau khi thị trường chứng khoán được nâng hạng. ]]>
-</description>
-<pubDate>Sun, 12 Apr 2026 20:14:00 +0700</pubDate>
-<link>https://vnexpress.net/25-ty-usd-cua-trong-lo-5061491.html</link>
-<guid>https://vnexpress.net/25-ty-usd-cua-trong-lo-5061491.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/12/Tuan2-1775990289-1566-1775990296.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=8g4q773gGymLfsMB0G6glQ"/>
-</item>
-<item>
-<title>Đại học - di dời hay bám trụ?</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/dai-hoc-di-doi-hay-bam-tru-5061311.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/12/Ohuong-1775957816-2441-1775957820.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=TUxJBXdbCU94y2_NgHl0hQ"></a></br>Ở Việt Nam, câu hỏi “di dời trường đại học đi đâu’ thường bắt đầu từ quỹ đất. Đáng lẽ nó phải bắt đầu từ con người. ]]>
-</description>
-<pubDate>Sun, 12 Apr 2026 00:02:43 +0700</pubDate>
-<link>https://vnexpress.net/dai-hoc-di-doi-hay-bam-tru-5061311.html</link>
-<guid>https://vnexpress.net/dai-hoc-di-doi-hay-bam-tru-5061311.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/12/Ohuong-1775957816-2441-1775957820.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=TUxJBXdbCU94y2_NgHl0hQ"/>
-</item>
-<item>
-<title>Ngành học nào hết thời</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/nganh-hoc-nao-het-thoi-5061095.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/10/hoc-1775838698-8508-1775838702.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=VQF1pZX7hahgrL027-BOug"></a></br>Người quen tôi có con đang học năm nhất ngành Ngôn ngữ Anh, gần đây lại muốn học thêm data và AI vì sợ không theo kịp thị trường. ]]>
-</description>
-<pubDate>Sat, 11 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/nganh-hoc-nao-het-thoi-5061095.html</link>
-<guid>https://vnexpress.net/nganh-hoc-nao-het-thoi-5061095.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/10/hoc-1775838698-8508-1775838702.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=VQF1pZX7hahgrL027-BOug"/>
-</item>
-<item>
-<title>Đậu xe hơi, cưỡi xe buýt</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/dau-xe-hoi-cuoi-xe-buyt-5060632.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/09/Xebuyt-1775752677-4864-1775752703.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=I6YNB2hWW54TG3pt1HOCZQ"></a></br>Tôi đã dùng phương tiện giao thông công cộng tại nhiều thành phố ở Singapore, Anh, Scotland, Luxembourg, Dubai. Tôi cũng từng trải nghiệm ùn tắc giao thông khi lái xe xuôi ngược từ Dubai đến Sharjah (UAE) trên các tuyến đường mỗi bên có 8-10 làn xe. ]]>
-</description>
-<pubDate>Fri, 10 Apr 2026 07:52:26 +0700</pubDate>
-<link>https://vnexpress.net/dau-xe-hoi-cuoi-xe-buyt-5060632.html</link>
-<guid>https://vnexpress.net/dau-xe-hoi-cuoi-xe-buyt-5060632.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/09/Xebuyt-1775752677-4864-1775752703.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=I6YNB2hWW54TG3pt1HOCZQ"/>
-</item>
-<item>
-<title>Tố giác có thưởng</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/to-giac-co-thuong-5060313.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/09/Togiac-1775717700-4054-1775717786.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=asek8rCT0eXWm55YEaerOg"></a></br>Tôi mua ly trà sữa 50 Đài tệ ở Đài Bắc. Người bán hàng gọi lại để đưa hóa đơn, giải thích thêm, đó đồng thời là tấm vé số với giải đặc biệt lên tới 10 triệu Đài tệ. ]]>
-</description>
-<pubDate>Thu, 09 Apr 2026 13:48:12 +0700</pubDate>
-<link>https://vnexpress.net/to-giac-co-thuong-5060313.html</link>
-<guid>https://vnexpress.net/to-giac-co-thuong-5060313.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/09/Togiac-1775717700-4054-1775717786.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=asek8rCT0eXWm55YEaerOg"/>
-</item>
-<item>
-<title>Sau những tối hậu thư 'lạnh người'</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/sau-nhung-toi-hau-thu-lanh-nguoi-5059982.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/08/hk-1775627701-8239-1775627742.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=PaPiTWPaibYiHnvHkLeESg"></a></br>Tôi sinh ra vào mùa đông năm 1966 tại Hà Nội, thời điểm bom Mỹ đang dội dày đặc xuống thành phố này. ]]>
-</description>
-<pubDate>Wed, 08 Apr 2026 12:57:54 +0700</pubDate>
-<link>https://vnexpress.net/sau-nhung-toi-hau-thu-lanh-nguoi-5059982.html</link>
-<guid>https://vnexpress.net/sau-nhung-toi-hau-thu-lanh-nguoi-5059982.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/08/hk-1775627701-8239-1775627742.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=PaPiTWPaibYiHnvHkLeESg"/>
-</item>
-<item>
-<title>Sống hay chết vì dầu mỏ</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/song-hay-chet-vi-dau-mo-5059715.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/07/dau-1775573775-6972-1775573799.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=4zxzG0k6S9wff9BcoJ1Fdw"></a></br>Tôi ghé vào trạm xăng ven đường khi tín hiệu GPS đột ngột biến mất. Trên bản đồ, chiếc xe của tôi đang được định vị nằm ngoài khơi Dubai. ]]>
-</description>
-<pubDate>Wed, 08 Apr 2026 06:00:00 +0700</pubDate>
-<link>https://vnexpress.net/song-hay-chet-vi-dau-mo-5059715.html</link>
-<guid>https://vnexpress.net/song-hay-chet-vi-dau-mo-5059715.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/07/dau-1775573775-6972-1775573799.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=4zxzG0k6S9wff9BcoJ1Fdw"/>
-</item>
-<item>
-<title>Cha mẹ già ai chăm</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/cha-me-gia-ai-cham-5059277.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/06/Laokhoa-1775488304-6065-1775488722.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UsNMVCGDg5tbvNWOg3F8sw"></a></br>Anh con trai đó gần như tuyệt vọng khi đưa cha mình đến chỗ chúng tôi. ]]>
-</description>
-<pubDate>Tue, 07 Apr 2026 06:00:00 +0700</pubDate>
-<link>https://vnexpress.net/cha-me-gia-ai-cham-5059277.html</link>
-<guid>https://vnexpress.net/cha-me-gia-ai-cham-5059277.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/06/Laokhoa-1775488304-6065-1775488722.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UsNMVCGDg5tbvNWOg3F8sw"/>
-</item>
-<item>
-<title>Xe buýt, vấn đề không ở giá vé</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/xe-buyt-van-de-khong-o-gia-ve-5058669.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/05/Mienphixebuyt-1775376595-9557-1775376612.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zl7fgQgxHtr9hMD6temzKg"></a></br>Gần đây tôi đi xe buýt thường xuyên và có những trải nghiệm khác trước khá nhiều. ]]>
-</description>
-<pubDate>Mon, 06 Apr 2026 00:00:00 +0700</pubDate>
-<link>https://vnexpress.net/xe-buyt-van-de-khong-o-gia-ve-5058669.html</link>
-<guid>https://vnexpress.net/xe-buyt-van-de-khong-o-gia-ve-5058669.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/05/Mienphixebuyt-1775376595-9557-1775376612.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zl7fgQgxHtr9hMD6temzKg"/>
-</item>
-<item>
-<title>Hermès giả phá di sản thật</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/hermes-gia-pha-di-san-that-5058025.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/04/AnhtrenVnE-1775318864-9266-1775318884.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ppfwwqF7KpoufEcudu5HJg"></a></br>Năm ngoái, Anne, 12 tuổi, chọn Việt Nam làm điểm nghỉ hè. ]]>
-</description>
-<pubDate>Sun, 05 Apr 2026 00:00:41 +0700</pubDate>
-<link>https://vnexpress.net/hermes-gia-pha-di-san-that-5058025.html</link>
-<guid>https://vnexpress.net/hermes-gia-pha-di-san-that-5058025.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/04/AnhtrenVnE-1775318864-9266-1775318884.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ppfwwqF7KpoufEcudu5HJg"/>
-</item>
-<item>
-<title>Hà Nội: vẽ trăm năm có sợ lỗi thời?</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/ha-noi-ve-tram-nam-co-so-loi-thoi-5058236.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/04/HN-1775266199-7357-1775266208.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=335dFIeREQb92u_VKNacKw"></a></br>Cuối tuần trước, tôi được mời góp ý cho đồ án Quy hoạch tổng thể thủ đô tầm nhìn 100 năm. Hy vọng nhiều, băn khoăn cũng không ít - từ tiến độ gấp gáp tới sự lệch pha tiếp cận. ]]>
-</description>
-<pubDate>Sat, 04 Apr 2026 08:00:00 +0700</pubDate>
-<link>https://vnexpress.net/ha-noi-ve-tram-nam-co-so-loi-thoi-5058236.html</link>
-<guid>https://vnexpress.net/ha-noi-ve-tram-nam-co-so-loi-thoi-5058236.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/04/HN-1775266199-7357-1775266208.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=335dFIeREQb92u_VKNacKw"/>
-</item>
-<item>
-<title>Cơn ghen từ bức ảnh AI</title>
-<description>
-<![CDATA[ <a href="https://vnexpress.net/con-ghen-tu-buc-anh-ai-5057872.html"><img src="https://i1-vnexpress.vnecdn.net/2026/04/02/Phong-1775146746-3893-1775146750.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DzZr_KRGMtwWOxEz3PR_tA"></a></br>Thành đứng bên cái tủ kính, cạnh cô bán bánh mì bơ cốm gợi cảm đang nổi danh ở Cần Thơ. Tấm hình ấy được ai đó ghép rồi ném vào nhóm chung như một trò đùa. ]]>
-</description>
-<pubDate>Fri, 03 Apr 2026 06:00:00 +0700</pubDate>
-<link>https://vnexpress.net/con-ghen-tu-buc-anh-ai-5057872.html</link>
-<guid>https://vnexpress.net/con-ghen-tu-buc-anh-ai-5057872.html</guid>
-<enclosure type="image/jpeg" length="1200" url="https://i1-vnexpress.vnecdn.net/2026/04/02/Phong-1775146746-3893-1775146750.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DzZr_KRGMtwWOxEz3PR_tA"/>
+<dc:creator>Thethao247</dc:creator>
+<link>https://thethao247.vn/world-cup/193267-dt-tay-ban-nha-chot-so-ao-chinh-thuc-tai-world-cup-2026-d422195.html</link>
+<pubDate>Tue, 02 Jun 2026 10:12:00 +0700</pubDate>
+<guid>https://thethao247.vn/world-cup/193267-dt-tay-ban-nha-chot-so-ao-chinh-thuc-tai-world-cup-2026-d422195.html</guid>
+<atom:link href="https://thethao247.vn/world-cup/193267-dt-tay-ban-nha-chot-so-ao-chinh-thuc-tai-world-cup-2026-d422195.html" rel="self" type="application/rss+xml"/>
 </item>
 </channel>
 </rss>

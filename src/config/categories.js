@@ -23,6 +23,11 @@ const categories = [
         rssUrl: 'https://vnexpress.net/rss/the-thao.rss',
     },
     {
+        id: 'world-cup',
+        name: 'World Cup 2026',
+        rssUrl: 'https://thethao247.vn/world-cup.rss',
+    },
+    {
         id: 'world',
         name: 'Thế giới',
         rssUrl: 'https://vnexpress.net/rss/the-gioi.rss',
