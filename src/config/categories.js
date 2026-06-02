@@ -44,9 +44,45 @@ const thethao247Categories = [
     provider: 'thethao247',
 }));
 
-const categories = [
-    ...vnexpressCategories,
-    ...thethao247Categories,
+/**
+ * Thứ tự hiển thị / crawl (theo id, không phải slug).
+ * Các id không có trong danh sách sẽ đứng sau, giữ thứ tự khai báo trong
+ * vnexpressCategories rồi thethao247Categories.
+ *
+ * Ví dụ: Thể thao → World Cup → Bóng đá VN → Thế giới → …còn lại
+ */
+const categoryOrder = [
+    'sports',           // the-thao
+    'world-cup',
+    'vietnam-football', // bong-da-viet-nam-c1
+    'world',            // the-gioi
 ];
+
+function orderCategories(all, orderIds) {
+    const byId = new Map(all.map((category) => [category.id, category]));
+    const seen = new Set();
+    const ordered = [];
+
+    for (const id of orderIds) {
+        const category = byId.get(id);
+        if (category) {
+            ordered.push(category);
+            seen.add(id);
+        }
+    }
+
+    for (const category of all) {
+        if (!seen.has(category.id)) {
+            ordered.push(category);
+        }
+    }
+
+    return ordered;
+}
+
+const categories = orderCategories(
+    [...vnexpressCategories, ...thethao247Categories],
+    categoryOrder,
+);
 
 module.exports = categories;
