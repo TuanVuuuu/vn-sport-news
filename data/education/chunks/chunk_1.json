@@ -742,5 +742,41 @@
     "link": "https://vnexpress.net/tranh-luan-ve-bai-toan-0-5-diem-trong-de-thi-lop-10-ha-noi-5080487.html",
     "published_at": "Tue, 02 Jun 2026 05:00:00 +0700",
     "createAt": "2026-06-01T22:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/de-toan-thi-vao-lop-10-tp-hcm-2026-kem-dap-an-chi-tiet-5080184.html",
+    "category_id": "education",
+    "category_name": "Giáo dục",
+    "source": "VnExpress RSS",
+    "title": "Đề Toán thi vào lớp 10 TP HCM",
+    "description": "Hơn 150.000 thí sinh hoàn thành đề thi môn Toán với 7 bài sau 120 phút, phần lớn kết thúc kỳ thi vào lớp 10 ở TP HCM, trưa 2/6.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/z7884643228270e0cd5b750d1cc52a-3740-9551-1780369896.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6gskwzLC1fUP6ja62QSZUA",
+    "link": "https://vnexpress.net/de-toan-thi-vao-lop-10-tp-hcm-2026-kem-dap-an-chi-tiet-5080184.html",
+    "published_at": "Tue, 02 Jun 2026 10:11:35 +0700",
+    "createAt": "2026-06-02T03:11:35.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dap-an-de-thi-toan-vao-lop-10-tp-hcm-2026-chi-tiet-5080818.html",
+    "category_id": "education",
+    "category_name": "Giáo dục",
+    "source": "VnExpress RSS",
+    "title": "Gợi ý đáp án môn Toán thi vào lớp 10 ở TP HCM",
+    "description": "Đề thi môn Toán vào lớp 10 của TP HCM có 7 bài trong 120 phút, với 3 bài toán thực tế, nhiều thí sinh phấn khởi vì \"đề dễ hơn năm ngoái\".",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/01/z7887099748830-da7fd049a2889d4-5772-4071-1780326060.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GWuT5QHfA1GsCLb_6Ju36Q",
+    "link": "https://vnexpress.net/dap-an-de-thi-toan-vao-lop-10-tp-hcm-2026-chi-tiet-5080818.html",
+    "published_at": "Tue, 02 Jun 2026 10:19:06 +0700",
+    "createAt": "2026-06-02T03:19:06.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dap-an-de-thi-toan-vao-lop-10-phu-tho-2026-chi-tiet-5080756.html",
+    "category_id": "education",
+    "category_name": "Giáo dục",
+    "source": "VnExpress RSS",
+    "title": "Đề và đáp án môn Toán thi lớp 10 Phú Thọ",
+    "description": "Hơn 57.000 thí sinh Phú Thọ hoàn thành bài thi Toán chung trong 120 phút, gồm hai phần và 18 câu, kết thúc các môn thi hệ không chuyên.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/cvp-1780313467-5506-1780370482.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ytkowxZc3gcDBTARoCkbag",
+    "link": "https://vnexpress.net/dap-an-de-thi-toan-vao-lop-10-phu-tho-2026-chi-tiet-5080756.html",
+    "published_at": "Tue, 02 Jun 2026 10:23:37 +0700",
+    "createAt": "2026-06-02T03:23:37.000Z"
   }
 ]
