@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const categories = require('./src/config/categories');
 const { loadMetadata, getPaginatedItems, searchItems } = require('./src/utils/fileHelper');
+const { getSearchSuggestionsForApi } = require('./src/utils/searchSuggestionHelper');
 const packageInfo = require('./package.json');
 
 const app = express();
@@ -158,6 +159,22 @@ app.get('/api/news/search', (req, res) => {
     return res.json(successResponse({
         data: result.data,
         pagination: result.pagination
+    }));
+});
+
+/**
+ * GET /api/search/suggestions
+ * Query params:
+ *   - limit: số lượng gợi ý (default 10, max 50)
+ *
+ * Trả về từ khóa crawl từ VnExpress, bù bằng defaultSearchSuggestions nếu thiếu.
+ */
+app.get('/api/search/suggestions', (req, res) => {
+    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 10));
+    const result = getSearchSuggestionsForApi(limit);
+    return res.json(successResponse({
+        data: result.data,
+        meta: result.meta,
     }));
 });
 

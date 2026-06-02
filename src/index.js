@@ -1,6 +1,7 @@
 const categories = require('./config/categories');
 const { fetchRSS } = require('./services/rssService');
 const { parseRSS } = require('./services/parseService');
+const { crawlSearchSuggestions } = require('./services/keywordCrawlerService');
 const {
     ensureDirs,
     loadMetadata,
@@ -59,6 +60,12 @@ async function main() {
         } catch (err) {
             console.error(`[LỖI] Danh mục "${category.name}":`, err.message);
         }
+    }
+
+    try {
+        await crawlSearchSuggestions();
+    } catch (err) {
+        console.error('[LỖI] Crawl từ khóa gợi ý:', err.message);
     }
 
     console.log(`\n[${new Date().toISOString()}] Crawler hoàn tất tất cả danh mục.`);
