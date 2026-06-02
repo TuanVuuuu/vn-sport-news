@@ -850,5 +850,53 @@
     "link": "https://vnexpress.net/nang-nong-uong-nuoc-the-nao-tot-cho-tim-5080851.html",
     "published_at": "Tue, 02 Jun 2026 09:30:00 +0700",
     "createAt": "2026-06-02T02:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bac-si-trung-quoc-chi-6-sai-lam-chet-nguoi-khi-tam-mua-he-5080652.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Bác sĩ Trung Quốc chỉ 6 sai lầm chết người khi tắm mùa hè",
+    "description": "Tắm ngay khi vừa đi nắng về, cơ thể đang vã mồ hôi, vừa ăn no, sau khi uống rượu hoặc khi bụng đang đói làm thay đổi huyết áp đột ngột, có thể đột tử.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/screenshot-at-1780359076-4229-1780359136.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=uHaXwoW0WQXpUu8wQBib1g",
+    "link": "https://vnexpress.net/bac-si-trung-quoc-chi-6-sai-lam-chet-nguoi-khi-tam-mua-he-5080652.html",
+    "published_at": "Tue, 02 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-02T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bien-dao-mua-quang-dang-rach-gan-vai-khi-tap-nhay-5080886.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Biên đạo múa Quang Đăng rách gân vai khi tập nhảy",
+    "description": "Quang Đăng, 37 tuổi, bị rách gân vai sau động tác chống tay tập nhảy, được bác sĩ phẫu thuật nội soi khâu gân.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/z7853736708961a98a6f74e3a5e813-5335-1524-1780366974.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=-znaq45amH0HIsCeLWrUzw",
+    "link": "https://vnexpress.net/bien-dao-mua-quang-dang-rach-gan-vai-khi-tap-nhay-5080886.html",
+    "published_at": "Tue, 02 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-02T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dot-quy-sau-nhieu-nam-benh-tieu-duong-tang-huyet-ap-5080855.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Đột quỵ sau nhiều năm bệnh tiểu đường, tăng huyết áp",
+    "description": "Ông Tân, 60 tuổi, tê mặt, mệt mỏi tăng dần từ đêm đến sáng, bác sĩ chẩn đoán nhồi máu não sau nhiều năm mắc tiểu đường, tăng huyết áp và rối loạn chuyển hóa.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/3-1780358632-7426-1780358725.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Fi3UczvjbFzdSJwrgDuwgw",
+    "link": "https://vnexpress.net/dot-quy-sau-nhieu-nam-benh-tieu-duong-tang-huyet-ap-5080855.html",
+    "published_at": "Tue, 02 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-02T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/robot-cat-u-ung-thu-truc-trang-cu-ba-92-tuoi-5080853.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Robot cắt u ung thư trực tràng cụ bà 92 tuổi",
+    "description": "Bà Kim, 92 tuổi, ung thư trực tràng được bác sĩ dùng robot phẫu thuật loại bỏ khối u.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/2-1780358305-8192-1780358309.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=l809k8XKR1bgav7T837rSg",
+    "link": "https://vnexpress.net/robot-cat-u-ung-thu-truc-trang-cu-ba-92-tuoi-5080853.html",
+    "published_at": "Tue, 02 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-02T03:00:00.000Z"
   }
 ]
