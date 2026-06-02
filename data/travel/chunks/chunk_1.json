@@ -790,5 +790,41 @@
     "link": "https://vnexpress.net/6-trai-nghiem-mua-he-o-thai-nguyen-5078929.html",
     "published_at": "Tue, 02 Jun 2026 11:31:03 +0700",
     "createAt": "2026-06-02T04:31:03.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/4-trai-nghiem-mua-he-nen-thu-o-thai-nguyen-5078929.html",
+    "category_id": "travel",
+    "category_name": "Du lịch",
+    "source": "VnExpress RSS",
+    "title": "4 trải nghiệm mùa hè nên thử ở Thái Nguyên",
+    "description": "Đi thuyền giữa hồ Ba Bể, trèo cây hái chè cổ thụ, nghe đàn tính là những trải nghiệm dành cho du khách tới Thái Nguyên dịp này.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/05/27/705705629-n-1779879655.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=mYKUsfBm_hcMT2redUypJw",
+    "link": "https://vnexpress.net/4-trai-nghiem-mua-he-nen-thu-o-thai-nguyen-5078929.html",
+    "published_at": "Tue, 02 Jun 2026 11:31:03 +0700",
+    "createAt": "2026-06-02T04:31:03.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tiem-banh-danh-tieng-phap-ra-mat-tren-dinh-ba-na-5080762.html",
+    "category_id": "travel",
+    "category_name": "Du lịch",
+    "source": "VnExpress RSS",
+    "title": "Tiệm bánh danh tiếng Pháp ra mắt trên đỉnh Bà Nà",
+    "description": "Tiệm bánh Eric Kayser - thương hiệu lâu đời của Pháp vừa mở cửa đón những vị khách đầu tiên tại khu du lịch Sun World Ba Na Hills.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/06/01/2-1780309443.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=yRHKfeajBKuzyrhKkAOFgg",
+    "link": "https://vnexpress.net/tiem-banh-danh-tieng-phap-ra-mat-tren-dinh-ba-na-5080762.html",
+    "published_at": "Tue, 02 Jun 2026 14:30:00 +0700",
+    "createAt": "2026-06-02T07:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tour-he-viet-nam-di-thai-lan-tang-manh-5080512.html",
+    "category_id": "travel",
+    "category_name": "Du lịch",
+    "source": "VnExpress RSS",
+    "title": "Tour hè Việt Nam đi Thái Lan tăng mạnh",
+    "description": "Lượng khách đặt tour đi Thái Lan mùa hè này tăng 15-40% so với cùng kỳ năm ngoái, do nhiều người chủ động hủy tuyến đường dài để chọn điểm đến an toàn, chi phí hợp lý.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/06/01/1-1780284852-9123-1780284879.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=OZLZlinyBv_XL_RM_T09WQ",
+    "link": "https://vnexpress.net/tour-he-viet-nam-di-thai-lan-tang-manh-5080512.html",
+    "published_at": "Tue, 02 Jun 2026 14:58:12 +0700",
+    "createAt": "2026-06-02T07:58:12.000Z"
   }
 ]
