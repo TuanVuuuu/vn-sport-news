@@ -338,50 +338,51 @@ function loadAllItems(categoryId, metadata) {
 }
 
 /**
- * Search bài viết theo text, link hoặc ngày/tháng/năm phát hành.
- * @param {string} categoryId
- * @param {object} metadata
- * @param {{ text?: string, link?: string, published_at?: string, day?: number, month?: number, year?: number }} filters
- * @param {number} page
- * @param {number} size
- * @returns {{ data: Array, pagination: object }}
+ * Kiểm tra bài viết có khớp bộ lọc search hay không.
+ * @param {object} item
+ * @param {{ text?: string, link?: string, published_at?: string, day?: number|null, month?: number|null, year?: number|null }} filters
+ * @returns {boolean}
  */
-function searchItems(categoryId, metadata, filters, page, size) {
+function matchesSearchFilters(item, filters) {
     const normalizedText = normalizeSearchText(filters.text);
     const normalizedLink = filters.link ? filters.link.toLowerCase().trim() : '';
     const normalizedPublishedAt = filters.published_at ? filters.published_at.toLowerCase().trim() : '';
 
-    const filteredItems = loadAllItems(categoryId, metadata)
-        .filter(item => {
-            if (normalizedText.spaced) {
-                const articleText = getSearchableArticleText(item);
-                if (!articleText.spaced.includes(normalizedText.spaced) && !articleText.compact.includes(normalizedText.compact)) {
-                    return false;
-                }
-            }
+    if (normalizedText.spaced) {
+        const articleText = getSearchableArticleText(item);
+        if (!articleText.spaced.includes(normalizedText.spaced) && !articleText.compact.includes(normalizedText.compact)) {
+            return false;
+        }
+    }
 
-            if (normalizedLink && !(item.link || '').toLowerCase().includes(normalizedLink)) {
-                return false;
-            }
+    if (normalizedLink && !(item.link || '').toLowerCase().includes(normalizedLink)) {
+        return false;
+    }
 
-            if (normalizedPublishedAt && !(item.published_at || '').toLowerCase().includes(normalizedPublishedAt)) {
-                return false;
-            }
+    if (normalizedPublishedAt && !(item.published_at || '').toLowerCase().includes(normalizedPublishedAt)) {
+        return false;
+    }
 
-            const { day, month, year } = getPublishedDateParts(item);
-            if (filters.day !== null && day !== filters.day) return false;
-            if (filters.month !== null && month !== filters.month) return false;
-            if (filters.year !== null && year !== filters.year) return false;
+    const { day, month, year } = getPublishedDateParts(item);
+    if (filters.day !== null && filters.day !== undefined && day !== filters.day) return false;
+    if (filters.month !== null && filters.month !== undefined && month !== filters.month) return false;
+    if (filters.year !== null && filters.year !== undefined && year !== filters.year) return false;
 
-            return true;
-        })
-        .sort((a, b) => new Date(getCreateAt(b)) - new Date(getCreateAt(a)));
+    return true;
+}
 
-    const totalItems = filteredItems.length;
+/**
+ * Phân trang kết quả search đã sort.
+ * @param {Array} items
+ * @param {number} page
+ * @param {number} size
+ * @returns {{ data: Array, pagination: object }}
+ */
+function paginateSearchResults(items, page, size) {
+    const totalItems = items.length;
     const totalPages = Math.ceil(totalItems / size);
     const startIndex = page * size;
-    const data = filteredItems.slice(startIndex, startIndex + size)
-        .map(item => formatArticle(item, categoryId, metadata));
+    const data = items.slice(startIndex, startIndex + size);
 
     return {
         data,
@@ -396,6 +397,60 @@ function searchItems(categoryId, metadata, filters, page, size) {
     };
 }
 
+/**
+ * Search bài viết theo text, link hoặc ngày/tháng/năm phát hành.
+ * @param {string} categoryId
+ * @param {object} metadata
+ * @param {{ text?: string, link?: string, published_at?: string, day?: number, month?: number, year?: number }} filters
+ * @param {number} page
+ * @param {number} size
+ * @returns {{ data: Array, pagination: object }}
+ */
+function searchItems(categoryId, metadata, filters, page, size) {
+    const filteredItems = loadAllItems(categoryId, metadata)
+        .filter(item => matchesSearchFilters(item, filters))
+        .sort((a, b) => new Date(getCreateAt(b)) - new Date(getCreateAt(a)))
+        .map(item => formatArticle(item, categoryId, metadata));
+
+    return paginateSearchResults(filteredItems, page, size);
+}
+
+/**
+ * Search bài viết trên tất cả danh mục. Trùng id bài viết chỉ giữ bản mới nhất.
+ * @param {Array<{ id: string, name: string }>} categoryList
+ * @param {{ text?: string, link?: string, published_at?: string, day?: number, month?: number, year?: number }} filters
+ * @param {number} page
+ * @param {number} size
+ * @returns {{ data: Array, pagination: object }}
+ */
+function searchItemsAllCategories(categoryList, filters, page, size) {
+    const uniqueItems = new Map();
+
+    for (const category of categoryList) {
+        const metadata = loadMetadata(category.id);
+        if (!metadata || metadata.total_articles === 0) {
+            continue;
+        }
+
+        for (const item of loadAllItems(category.id, metadata)) {
+            if (!matchesSearchFilters(item, filters)) {
+                continue;
+            }
+
+            const formatted = formatArticle(item, category.id, metadata);
+            const existing = uniqueItems.get(item.id);
+            if (!existing || new Date(getCreateAt(formatted)) > new Date(getCreateAt(existing))) {
+                uniqueItems.set(item.id, formatted);
+            }
+        }
+    }
+
+    const filteredItems = Array.from(uniqueItems.values())
+        .sort((a, b) => new Date(getCreateAt(b)) - new Date(getCreateAt(a)));
+
+    return paginateSearchResults(filteredItems, page, size);
+}
+
 module.exports = {
     CHUNK_SIZE,
     ensureDirs,
@@ -405,4 +460,5 @@ module.exports = {
     appendItems,
     getPaginatedItems,
     searchItems,
+    searchItemsAllCategories,
 };

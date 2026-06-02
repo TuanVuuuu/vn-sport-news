@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const categories = require('./src/config/categories');
-const { loadMetadata, getPaginatedItems, searchItems } = require('./src/utils/fileHelper');
+const { loadMetadata, getPaginatedItems, searchItems, searchItemsAllCategories } = require('./src/utils/fileHelper');
 const { getSearchSuggestionsForApi } = require('./src/utils/searchSuggestionHelper');
 const packageInfo = require('./package.json');
 
@@ -117,7 +117,7 @@ app.get('/api/news', (req, res) => {
 /**
  * GET /api/news/search
  * Query params:
- *   - category:     ID danh mục (default first in config)
+ *   - category:     optional, ID danh mục; bỏ trống để search tất cả danh mục
  *   - text:         optional, tìm trong title/description; hỗ trợ tiếng Việt không dấu và bỏ dấu phân cách
  *   - link:         optional, tìm bài viết có link chứa chuỗi này
  *   - published_at: optional, tìm bài viết có published_at chứa chuỗi này
@@ -126,7 +126,7 @@ app.get('/api/news', (req, res) => {
  *   - size:         items per page (default 20, max 100)
  */
 app.get('/api/news/search', (req, res) => {
-    const categoryId = req.query.category || categories[0].id;
+    const categoryId = req.query.category;
     const page = Math.max(0, parseInt(req.query.page) || 0);
     const requestedSize = Math.max(1, parseInt(req.query.size || req.query.limit) || 20);
 
@@ -135,11 +135,6 @@ app.get('/api/news/search', (req, res) => {
         return res.json(errorResponse(sizeError.replace('"limit"', '"size"')));
     }
     const size = requestedSize;
-
-    const category = getCategory(categoryId);
-    if (!category) {
-        return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
-    }
 
     const filters = {
         text: req.query.text,
@@ -150,15 +145,28 @@ app.get('/api/news/search', (req, res) => {
         year: parseDateFilter(req.query.year),
     };
 
-    const metadata = loadMetadata(categoryId);
-    if (!metadata || metadata.total_articles === 0) {
-        return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
+    if (categoryId) {
+        const category = getCategory(categoryId);
+        if (!category) {
+            return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+        }
+
+        const metadata = loadMetadata(categoryId);
+        if (!metadata || metadata.total_articles === 0) {
+            return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
+        }
+
+        const result = searchItems(categoryId, metadata, filters, page, size);
+        return res.json(successResponse({
+            data: result.data,
+            pagination: result.pagination,
+        }));
     }
 
-    const result = searchItems(categoryId, metadata, filters, page, size);
+    const result = searchItemsAllCategories(categories, filters, page, size);
     return res.json(successResponse({
         data: result.data,
-        pagination: result.pagination
+        pagination: result.pagination,
     }));
 });
 
