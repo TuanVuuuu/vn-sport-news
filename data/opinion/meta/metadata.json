@@ -6,9 +6,10 @@
   "channel": {
     "title": "Ý kiến - VnExpress RSS",
     "description": "VnExpress RSS",
+    "generator": "VnExpress",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/y-kien.rss",
-    "last_updated": "Tue, 02 Jun 2026 16:31:09 +0700"
+    "last_updated": "Tue, 02 Jun 2026 22:31:09 +0700"
   },
-  "last_updated": "2026-06-02T09:50:51.764Z"
+  "last_updated": "2026-06-02T17:14:16.361Z"
 }

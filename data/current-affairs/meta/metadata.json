@@ -6,9 +6,10 @@
   "channel": {
     "title": "Thời sự - VnExpress RSS",
     "description": "VnExpress RSS",
+    "generator": "VnExpress",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/thoi-su.rss",
-    "last_updated": "Tue, 02 Jun 2026 23:01:14 +0700"
+    "last_updated": "Tue, 02 Jun 2026 22:31:03 +0700"
   },
-  "last_updated": "2026-06-02T16:20:46.447Z"
+  "last_updated": "2026-06-02T17:14:13.791Z"
 }

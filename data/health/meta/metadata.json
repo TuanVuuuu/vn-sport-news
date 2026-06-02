@@ -7,9 +7,10 @@
   "channel": {
     "title": "Sức khỏe - VnExpress RSS",
     "description": "VnExpress RSS",
+    "generator": "VnExpress",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/suc-khoe.rss",
-    "last_updated": "Tue, 02 Jun 2026 20:51:02 +0700"
+    "last_updated": "Tue, 02 Jun 2026 23:10:49 +0700"
   },
-  "last_updated": "2026-06-02T14:01:29.049Z"
+  "last_updated": "2026-06-02T17:14:17.832Z"
 }

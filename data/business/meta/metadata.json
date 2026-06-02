@@ -6,9 +6,10 @@
   "channel": {
     "title": "Kinh doanh - VnExpress RSS",
     "description": "VnExpress RSS",
+    "generator": "VnExpress",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/kinh-doanh.rss",
-    "last_updated": "Tue, 02 Jun 2026 21:01:20 +0700"
+    "last_updated": "Tue, 02 Jun 2026 22:50:43 +0700"
   },
-  "last_updated": "2026-06-02T15:01:14.851Z"
+  "last_updated": "2026-06-02T17:14:14.061Z"
 }
