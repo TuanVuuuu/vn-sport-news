@@ -790,5 +790,41 @@
     "link": "https://vnexpress.net/bac-si-chi-cach-an-uong-tranh-than-moc-chi-chit-soi-5080786.html",
     "published_at": "Tue, 02 Jun 2026 07:05:30 +0700",
     "createAt": "2026-06-02T00:05:30.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dung-thuoc-ten-lua-dan-duong-dieu-tri-ung-thu-phoi-5080850.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Dùng thuốc 'tên lửa dẫn đường' điều trị ung thư phổi",
+    "description": "Ông Hoàng, 67 tuổi, yếu liệt nửa người, co giật, bác sĩ chẩn đoán ung thư phổi di căn não, được phẫu thuật kết hợp điều trị bằng thuốc \"tên lửa dẫn đường\".",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/benhnhanphauthuatunaonew-17803-5068-7189-1780357911.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Jb8VchsNoIbIHPHg5gjzfg",
+    "link": "https://vnexpress.net/dung-thuoc-ten-lua-dan-duong-dieu-tri-ung-thu-phoi-5080850.html",
+    "published_at": "Tue, 02 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-02T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dot-quy-moi-biet-tang-huyet-ap-5080849.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Đột quỵ mới biết tăng huyết áp",
+    "description": "Anh Hưng, 43 tuổi, đột ngột đau đầu, đi lại loạng choạng, bác sĩ chẩn đoán xuất huyết não do tăng huyết áp nhiều năm không điều trị.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/image001-1780358619-7102-1780359095.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=q3_DqTTvOiIMvd0wz6U5OA",
+    "link": "https://vnexpress.net/dot-quy-moi-biet-tang-huyet-ap-5080849.html",
+    "published_at": "Tue, 02 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-02T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/uong-nuoc-chanh-am-pha-mat-ong-co-het-ho-5080848.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Uống nước chanh ấm pha mật ong có hết ho?",
+    "description": "Tôi ho nhiều tuần nay, uống thuốc theo toa bác sĩ. Pha mật ong với nước chanh ấm uống mỗi ngày có giúp giảm ho không? (Linh Trần, Lâm Đồng)",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/generated-image-septemberam-jp-1797-8451-1780357491.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=WSHOMs6oErL9gkgXhsTKwQ",
+    "link": "https://vnexpress.net/uong-nuoc-chanh-am-pha-mat-ong-co-het-ho-5080848.html",
+    "published_at": "Tue, 02 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-02T01:00:00.000Z"
   }
 ]
