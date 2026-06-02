@@ -1,5 +1,5 @@
 {
-  "total_articles": 68,
+  "total_articles": 70,
   "files": [
     "chunk_1.json"
   ],
@@ -8,7 +8,7 @@
     "description": "VnExpress RSS",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/oto-xe-may.rss",
-    "last_updated": "Tue, 02 Jun 2026 11:10:51 +0700"
+    "last_updated": "Tue, 02 Jun 2026 12:10:51 +0700"
   },
-  "last_updated": "2026-06-02T04:50:46.984Z"
+  "last_updated": "2026-06-02T05:20:51.181Z"
 }
