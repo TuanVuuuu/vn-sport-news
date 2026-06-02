@@ -898,5 +898,53 @@
     "link": "https://vnexpress.net/robot-cat-u-ung-thu-truc-trang-cu-ba-92-tuoi-5080853.html",
     "published_at": "Tue, 02 Jun 2026 10:00:00 +0700",
     "createAt": "2026-06-02T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/vi-sao-du-18-tuoi-moi-duoc-xoa-can-5080880.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Vì sao đủ 18 tuổi mới được xóa cận?",
+    "description": "Con tôi 14 tuổi, cận thị 5 độ mắt phải và 6 độ mắt trái, muốn xóa cận nhưng bác sĩ cho biết con chưa đủ tuổi. Vì sao 18 tuổi mới được phẫu thuật? (Trúc An, Khánh Hòa)",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/mo-can-1780365399-7016-1780365453.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Ce4AKpMfcfnA1XgZdyoHrw",
+    "link": "https://vnexpress.net/vi-sao-du-18-tuoi-moi-duoc-xoa-can-5080880.html",
+    "published_at": "Tue, 02 Jun 2026 10:30:00 +0700",
+    "createAt": "2026-06-02T03:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/long-chau-khoi-dong-chuong-trinh-cham-soc-suc-khoe-ho-hap-cong-dong-5080930.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Long Châu khởi động chương trình chăm sóc sức khỏe hô hấp cộng đồng",
+    "description": "Long Châu ký hợp tác chiến lược với Hội Hen - Dị ứng - Miễn dịch lâm sàng TP HCM triển khai chương trình chăm sóc sức khỏe hô hấp cộng đồng, từ tầm soát đến điều trị.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/7-1780369899-2300-1780370171.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=LPi5BJWLRChAxvdxC3N6qw",
+    "link": "https://vnexpress.net/long-chau-khoi-dong-chuong-trinh-cham-soc-suc-khoe-ho-hap-cong-dong-5080930.html",
+    "published_at": "Tue, 02 Jun 2026 10:45:00 +0700",
+    "createAt": "2026-06-02T03:45:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ngu-muon-anh-huong-suc-khoe-tre-the-nao-5080901.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Ngủ muộn ảnh hưởng sức khỏe trẻ thế nào",
+    "description": "Trẻ thường xuyên đi ngủ sau 22h có thể bị rối loạn nhịp sinh học, ảnh hưởng đến chất lượng giấc ngủ, khả năng tập trung và phát triển thể chất.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/IMG0891-1780367138-1961-1780367254.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Xbvv96FI0wh6hrlgMi4oYQ",
+    "link": "https://vnexpress.net/ngu-muon-anh-huong-suc-khoe-tre-the-nao-5080901.html",
+    "published_at": "Tue, 02 Jun 2026 11:00:00 +0700",
+    "createAt": "2026-06-02T04:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bac-si-cuu-qua-than-dut-roi-cua-nguoi-dan-ong-5080960.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress RSS",
+    "title": "Bác sĩ cứu quả thận đứt rời của người đàn ông",
+    "description": "Các bác sĩ Bệnh viện E ghép thận tự thân cứu người đàn ông 31 tuổi bị đứt rời thận phải sau tai nạn giao thông.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/1-1780372150-1727-1780372178.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=WChc2GeWT-aIfNUB8MTgEg",
+    "link": "https://vnexpress.net/bac-si-cuu-qua-than-dut-roi-cua-nguoi-dan-ong-5080960.html",
+    "published_at": "Tue, 02 Jun 2026 11:29:06 +0700",
+    "createAt": "2026-06-02T04:29:06.000Z"
   }
 ]
