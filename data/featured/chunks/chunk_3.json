@@ -382,5 +382,77 @@
     "link": "https://vnexpress.net/nang-nong-o-mien-bac-giam-dan-mien-trung-gan-40-do-c-5081703.html",
     "published_at": "Wed, 03 Jun 2026 21:44:24 +0700",
     "createAt": "2026-06-03T14:44:24.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tham-vong-xay-trung-tam-du-lieu-vu-tru-cua-musk-kho-thanh-5080649.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Tham vọng xây trung tâm dữ liệu vũ trụ của Musk khó thành",
+    "description": "Kế hoạch phóng một triệu vệ tinh trung tâm dữ liệu lên quỹ đạo năm 2028 của Elon Musk bị đánh giá có thể khiến SpaceX sụp đổ tài chính.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/space-jpeg-1780419879-4896-1780420837.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=mBugld34Np1SmUZVok8c5Q",
+    "link": "https://vnexpress.net/tham-vong-xay-trung-tam-du-lieu-vu-tru-cua-musk-kho-thanh-5080649.html",
+    "published_at": "Thu, 04 Jun 2026 00:00:00 +0700",
+    "createAt": "2026-06-03T17:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/phe-thai-xay-dung-tai-nguyen-bi-lang-phi-5081135.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Phế thải xây dựng - tài nguyên bị lãng phí",
+    "description": "Phế thải xây dựng ở Hà Nội có thể tái chế thành vật liệu đắp nền, làm bêtông, sản xuất gạch, nhưng phần lớn đang bị chôn lấp, đổ trộm gây ô nhiễm môi trường.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/c91r2682-jpg-1780507034-9965-1780507059.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=4sHe7OntAHrA2YURByAHVw",
+    "link": "https://vnexpress.net/phe-thai-xay-dung-tai-nguyen-bi-lang-phi-5081135.html",
+    "published_at": "Thu, 04 Jun 2026 00:17:59 +0700",
+    "createAt": "2026-06-03T17:17:59.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bien-dong-xuat-hien-ap-thap-nhiet-doi-dau-tien-trong-nam-2026-5081718.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Biển Đông xuất hiện áp thấp nhiệt đới đầu tiên trong năm 2026",
+    "description": "Áp thấp nhiệt đới đầu tiên trong năm hình thành ở giữa Biển Đông, báo hiệu mùa mưa bão bắt đầu với dự báo tiềm ẩn nhiều nguy hiểm.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/screenshot-1780503117-7853-1780503152.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=oqWtxEY19ZH7LUCDkyZZVA",
+    "link": "https://vnexpress.net/bien-dong-xuat-hien-ap-thap-nhiet-doi-dau-tien-trong-nam-2026-5081718.html",
+    "published_at": "Thu, 04 Jun 2026 00:24:32 +0700",
+    "createAt": "2026-06-03T17:24:32.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/the-luong-nan-voi-oman-truoc-suc-ep-chon-phe-tu-my-5081037.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Thế lưỡng nan với Oman trước sức ép chọn phe từ Mỹ",
+    "description": "Oman cố gắng duy trì chính sách trung lập trong chiến sự Mỹ - Iran, nhưng đang đối mặt thế khó khi Washington tăng áp lực \"chọn phe\" với nước này.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/afp-aa-v1-highres-omannavypara-2594-8335-1780397273.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=e8e8QORUi-1wu8-UymCt_g",
+    "link": "https://vnexpress.net/the-luong-nan-voi-oman-truoc-suc-ep-chon-phe-tu-my-5081037.html",
+    "published_at": "Thu, 04 Jun 2026 05:00:00 +0700",
+    "createAt": "2026-06-03T22:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ngoi-truong-109-tuoi-o-ha-noi-tung-la-tru-so-bo-quoc-phong-5078492.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Ngôi trường 109 tuổi ở Hà Nội từng là trụ sở Bộ Quốc phòng",
+    "description": "Sau hơn 100 năm, THCS Trưng Vương gần như là nơi duy nhất còn giữ huy hiệu của thành phố Hà Nội thời Pháp thuộc, được công nhận Di tích lịch sử cách mạng bởi từng là trụ sở Bộ Quốc phòng.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/05/31/THPT-Tru-ng-Vu-o-ng-1779789191-1779789847-1780205738.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_N4o_N1k_NNACrEOFnN9nA",
+    "link": "https://vnexpress.net/ngoi-truong-109-tuoi-o-ha-noi-tung-la-tru-so-bo-quoc-phong-5078492.html",
+    "published_at": "Thu, 04 Jun 2026 05:59:00 +0700",
+    "createAt": "2026-06-03T22:59:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/loat-dinh-thu-tram-tuoi-do-nat-o-mien-tay-5080091.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Loạt dinh thự trăm tuổi đổ nát ở miền Tây",
+    "description": "Hàng chục dinh thự cổ 100 năm tuổi tại Tây Ninh, Đồng Tháp, Bạc Liêu... không được chăm sóc, trùng tu, hiện xuống cấp, hư hại nặng, nhiều căn bỏ hoang cỏ mọc um tùm.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/dji-d-jpg-1780479330.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=QMK-2R59HBPlxHenH-tV8Q",
+    "link": "https://vnexpress.net/loat-dinh-thu-tram-tuoi-do-nat-o-mien-tay-5080091.html",
+    "published_at": "Thu, 04 Jun 2026 06:00:00 +0700",
+    "createAt": "2026-06-03T23:00:00.000Z"
   }
 ]
