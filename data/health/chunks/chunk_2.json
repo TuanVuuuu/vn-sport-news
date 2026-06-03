@@ -166,5 +166,65 @@
     "link": "https://vnexpress.net/6-cach-don-gian-bao-ve-mat-khi-nang-nong-5080532.html",
     "published_at": "Wed, 03 Jun 2026 09:30:00 +0700",
     "createAt": "2026-06-03T02:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/chu-quan-voi-huyet-ap-cao-cua-tu-can-ke-o-tuoi-45-5081092.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Chủ quan với huyết áp cao, cửa tử cận kề ở tuổi 45",
+    "description": "Người đàn ông 45 tuổi nguy kịch do nhồi máu cơ tim, tắc hoàn toàn cùng lúc hai nhánh mạch vành chính sau nhiều năm hút thuốc, bỏ mặc tăng huyết áp.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/can-thie-p-tim-1780389456-4508-1780389568.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=XgHH5_81SxcGNY9Je7wl_w",
+    "link": "https://vnexpress.net/chu-quan-voi-huyet-ap-cao-cua-tu-can-ke-o-tuoi-45-5081092.html",
+    "published_at": "Wed, 03 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-03T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dieu-gi-xay-voi-he-tieu-hoa-khi-khong-uong-du-nuoc-5081381.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Điều gì xảy với hệ tiêu hóa khi không uống đủ nước?",
+    "description": "Khát là dấu hiệu muộn của tình trạng thiếu nước trong cơ thể, nếu kéo dài có thể gây mệt mỏi, rối loạn hoạt động tiêu hóa.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/gemini-generated-imagee17285e1-4791-4504-1780454052.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Y6B3rrKeC2oSid91CB0K2g",
+    "link": "https://vnexpress.net/dieu-gi-xay-voi-he-tieu-hoa-khi-khong-uong-du-nuoc-5081381.html",
+    "published_at": "Wed, 03 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-03T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/vi-khuan-lao-tan-cong-tim-nguoi-dan-ong-5081340.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Vi khuẩn lao tấn công tim người đàn ông",
+    "description": "Ông Tạ, 59 tuổi, ho, khó thở, đau tức ngực hai tháng, bác sĩ chẩn đoán vi khuẩn lao tấn công gây viêm màng ngoài tim co thắt.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/image001-1780449597-3775-1780449687.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=H5YDOCWARUsOyIWyouqrTw",
+    "link": "https://vnexpress.net/vi-khuan-lao-tan-cong-tim-nguoi-dan-ong-5081340.html",
+    "published_at": "Wed, 03 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-03T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/suy-tuyen-thuong-than-sau-mot-nam-uong-thuoc-xuong-khop-khong-ro-nguon-goc-5081336.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Suy tuyến thượng thận sau một năm uống thuốc xương khớp không rõ nguồn gốc",
+    "description": "Bà Hoa, 76 tuổi, mệt mỏi, phù mặt sau một năm uống thuốc bột không rõ nguồn gốc chữa bệnh xương khớp, bác sĩ chẩn đoán suy tuyến thượng thận do dùng corticoid kéo dài.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/image001-1780449144-6648-1780449247.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=y-BPVR1ngUInLRbkUbS_FA",
+    "link": "https://vnexpress.net/suy-tuyen-thuong-than-sau-mot-nam-uong-thuoc-xuong-khop-khong-ro-nguon-goc-5081336.html",
+    "published_at": "Wed, 03 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-03T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/thu-hoi-toan-quoc-loai-dung-dich-ve-sinh-khong-dat-chuan-vi-sinh-5081405.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Thu hồi toàn quốc loại dung dịch vệ sinh không đạt chuẩn vi sinh",
+    "description": "Cục Quản lý Dược quyết định thu hồi toàn quốc lô dung dịch vệ sinh phụ nữ Coop Select chai 150ml do không đạt tiêu chuẩn chất lượng về chỉ tiêu giới hạn vi sinh vật.",
+    "thumbnail_url": null,
+    "link": "https://vnexpress.net/thu-hoi-toan-quoc-loai-dung-dich-ve-sinh-khong-dat-chuan-vi-sinh-5081405.html",
+    "published_at": "Wed, 03 Jun 2026 10:03:41 +0700",
+    "createAt": "2026-06-03T03:03:41.000Z"
   }
 ]
