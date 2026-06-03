@@ -898,5 +898,29 @@
     "link": "https://vnexpress.net/lai-xe-cham-hon-giup-tiet-kiem-nhien-lieu-5080872.html",
     "published_at": "Wed, 03 Jun 2026 06:00:00 +0700",
     "createAt": "2026-06-02T23:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/honda-trieu-hoi-gan-100-000-xe-vi-loi-tui-khi-bung-khong-dung-luc-5081247.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress",
+    "title": "Honda triệu hồi gần 100.000 xe vì lỗi túi khí bung không đúng lúc",
+    "description": "Lỗi cảm biến ghế phụ có thể khiến túi khí hoạt động sai, làm tăng nguy cơ chấn thương khi xảy ra va chạm.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/2020-honda-cr-v-1780404557-3701-1780404573.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=BI8jx3twjaqkeJSJ-iNfmg",
+    "link": "https://vnexpress.net/honda-trieu-hoi-gan-100-000-xe-vi-loi-tui-khi-bung-khong-dung-luc-5081247.html",
+    "published_at": "Wed, 03 Jun 2026 06:30:00 +0700",
+    "createAt": "2026-06-02T23:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/hongqi-guoya-xe-sang-trung-quoc-dat-ngang-mercedes-maybach-5080907.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress",
+    "title": "Hongqi Guoya - xe sang Trung Quốc đắt ngang Mercedes-Maybach",
+    "description": "Thương hiệu hạng sang Hongqi đưa mẫu Guoya đến Nga, nơi giá bán của chiếc sedan đầu bảng đắt gấp đôi so với ở thị trường nội địa.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/HongqiGuoya1-1780372066-7668-1780372215.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=SQ1vIKmXJv74xdN2aNXhAQ",
+    "link": "https://vnexpress.net/hongqi-guoya-xe-sang-trung-quoc-dat-ngang-mercedes-maybach-5080907.html",
+    "published_at": "Wed, 03 Jun 2026 07:00:00 +0700",
+    "createAt": "2026-06-03T00:00:00.000Z"
   }
 ]
