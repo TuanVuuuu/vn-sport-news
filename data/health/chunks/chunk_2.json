@@ -94,5 +94,53 @@
     "link": "https://vnexpress.net/bay-tam-ly-thuc-khuya-tra-thu-5080403.html",
     "published_at": "Wed, 03 Jun 2026 06:00:00 +0700",
     "createAt": "2026-06-02T23:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/thuoc-thu-nghiem-giup-nguoi-mac-loai-ung-thu-nguy-hiem-nhat-song-them-13-thang-5081051.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Thuốc thử nghiệm giúp người mắc loại ung thư nguy hiểm nhất sống thêm 13 tháng",
+    "description": "Viên uống thế hệ mới daraxonrasib chứng minh khả năng vô hiệu hóa tế bào ác tính, giúp kéo dài gần gấp đôi tuổi thọ cho các bệnh nhân ung thư tụy giai đoạn muộn.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/thuoc1-1780392529-6015-1780393191.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=CQqeh6ERvxB0JzOwotMjag",
+    "link": "https://vnexpress.net/thuoc-thu-nghiem-giup-nguoi-mac-loai-ung-thu-nguy-hiem-nhat-song-them-13-thang-5081051.html",
+    "published_at": "Wed, 03 Jun 2026 07:45:53 +0700",
+    "createAt": "2026-06-03T00:45:53.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nhuoc-co-boi-u-tuyen-uc-5081306.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Nhược cơ bởi u tuyến ức",
+    "description": "Anh Tú, 38 tuổi, sụp mí mắt, mỏi cơ, mỏi tay, bác sĩ chẩn đoán nhược cơ do u tuyến ức, chỉ định phẫu thuật bằng robot.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/a-nh-1780441417-7900-1780441554.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=0_2FNOfJwR8_CUzpZE8y9A",
+    "link": "https://vnexpress.net/nhuoc-co-boi-u-tuyen-uc-5081306.html",
+    "published_at": "Wed, 03 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-03T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/te-moi-co-phai-dau-hieu-dot-quy-5081157.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Tê môi có phải dấu hiệu đột quỵ?",
+    "description": "Tôi bị tê môi thoáng qua, đôi khi hơi méo miệng nhẹ nhưng vài phút sau lại bình thường. Đây có phải dấu hiệu đột quỵ? (Quốc Anh, Tây Ninh)",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/dotquy-1780443621-4682-1780443908.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=AILg1-zJVN9sUaAoY1wNZg",
+    "link": "https://vnexpress.net/te-moi-co-phai-dau-hieu-dot-quy-5081157.html",
+    "published_at": "Wed, 03 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-03T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ung-thu-xoang-le-di-can-thuc-quan-5081153.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Ung thư xoang lê di căn thực quản",
+    "description": "Ông Tùng, 50 tuổi, điều trị viêm họng 6 tháng không bớt, nay cổ sưng, khó nuốt, bác sĩ chẩn đoán ung thư xoang lê di căn thực quản.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/02/ba-o-1780390546-3323-1780390728.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=5tE-M9En9djKsxe6bDmV5g",
+    "link": "https://vnexpress.net/ung-thu-xoang-le-di-can-thuc-quan-5081153.html",
+    "published_at": "Wed, 03 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-03T01:00:00.000Z"
   }
 ]
