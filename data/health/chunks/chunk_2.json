@@ -226,5 +226,53 @@
     "link": "https://vnexpress.net/thu-hoi-toan-quoc-loai-dung-dich-ve-sinh-khong-dat-chuan-vi-sinh-5081405.html",
     "published_at": "Wed, 03 Jun 2026 10:03:41 +0700",
     "createAt": "2026-06-03T03:03:41.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cat-than-ban-phan-dieu-tri-ung-thu-5081446.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Cắt thận bán phần điều trị ung thư",
+    "description": "Ông Hoàng, 65 tuổi, có khối u 3 cm khu trú trong thận phải, chưa xâm lấn ra mô xung quanh hay hạch bạch huyết, được bác sĩ phẫu thuật cắt u bằng robot.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/bao-1780457217-3354-1780457266.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=RVJhqiGVWqO9C-6f1yIEjw",
+    "link": "https://vnexpress.net/cat-than-ban-phan-dieu-tri-ung-thu-5081446.html",
+    "published_at": "Wed, 03 Jun 2026 12:00:00 +0700",
+    "createAt": "2026-06-03T05:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/soc-mat-mau-do-vo-thai-ngoai-tu-cung-5081344.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Sốc mất máu do vỡ thai ngoài tử cung",
+    "description": "Chị Hồng, 33 tuổi, đau bụng dữ dội, choáng, huyết áp tụt sâu, siêu âm phát hiện vỡ thai ngoài tử cung gây sốc mất máu.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/image001-1780450346-9753-1780450484.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=R0pAsZRIl1buC6rtE1GyBQ",
+    "link": "https://vnexpress.net/soc-mat-mau-do-vo-thai-ngoai-tu-cung-5081344.html",
+    "published_at": "Wed, 03 Jun 2026 12:00:00 +0700",
+    "createAt": "2026-06-03T05:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/co-con-tu-phoi-duy-nhat-sau-hai-lan-say-da-thai-5081491.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Có con từ phôi duy nhất sau hai lần sảy đa thai",
+    "description": "Hai lần liên tiếp sảy song thai và tam thai, chị Hương, 42 tuổi, thụ tinh ống nghiệm lần ba thành công với phôi duy nhất.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/bao-1780460904-9964-1780460917.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=F06EsS7nzuxDpPtwSisgBA",
+    "link": "https://vnexpress.net/co-con-tu-phoi-duy-nhat-sau-hai-lan-say-da-thai-5081491.html",
+    "published_at": "Wed, 03 Jun 2026 13:00:00 +0700",
+    "createAt": "2026-06-03T06:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/an-it-co-giup-giam-can-5081460.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Ăn ít có giúp giảm cân?",
+    "description": "Ăn ít có giúp giảm cân không, cần tính toán calo thế nào để hỗ trợ giảm mỡ hiệu quả? (Ngọc Dung, 38 tuổi)",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/gemini-generated-image-kphjdnk-5850-4364-1780458284.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Q7mTSMKSkt3yjhLM2RJVcQ",
+    "link": "https://vnexpress.net/an-it-co-giup-giam-can-5081460.html",
+    "published_at": "Wed, 03 Jun 2026 13:00:00 +0700",
+    "createAt": "2026-06-03T06:00:00.000Z"
   }
 ]
