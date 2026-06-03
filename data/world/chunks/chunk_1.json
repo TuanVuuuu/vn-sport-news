@@ -1102,5 +1102,29 @@
     "link": "https://vnexpress.net/new-york-canh-bao-ve-thu-thach-treo-noc-tau-dien-5081052.html",
     "published_at": "Wed, 03 Jun 2026 02:00:00 +0700",
     "createAt": "2026-06-02T19:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/niem-vui-bong-da-hoa-thanh-tranh-cai-chinh-tri-o-phap-5080843.html",
+    "category_id": "world",
+    "category_name": "Thế giới",
+    "source": "VnExpress",
+    "title": "Niềm vui bóng đá hóa thành tranh cãi chính trị ở Pháp",
+    "description": "Từ niềm vui trên sân cỏ đến cảnh đốt xe, cướp bóc và đụng độ với cảnh sát, CĐV bóng đá quá khích đang trở thành vấn đề an ninh dai dẳng với nước Pháp.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/02/ap26150769569011-1780375909-5133-1780375989.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=JLVswDS1MF1ZT6z4RHoVVw",
+    "link": "https://vnexpress.net/niem-vui-bong-da-hoa-thanh-tranh-cai-chinh-tri-o-phap-5080843.html",
+    "published_at": "Wed, 03 Jun 2026 06:29:08 +0700",
+    "createAt": "2026-06-02T23:29:08.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/my-phong-ten-lua-vo-hieu-hoa-tau-dau-huong-toi-iran-5081304.html",
+    "category_id": "world",
+    "category_name": "Thế giới",
+    "source": "VnExpress",
+    "title": "Mỹ phóng tên lửa, vô hiệu hóa tàu dầu hướng tới Iran",
+    "description": "Mỹ phóng tên lửa vào tàu dầu đang tìm cách tới cảng của Iran và vô hiệu hóa nó, do \"vi phạm lệnh phong tỏa\" mà Washington áp đặt.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/video750x450highquality-178044-4179-2639-1780442222.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=UE5XbzMW-ZqHfuqm7fy0pg&t=image",
+    "link": "https://vnexpress.net/my-phong-ten-lua-vo-hieu-hoa-tau-dau-huong-toi-iran-5081304.html",
+    "published_at": "Wed, 03 Jun 2026 06:46:56 +0700",
+    "createAt": "2026-06-02T23:46:56.000Z"
   }
 ]
