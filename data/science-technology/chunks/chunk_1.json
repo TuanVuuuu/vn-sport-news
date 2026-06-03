@@ -970,5 +970,41 @@
     "link": "https://vnexpress.net/loat-san-pham-diem-nhan-tai-computex-2026-5081274.html",
     "published_at": "Wed, 03 Jun 2026 18:00:00 +0700",
     "createAt": "2026-06-03T11:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ham-chat-thai-hat-nhan-dau-tien-tren-the-gioi-sap-hoat-dong-5081674.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Hầm chất thải hạt nhân đầu tiên trên thế giới sắp hoạt động",
+    "description": "Hầm Onkalo, nằm ở độ sâu 430 m và được thiết kế để lưu trữ chất thải hạt nhân 100.000 năm, có thể đi vào vận hành cuối năm nay.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/afp20260601b3ba2wjv1highresfin-7944-9419-1780485939.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oY50lB06nZDsiSb3BraBPg",
+    "link": "https://vnexpress.net/ham-chat-thai-hat-nhan-dau-tien-tren-the-gioi-sap-hoat-dong-5081674.html",
+    "published_at": "Wed, 03 Jun 2026 20:02:35 +0700",
+    "createAt": "2026-06-03T13:02:35.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/xiaomi-viet-nam-len-tieng-ve-an-phat-290-trieu-dong-5081694.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Xiaomi Việt Nam lên tiếng về án phạt 290 triệu đồng",
+    "description": "Chiều 3/6, Xiaomi Việt Nam cho biết đã ghi nhận các kết luận của Ủy ban Cạnh tranh Quốc gia (VCC), trong đó xử phạt 290 triệu đồng với ba hành vi vi phạm.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/a1-1780491045-9341-1780491130.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=dMmcoVvrbCIqJryoF9NlVA",
+    "link": "https://vnexpress.net/xiaomi-viet-nam-len-tieng-ve-an-phat-290-trieu-dong-5081694.html",
+    "published_at": "Wed, 03 Jun 2026 20:15:01 +0700",
+    "createAt": "2026-06-03T13:15:01.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/viet-nam-xay-dung-cac-nhom-nghien-cuu-manh-phat-trien-cong-nghe-luong-tu-5081613.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "'Việt Nam xây dựng các nhóm nghiên cứu mạnh phát triển công nghệ lượng tử'",
+    "description": "Thứ trưởng Lê Xuân Định cho rằng Việt Nam không tiếp cận lượng tử theo phong trào, mà xây dựng năng lực thực chất bắt đầu từ nền tảng khoa học cơ bản, hình thành các nhóm nghiên cứu mạnh.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/z78964915700613ce4ab07f6cd39e2-5536-5350-1780477224.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Sd5bHUFUuc6xpsZwX4rQ-A",
+    "link": "https://vnexpress.net/viet-nam-xay-dung-cac-nhom-nghien-cuu-manh-phat-trien-cong-nghe-luong-tu-5081613.html",
+    "published_at": "Wed, 03 Jun 2026 20:17:36 +0700",
+    "createAt": "2026-06-03T13:17:36.000Z"
   }
 ]
