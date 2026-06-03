@@ -934,5 +934,29 @@
     "link": "https://vnexpress.net/ky-vong-thay-doi-nganh-cuu-ho-oto-cua-vetc-5081290.html",
     "published_at": "Wed, 03 Jun 2026 08:00:00 +0700",
     "createAt": "2026-06-03T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/xe-may-di-nguoc-chieu-lao-thang-vao-dau-oto-5081310.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress",
+    "title": "Xe máy đi ngược chiều lao thẳng vào đầu ôtô",
+    "description": "Tại đường có dải phân cách cứng, bất ngờ người đàn ông đi xe máy ngược chiều lao thẳng vào đầu ôtô hôm 2/5 tại Hoàng Văn Thái.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/ezgif2f7d4fbe94c05876-17804448-2844-8722-1780444955.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=Bf629IK4lDso91kLQkbSVw&t=image",
+    "link": "https://vnexpress.net/xe-may-di-nguoc-chieu-lao-thang-vao-dau-oto-5081310.html",
+    "published_at": "Wed, 03 Jun 2026 08:45:20 +0700",
+    "createAt": "2026-06-03T01:45:20.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ra-mat-ung-dung-phan-anh-chat-luong-xang-tim-kiem-cua-hang-theo-e5-e10-5081324.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress",
+    "title": "Ra mắt ứng dụng phản ánh chất lượng xăng, tìm kiếm cửa hàng theo E5, E10",
+    "description": "Từ tháng 6, người dân có thể gửi phản ánh về chất lượng xăng E10, giá bán và hoạt động của cây xăng thông qua ứng dụng \"Quanh tôi\".",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/img-1780451888-1446-1780454026.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=maaDh93nsr0rYwl207BWsg",
+    "link": "https://vnexpress.net/ra-mat-ung-dung-phan-anh-chat-luong-xang-tim-kiem-cua-hang-theo-e5-e10-5081324.html",
+    "published_at": "Wed, 03 Jun 2026 09:34:23 +0700",
+    "createAt": "2026-06-03T02:34:23.000Z"
   }
 ]
