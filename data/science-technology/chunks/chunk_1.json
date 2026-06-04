@@ -1114,5 +1114,41 @@
     "link": "https://vnexpress.net/van-hanh-ung-dung-tra-cuu-gia-xang-va-phan-anh-vi-pham-chat-luong-5081355.html",
     "published_at": "Thu, 04 Jun 2026 11:34:54 +0700",
     "createAt": "2026-06-04T04:34:54.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ung-dung-tra-cuu-gia-xang-va-phan-anh-vi-pham-chat-luong-5081355.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Ứng dụng tra cứu giá xăng và phản ánh vi phạm chất lượng",
+    "description": "Bộ Công thương đưa vào vận hành ứng dụng \"Quanh tôi\" hôm 1/6, giúp người dân có thể tìm cây xăng, dầu, xem giá bán, gửi phản ánh vi phạm và theo dõi chi phí nhiên liệu.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/gia-xang-jpg-1780451442-2286-1780451455.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=EtlWrDAFGcOpZqg2LIaw7g",
+    "link": "https://vnexpress.net/ung-dung-tra-cuu-gia-xang-va-phan-anh-vi-pham-chat-luong-5081355.html",
+    "published_at": "Thu, 04 Jun 2026 11:34:54 +0700",
+    "createAt": "2026-06-04T04:34:54.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ai-giup-cong-ty-chau-au-khong-phai-tim-duong-den-my-5081850.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "AI giúp công ty châu Âu không phải 'tìm đường' đến Mỹ",
+    "description": "AI được xem là động lực mới giúp doanh nghiệp châu Âu phát triển ngay tại quê nhà, thay vì phải tìm cách đến Mỹ hay các quốc gia khác.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/msh-1780548729-1899-1780549134.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FhUCV083vQkj83Hw8qh3zw",
+    "link": "https://vnexpress.net/ai-giup-cong-ty-chau-au-khong-phai-tim-duong-den-my-5081850.html",
+    "published_at": "Thu, 04 Jun 2026 11:59:28 +0700",
+    "createAt": "2026-06-04T04:59:28.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/microsoft-ra-tac-nhan-tu-chu-tuong-tu-openclaw-5081390.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Microsoft ra tác nhân tự chủ tương tự OpenClaw",
+    "description": "Microsoft công bố Scout, được xây dựng trên sức mạnh và tính linh hoạt của OpenClaw, giúp nhân viên tự động hóa công việc văn phòng.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/FY14MpaUEsEDJ5La5meWYbnmfnppXE-8121-4713-1780456379.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=ALP1xncsQjiG8P7TRMi16Q",
+    "link": "https://vnexpress.net/microsoft-ra-tac-nhan-tu-chu-tuong-tu-openclaw-5081390.html",
+    "published_at": "Thu, 04 Jun 2026 12:00:00 +0700",
+    "createAt": "2026-06-04T05:00:00.000Z"
   }
 ]
