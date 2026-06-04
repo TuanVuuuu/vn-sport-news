@@ -1,7 +1,8 @@
 {
-  "total_articles": 100,
+  "total_articles": 101,
   "files": [
-    "chunk_1.json"
+    "chunk_1.json",
+    "chunk_2.json"
   ],
   "channel": {
     "title": "Khoa học công nghệ - VnExpress RSS",
@@ -10,7 +11,7 @@
     "copyright": "",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/khoa-hoc-cong-nghe.rss",
-    "last_updated": "Fri, 05 Jun 2026 02:01:01 +0700"
+    "last_updated": "Fri, 05 Jun 2026 05:40:31 +0700"
   },
-  "last_updated": "2026-06-04T22:40:31.403Z"
+  "last_updated": "2026-06-04T22:50:33.278Z"
 }
