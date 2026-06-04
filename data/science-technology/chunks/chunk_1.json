@@ -1150,5 +1150,29 @@
     "link": "https://vnexpress.net/microsoft-ra-tac-nhan-tu-chu-tuong-tu-openclaw-5081390.html",
     "published_at": "Thu, 04 Jun 2026 12:00:00 +0700",
     "createAt": "2026-06-04T05:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/tau-quy-dao-sao-hoa-cua-nasa-dung-hoat-dong-sau-11-nam-5081859.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Tàu quỹ đạo Sao Hỏa của NASA dừng hoạt động sau 11 năm",
+    "description": "Sau 6 tháng mất liên lạc, NASA tuyên bố Maven, tàu vũ trụ bay quanh Sao Hỏa để nghiên cứu khí quyển, chính thức dừng hoạt động.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/coriginal-1780544536-8700-1780546169.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=pfYntxLffctonepS8Hxyqg",
+    "link": "https://vnexpress.net/tau-quy-dao-sao-hoa-cua-nasa-dung-hoat-dong-sau-11-nam-5081859.html",
+    "published_at": "Thu, 04 Jun 2026 13:45:36 +0700",
+    "createAt": "2026-06-04T06:45:36.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/microsoft-ra-chip-luong-tu-moi-voi-su-tro-giup-cua-ai-5081499.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Microsoft ra chip lượng tử mới 'với sự trợ giúp của AI'",
+    "description": "Microsoft công bố chip lượng tử Majorana 2 sử dụng vật liệu gốc chì mới, và tuyên bố \"do các công cụ AI khoa học vật liệu hỗ trợ\".",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/nlsvp5fjyzo4bpbk6ekv75b6ga-178-9034-5324-1780469412.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=-k8hma7uJXxC5sGJibPHrg",
+    "link": "https://vnexpress.net/microsoft-ra-chip-luong-tu-moi-voi-su-tro-giup-cua-ai-5081499.html",
+    "published_at": "Thu, 04 Jun 2026 13:46:59 +0700",
+    "createAt": "2026-06-04T06:46:59.000Z"
   }
 ]
