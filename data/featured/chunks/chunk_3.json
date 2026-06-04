@@ -490,5 +490,41 @@
     "link": "https://vnexpress.net/loat-giao-su-danh-tieng-nga-ngua-vi-be-boi-nghien-cuu-5081656.html",
     "published_at": "Thu, 04 Jun 2026 07:16:20 +0700",
     "createAt": "2026-06-04T00:16:20.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cuc-thue-de-xuat-khong-bo-trach-nhiem-cung-cap-thong-tin-nguoi-nop-thue-cua-ngan-hang-5081714.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Cục Thuế đề xuất không bỏ trách nhiệm cung cấp thông tin người nộp thuế của ngân hàng",
+    "description": "Các ngân hàng dự kiến tiếp tục cung cấp thông tin tài khoản người nộp thuế cho cơ quan thuế, và phối hợp xử lý khi phát hiện giao dịch bất thường, theo Cục Thuế.",
+    "thumbnail_url": "https://vcdn1-kinhdoanh.vnecdn.net/2026/06/03/vpbank-thanhtung33-1780500435-7335-1780500564.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=F-z7usNfR7z5NXGVEIQocg",
+    "link": "https://vnexpress.net/cuc-thue-de-xuat-khong-bo-trach-nhiem-cung-cap-thong-tin-nguoi-nop-thue-cua-ngan-hang-5081714.html",
+    "published_at": "Wed, 03 Jun 2026 22:55:40 +0700",
+    "createAt": "2026-06-03T15:55:40.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/hang-nghin-phu-nu-ung-thu-vu-thoat-hoa-tri-nho-thu-nghiem-dot-pha-5081478.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Hàng nghìn phụ nữ ung thư vú thoát hóa trị nhờ thử nghiệm đột phá",
+    "description": "Một thử nghiệm xét nghiệm ADN đột phá có thể giúp hàng nghìn phụ nữ ung thư vú không phải hóa trị, tránh nhiều tác dụng phụ nghiêm trọng như rụng tóc, nôn mửa.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/03/00-1780478664-6822-1780479064.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=fsqeQe9rQZDbWPmHxHDMXQ",
+    "link": "https://vnexpress.net/hang-nghin-phu-nu-ung-thu-vu-thoat-hoa-tri-nho-thu-nghiem-dot-pha-5081478.html",
+    "published_at": "Thu, 04 Jun 2026 07:00:00 +0700",
+    "createAt": "2026-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/israel-lebanon-nhat-tri-thuc-hien-lenh-ngung-ban-5081744.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Israel - Lebanon nhất trí thực hiện lệnh ngừng bắn",
+    "description": "Israel - Lebanon nhất trí thực hiện lệnh ngừng bắn, nhưng cho biết điều này đòi hỏi Hezbollah \"chấm dứt hoàn toàn\" các cuộc tấn công.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/afp20260603b4xf4dlv1highresusi-6930-8849-1780531816.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=fJ5PX0BCjgDuMzw8cSHaYQ",
+    "link": "https://vnexpress.net/israel-lebanon-nhat-tri-thuc-hien-lenh-ngung-ban-5081744.html",
+    "published_at": "Thu, 04 Jun 2026 07:27:26 +0700",
+    "createAt": "2026-06-04T00:27:26.000Z"
   }
 ]
