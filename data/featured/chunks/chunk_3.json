@@ -454,5 +454,41 @@
     "link": "https://vnexpress.net/loat-dinh-thu-tram-tuoi-do-nat-o-mien-tay-5080091.html",
     "published_at": "Thu, 04 Jun 2026 06:00:00 +0700",
     "createAt": "2026-06-03T23:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cuoc-song-tam-cu-cua-nhung-ho-dan-nhuong-dat-xay-cau-5080325.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Cuộc sống tạm cư của những hộ dân nhường đất xây cầu",
+    "description": "Hàng trăm hộ dân phường Hồng Hà đang đi thuê trọ, chờ hoàn thiện hạ tầng khu tái định cư sau khi nhà cũ của họ đã bị giải tỏa cho dự án xây cầu Trần Hưng Đạo.",
+    "thumbnail_url": "https://vcdn1-giadinh.vnecdn.net/2026/06/03/cau-tran-hung-dao-1780504847-6271-1780505014.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=pn69-37GgiSGgRcSLj2Vjg",
+    "link": "https://vnexpress.net/cuoc-song-tam-cu-cua-nhung-ho-dan-nhuong-dat-xay-cau-5080325.html",
+    "published_at": "Thu, 04 Jun 2026 06:30:00 +0700",
+    "createAt": "2026-06-03T23:30:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/my-iran-phat-thong-diep-mau-thuan-ve-dam-phan-5081737.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Mỹ - Iran phát thông điệp mâu thuẫn về đàm phán",
+    "description": "Tổng thống Trump nói cuộc đàm phán với Iran có thể đạt kết quả vào cuối tuần này, trong khi Ngoại trưởng Iran tuyên bố \"không có tiến triển nào đáng kể\".",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/ap26154731759036-1780529774-6907-1780530111.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6ck0qo2ptdBP0xX5ZebeXA",
+    "link": "https://vnexpress.net/my-iran-phat-thong-diep-mau-thuan-ve-dam-phan-5081737.html",
+    "published_at": "Thu, 04 Jun 2026 06:52:26 +0700",
+    "createAt": "2026-06-03T23:52:26.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/loat-giao-su-danh-tieng-nga-ngua-vi-be-boi-nghien-cuu-5081656.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Loạt giáo sư danh tiếng 'ngã ngựa' vì bê bối nghiên cứu",
+    "description": "Bốn giáo sư - đều là các 'ngôi sao' nghiên cứu ở các đại học hàng đầu - mất chức sau khi bị phát hiện chỉnh sửa, ngụy tạo dữ liệu nghiên cứu.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/dismissagain-1780484262-1755-1780484371.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=yCwXmv9o2WTXwBlMBd1h7w",
+    "link": "https://vnexpress.net/loat-giao-su-danh-tieng-nga-ngua-vi-be-boi-nghien-cuu-5081656.html",
+    "published_at": "Thu, 04 Jun 2026 07:16:20 +0700",
+    "createAt": "2026-06-04T00:16:20.000Z"
   }
 ]
