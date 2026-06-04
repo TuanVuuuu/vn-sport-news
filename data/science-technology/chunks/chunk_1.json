@@ -1042,5 +1042,29 @@
     "link": "https://vnexpress.net/nuoc-sach-co-the-la-rui-ro-khi-sapcex-tien-hanh-ipo-5081288.html",
     "published_at": "Thu, 04 Jun 2026 07:00:00 +0700",
     "createAt": "2026-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/sinh-vien-hao-hung-voi-ai-nhung-thay-bat-dinh-ve-tuong-lai-5078703.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "'Sinh viên hào hứng với AI, nhưng thấy bất định về tương lai'",
+    "description": "Theo Rafif Srour, Phó hiệu trưởng Trường Khoa học và Công nghệ IE, dù hào hứng với AI, sinh viên băn khoăn sự nghiệp của họ sẽ thay đổi ra sao trong một nền kinh tế dẫn dắt bởi trí tuệ nhân tạo.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/ie-jpeg-1780534763-3924-1780536024.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=4qhxRb-WQ-tjt21lyO811g",
+    "link": "https://vnexpress.net/sinh-vien-hao-hung-voi-ai-nhung-thay-bat-dinh-ve-tuong-lai-5078703.html",
+    "published_at": "Thu, 04 Jun 2026 08:20:23 +0700",
+    "createAt": "2026-06-04T01:20:23.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ung-dung-chatgpt-dat-mot-ty-nguoi-dung-hang-thang-5081454.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Ứng dụng ChatGPT đạt một tỷ người dùng hàng tháng",
+    "description": "ChatGPT trở thành ứng dụng đạt một tỷ người dùng hàng tháng nhanh nhất từ ​​trước đến nay khi chỉ cần khoảng ba năm.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/lq-1780460519-9919-1780460774.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Y1D967pmgGo3wnC1yV0GTQ",
+    "link": "https://vnexpress.net/ung-dung-chatgpt-dat-mot-ty-nguoi-dung-hang-thang-5081454.html",
+    "published_at": "Thu, 04 Jun 2026 09:00:00 +0700",
+    "createAt": "2026-06-04T02:00:00.000Z"
   }
 ]
