@@ -1186,5 +1186,17 @@
     "link": "https://vnexpress.net/gia-tien-ao-pi-lai-sap-manh-5081920.html",
     "published_at": "Thu, 04 Jun 2026 14:23:16 +0700",
     "createAt": "2026-06-04T07:23:16.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/mo-hinh-ngon-ngu-lon-tieng-viet-voi-120-ty-tham-so-5082057.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Mô hình ngôn ngữ lớn tiếng Việt với 120 tỷ tham số",
+    "description": "Mô hình VT-Super-120B-A12B do kỹ sư Viettel huấn luyện dựa trên kiến trúc của Nvidia, hướng tới tạo ra các AI hiểu sâu ngôn ngữ Việt Nam.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/VT-Super-120B-A12B-du-o-c-xa-y-9138-7277-1780569363.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ibOlzQGruimTz-bVWVMmsw",
+    "link": "https://vnexpress.net/mo-hinh-ngon-ngu-lon-tieng-viet-voi-120-ty-tham-so-5082057.html",
+    "published_at": "Thu, 04 Jun 2026 18:35:34 +0700",
+    "createAt": "2026-06-04T11:35:34.000Z"
   }
 ]
