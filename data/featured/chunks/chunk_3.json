@@ -622,5 +622,41 @@
     "link": "https://vnexpress.net/thoi-quen-xai-chua-nhac-viet-5076936.html",
     "published_at": "Thu, 04 Jun 2026 09:58:06 +0700",
     "createAt": "2026-06-04T02:58:06.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/thi-sinh-nhieu-tinh-do-ve-thi-lop-10-chuyen-su-pham-5081762.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Thí sinh nhiều tỉnh đổ về thi lớp 10 chuyên Sư phạm",
+    "description": "Kỳ thi vào lớp 10 trường chuyên Sư phạm có gần 7.500 thí sinh, nhiều em vượt 50-60 km cùng vali đồ đạc để ở lại thi hai ngày.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/tuu-jpg-1780538678-2352-1780539369.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=tWzk7q9H3KhS-BjYI2D3fw",
+    "link": "https://vnexpress.net/thi-sinh-nhieu-tinh-do-ve-thi-lop-10-chuyen-su-pham-5081762.html",
+    "published_at": "Thu, 04 Jun 2026 09:29:31 +0700",
+    "createAt": "2026-06-04T02:29:31.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/uav-ukraine-lan-dau-tap-kich-ham-doi-baltic-cua-nga-5081756.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "UAV Ukraine lần đầu tập kích Hạm đội Baltic của Nga",
+    "description": "Ukraine công bố video UAV tự sát tấn công chiến hạm Boikiy thuộc Hạm đội Baltic, khi nó đang nằm trong xưởng cạn gần thành phố St. Petersburg.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/settop-1780540157-8991-1780540654.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=Tg8W20TF2hRbuJPoKl_MdA",
+    "link": "https://vnexpress.net/uav-ukraine-lan-dau-tap-kich-ham-doi-baltic-cua-nga-5081756.html",
+    "published_at": "Thu, 04 Jun 2026 10:00:31 +0700",
+    "createAt": "2026-06-04T03:00:31.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cau-thu-goc-viet-du-world-cup-2026-la-ai-5081016.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Cầu thủ gốc Việt dự World Cup 2026 là ai?",
+    "description": "Ibrahim Maza, tiền vệ 20 tuổi mang dòng máu Việt Nam và Algeria nằm trong nhóm cầu thủ chuẩn bị tham dự World Cup 2026 cùng đội tuyển Bắc Phi.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/Anhmanhinh20260604luc102246-17-4178-9354-1780543486.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=UjJ7X_r3XS3BPlnw3C2jng",
+    "link": "https://vnexpress.net/cau-thu-goc-viet-du-world-cup-2026-la-ai-5081016.html",
+    "published_at": "Thu, 04 Jun 2026 10:24:46 +0700",
+    "createAt": "2026-06-04T03:24:46.000Z"
   }
 ]

@@ -1066,5 +1066,29 @@
     "link": "https://vnexpress.net/ung-dung-chatgpt-dat-mot-ty-nguoi-dung-hang-thang-5081454.html",
     "published_at": "Thu, 04 Jun 2026 09:00:00 +0700",
     "createAt": "2026-06-04T02:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ky-vong-tu-mo-hinh-nghien-cuu-ai-mo-dau-tien-cua-viet-nam-5079647.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Kỳ vọng từ mô hình nghiên cứu AI mở đầu tiên của Việt Nam",
+    "description": "Saigon AI Hub chọn mô hình mở để kết nối hạ tầng, học thuật và cộng đồng nghiên cứu, kỳ vọng tạo lối đi riêng để đưa AI Việt Nam vào thị trường toàn cầu.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/settop-1780474676-4269-1780475817.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=gJ40iAPqKoMxeJturpUTYw",
+    "link": "https://vnexpress.net/ky-vong-tu-mo-hinh-nghien-cuu-ai-mo-dau-tien-cua-viet-nam-5079647.html",
+    "published_at": "Thu, 04 Jun 2026 10:00:00 +0700",
+    "createAt": "2026-06-04T03:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/can-cau-lon-nhat-the-gioi-lap-dat-lo-phan-ung-hat-nhan-5081527.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Cần cẩu lớn nhất thế giới lắp đặt lò phản ứng hạt nhân",
+    "description": "Cần cẩu Big Carl nâng thùng lò phản ứng và đặt chuẩn xác lên vòng đỡ tại nhà máy điện hạt nhân Hinkley Point C chỉ trong hai ngày.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/03/VNECrane-1780467864-5300-1780469841.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=t24c5-51ROZfXEVZCuNwsA",
+    "link": "https://vnexpress.net/can-cau-lon-nhat-the-gioi-lap-dat-lo-phan-ung-hat-nhan-5081527.html",
+    "published_at": "Thu, 04 Jun 2026 10:27:54 +0700",
+    "createAt": "2026-06-04T03:27:54.000Z"
   }
 ]
