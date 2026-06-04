@@ -886,5 +886,29 @@
     "link": "https://vnexpress.net/thu-hoi-hai-loai-thuc-pham-chuc-nang-cua-australia-do-nguy-co-lan-manh-kinh-5082069.html",
     "published_at": "Thu, 04 Jun 2026 18:06:55 +0700",
     "createAt": "2026-06-04T11:06:55.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bac-si-chi-ra-dau-hieu-suy-than-man-o-nguoi-tre-5082058.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Bác sĩ chỉ ra dấu hiệu suy thận mạn ở người trẻ",
+    "description": "Mệt mỏi, ăn không ngon miệng, da khô ngứa, đi tiểu nhiều có thể là dấu hiệu suy thận giai đoạn sớm mà người trẻ dễ bỏ qua.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/04/vne-1780567842-6080-1780568115.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=2mw-EnnKGrlBTz7n7QMEtQ",
+    "link": "https://vnexpress.net/bac-si-chi-ra-dau-hieu-suy-than-man-o-nguoi-tre-5082058.html",
+    "published_at": "Thu, 04 Jun 2026 19:00:00 +0700",
+    "createAt": "2026-06-04T12:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/thuoc-va-vaccine-nao-dang-duoc-phat-trien-de-chong-ebola-5081989.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Thuốc và vaccine nào đang được phát triển để chống Ebola?",
+    "description": "Ba vaccine và bốn thuốc đang được nghiên cứu trên toàn cầu để ngăn chủng Ebola Bundibugyo lây lan mạnh tại Cộng hòa Congo và Uganda.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/04/7m9a8396-ok-1780562214-2382-1780562400.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=A2mRpG-If5KTTGRIJepZQA",
+    "link": "https://vnexpress.net/thuoc-va-vaccine-nao-dang-duoc-phat-trien-de-chong-ebola-5081989.html",
+    "published_at": "Thu, 04 Jun 2026 19:00:00 +0700",
+    "createAt": "2026-06-04T12:00:00.000Z"
   }
 ]
