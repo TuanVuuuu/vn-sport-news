@@ -1150,5 +1150,29 @@
     "link": "https://vnexpress.net/sac-voc-co-thu-ky-xinh-dep-sau-26-nam-5081568.html",
     "published_at": "Thu, 04 Jun 2026 05:00:00 +0700",
     "createAt": "2026-06-03T22:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/thoi-quen-xai-chua-nhac-viet-5076936.html",
+    "category_id": "entertainment",
+    "category_name": "Giải trí",
+    "source": "VnExpress",
+    "title": "Thói quen 'xài chùa' nhạc Việt",
+    "description": "Nhiều người lấy nhạc cắt ghép, livestream trên nền tảng mạng xã hội mà không biết đang vi phạm bản quyền, hoặc các tổ chức dùng nhạc mà không xin phép.",
+    "thumbnail_url": "https://vcdn1-giaitri.vnecdn.net/2026/05/28/spotify-1779960260-1946-1779960271.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=j0zunKUui9xOPFaI5OntOQ",
+    "link": "https://vnexpress.net/thoi-quen-xai-chua-nhac-viet-5076936.html",
+    "published_at": "Thu, 04 Jun 2026 09:58:06 +0700",
+    "createAt": "2026-06-04T02:58:06.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/he-mong-dao-cam-on-me-chong-5081788.html",
+    "category_id": "entertainment",
+    "category_name": "Giải trí",
+    "source": "VnExpress",
+    "title": "Hề Mộng Dao cảm ơn mẹ chồng",
+    "description": "Người mẫu Trung Quốc Hề Mộng Dao đăng loạt hình ở hôn lễ, cảm ơn mẹ chồng trao cho cô nữ trang cổ.",
+    "thumbnail_url": "https://vcdn1-giaitri.vnecdn.net/2026/06/04/top-dao1-1780540046.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=vgcYZaB8Ju_Pt1fCxLuemw",
+    "link": "https://vnexpress.net/he-mong-dao-cam-on-me-chong-5081788.html",
+    "published_at": "Thu, 04 Jun 2026 10:15:54 +0700",
+    "createAt": "2026-06-04T03:15:54.000Z"
   }
 ]
