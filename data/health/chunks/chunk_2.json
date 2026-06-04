@@ -766,5 +766,41 @@
     "link": "https://vnexpress.net/mat-ngu-tuoi-20-5081785.html",
     "published_at": "Thu, 04 Jun 2026 13:25:32 +0700",
     "createAt": "2026-06-04T06:25:32.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/sai-lam-thuong-gap-khi-dieu-tri-viem-khop-5081931.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Sai lầm thường gặp khi điều trị viêm khớp",
+    "description": "Tự ý ngừng hoặc đổi thuốc, hạn chế vận động, dùng dầu nóng để điều trị viêm khớp có thể khiến bệnh nặng hơn.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/04/bsvbnnn-1780554544-7369-1780554580.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=-nLWFpAGEP9j-X050-aA5Q",
+    "link": "https://vnexpress.net/sai-lam-thuong-gap-khi-dieu-tri-viem-khop-5081931.html",
+    "published_at": "Thu, 04 Jun 2026 15:00:00 +0700",
+    "createAt": "2026-06-04T08:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/16-nam-tieu-khong-kiem-soat-5081745.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "16 năm tiểu không kiểm soát",
+    "description": "Nhi, 16 tuổi, rối loạn cơ chế kiểm soát tiểu tiện, nay được bác sĩ điều trị ổn định bằng thuốc kết hợp điều chỉnh thói quen sinh hoạt.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/04/image001-1780540738-8970-1780541166.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=oElqUzvZyt4daZZQyqKmVA",
+    "link": "https://vnexpress.net/16-nam-tieu-khong-kiem-soat-5081745.html",
+    "published_at": "Thu, 04 Jun 2026 15:00:00 +0700",
+    "createAt": "2026-06-04T08:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bac-si-ly-giai-quan-niem-5-nam-moi-gia-mot-tuoi-5081795.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Bác sĩ lý giải quan niệm '5 năm mới già một tuổi'",
+    "description": "Không chỉ sống lâu, mỗi người còn có thể duy trì \"độ tuổi sinh học\" trẻ hơn tuổi thật, thậm chí \"5 năm mới già đi một tuổi\", nếu quản lý tốt sức khỏe và lối sống.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/04/233a8486-1780554951-5789-1780555232.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=_cw6oVIoFYnf3v_Kc7yVvw",
+    "link": "https://vnexpress.net/bac-si-ly-giai-quan-niem-5-nam-moi-gia-mot-tuoi-5081795.html",
+    "published_at": "Thu, 04 Jun 2026 15:28:56 +0700",
+    "createAt": "2026-06-04T08:28:56.000Z"
   }
 ]
