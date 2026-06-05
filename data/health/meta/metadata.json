@@ -1,8 +1,9 @@
 {
-  "total_articles": 200,
+  "total_articles": 201,
   "files": [
     "chunk_1.json",
-    "chunk_2.json"
+    "chunk_2.json",
+    "chunk_3.json"
   ],
   "channel": {
     "title": "Sức khỏe - VnExpress RSS",
@@ -11,7 +12,7 @@
     "copyright": "",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/suc-khoe.rss",
-    "last_updated": "Fri, 05 Jun 2026 13:40:37 +0700"
+    "last_updated": "Fri, 05 Jun 2026 14:10:43 +0700"
   },
-  "last_updated": "2026-06-05T07:40:42.523Z"
+  "last_updated": "2026-06-05T07:50:43.426Z"
 }
