@@ -70,5 +70,41 @@
     "link": "https://vnexpress.net/ong-nguyen-anh-tuan-tai-dac-cu-chu-tich-tong-lien-doan-lao-dong-viet-nam-5082180.html",
     "published_at": "Fri, 05 Jun 2026 09:10:44 +0700",
     "createAt": "2026-06-05T02:10:44.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/hieu-the-nao-ve-hien-tuong-tach-nuoc-o-xang-e10-5082114.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Hiểu thế nào về hiện tượng tách nước ở xăng E10",
+    "description": "Việc lưu trữ nhiên liệu sai cách hoặc để nước lọt vào bình chứa là những nguyên nhân chính khiến ethanol kéo nước lắng xuống đáy bình.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/thumbnailngang-1780581461-4668-1780582199.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=uM0WsBYsE1OswYjms0c34g",
+    "link": "https://vnexpress.net/hieu-the-nao-ve-hien-tuong-tach-nuoc-o-xang-e10-5082114.html",
+    "published_at": "Fri, 05 Jun 2026 06:00:00 +0700",
+    "createAt": "2026-06-04T23:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nha-sang-lap-google-x-khong-the-theo-loi-cu-khi-ai-da-lam-tot-hon-5082121.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Nhà sáng lập Google X: 'Không thể theo lối cũ khi AI đã làm tốt hơn'",
+    "description": "Sebastian Thrun, nhà đồng sáng lập Google X, con người đang sống trong giai đoạn đặc biệt với AI nên cách giáo dục cũng cần thay đổi để tương lai \"ai cũng có thể trở thành một kỹ sư phần mềm\".",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/thrun-jpeg-1780585347-7484-1780585438.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=NslaP4ql3rQQsFROmkH5gg",
+    "link": "https://vnexpress.net/nha-sang-lap-google-x-khong-the-theo-loi-cu-khi-ai-da-lam-tot-hon-5082121.html",
+    "published_at": "Fri, 05 Jun 2026 09:00:00 +0700",
+    "createAt": "2026-06-05T02:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/gan-50-nguoi-chet-khat-giua-sa-mac-sahara-5082201.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Gần 50 người chết khát giữa sa mạc Sahara",
+    "description": "49 người chết khát tại vùng hẻo lánh trên sa mạc Sahara ở Niger sau khi xe tải chở họ bị hỏng, hai người sống sót nhờ đi bộ 50 km tìm nước.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/afp-zarzycka-panorama241030-np-6686-1734-1780623530.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=JVjctj2twoFk9nofmk7S5Q",
+    "link": "https://vnexpress.net/gan-50-nguoi-chet-khat-giua-sa-mac-sahara-5082201.html",
+    "published_at": "Fri, 05 Jun 2026 09:09:17 +0700",
+    "createAt": "2026-06-05T02:09:17.000Z"
   }
 ]
