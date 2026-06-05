@@ -1138,5 +1138,65 @@
     "link": "https://vnexpress.net/liverpool-bo-nhiem-hlv-iraola-5082154.html",
     "published_at": "Fri, 05 Jun 2026 05:17:22 +0700",
     "createAt": "2026-06-04T22:17:22.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nhung-lenh-ngung-ban-co-cung-nhu-khong-o-trung-dong-5081759.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Những lệnh ngừng bắn 'có cũng như không' ở Trung Đông",
+    "description": "Các lệnh ngừng bắn tại Gaza, Lebanon và vùng Vịnh được cho là không hiệu quả, khi xung đột vẫn tiếp diễn, đe dọa nỗ lực đàm phán hòa bình.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/afp20260602b4qp39fv1midresleba-6868-5273-1780548189.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=RioR23VES0TjNVLaI9EEcg",
+    "link": "https://vnexpress.net/nhung-lenh-ngung-ban-co-cung-nhu-khong-o-trung-dong-5081759.html",
+    "published_at": "Fri, 05 Jun 2026 05:00:00 +0700",
+    "createAt": "2026-06-04T22:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/song-kho-trong-dinh-thu-tram-tuoi-o-mien-tay-5081268.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Sống khổ trong dinh thự trăm tuổi ở miền Tây",
+    "description": "Mỗi mùa mưa, bà Ngà đặt gần 50 xô chậu hứng nước dột trong tòa nhà gần 100 năm tuổi ở Tây Ninh, không thể tự sửa những chỗ hư hỏng vì công trình thuộc diện bảo tồn.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/2aoboqbdtesznd2k5rllsgu4aiavmy-4429-8999-1780585385.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=E7gwwKPKgtqI4YpLgTPcDA",
+    "link": "https://vnexpress.net/song-kho-trong-dinh-thu-tram-tuoi-o-mien-tay-5081268.html",
+    "published_at": "Fri, 05 Jun 2026 06:00:00 +0700",
+    "createAt": "2026-06-04T23:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/vuon-san-thuong-giai-nhiet-cua-nu-trung-ta-ha-noi-5081420.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Vườn sân thượng giải nhiệt của nữ trung tá Hà Nội",
+    "description": "Trung tá Thanh Thúy, ở Hoài Đức cùng chồng biến sân thượng thành khu vườn với những hàng cây xanh, thẳng tắp giữa những nóc nhà phố thị.",
+    "thumbnail_url": "https://vcdn1-giadinh.vnecdn.net/2026/06/03/z7892190258411f32f79e5b46ade8dfc5313db90e-1780451382.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=luul7_ki9LwQjMDDvG2vyw",
+    "link": "https://vnexpress.net/vuon-san-thuong-giai-nhiet-cua-nu-trung-ta-ha-noi-5081420.html",
+    "published_at": "Fri, 05 Jun 2026 06:29:00 +0700",
+    "createAt": "2026-06-04T23:29:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ong-zelensky-gui-thu-ngo-cho-ong-putin-de-nghi-gap-truc-tiep-5082159.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Ông Zelensky gửi thư ngỏ cho ông Putin, đề nghị gặp trực tiếp",
+    "description": "Tổng thống Zelensky đề xuất lệnh ngừng bắn toàn diện và gặp mặt trực tiếp bên ngoài Moskva trong bức thư ngỏ hiếm hoi gửi người đồng cấp Putin.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/Zelensky-1780616152-4302-1780616517.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZRRlxG-T8-2JPFI0-88ZdA",
+    "link": "https://vnexpress.net/ong-zelensky-gui-thu-ngo-cho-ong-putin-de-nghi-gap-truc-tiep-5082159.html",
+    "published_at": "Fri, 05 Jun 2026 06:55:19 +0700",
+    "createAt": "2026-06-04T23:55:19.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/9-hang-quan-moi-vao-danh-sach-michelin-tuyen-chon-5082148.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "9 hàng quán mới vào danh sách 'Michelin tuyển chọn'",
+    "description": "Từ quán phở gà, tiệm bánh tráng bình dân đến nhà hàng thuần chay không rác thải, 9 nhà hàng mới trong danh sách Michelin Selected phản ánh sự đa dạng của ẩm thực của ba miền.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/06/05/igsnapinsta-com-www-instagram-com-p-cwxppbasli0-1780596087.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=rpopr0CG9UFVY32cJER0bg",
+    "link": "https://vnexpress.net/9-hang-quan-moi-vao-danh-sach-michelin-tuyen-chon-5082148.html",
+    "published_at": "Fri, 05 Jun 2026 07:01:32 +0700",
+    "createAt": "2026-06-05T00:01:32.000Z"
   }
 ]
