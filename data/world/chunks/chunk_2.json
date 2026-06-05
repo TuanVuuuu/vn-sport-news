@@ -946,5 +946,29 @@
     "link": "https://vnexpress.net/dong-luc-thuc-day-ong-zelensky-de-nghi-gap-ong-putin-5082211.html",
     "published_at": "Fri, 05 Jun 2026 19:00:00 +0700",
     "createAt": "2026-06-05T12:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/lanh-dao-lao-campuchia-thai-lan-sap-tham-viet-nam-5082512.html",
+    "category_id": "world",
+    "category_name": "Thế giới",
+    "source": "VnExpress",
+    "title": "Lãnh đạo Lào, Campuchia, Thái Lan sắp thăm Việt Nam",
+    "description": "Thủ tướng ba nước Lào, Campuchia, Thái Lan sắp thăm chính thức Việt Nam và dự Diễn đàn Tương lai ASEAN lần thứ ba.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/page-1780662269-7081-1780662288.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=TPbuh91slkpyJBLldP4zXA",
+    "link": "https://vnexpress.net/lanh-dao-lao-campuchia-thai-lan-sap-tham-viet-nam-5082512.html",
+    "published_at": "Fri, 05 Jun 2026 19:45:46 +0700",
+    "createAt": "2026-06-05T12:45:46.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nga-ukraine-trao-doi-hang-tram-tu-binh-5082520.html",
+    "category_id": "world",
+    "category_name": "Thế giới",
+    "source": "VnExpress",
+    "title": "Nga - Ukraine trao đổi hàng trăm tù binh",
+    "description": "Nga và Ukraine trao đổi mỗi bên 185 tù binh, thể hiện một trong số ít lĩnh vực hai bên vẫn duy trì hợp tác giữa chiến sự.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/afp20260605b64g4wev1highresukr-9049-8172-1780666988.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=uR0z93K7rIBaBMH98esqqg",
+    "link": "https://vnexpress.net/nga-ukraine-trao-doi-hang-tram-tu-binh-5082520.html",
+    "published_at": "Fri, 05 Jun 2026 21:00:52 +0700",
+    "createAt": "2026-06-05T14:00:52.000Z"
   }
 ]
