@@ -118,5 +118,29 @@
     "link": "https://vnexpress.net/ung-thu-vung-kin-tre-hoa-nhieu-ca-chua-den-30-tuoi-5082465.html",
     "published_at": "Fri, 05 Jun 2026 17:30:22 +0700",
     "createAt": "2026-06-05T10:30:22.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nhung-dieu-can-biet-ve-chieu-cao-cua-tre-5082373.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Những điều cần biết về chiều cao của trẻ",
+    "description": "Chiều cao của trẻ chịu ảnh hưởng bởi nhiều yếu tố như dinh dưỡng, giấc ngủ và sức khỏe tinh thần, phát triển nhanh nhất trong những năm đầu đời, giai đoạn dậy thì.",
+    "thumbnail_url": null,
+    "link": "https://vnexpress.net/nhung-dieu-can-biet-ve-chieu-cao-cua-tre-5082373.html",
+    "published_at": "Fri, 05 Jun 2026 18:00:00 +0700",
+    "createAt": "2026-06-05T11:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dieu-gi-xay-ra-sau-ba-thang-bo-thuoc-la-5081901.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Điều gì xảy ra sau ba tháng bỏ thuốc lá?",
+    "description": "Chức năng phổi cải thiện, giảm ho và khó thở, tăng cường tuần hoàn máu là những thay đổi tích cực của cơ thể sau khi bỏ thuốc lá.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/05/eff00818e61743049db8297e724843-3357-6705-1780638294.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=koiokK0TwDi3w7xvmm1EYw",
+    "link": "https://vnexpress.net/dieu-gi-xay-ra-sau-ba-thang-bo-thuoc-la-5081901.html",
+    "published_at": "Fri, 05 Jun 2026 18:00:00 +0700",
+    "createAt": "2026-06-05T11:00:00.000Z"
   }
 ]
