@@ -130,5 +130,29 @@
     "link": "https://vnexpress.net/em-be-lao-xe-dap-tu-goc-khuat-vao-dau-oto-5082229.html",
     "published_at": "Fri, 05 Jun 2026 10:03:29 +0700",
     "createAt": "2026-06-05T03:03:29.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cuoc-chien-yeu-ghet-sau-vu-chay-xe-dien-o-trung-quoc-5082245.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress",
+    "title": "Cuộc chiến yêu - ghét sau vụ cháy xe điện ở Trung Quốc",
+    "description": "Chiếc Aito M9 bốc cháy khi đang chạy ở Chiết Giang hôm 3/6 thổi bùng xung đột vốn có từ hai trường phái đối lập: yêu và ghét xe điện.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/AitoM92-1780631286-4652-1780631436.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Xm-i5SsGLgOqAI7ALvfl2Q",
+    "link": "https://vnexpress.net/cuoc-chien-yeu-ghet-sau-vu-chay-xe-dien-o-trung-quoc-5082245.html",
+    "published_at": "Fri, 05 Jun 2026 12:03:27 +0700",
+    "createAt": "2026-06-05T05:03:27.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/can-lam-gi-voi-xe-khong-ho-tro-xang-e10-5082336.html",
+    "category_id": "vehicles",
+    "category_name": "Xe",
+    "source": "VnExpress",
+    "title": "Cần làm gì với xe không hỗ trợ xăng E10?",
+    "description": "Những xe đời cũ không tương thích E10 nên ưu tiên dùng xăng E5, thay thế linh kiện tương thích E10, bảo dưỡng hệ thống nhiên liệu thường xuyên.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/MON82181704812030-1780636033-8463-1780636041.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=6l1217dNqzjCi5Gb_AJyJg",
+    "link": "https://vnexpress.net/can-lam-gi-voi-xe-khong-ho-tro-xang-e10-5082336.html",
+    "published_at": "Fri, 05 Jun 2026 12:30:00 +0700",
+    "createAt": "2026-06-05T05:30:00.000Z"
   }
 ]
