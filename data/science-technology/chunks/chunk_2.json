@@ -154,5 +154,29 @@
     "link": "https://vnexpress.net/tao-ra-cach-lam-moi-bang-cong-nghe-so-de-mang-lai-gia-tri-dot-pha-5082429.html",
     "published_at": "Fri, 05 Jun 2026 16:48:59 +0700",
     "createAt": "2026-06-05T09:48:59.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/apple-da-xoay-trinh-duyet-chrome-5082143.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Apple 'đá xoáy' trình duyệt Chrome",
+    "description": "Trong video giới thiệu khả năng bảo mật dữ liệu riêng tư của Safari, Apple ẩn ý trình duyệt Chrome không bảo vệ người dùng trước những kẻ theo dõi.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/Untitled7-1780658329-7255-1780658415.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Dtw413yjpngmudljySJVzg",
+    "link": "https://vnexpress.net/apple-da-xoay-trinh-duyet-chrome-5082143.html",
+    "published_at": "Fri, 05 Jun 2026 19:04:11 +0700",
+    "createAt": "2026-06-05T12:04:11.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/truy-cap-internet-tu-bot-ai-lan-dau-vuot-con-nguoi-5082127.html",
+    "category_id": "science-technology",
+    "category_name": "Khoa học công nghệ",
+    "source": "VnExpress",
+    "title": "Truy cập Internet từ bot AI lần đầu vượt con người",
+    "description": "Nền tảng hạ tầng Internet Cloudflare cho biết lưu lượng truy cập từ bot AI đã vượt qua con người, sớm hơn một năm so với dự đoán của công ty.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/04/01-ai-agentsth-july-1780585719-5023-1780585753.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=wcxAstPYBs8e5mHq35PzBg",
+    "link": "https://vnexpress.net/truy-cap-internet-tu-bot-ai-lan-dau-vuot-con-nguoi-5082127.html",
+    "published_at": "Fri, 05 Jun 2026 20:06:59 +0700",
+    "createAt": "2026-06-05T13:06:59.000Z"
   }
 ]
