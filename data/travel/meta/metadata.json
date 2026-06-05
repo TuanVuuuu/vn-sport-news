@@ -1,7 +1,8 @@
 {
-  "total_articles": 100,
+  "total_articles": 101,
   "files": [
-    "chunk_1.json"
+    "chunk_1.json",
+    "chunk_2.json"
   ],
   "channel": {
     "title": "Du lịch - VnExpress RSS",
@@ -10,7 +11,7 @@
     "copyright": "",
     "logo_url": "https://s.vnecdn.net/vnexpress/i/v20/logos/vne_logo_rss.png",
     "link": "https://vnexpress.net/rss/du-lich.rss",
-    "last_updated": "Fri, 05 Jun 2026 06:31:16 +0700"
+    "last_updated": "Fri, 05 Jun 2026 09:10:35 +0700"
   },
-  "last_updated": "2026-06-05T02:10:35.321Z"
+  "last_updated": "2026-06-05T02:20:34.628Z"
 }
