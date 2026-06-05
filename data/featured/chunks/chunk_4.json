@@ -166,5 +166,65 @@
     "link": "https://vnexpress.net/gia-vang-tiep-tuc-lui-ve-duoi-154-trieu-dong-5082326.html",
     "published_at": "Fri, 05 Jun 2026 12:02:14 +0700",
     "createAt": "2026-06-05T05:02:14.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/vi-sao-hlv-doi-tam-trung-thuong-that-bai-o-big-6-ngoai-hang-anh-5082052.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Vì sao HLV đội tầm trung thường thất bại ở 'Big 6' Ngoại hạng Anh?",
+    "description": "Một HLV như Andoni Iraola chuyển tới dẫn dắt Liverpool là bước tiến lớn trong sự nghiệp, nhưng lại là thử thách lớn khiến nhiều người vấp ngã.",
+    "thumbnail_url": "https://vcdn1-thethao.vnecdn.net/2026/06/04/andoni-iraola-1780565768-8770-1780566498.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=A3in7lEJ_pBCAWz9g37G2g",
+    "link": "https://vnexpress.net/vi-sao-hlv-doi-tam-trung-thuong-that-bai-o-big-6-ngoai-hang-anh-5082052.html",
+    "published_at": "Fri, 05 Jun 2026 10:47:17 +0700",
+    "createAt": "2026-06-05T03:47:17.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/nguoi-dan-thao-chay-sau-vu-no-kho-gas-o-mexico-5082329.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Người dân tháo chạy sau vụ nổ kho gas ở Mexico",
+    "description": "Tiếng nổ lớn vang lên khi bốn bồn chứa LPG bốc cháy tại một cơ sở lưu trữ khí đốt ở bang Puebla, người dân xung quanh hoảng loạn tháo chạy.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/Lark20260605122311-1780637006-2095-1780637015.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=AHfOjgBr2QchzhijiTwYww&t=image",
+    "link": "https://vnexpress.net/nguoi-dan-thao-chay-sau-vu-no-kho-gas-o-mexico-5082329.html",
+    "published_at": "Fri, 05 Jun 2026 12:31:18 +0700",
+    "createAt": "2026-06-05T05:31:18.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/cong-doan-viet-nam-con-du-dia-tang-ngay-nghi-le-5082340.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Công đoàn: Việt Nam còn dư địa tăng ngày nghỉ lễ",
+    "description": "Tổng Liên đoàn Lao động Việt Nam cho rằng số ngày nghỉ lễ hiện nay vẫn thấp so với nhiều nước, nên vẫn còn dư địa để xem xét tăng thêm khi điều kiện cho phép.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/233A1020-1780637015-3735-1780637158.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=HfNHXhShntJ84bJB1P9Smg",
+    "link": "https://vnexpress.net/cong-doan-viet-nam-con-du-dia-tang-ngay-nghi-le-5082340.html",
+    "published_at": "Fri, 05 Jun 2026 12:34:54 +0700",
+    "createAt": "2026-06-05T05:34:54.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/day-dut-cua-cuu-trinh-sat-ve-tran-danh-biet-khu-24-o-kon-tum-5082137.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Day dứt của cựu trinh sát về trận đánh Biệt khu 24 ở Kon Tum",
+    "description": "Gần 60 năm sau trận đánh Biệt khu 24, đại tá Trần Thanh Hòa vẫn lần theo từng manh mối, hy vọng tìm thấy những đồng đội hy sinh chưa được đưa về.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/z7903283939475-d0db302bc014269-6605-3021-1780641573.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=teB8RTdBN1mI84nBXyV2nw",
+    "link": "https://vnexpress.net/day-dut-cua-cuu-trinh-sat-ve-tran-danh-biet-khu-24-o-kon-tum-5082137.html",
+    "published_at": "Fri, 05 Jun 2026 12:51:03 +0700",
+    "createAt": "2026-06-05T05:51:03.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/giong-loc-lam-sap-gian-hang-hoi-cho-o-thai-nguyen-5082344.html",
+    "category_id": "featured",
+    "category_name": "Tin nổi bật",
+    "source": "VnExpress",
+    "title": "Giông lốc làm sập gian hàng hội chợ ở Thái Nguyên",
+    "description": "Trận giông kéo dài khoảng 30 phút quét qua phường Vạn Xuân tối 4/6 xô ngã nhiều người đi đường, các gian hàng hội chợ đổ sập.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/05/PYMediaezgifcomvideotogifconve-2724-9052-1780636904.gif?w=1200&h=0&q=100&dpr=1&fit=crop&s=E424NkRZfY6WDuSIaZYG4A&t=image",
+    "link": "https://vnexpress.net/giong-loc-lam-sap-gian-hang-hoi-cho-o-thai-nguyen-5082344.html",
+    "published_at": "Fri, 05 Jun 2026 13:02:44 +0700",
+    "createAt": "2026-06-05T06:02:44.000Z"
   }
 ]
