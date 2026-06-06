@@ -226,5 +226,53 @@
     "link": "https://vnexpress.net/hien-dai-hoa-y-hoc-co-truyen-viet-nam-5082386.html",
     "published_at": "Sat, 06 Jun 2026 07:58:28 +0700",
     "createAt": "2026-06-06T00:58:28.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/u-tai-mot-ben-co-nguy-hiem-5082574.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Ù tai một bên có nguy hiểm?",
+    "description": "Tôi bị ù một bên tai hơn một tuần, có phải là triệu chứng cảnh báo bệnh nguy hiểm, điều trị thế nào? (Quốc Phan, 30 tuổi, TP HCM)",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/06/1-1780705784-4092-1780705962.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ZZfuQAy2GZcyL40k3Srzsw",
+    "link": "https://vnexpress.net/u-tai-mot-ben-co-nguy-hiem-5082574.html",
+    "published_at": "Sat, 06 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-06T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ung-thu-phoi-xam-lan-khong-trieu-chung-5082570.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Ung thư phổi xâm lấn không triệu chứng",
+    "description": "Ông Nguyên, 54 tuổi, điều trị tràn dịch màng phổi 5 năm, nay phát hiện u phổi ác tính xâm lấn thành ngực dù không có triệu chứng bất thường.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/06/bao4-1780704233-2319-1780704584.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ANbCJbx2NiWEbzRqvB1hOw",
+    "link": "https://vnexpress.net/ung-thu-phoi-xam-lan-khong-trieu-chung-5082570.html",
+    "published_at": "Sat, 06 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-06T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ton-thuong-phoi-do-viem-co-tu-mien-sau-nhiem-nam-5082535.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Tổn thương phổi do viêm cơ tự miễn sau nhiễm nấm",
+    "description": "Ông Tiến, 52 tuổi, đau ngực, đau khớp, ho, sụt 6 kg trong một năm, bác sĩ phát hiện nhiễm nấm và viêm cơ tự miễn gây tổn thương phổi.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/05/image001-1780669181-1172-1780669211.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=W87gBFAZ9NcFMgq4pevlPw",
+    "link": "https://vnexpress.net/ton-thuong-phoi-do-viem-co-tu-mien-sau-nhiem-nam-5082535.html",
+    "published_at": "Sat, 06 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-06T01:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/bac-si-chi-cach-xu-tri-khi-tre-tiep-xuc-kien-ba-khoang-5082533.html",
+    "category_id": "health",
+    "category_name": "Sức khỏe",
+    "source": "VnExpress",
+    "title": "Bác sĩ chỉ cách xử trí khi trẻ tiếp xúc kiến ba khoang",
+    "description": "Phụ huynh cần rửa sạch vùng da tiếp xúc bằng nước và xà phòng, không chà xát hay đắp thuốc dân gian, đưa trẻ đi khám nếu tổn thương lan rộng hoặc nhiễm trùng.",
+    "thumbnail_url": "https://vcdn1-suckhoe.vnecdn.net/2026/06/06/image001-1780705468-9362-1780705669.png?w=1200&h=0&q=100&dpr=1&fit=crop&s=OPsGHo3_Ds6evAhnpjKAKA",
+    "link": "https://vnexpress.net/bac-si-chi-cach-xu-tri-khi-tre-tiep-xuc-kien-ba-khoang-5082533.html",
+    "published_at": "Sat, 06 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-06T01:00:00.000Z"
   }
 ]
