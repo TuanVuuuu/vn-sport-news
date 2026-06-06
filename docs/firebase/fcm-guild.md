@@ -369,6 +369,8 @@ condition: "'sn-cat-sports' in topics && 'sn-freq-realtime' in topics"
 
 ## 9. API thiết bị & cài đặt thông báo
 
+> Hợp đồng API cho mobile: [fcm-mobile-guide.md](./fcm-mobile-guide.md). Phần dưới mô tả implementation và endpoint vận hành.
+
 | Method | Endpoint | Mô tả |
 |---|---|---|
 | `GET` | `/api/notifications/settings` | Cấu hình mặc định: max_per_day, khung giờ, timezone |
@@ -376,8 +378,13 @@ condition: "'sn-cat-sports' in topics && 'sn-freq-realtime' in topics"
 | `GET` | `/api/devices/:deviceId/preferences` | Lấy cài đặt thiết bị |
 | `PUT` | `/api/devices/:deviceId/preferences` | Bật/tắt (`enabled`), đổi `max_per_day` |
 | `DELETE` | `/api/devices/:deviceId` | Hủy đăng ký thiết bị |
+| `POST` | `/api/notifications/test` | Gửi push test tới token hoặc topic (QA/backend) |
 
-**Schema `device` (file JSON hoặc DB sau này):**
+### 9.1 Lưu trữ thiết bị
+
+API server (`server.js`) ghi `devices.json` lên repo data GitHub tại `notifications/devices.json` ([vn-sport-news-data](https://github.com/TuanVuuuu/vn-sport-news-data/blob/main/notifications/devices.json)). Crawler đọc cùng file khi gửi push — mỗi thiết bị có `max_per_day` / `enabled` riêng.
+
+**Schema `device`:**
 
 ```json
 {
@@ -389,11 +396,85 @@ condition: "'sn-cat-sports' in topics && 'sn-freq-realtime' in topics"
     "enabled": true,
     "max_per_day": 3
   },
+  "created_at": "ISO",
   "updated_at": "ISO"
 }
 ```
 
-> **Khuyến nghị MVP:** Chỉ dùng FCM Topics phía client, chưa cần API register. Thêm API khi cần đồng bộ preference hoặc gửi targeted notification.
+### 9.2 API gửi push test
+
+Dành cho QA / backend dev. Bỏ qua khung giờ, dedup; **không** ghi `sent_notifications.json` / `send_log.json`.
+
+**`POST /api/notifications/test`**
+
+Gửi tới token:
+
+```json
+{
+  "target": "token",
+  "fcm_token": "...",
+  "variant": "single"
+}
+```
+
+Hoặc qua `device_id` đã register (server tra token từ `devices.json`):
+
+```json
+{
+  "device_id": "550e8400-e29b-41d4-a716-446655440000",
+  "variant": "single"
+}
+```
+
+Gửi tới topic:
+
+```json
+{
+  "target": "topic",
+  "topic": "sn-featured",
+  "variant": "digest"
+}
+```
+
+Tuỳ chỉnh nội dung (ghi đè mẫu mặc định, field nào không gửi thì dùng giá trị từ `variant`):
+
+```json
+{
+  "target": "token",
+  "fcm_token": "...",
+  "content": {
+    "title": "Thông báo test tuỳ chỉnh",
+    "body": "Nội dung bạn muốn hiển thị trên tray",
+    "image": "https://example.com/thumb.jpg",
+    "highlight_id": "test://sportnews/my-article",
+    "click_action": "OPEN_ARTICLE",
+    "article_count": 1
+  }
+}
+```
+
+| Field `content` | Mô tả |
+|---|---|
+| `title` | Tiêu đề notification |
+| `body` | Nội dung notification |
+| `image` | URL ảnh (để trống `""` để bỏ ảnh) |
+| `highlight_id` | ID bài khi user tap — mặc định `test://sportnews/...` |
+| `click_action` | Mặc định `OPEN_ARTICLE` |
+| `article_count` | Số bài trong digest — mặc định theo `variant` |
+
+Payload luôn có `data.is_test = "true"`.
+
+Bảo vệ endpoint (tuỳ chọn): set `FCM_TEST_SECRET` — client gửi header `X-FCM-Test-Secret` hoặc field `secret` trong body.
+
+### 9.3 Cấu hình server API (Render)
+
+| Biến | Bắt buộc | Mô tả |
+|---|---|---|
+| `DATA_REPO_TOKEN` | Có | GitHub PAT ghi repo `vn-sport-news-data` — lưu `devices.json` |
+| `FCM_SERVICE_ACCOUNT_JSON` | Có (nếu dùng API test) | JSON service account Firebase |
+| `FCM_TEST_SECRET` | Không | Bảo vệ `POST /api/notifications/test` |
+
+API test **không** cần `FCM_ENABLED=true`. Crawler production vẫn cần `FCM_ENABLED` + `FCM_SERVICE_ACCOUNT_JSON` trên GitHub Actions.
 
 ---
 
@@ -428,12 +509,14 @@ Gửi tổng hợp tin mới trong 24h qua topic `sn-freq-daily-digest` + `sn-ca
 
 ## 11. Biến môi trường
 
-| Biến | Bắt buộc | Mô tả |
-|---|---|---|
-| `FCM_ENABLED` | Có | `true` để bật gửi, `false` để tắt (dev/local) |
-| `FCM_SERVICE_ACCOUNT_JSON` | Có (prod) | JSON service account, 1 dòng |
-| `FCM_MAX_PER_DAY` | Không | Giới hạn mặc định khi chưa có preference thiết bị (mặc định **3**) |
-| `FCM_MAX_ARTICLES_PER_NOTIFICATION` | Không | Số bài gom tối đa mỗi push (mặc định 5) |
+| Biến | Nơi dùng | Bắt buộc | Mô tả |
+|---|---|---|---|
+| `FCM_ENABLED` | Crawler (GitHub Actions) | Có | `true` để bật gửi, `false` để tắt |
+| `FCM_SERVICE_ACCOUNT_JSON` | Crawler; API server (nếu test push) | Có (prod) | JSON service account, 1 dòng |
+| `FCM_MAX_PER_DAY` | Crawler | Không | Giới hạn mặc định khi chưa có preference thiết bị (mặc định **3**) |
+| `FCM_MAX_ARTICLES_PER_NOTIFICATION` | Crawler | Không | Số bài gom tối đa mỗi push (mặc định 5) |
+| `DATA_REPO_TOKEN` | API server (Render) | Có | PAT ghi `devices.json` lên data repo |
+| `FCM_TEST_SECRET` | API server | Không | Bảo vệ endpoint test push |
 
 ---
 
@@ -519,7 +602,10 @@ Gửi tổng hợp tin mới trong 24h qua topic `sn-freq-daily-digest` + `sn-ca
 
 ## 16. Tham khảo
 
+- Mobile integration: [fcm-mobile-guide.md](./fcm-mobile-guide.md)
+- Postman FCM: [postman_collection_fcm.json](../v1/postman_collection_fcm.json)
+- Devices storage: [notifications/devices.json](https://github.com/TuanVuuuu/vn-sport-news-data/blob/main/notifications/devices.json)
 - [Firebase Admin SDK — Node.js](https://firebase.google.com/docs/admin/setup)
 - [FCM Topic Messaging](https://firebase.google.com/docs/cloud-messaging/android/topic-messaging)
 - [FCM Condition Messaging](https://firebase.google.com/docs/cloud-messaging/android/send-multiple)
-- Codebase: `src/index.js`, `src/config/categories.js`, `.github/workflows/crawler.yml`
+- Codebase: `src/index.js`, `src/services/notificationService.js`, `server.js`, `.github/workflows/crawler.yml`

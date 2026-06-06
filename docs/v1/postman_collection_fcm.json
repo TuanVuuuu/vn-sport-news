@@ -20,9 +20,101 @@
       "key": "fcmToken",
       "value": "your-fcm-device-token",
       "type": "string"
+    },
+    {
+      "key": "fcmTestSecret",
+      "value": "",
+      "type": "string"
     }
   ],
   "item": [
+    {
+      "name": "POST /api/notifications/test - Gửi push test tới token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-FCM-Test-Secret",
+            "value": "{{fcmTestSecret}}",
+            "disabled": true
+          }
+        ],
+        "description": "Gửi thông báo test tới FCM token. Bỏ qua khung giờ và dedup. Cần FCM_SERVICE_ACCOUNT_JSON trên server. Body: target=token, fcm_token (hoặc device_id). variant=single|digest. Tuỳ chỉnh qua content: { title, body, image, highlight_id, click_action, article_count }. Bật header X-FCM-Test-Secret nếu server có FCM_TEST_SECRET.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"target\": \"token\",\n  \"fcm_token\": \"{{fcmToken}}\",\n  \"variant\": \"single\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/notifications/test"
+      },
+      "response": []
+    },
+    {
+      "name": "POST /api/notifications/test - Gửi push test tuỳ chỉnh nội dung",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-FCM-Test-Secret",
+            "value": "{{fcmTestSecret}}",
+            "disabled": true
+          }
+        ],
+        "description": "Gửi push test với title/body tùy chỉnh. Field content ghi đè mẫu mặc định.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"target\": \"token\",\n  \"fcm_token\": \"{{fcmToken}}\",\n  \"content\": {\n    \"title\": \"Thông báo test tuỳ chỉnh\",\n    \"body\": \"Nội dung bạn muốn hiển thị trên tray\",\n    \"highlight_id\": \"test://sportnews/my-article\"\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/notifications/test"
+      },
+      "response": []
+    },
+    {
+      "name": "POST /api/notifications/test - Gửi push test tới topic",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-FCM-Test-Secret",
+            "value": "{{fcmTestSecret}}",
+            "disabled": true
+          }
+        ],
+        "description": "Gửi thông báo test tới topic sn-featured. App phải đã subscribe topic. variant=single (1 bài) hoặc digest (3 bài).",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"target\": \"topic\",\n  \"topic\": \"sn-featured\",\n  \"variant\": \"digest\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/notifications/test"
+      },
+      "response": []
+    },
     {
       "name": "GET /api/notifications/settings - Lấy cấu hình thông báo",
       "request": {

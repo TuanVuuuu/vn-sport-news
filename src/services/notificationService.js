@@ -11,6 +11,24 @@ const {
 
 let firebaseAdmin = null;
 
+const TEST_ARTICLES = [
+    {
+        id: 'test://sportnews/single-article',
+        title: '[TEST] Đội tuyển Việt Nam thắng 2-0 trong trận giao hữu',
+        thumbnail_url: 'https://picsum.photos/seed/sportnews-test-1/400/225',
+    },
+    {
+        id: 'test://sportnews/digest-article-1',
+        title: '[TEST] Real Madrid vô địch Champions League',
+        thumbnail_url: 'https://picsum.photos/seed/sportnews-test-2/400/225',
+    },
+    {
+        id: 'test://sportnews/digest-article-2',
+        title: '[TEST] Djokovic vào chung kết Australian Open',
+        thumbnail_url: 'https://picsum.photos/seed/sportnews-test-3/400/225',
+    },
+];
+
 function getIctParts(date = new Date()) {
     const formatter = new Intl.DateTimeFormat('en-US', {
         timeZone: notificationConfig.timezone,
@@ -160,12 +178,12 @@ function buildDigestPayload(articles, categoryId = 'featured') {
     };
 }
 
-function initFirebase() {
+function initFirebase({ skipEnabledCheck = false } = {}) {
     if (firebaseAdmin) {
         return firebaseAdmin;
     }
 
-    if (!notificationConfig.enabled) {
+    if (!skipEnabledCheck && !notificationConfig.enabled) {
         return null;
     }
 
@@ -190,8 +208,8 @@ function initFirebase() {
     }
 }
 
-async function sendToToken(token, payload) {
-    const admin = initFirebase();
+async function sendToToken(token, payload, { skipEnabledCheck = false } = {}) {
+    const admin = initFirebase({ skipEnabledCheck });
     if (!admin) {
         return { success: false, skipped: true, reason: 'firebase_not_ready' };
     }
@@ -207,8 +225,8 @@ async function sendToToken(token, payload) {
     return { success: true, response };
 }
 
-async function sendToTopic(topic, payload) {
-    const admin = initFirebase();
+async function sendToTopic(topic, payload, { skipEnabledCheck = false } = {}) {
+    const admin = initFirebase({ skipEnabledCheck });
     if (!admin) {
         return { success: false, skipped: true, reason: 'firebase_not_ready' };
     }
@@ -353,6 +371,95 @@ async function notifyFeaturedNews(newArticles) {
     };
 }
 
+function getTestArticles(variant = 'single') {
+    if (variant === 'digest') {
+        return TEST_ARTICLES;
+    }
+
+    return [TEST_ARTICLES[0]];
+}
+
+function buildTestPayload({ variant = 'single', content = {} } = {}) {
+    const articles = getTestArticles(variant);
+    const payload = buildDigestPayload(articles);
+
+    if (content.title) {
+        payload.notification.title = content.title;
+    }
+
+    if (content.body) {
+        payload.notification.body = content.body;
+    }
+
+    if (content.image !== undefined) {
+        payload.notification.image = content.image || undefined;
+    }
+
+    if (content.highlight_id) {
+        payload.data.highlight_id = content.highlight_id;
+    }
+
+    if (content.click_action) {
+        payload.data.click_action = content.click_action;
+    }
+
+    if (content.article_count !== undefined) {
+        payload.data.article_count = String(content.article_count);
+    }
+
+    payload.data.is_test = 'true';
+    return payload;
+}
+
+async function sendTestNotification({
+    target,
+    fcmToken = null,
+    topic = null,
+    variant = 'single',
+    content = {},
+}) {
+    const payload = buildTestPayload({ variant, content });
+
+    let result;
+    let sentTo;
+
+    if (target === 'token') {
+        if (!fcmToken) {
+            return { success: false, error: 'missing_fcm_token' };
+        }
+
+        result = await sendToToken(fcmToken, payload, { skipEnabledCheck: true });
+        sentTo = { type: 'token' };
+    } else if (target === 'topic') {
+        const resolvedTopic = topic || notificationConfig.topics.featured;
+        result = await sendToTopic(resolvedTopic, payload, { skipEnabledCheck: true });
+        sentTo = { type: 'topic', topic: resolvedTopic };
+    } else {
+        return { success: false, error: 'invalid_target' };
+    }
+
+    if (!result.success) {
+        const reasonMessages = {
+            firebase_not_ready: 'Chưa cấu hình FCM_SERVICE_ACCOUNT_JSON hoặc Firebase Admin SDK lỗi.',
+        };
+
+        return {
+            success: false,
+            error: result.reason || 'send_failed',
+            message: reasonMessages[result.reason] || 'Không gửi được thông báo test.',
+            sent_to: sentTo,
+            payload,
+        };
+    }
+
+    return {
+        success: true,
+        message_id: result.response,
+        sent_to: sentTo,
+        payload,
+    };
+}
+
 function getPublicSettings() {
     return {
         enabled: notificationConfig.enabled,
@@ -378,6 +485,7 @@ module.exports = {
     canSendNow,
     getDeviceMaxPerDay,
     buildDigestPayload,
+    sendTestNotification,
     notifyFeaturedNews,
     getPublicSettings,
 };

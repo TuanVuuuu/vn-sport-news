@@ -16,7 +16,10 @@ const {
     updateDevicePreferences,
     removeDevice,
 } = require('./src/utils/devicesStore');
-const { getPublicSettings } = require('./src/services/notificationService');
+const {
+    getPublicSettings,
+    sendTestNotification,
+} = require('./src/services/notificationService');
 const packageInfo = require('./package.json');
 
 const app = express();
@@ -270,6 +273,96 @@ app.get('/api/categories', (req, res) => {
  */
 app.get('/api/notifications/settings', (req, res) => {
     return res.json(successResponse({ data: getPublicSettings() }));
+});
+
+function isTestNotificationAuthorized(req) {
+    const testSecret = process.env.FCM_TEST_SECRET;
+    if (!testSecret) {
+        return true;
+    }
+
+    const provided = req.get('X-FCM-Test-Secret') || req.body?.secret;
+    return provided === testSecret;
+}
+
+/**
+ * POST /api/notifications/test
+ * Gửi push notification test tới token hoặc topic FCM.
+ * Body: { target: 'token'|'topic', fcm_token?, topic?, variant?: 'single'|'digest', content?: { title?, body?, image?, highlight_id?, click_action?, article_count? }, secret? }
+ * Header (tuỳ chọn): X-FCM-Test-Secret — bắt buộc nếu server có FCM_TEST_SECRET.
+ */
+app.post('/api/notifications/test', async (req, res) => {
+    if (!isTestNotificationAuthorized(req)) {
+        return res.json(errorResponse('Không có quyền gửi thông báo test. Cần header X-FCM-Test-Secret hợp lệ.'));
+    }
+
+    const body = req.body || {};
+    const variant = body.variant === 'digest' ? 'digest' : 'single';
+    let target = body.target;
+    let fcmToken = body.fcm_token || null;
+    const topic = body.topic || null;
+
+    if (!target) {
+        if (fcmToken) {
+            target = 'token';
+        } else if (body.device_id) {
+            target = 'token';
+        } else {
+            target = 'topic';
+        }
+    }
+
+    if (body.device_id) {
+        try {
+            const device = await getDeviceById(body.device_id);
+            if (!device) {
+                return res.json(errorResponse('Không tìm thấy thiết bị. Hãy gọi POST /api/devices/register trước.'));
+            }
+
+            if (!device.fcm_token) {
+                return res.json(errorResponse('Thiết bị chưa có fcm_token.'));
+            }
+
+            fcmToken = device.fcm_token;
+            target = 'token';
+        } catch (error) {
+            console.error('[notifications/test] Lỗi đọc thiết bị:', error.message);
+            return res.json(errorResponse('Không đọc được dữ liệu thiết bị từ repo data.'));
+        }
+    }
+
+    if (target === 'token' && !fcmToken) {
+        return res.json(errorResponse('Thiếu fcm_token hoặc device_id hợp lệ.'));
+    }
+
+    try {
+        const content = body.content && typeof body.content === 'object' ? body.content : {};
+
+        const result = await sendTestNotification({
+            target,
+            fcmToken,
+            topic,
+            variant,
+            content,
+        });
+
+        if (!result.success) {
+            return res.json(errorResponse(result.message || 'Không gửi được thông báo test.'));
+        }
+
+        return res.json(successResponse({
+            data: {
+                message: 'Đã gửi thông báo test.',
+                message_id: result.message_id,
+                sent_to: result.sent_to,
+                variant,
+                payload: result.payload,
+            },
+        }));
+    } catch (error) {
+        console.error('[notifications/test] Lỗi gửi FCM:', error.message);
+        return res.json(errorResponse(`Lỗi gửi FCM: ${error.message}`));
+    }
 });
 
 /**

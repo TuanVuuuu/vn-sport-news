@@ -1,57 +1,47 @@
 # Hướng dẫn tích hợp FCM cho Mobile
 
-> Tài liệu dành cho team mobile (Flutter / React Native / native). Mô tả cách gọi API, ý nghĩa từng endpoint và luồng tích hợp push notification tin nổi bật.
+> Tài liệu dành cho team mobile (Flutter / React Native / native). Chỉ mô tả những gì app cần gọi, nhận và xử lý.
 
 ---
 
 ## 1. Tổng quan
 
-SportNews gửi push notification khi có **tin nổi bật mới** (`category: featured`). Backend hỗ trợ **hai cách nhận thông báo**:
+App nhận push khi có **tin nổi bật mới**. Có hai cách:
 
-| Cách | Mô tả | Khi nào dùng |
-|---|---|---|
-| **FCM Topic** | App subscribe topic `sn-featured` | MVP đơn giản, không cần gọi API |
-| **Đăng ký thiết bị qua API** | App gửi `device_id` + `fcm_token` lên server | Cần bật/tắt, giới hạn tần suất theo từng thiết bị |
-
-**Khuyến nghị:** Dùng **API đăng ký thiết bị** để user có thể tùy chỉnh `max_per_day` và `enabled`. Nếu chưa có màn cài đặt, có thể chỉ subscribe topic `sn-featured` qua FCM SDK.
-
-### Giới hạn mặc định
-
-- Tối đa **3 thông báo/ngày**, rải **sáng – trưa – tối** (giờ Việt Nam, ICT)
-- Nhiều bài mới trong 1 lần crawl → gộp thành **1 thông báo digest**
-- Bài mới ngoài khung giờ → giữ pending, gửi ở khung kế tiếp
-
-| `max_per_day` | Khung giờ được gửi |
+| Cách | App cần làm |
 |---|---|
-| 1 | Tối (17h–22h) |
-| 2 | Sáng (6h–11h) + Tối |
-| 3 | Sáng + Trưa (11h–17h) + Tối |
+| **FCM Topic** | `subscribeToTopic('sn-featured')` — không cần gọi API |
+| **Đăng ký thiết bị** | Gọi `POST /api/devices/register` với `device_id` + `fcm_token` |
+
+**Khuyến nghị:** Dùng **API đăng ký** nếu có màn cài đặt (bật/tắt, chọn tần suất). Chưa có màn cài đặt thì chỉ subscribe topic.
+
+### Tần suất (hiển thị trên UI)
+
+User chọn `max_per_day` từ 1–3. Dùng bảng sau để giải thích trên màn cài đặt (label khung giờ lấy từ `GET /api/notifications/settings` → `time_slots`):
+
+| `max_per_day` | Ý nghĩa với user |
+|---|---|
+| 1 | Tối đa 1 thông báo/ngày (khung tối) |
+| 2 | Tối đa 2 thông báo/ngày (sáng + tối) |
+| 3 | Tối đa 3 thông báo/ngày (sáng + trưa + tối) |
 
 ---
 
 ## 2. Quy ước response API
 
-Tất cả API trả **HTTP 200**. Mobile kiểm tra field `status`:
+Tất cả API trả **HTTP 200**. Kiểm tra field `status`:
 
 ```json
 // Thành công
-{
-  "status": 1,
-  "body": { "data": { ... } }
-}
+{ "status": 1, "body": { "data": { ... } } }
 
-// Lỗi nghiệp vụ
-{
-  "status": 0,
-  "body": { "message": "Mô tả lỗi" }
-}
+// Lỗi
+{ "status": 0, "body": { "message": "Mô tả lỗi" } }
 ```
 
 **Base URL:** `http://localhost:3005` (dev) — thay bằng URL production khi deploy.
 
-**Headers:** `Content-Type: application/json` cho các request có body.
-
-**Lưu trữ thiết bị:** API server ghi `devices.json` lên repo data GitHub tại `notifications/devices.json` ([vn-sport-news-data](https://github.com/TuanVuuuu/vn-sport-news-data/blob/main/notifications/devices.json)). Crawler đọc cùng file này khi gửi push — mỗi thiết bị có `max_per_day` / `enabled` riêng hoạt động đúng trên production.
+**Headers:** `Content-Type: application/json` cho request có body.
 
 ---
 
@@ -59,13 +49,7 @@ Tất cả API trả **HTTP 200**. Mobile kiểm tra field `status`:
 
 ### 3.1 `GET /api/notifications/settings`
 
-**Mục đích:** Lấy cấu hình hệ thống để hiển thị UI cài đặt (khung giờ, giới hạn mặc định, topic FCM).
-
-**Khi gọi:**
-- Mở màn hình **Cài đặt thông báo** lần đầu
-- Cần hiển thị label khung giờ (Sáng / Trưa / Tối) cho user
-
-**Request:** Không có body, không có query param.
+Lấy cấu hình để vẽ màn **Cài đặt thông báo** (khung giờ, giới hạn, topic FCM).
 
 **Response mẫu:**
 
@@ -96,27 +80,22 @@ Tất cả API trả **HTTP 200**. Mobile kiểm tra field `status`:
 }
 ```
 
-**Ý nghĩa các field:**
-
-| Field | Ý nghĩa |
+| Field | Dùng trên app |
 |---|---|
-| `enabled` | Server có đang bật gửi FCM không (`FCM_ENABLED`) |
-| `defaults.maxPerDay` | Số thông báo/ngày mặc định khi user chưa tùy chỉnh |
-| `limits.max_per_day` | Giới hạn tối đa server cho phép (1–3) |
-| `time_slots` | Khung giờ ICT — dùng để giải thích cho user |
-| `topic` | Topic FCM mặc định (`sn-featured`) — dùng nếu subscribe topic |
+| `defaults.maxPerDay` | Giá trị mặc định khi user chưa tùy chỉnh |
+| `limits.max_per_day` | Giới hạn tối đa cho phép chọn (1–3) |
+| `time_slots` | Label khung giờ hiển thị cho user |
+| `topic` | Tên topic FCM nếu dùng subscribe topic |
 
 ---
 
 ### 3.2 `POST /api/devices/register`
 
-**Mục đích:** Đăng ký hoặc cập nhật thiết bị với FCM token và preferences. Server sẽ gửi push **trực tiếp tới token** thay vì chỉ qua topic.
+Đăng ký hoặc cập nhật thiết bị. Gọi khi:
 
-**Khi gọi:**
-- App khởi động lần đầu (sau khi có FCM token)
-- FCM token refresh (Firebase gọi `onTokenRefresh`)
-- User bật thông báo sau khi từng tắt
-- Đổi `device_id` (reinstall app) — gọi lại với token mới
+- Có FCM token lần đầu
+- Token refresh (`onTokenRefresh`)
+- User bật lại thông báo
 
 **Request body:**
 
@@ -135,184 +114,58 @@ Tất cả API trả **HTTP 200**. Mobile kiểm tra field `status`:
 
 | Field | Bắt buộc | Mô tả |
 |---|---|---|
-| `device_id` | Có | UUID cố định do app tạo và lưu local (SharedPreferences / Keychain) |
-| `fcm_token` | Có | Token từ `FirebaseMessaging.instance.getToken()` |
-| `platform` | Không | `"android"` hoặc `"ios"` — mặc định `"unknown"` |
-| `preferences.enabled` | Không | `true` = nhận thông báo, `false` = tắt. Mặc định `true` |
-| `preferences.max_per_day` | Không | 1, 2 hoặc 3. Mặc định `3` |
-| `preferences.categories` | Không | Hiện chỉ hỗ trợ `["featured"]` |
+| `device_id` | Có | UUID cố định, lưu local (SharedPreferences / Keychain) |
+| `fcm_token` | Có | `FirebaseMessaging.instance.getToken()` |
+| `platform` | Không | `"android"` hoặc `"ios"` |
+| `preferences.enabled` | Không | `true` = nhận push. Mặc định `true` |
+| `preferences.max_per_day` | Không | `1`, `2` hoặc `3`. Mặc định `3` |
+| `preferences.categories` | Không | Hiện chỉ `["featured"]` |
 
-**Response mẫu:**
-
-```json
-{
-  "status": 1,
-  "body": {
-    "data": {
-      "device_id": "550e8400-e29b-41d4-a716-446655440000",
-      "fcm_token": "dGhpcyBpcyBhIGZha2UgdG9rZW4...",
-      "platform": "android",
-      "preferences": {
-        "enabled": true,
-        "max_per_day": 3,
-        "categories": ["featured"]
-      },
-      "created_at": "2026-06-06T10:00:00.000Z",
-      "updated_at": "2026-06-06T10:00:00.000Z"
-    }
-  }
-}
-```
-
-**Lỗi thường gặp:**
-
-```json
-{ "status": 0, "body": { "message": "Thiếu device_id hoặc fcm_token." } }
-```
-
-> **Lưu ý:** Gọi lại endpoint này với cùng `device_id` sẽ **cập nhật** (upsert), không tạo bản ghi trùng.
+Gọi lại cùng `device_id` sẽ **cập nhật** (upsert).
 
 ---
 
 ### 3.3 `GET /api/devices/:deviceId/preferences`
 
-**Mục đích:** Lấy cài đặt hiện tại của thiết bị từ server — đồng bộ UI khi user mở màn cài đặt.
-
-**Khi gọi:**
-- Mở màn **Cài đặt thông báo**
-- App reinstall nhưng giữ cùng `device_id` — khôi phục preferences
-
-**Request:** Thay `:deviceId` bằng UUID đã lưu local.
+Đồng bộ UI cài đặt từ server.
 
 ```
 GET /api/devices/550e8400-e29b-41d4-a716-446655440000/preferences
 ```
 
-**Response mẫu:**
-
-```json
-{
-  "status": 1,
-  "body": {
-    "data": {
-      "device_id": "550e8400-e29b-41d4-a716-446655440000",
-      "preferences": {
-        "enabled": true,
-        "max_per_day": 2,
-        "categories": ["featured"]
-      },
-      "updated_at": "2026-06-06T12:00:00.000Z"
-    }
-  }
-}
-```
-
-**Lỗi:**
-
-```json
-{ "status": 0, "body": { "message": "Không tìm thấy thiết bị." } }
-```
-
-→ Gọi `POST /api/devices/register` trước.
+Chưa register → lỗi `"Không tìm thấy thiết bị."` → gọi `POST /api/devices/register` trước.
 
 ---
 
 ### 3.4 `PUT /api/devices/:deviceId/preferences`
 
-**Mục đích:** Cập nhật một phần preferences — bật/tắt thông báo, đổi tần suất, đổi danh mục (phase sau).
-
-**Khi gọi:**
-- User bật/tắt toggle **Tin nổi bật**
-- User chọn tần suất (1 / 2 / 3 lần/ngày)
-- (Phase 2) User chọn thể loại muốn nhận
-
-**Request body** — chỉ gửi field cần thay đổi:
+Cập nhật một phần — chỉ gửi field thay đổi:
 
 ```json
-{
-  "enabled": false
-}
+{ "enabled": false }
 ```
 
 ```json
-{
-  "max_per_day": 1
-}
+{ "max_per_day": 1 }
 ```
 
-| Field | Kiểu | Mô tả |
-|---|---|---|
-| `enabled` | `boolean` | `true` = nhận push, `false` = server bỏ qua thiết bị này |
-| `max_per_day` | `number` | 1, 2 hoặc 3 — ảnh hưởng khung giờ được gửi (xem bảng mục 1) |
-| `categories` | `string[]` | Hiện chỉ `["featured"]`; phase 2 sẽ mở rộng |
-
-**Response mẫu:**
-
-```json
-{
-  "status": 1,
-  "body": {
-    "data": {
-      "device_id": "550e8400-e29b-41d4-a716-446655440000",
-      "preferences": {
-        "enabled": false,
-        "max_per_day": 3,
-        "categories": ["featured"]
-      },
-      "updated_at": "2026-06-06T14:00:00.000Z"
-    }
-  }
-}
-```
-
-**Lỗi:**
-
-```json
-{ "status": 0, "body": { "message": "Không tìm thấy thiết bị. Hãy gọi POST /api/devices/register trước." } }
-```
-
-```json
-{ "status": 0, "body": { "message": "max_per_day phải là số nguyên >= 1." } }
-```
+| Field | Mô tả |
+|---|---|
+| `enabled` | `true` = nhận push, `false` = tắt |
+| `max_per_day` | `1`, `2` hoặc `3` (xem bảng mục 1) |
+| `categories` | Hiện chỉ `["featured"]` |
 
 ---
 
 ### 3.5 `DELETE /api/devices/:deviceId`
 
-**Mục đích:** Xóa thiết bị khỏi server — server không còn gửi push tới token đó.
-
-**Khi gọi:**
-- User chọn **Tắt hoàn toàn thông báo** và xóa dữ liệu
-- Logout / xóa tài khoản (nếu có)
-- Uninstall cleanup (tuỳ chọn)
-
-**Request:**
+Xóa thiết bị khỏi server khi user tắt hoàn toàn thông báo.
 
 ```
 DELETE /api/devices/550e8400-e29b-41d4-a716-446655440000
 ```
 
-**Response mẫu:**
-
-```json
-{
-  "status": 1,
-  "body": {
-    "data": {
-      "device_id": "550e8400-e29b-41d4-a716-446655440000",
-      "removed": true
-    }
-  }
-}
-```
-
-**Lỗi:**
-
-```json
-{ "status": 0, "body": { "message": "Không tìm thấy thiết bị." } }
-```
-
-> Sau khi xóa, nên **unsubscribe** topic `sn-featured` phía FCM SDK nếu app đã subscribe.
+Sau khi xóa, **unsubscribe** topic `sn-featured` nếu app đã subscribe.
 
 ---
 
@@ -320,9 +173,7 @@ DELETE /api/devices/550e8400-e29b-41d4-a716-446655440000
 
 ### 4.1 Payload nhận được
 
-Khi user nhận push, FCM gửi kèm:
-
-**Notification (hiển thị trên tray):**
+**Notification (tray):**
 
 ```json
 {
@@ -332,7 +183,7 @@ Khi user nhận push, FCM gửi kèm:
 }
 ```
 
-**Data (xử lý logic app):**
+**Data (logic app):**
 
 ```json
 {
@@ -344,34 +195,33 @@ Khi user nhận push, FCM gửi kèm:
 }
 ```
 
-### 4.2 Xử lý khi user tap notification
+**Push test** thêm field `is_test: "true"` và `highlight_id` dạng `test://sportnews/...` — app nên mở màn debug thay vì bài thật.
+
+### 4.2 Tap notification
 
 | `click_action` | Hành vi app |
 |---|---|
-| `OPEN_ARTICLE` | Mở chi tiết bài viết có `id` = `highlight_id` |
-| `OPEN_CATEGORY` | (Phase 2) Mở danh sách category `category_id` |
+| `OPEN_ARTICLE` | Mở bài có `id` = `highlight_id` |
+| `OPEN_CATEGORY` | (Phase 2) Mở danh sách `category_id` |
 
-`highlight_id` trùng với `id` bài viết trong API `/api/news`.
+`highlight_id` trùng `id` bài viết trong API `/api/news`.
 
 ### 4.3 Subscribe topic (tuỳ chọn)
 
-Nếu **không** dùng API register, app cần subscribe topic khi user bật thông báo:
+Nếu không dùng API register:
 
 ```dart
-// Flutter
 await FirebaseMessaging.instance.subscribeToTopic('sn-featured');
+await FirebaseMessaging.instance.unsubscribeFromTopic('sn-featured'); // tắt
 ```
 
-```dart
-// Tắt thông báo
-await FirebaseMessaging.instance.unsubscribeFromTopic('sn-featured');
-```
+Topic name lấy từ `GET /api/notifications/settings` → `topic`.
 
-Topic name lấy từ `GET /api/notifications/settings` → field `topic`.
+**Android:** tạo notification channel `featured_news` (backend gửi kèm `channelId` này).
 
 ---
 
-## 5. Luồng tích hợp đề xuất
+## 5. Luồng tích hợp
 
 ```mermaid
 sequenceDiagram
@@ -383,82 +233,63 @@ sequenceDiagram
     App->>FCM: getToken()
     App->>API: GET /api/notifications/settings
     App->>API: POST /api/devices/register
-    Note over App,API: device_id + fcm_token + preferences
 
     loop Token refresh
         App->>FCM: onTokenRefresh
-        App->>API: POST /api/devices/register (cập nhật token)
+        App->>API: POST /api/devices/register
     end
 
-    Note over App: User mở Cài đặt thông báo
     App->>API: GET /api/devices/:id/preferences
-    App->>API: PUT /api/devices/:id/preferences (khi user đổi toggle)
+    App->>API: PUT /api/devices/:id/preferences
 
-    Note over FCM,App: Có tin nổi bật mới
     FCM->>App: Push notification + data
-    App->>App: Tap → OPEN_ARTICLE → mở bài highlight_id
+    App->>App: Tap → OPEN_ARTICLE → mở highlight_id
 ```
 
-### Checklist triển khai
+### Checklist
 
-- [ ] Tạo và lưu `device_id` (UUID) cố định trên thiết bị
-- [ ] Xin quyền notification **khi user bật tính năng**, không hỏi ngay khi mở app
-- [ ] Gọi `POST /api/devices/register` sau khi có FCM token
+- [ ] Tạo và lưu `device_id` (UUID) cố định
+- [ ] Xin quyền notification khi user **bật tính năng**
+- [ ] `POST /api/devices/register` sau khi có token
 - [ ] Lắng nghe token refresh → gọi lại register
-- [ ] Màn cài đặt: gọi `GET settings` + `GET preferences`, cập nhật bằng `PUT preferences`
-- [ ] Xử lý tap notification theo `click_action` và `highlight_id`
-- [ ] (Tuỳ chọn) Subscribe/unsubscribe topic `sn-featured` song song với API
+- [ ] Màn cài đặt: `GET settings` + `GET preferences`, cập nhật bằng `PUT preferences`
+- [ ] Xử lý tap theo `click_action` và `highlight_id`
+- [ ] Nhận diện `is_test === "true"` khi test push
+- [ ] (Tuỳ chọn) Subscribe/unsubscribe topic `sn-featured`
 
 ---
 
-## 6. Postman Collection
+## 6. Test push trên thiết bị
 
-Import file `docs/v1/postman_collection_fcm.json` vào Postman để test nhanh các endpoint.
+Nhờ backend/QA gọi `POST /api/notifications/test` (Postman: `docs/v1/postman_collection_fcm.json`).
 
-Biến collection:
+App cần chuẩn bị:
 
-| Biến | Mặc định | Mô tả |
-|---|---|---|
-| `baseUrl` | `http://localhost:3005` | URL API server |
-| `deviceId` | UUID mẫu | Thay bằng UUID thật |
-| `fcmToken` | placeholder | Thay bằng FCM token từ thiết bị |
+1. Đã register (`POST /api/devices/register`) hoặc subscribe topic `sn-featured`
+2. Xử lý payload có `data.is_test === "true"`
+
+Chi tiết endpoint và cấu hình server: [fcm-guild.md §9.2](./fcm-guild.md#92-api-gửi-push-test).
 
 ---
 
 ## 7. FAQ
 
 **Q: Dùng topic hay API register?**  
-A: API register cho phép server gửi theo token và tôn trọng `max_per_day` / `enabled` từng thiết bị. Topic đơn giản hơn nhưng mọi subscriber nhận cùng tần suất.
+A: API register cho phép user bật/tắt và chọn tần suất. Topic đơn giản hơn, không cần gọi API.
 
 **Q: `enabled: false` có cần unsubscribe topic không?**  
-A: Nên unsubscribe topic nếu đã subscribe — tránh nhận push qua topic khi server fallback.
-
-**Q: `max_per_day = 1` nghĩa là gì với user?**  
-A: Chỉ nhận tối đa 1 thông báo/ngày, trong khung **tối** (17h–22h ICT).
+A: Có — tránh vẫn nhận push qua topic khi đã tắt trên app.
 
 **Q: Notification không đến?**  
-A: Kiểm tra: quyền OS, `FCM_ENABLED` trên server, token còn hợp lệ, `preferences.enabled = true`, đang trong khung giờ cho phép.
+A: Kiểm tra: quyền OS, FCM token còn hợp lệ, đã register hoặc subscribe topic, `preferences.enabled = true`.
 
 **Q: Phase 2 có gì mới?**  
-A: Chọn thể loại (`categories`), topic `sn-cat-*`, tần suất realtime/digest. API `categories` trong preferences sẽ mở rộng — hiện chỉ `featured`.
+A: Chọn thể loại (`categories`), nhiều topic `sn-cat-*`. Hiện chỉ `featured`.
 
 ---
 
-## 8. Cấu hình server (Render)
+## 8. Tham khảo
 
-API server trên Render cần biến môi trường:
-
-| Biến | Bắt buộc | Mô tả |
-|---|---|---|
-| `DATA_REPO_TOKEN` | Có | GitHub PAT có quyền ghi repo `vn-sport-news-data` — dùng để lưu `devices.json` |
-
-**Không cần** trên Render: `FCM_SERVICE_ACCOUNT_JSON` (chỉ crawler trên GitHub Actions cần để gửi push).
-
----
-
-## 9. Tham khảo
-
-- Kế hoạch backend: [fcm-guild.md](./fcm-guild.md)
+- Backend (logic gửi, env, crawler): [fcm-guild.md](./fcm-guild.md)
 - Postman: [postman_collection_fcm.json](../v1/postman_collection_fcm.json)
-- Devices storage: [notifications/devices.json](https://github.com/TuanVuuuu/vn-sport-news-data/blob/main/notifications/devices.json)
 - [FCM Topic Messaging](https://firebase.google.com/docs/cloud-messaging/android/topic-messaging)
