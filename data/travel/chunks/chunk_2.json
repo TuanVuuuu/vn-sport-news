@@ -106,5 +106,41 @@
     "link": "https://vnexpress.net/11-hang-quan-moi-vao-danh-sach-michelin-ngon-gia-phai-chang-5081875.html",
     "published_at": "Sat, 06 Jun 2026 00:02:07 +0700",
     "createAt": "2026-06-05T17:02:07.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/dung-coc-tre-chong-do-ngoi-dinh-co-truoc-nguy-co-do-sap-5082353.html",
+    "category_id": "travel",
+    "category_name": "Du lịch",
+    "source": "VnExpress",
+    "title": "Dùng cọc tre chống đỡ ngôi đình cổ trước nguy cơ đổ sập",
+    "description": "Đình làng Bái Sơn - di tích lịch sử văn hóa niên đại hơn 100 năm, đang xuống cấp nặng với nhiều cột, kèo mục nát, dân làng phải dùng cọc tre chống đỡ tạm thời.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/06/05/4-1780641020-1783-1780641217.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=ysGvr8xmsNDo4JW7oZ7WuA",
+    "link": "https://vnexpress.net/dung-coc-tre-chong-do-ngoi-dinh-co-truoc-nguy-co-do-sap-5082353.html",
+    "published_at": "Sat, 06 Jun 2026 07:00:00 +0700",
+    "createAt": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/vinhomes-ra-mat-thuong-hieu-khach-san-sieu-sang-5082526.html",
+    "category_id": "travel",
+    "category_name": "Du lịch",
+    "source": "VnExpress",
+    "title": "Vinhomes ra mắt thương hiệu khách sạn siêu sang",
+    "description": "Vinpearl ra mắt Vinpearl Legendlux, thương hiệu khách sạn 6 sao nhằm nâng tầm vị thế Việt Nam trên bản đồ du lịch siêu sang toàn cầu.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/06/05/b2ae48fc6ec4ef9ab6d5-178066779-3158-4473-1780668470.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=wQE3A2oSfjaPcXIJibu-KQ",
+    "link": "https://vnexpress.net/vinhomes-ra-mat-thuong-hieu-khach-san-sieu-sang-5082526.html",
+    "published_at": "Sat, 06 Jun 2026 07:00:00 +0700",
+    "createAt": "2026-06-06T00:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/soi-cao-lau-hoi-an-co-mau-vang-nho-dau-5082022.html",
+    "category_id": "travel",
+    "category_name": "Du lịch",
+    "source": "VnExpress",
+    "title": "Sợi cao lầu Hội An có màu vàng nhờ đâu?",
+    "description": "Sợi cao lầu Hội An cần ba nguyên liệu chính là gạo, nước trong không có phèn và nước tro từ một loại cây.",
+    "thumbnail_url": "https://vcdn1-dulich.vnecdn.net/2026/06/04/caolau-1780563731-5902-1780563737.webp?w=1200&h=0&q=100&dpr=1&fit=crop&s=S4nf1Fk3VPtOmB4ehkSA3Q",
+    "link": "https://vnexpress.net/soi-cao-lau-hoi-an-co-mau-vang-nho-dau-5082022.html",
+    "published_at": "Sat, 06 Jun 2026 08:00:00 +0700",
+    "createAt": "2026-06-06T01:00:00.000Z"
   }
 ]
