@@ -1042,5 +1042,29 @@
     "link": "https://vnexpress.net/tinh-toan-cua-iran-khi-phong-ten-lua-uav-vao-kuwait-5082176.html",
     "published_at": "Sat, 06 Jun 2026 05:00:00 +0700",
     "createAt": "2026-06-05T22:00:00.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/ong-putin-bac-de-xuat-gap-ong-zelensky-5082577.html",
+    "category_id": "world",
+    "category_name": "Thế giới",
+    "source": "VnExpress",
+    "title": "Ông Putin bác đề xuất gặp ông Zelensky",
+    "description": "Tổng thống Putin bác bỏ khả năng sớm gặp Tổng thống Zelensky, một ngày sau khi lãnh đạo Ukraine kêu gọi hai bên gặp mặt trực tiếp để đàm phán.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/06/AP26149597102818-1780703248-9461-1780703432.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=fQhqri8Ri9nakx5U5sp0dw",
+    "link": "https://vnexpress.net/ong-putin-bac-de-xuat-gap-ong-zelensky-5082577.html",
+    "published_at": "Sat, 06 Jun 2026 07:00:03 +0700",
+    "createAt": "2026-06-06T00:00:03.000Z"
+  },
+  {
+    "id": "https://vnexpress.net/my-tap-kich-tram-radar-cua-iran-5082581.html",
+    "category_id": "world",
+    "category_name": "Thế giới",
+    "source": "VnExpress",
+    "title": "Mỹ tập kích trạm radar của Iran",
+    "description": "Quân đội Mỹ cho biết đã không kích vào các trạm radar của Iran, gọi đây là hành động \"tự vệ\" sau khi Tehran phóng 4 UAV về phía eo biển Hormuz.",
+    "thumbnail_url": "https://vcdn1-vnexpress.vnecdn.net/2026/06/06/anh1-1780705237-4566-1780705692.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=KOeOqQhuBcfYtc3vx2RekA",
+    "link": "https://vnexpress.net/my-tap-kich-tram-radar-cua-iran-5082581.html",
+    "published_at": "Sat, 06 Jun 2026 07:44:14 +0700",
+    "createAt": "2026-06-06T00:44:14.000Z"
   }
 ]
