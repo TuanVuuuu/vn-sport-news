@@ -1,8 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const categories = require('./src/config/categories');
+const notificationConfig = require('./src/config/notification');
 const { loadMetadata, getPaginatedItems, searchItems, searchItemsAllCategories } = require('./src/utils/fileHelper');
 const { getSearchSuggestionsForApi } = require('./src/utils/searchSuggestionHelper');
+const {
+    getDeviceById,
+    upsertDevice,
+    updateDevicePreferences,
+    removeDevice,
+} = require('./src/utils/notificationStore');
+const { getPublicSettings } = require('./src/services/notificationService');
 const packageInfo = require('./package.json');
 
 const app = express();
@@ -11,6 +19,7 @@ const HIDDEN_DISCOVER_CATEGORY_IDS = new Set(['featured', 'latest']);
 const HOME_CATEGORY_IDS = new Set(['featured', 'latest', 'sports']);
 
 app.use(cors());
+app.use(express.json());
 
 function getCategory(categoryId) {
     return categories.find(c => c.id === categoryId);
@@ -232,6 +241,115 @@ app.get('/api/categories', (req, res) => {
         : categories;
     const result = sourceCategories.map(c => ({ id: c.id, name: c.name }));
     return res.json(successResponse({ data: result }));
+});
+
+/**
+ * GET /api/notifications/settings
+ * Trả về cấu hình mặc định: số lần/ngày, khung giờ sáng-trưa-tối, timezone.
+ */
+app.get('/api/notifications/settings', (req, res) => {
+    return res.json(successResponse({ data: getPublicSettings() }));
+});
+
+/**
+ * POST /api/devices/register
+ * Body: { device_id, fcm_token, platform?, preferences? }
+ */
+app.post('/api/devices/register', (req, res) => {
+    const { device_id: deviceId, fcm_token: fcmToken, platform, preferences } = req.body || {};
+
+    if (!deviceId || !fcmToken) {
+        return res.json(errorResponse('Thiếu device_id hoặc fcm_token.'));
+    }
+
+    const maxPerDay = parseInt(preferences?.max_per_day, 10);
+    const normalizedMaxPerDay = !Number.isNaN(maxPerDay) && maxPerDay > 0
+        ? Math.min(maxPerDay, notificationConfig.timeSlots.length)
+        : notificationConfig.defaults.maxPerDay;
+
+    const device = upsertDevice({
+        device_id: deviceId,
+        fcm_token: fcmToken,
+        platform: platform || 'unknown',
+        preferences: {
+            enabled: preferences?.enabled !== false,
+            max_per_day: normalizedMaxPerDay,
+            categories: Array.isArray(preferences?.categories) && preferences.categories.length > 0
+                ? preferences.categories
+                : notificationConfig.defaults.categories,
+        },
+    });
+
+    return res.json(successResponse({ data: device }));
+});
+
+/**
+ * GET /api/devices/:deviceId/preferences
+ */
+app.get('/api/devices/:deviceId/preferences', (req, res) => {
+    const device = getDeviceById(req.params.deviceId);
+    if (!device) {
+        return res.json(errorResponse('Không tìm thấy thiết bị.'));
+    }
+
+    return res.json(successResponse({
+        data: {
+            device_id: device.device_id,
+            preferences: device.preferences,
+            updated_at: device.updated_at,
+        },
+    }));
+});
+
+/**
+ * PUT /api/devices/:deviceId/preferences
+ * Body: { enabled?, max_per_day?, categories? }
+ */
+app.put('/api/devices/:deviceId/preferences', (req, res) => {
+    const device = getDeviceById(req.params.deviceId);
+    if (!device) {
+        return res.json(errorResponse('Không tìm thấy thiết bị. Hãy gọi POST /api/devices/register trước.'));
+    }
+
+    const body = req.body || {};
+    const nextPreferences = { ...device.preferences };
+
+    if (typeof body.enabled === 'boolean') {
+        nextPreferences.enabled = body.enabled;
+    }
+
+    if (body.max_per_day !== undefined) {
+        const maxPerDay = parseInt(body.max_per_day, 10);
+        if (Number.isNaN(maxPerDay) || maxPerDay < 1) {
+            return res.json(errorResponse('max_per_day phải là số nguyên >= 1.'));
+        }
+        nextPreferences.max_per_day = Math.min(maxPerDay, notificationConfig.timeSlots.length);
+    }
+
+    if (Array.isArray(body.categories)) {
+        nextPreferences.categories = body.categories;
+    }
+
+    const updated = updateDevicePreferences(req.params.deviceId, nextPreferences);
+    return res.json(successResponse({
+        data: {
+            device_id: updated.device_id,
+            preferences: updated.preferences,
+            updated_at: updated.updated_at,
+        },
+    }));
+});
+
+/**
+ * DELETE /api/devices/:deviceId
+ */
+app.delete('/api/devices/:deviceId', (req, res) => {
+    const removed = removeDevice(req.params.deviceId);
+    if (!removed) {
+        return res.json(errorResponse('Không tìm thấy thiết bị.'));
+    }
+
+    return res.json(successResponse({ data: { device_id: req.params.deviceId, removed: true } }));
 });
 
 app.listen(port, () => {

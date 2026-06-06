@@ -4,22 +4,30 @@ on:
   push:
     branches:
       - main
-  # Cho phép kích hoạt thủ công từ tab Actions
   workflow_dispatch:
 
 concurrency:
   group: rss-auto-crawler-${{ github.ref }}
   cancel-in-progress: false
 
+env:
+  DATA_REPO_OWNER: TuanVuuuu
+  DATA_REPO_NAME: vn-sport-news-data
+
 jobs:
   crawl-and-commit:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Cấp quyền cho GITHUB_TOKEN để push code
 
     steps:
       - name: Checkout mã nguồn
         uses: actions/checkout@v4
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.DATA_REPO_OWNER }}/${{ env.DATA_REPO_NAME }}
+          path: data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
 
       - name: Cài đặt Node.js
         uses: actions/setup-node@v4
@@ -31,12 +39,19 @@ jobs:
         run: npm install
 
       - name: Chạy Crawler cập nhật dữ liệu
+        env:
+          FCM_ENABLED: ${{ secrets.FCM_ENABLED }}
+          FCM_SERVICE_ACCOUNT_JSON: ${{ secrets.FCM_SERVICE_ACCOUNT_JSON }}
+          FCM_MAX_PER_DAY: ${{ secrets.FCM_MAX_PER_DAY }}
         run: node src/index.js
 
       - name: Commit và Push dữ liệu mới
+        working-directory: data
+        env:
+          DATA_REPO_TOKEN: ${{ secrets.DATA_REPO_TOKEN }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          # Nếu có thay đổi (bài viết mới) thì mới commit và push
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update articles and search suggestions [skip ci]" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${DATA_REPO_TOKEN}@github.com/${{ env.DATA_REPO_OWNER }}/${{ env.DATA_REPO_NAME }}.git
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update data [skip ci]" && git push)

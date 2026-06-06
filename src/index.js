@@ -1,7 +1,9 @@
 const categories = require('./config/categories');
+const notificationConfig = require('./config/notification');
 const { fetchRSS } = require('./services/rssService');
 const { parseRSS } = require('./services/parseService');
 const { crawlSearchSuggestions } = require('./services/keywordCrawlerService');
+const { notifyFeaturedNews } = require('./services/notificationService');
 const {
     ensureDirs,
     loadMetadata,
@@ -45,6 +47,14 @@ async function crawlCategory(category) {
     saveMetadata(id, metadata);
 
     console.log(`[${name}] Đã thêm ${itemsToAdd.length} bài mới. Tổng: ${metadata.total_articles} bài trong ${metadata.files.length} chunks.`);
+
+    if (notificationConfig.notifiableCategories.includes(id)) {
+        try {
+            await notifyFeaturedNews(itemsToAdd);
+        } catch (err) {
+            console.error(`[${name}] Lỗi gửi thông báo:`, err.message);
+        }
+    }
 }
 
 /**

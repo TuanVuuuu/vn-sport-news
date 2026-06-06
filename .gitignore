@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.*
+
+# Dữ liệu lưu ở repo riêng: TuanVuuuu/vn-sport-news-data
+data/
