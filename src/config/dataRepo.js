@@ -9,4 +9,7 @@ module.exports = {
     get url() {
         return `https://github.com/${this.owner}/${this.repo}.git`;
     },
+    get rawBaseUrl() {
+        return `https://raw.githubusercontent.com/${this.owner}/${this.repo}/${this.branch}`;
+    },
 };

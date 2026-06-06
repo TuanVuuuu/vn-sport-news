@@ -461,4 +461,8 @@ module.exports = {
     getPaginatedItems,
     searchItems,
     searchItemsAllCategories,
+    formatArticle,
+    matchesSearchFilters,
+    paginateSearchResults,
+    getCreateAt,
 };

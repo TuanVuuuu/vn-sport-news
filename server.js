@@ -2,8 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const categories = require('./src/config/categories');
 const notificationConfig = require('./src/config/notification');
-const { loadMetadata, getPaginatedItems, searchItems, searchItemsAllCategories } = require('./src/utils/fileHelper');
+const {
+    loadMetadata,
+    getPaginatedItems,
+    searchItems,
+    searchItemsAllCategories,
+} = require('./src/utils/apiDataHelper');
 const { getSearchSuggestionsForApi } = require('./src/utils/searchSuggestionHelper');
+const dataRepo = require('./src/config/dataRepo');
 const {
     getDeviceById,
     upsertDevice,
@@ -38,16 +44,10 @@ function parseDateFilter(value) {
     return Number.isNaN(parsed) ? null : parsed;
 }
 
-function getDiscoverCategory(category) {
-    const metadata = loadMetadata(category.id);
+async function getDiscoverCategory(category) {
+    const metadata = await loadMetadata(category.id);
     const latestResult = metadata && metadata.total_articles > 0
-        ? searchItems(category.id, metadata, {
-            link: null,
-            published_at: null,
-            day: null,
-            month: null,
-            year: null,
-        }, 0, 10)
+        ? await getPaginatedItems(category.id, metadata, 1, 10)
         : { data: [] };
 
     return {
@@ -95,32 +95,37 @@ function errorResponse(message) {
  * Always HTTP 200. Returns { status: 1, body: { data, pagination } } on success,
  * or { status: 0, body: { message } } on error.
  */
-app.get('/api/news', (req, res) => {
-    const categoryId = req.query.category || categories[0].id;
-    const page = Math.max(1, parseInt(req.query.page) || 1);
-    const requestedLimit = parseInt(req.query.limit) || 20;
+app.get('/api/news', async (req, res) => {
+    try {
+        const categoryId = req.query.category || categories[0].id;
+        const page = Math.max(1, parseInt(req.query.page) || 1);
+        const requestedLimit = parseInt(req.query.limit) || 20;
 
-    const limitError = validateLimit(requestedLimit);
-    if (limitError) {
-        return res.json(errorResponse(limitError));
+        const limitError = validateLimit(requestedLimit);
+        if (limitError) {
+            return res.json(errorResponse(limitError));
+        }
+        const limit = requestedLimit;
+
+        const category = getCategory(categoryId);
+        if (!category) {
+            return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+        }
+
+        const metadata = await loadMetadata(categoryId);
+        if (!metadata || metadata.total_articles === 0) {
+            return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
+        }
+
+        const result = await getPaginatedItems(categoryId, metadata, page, limit);
+        return res.json(successResponse({
+            data: result.data,
+            pagination: result.pagination,
+        }));
+    } catch (error) {
+        console.error('[API] /api/news:', error.message);
+        return res.json(errorResponse('Không thể tải dữ liệu từ data repo.'));
     }
-    const limit = requestedLimit;
-
-    const category = getCategory(categoryId);
-    if (!category) {
-        return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
-    }
-
-    const metadata = loadMetadata(categoryId);
-    if (!metadata || metadata.total_articles === 0) {
-        return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
-    }
-
-    const result = getPaginatedItems(categoryId, metadata, page, limit);
-    return res.json(successResponse({
-        data: result.data,
-        pagination: result.pagination
-    }));
 });
 
 /**
@@ -134,49 +139,54 @@ app.get('/api/news', (req, res) => {
  *   - page:         zero-based page number (default 0)
  *   - size:         items per page (default 20, max 100)
  */
-app.get('/api/news/search', (req, res) => {
-    const categoryId = req.query.category;
-    const page = Math.max(0, parseInt(req.query.page) || 0);
-    const requestedSize = Math.max(1, parseInt(req.query.size || req.query.limit) || 20);
+app.get('/api/news/search', async (req, res) => {
+    try {
+        const categoryId = req.query.category;
+        const page = Math.max(0, parseInt(req.query.page) || 0);
+        const requestedSize = Math.max(1, parseInt(req.query.size || req.query.limit) || 20);
 
-    const sizeError = validateLimit(requestedSize);
-    if (sizeError) {
-        return res.json(errorResponse(sizeError.replace('"limit"', '"size"')));
-    }
-    const size = requestedSize;
+        const sizeError = validateLimit(requestedSize);
+        if (sizeError) {
+            return res.json(errorResponse(sizeError.replace('"limit"', '"size"')));
+        }
+        const size = requestedSize;
 
-    const filters = {
-        text: req.query.text,
-        link: req.query.link,
-        published_at: req.query.published_at,
-        day: parseDateFilter(req.query.day),
-        month: parseDateFilter(req.query.month),
-        year: parseDateFilter(req.query.year),
-    };
+        const filters = {
+            text: req.query.text,
+            link: req.query.link,
+            published_at: req.query.published_at,
+            day: parseDateFilter(req.query.day),
+            month: parseDateFilter(req.query.month),
+            year: parseDateFilter(req.query.year),
+        };
 
-    if (categoryId) {
-        const category = getCategory(categoryId);
-        if (!category) {
-            return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+        if (categoryId) {
+            const category = getCategory(categoryId);
+            if (!category) {
+                return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+            }
+
+            const metadata = await loadMetadata(categoryId);
+            if (!metadata || metadata.total_articles === 0) {
+                return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
+            }
+
+            const result = await searchItems(categoryId, metadata, filters, page, size);
+            return res.json(successResponse({
+                data: result.data,
+                pagination: result.pagination,
+            }));
         }
 
-        const metadata = loadMetadata(categoryId);
-        if (!metadata || metadata.total_articles === 0) {
-            return res.json(errorResponse('Chưa có dữ liệu. Crawler có thể chưa chạy lần nào.'));
-        }
-
-        const result = searchItems(categoryId, metadata, filters, page, size);
+        const result = await searchItemsAllCategories(categories, filters, page, size);
         return res.json(successResponse({
             data: result.data,
             pagination: result.pagination,
         }));
+    } catch (error) {
+        console.error('[API] /api/news/search:', error.message);
+        return res.json(errorResponse('Không thể tải dữ liệu từ data repo.'));
     }
-
-    const result = searchItemsAllCategories(categories, filters, page, size);
-    return res.json(successResponse({
-        data: result.data,
-        pagination: result.pagination,
-    }));
 });
 
 /**
@@ -186,24 +196,34 @@ app.get('/api/news/search', (req, res) => {
  *
  * Trả về từ khóa crawl từ VnExpress, bù bằng defaultSearchSuggestions nếu thiếu.
  */
-app.get('/api/search/suggestions', (req, res) => {
-    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 10));
-    const result = getSearchSuggestionsForApi(limit);
-    return res.json(successResponse({
-        data: result.data,
-        meta: result.meta,
-    }));
+app.get('/api/search/suggestions', async (req, res) => {
+    try {
+        const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 10));
+        const result = await getSearchSuggestionsForApi(limit);
+        return res.json(successResponse({
+            data: result.data,
+            meta: result.meta,
+        }));
+    } catch (error) {
+        console.error('[API] /api/search/suggestions:', error.message);
+        return res.json(errorResponse('Không thể tải gợi ý search từ data repo.'));
+    }
 });
 
 /**
  * GET /api/discover
  * Returns all categories with category info and 10 latest articles for each category.
  */
-app.get('/api/discover', (req, res) => {
-    const result = categories
-        .filter(category => !HIDDEN_DISCOVER_CATEGORY_IDS.has(category.id))
-        .map(getDiscoverCategory);
-    return res.json(successResponse({ data: result }));
+app.get('/api/discover', async (req, res) => {
+    try {
+        const visibleCategories = categories
+            .filter(category => !HIDDEN_DISCOVER_CATEGORY_IDS.has(category.id));
+        const result = await Promise.all(visibleCategories.map(getDiscoverCategory));
+        return res.json(successResponse({ data: result }));
+    } catch (error) {
+        console.error('[API] /api/discover:', error.message);
+        return res.json(errorResponse('Không thể tải dữ liệu từ data repo.'));
+    }
 });
 
 /**
@@ -224,6 +244,7 @@ app.get('/api/ping', (req, res) => {
             platform: process.platform,
             arch: process.arch,
             memory: getMemoryUsage(),
+            data_source: dataRepo.rawBaseUrl,
         },
     }));
 });

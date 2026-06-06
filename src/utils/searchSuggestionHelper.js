@@ -3,6 +3,7 @@ const path = require('path');
 const categories = require('../config/categories');
 const { defaultSearchSuggestions } = require('../config/searchSuggestions');
 const { loadMetadata, searchItems } = require('./fileHelper');
+const { loadSearchSuggestions: loadSearchSuggestionsRemote } = require('./apiDataHelper');
 
 const SUGGESTIONS_FILE = path.join(__dirname, '../../data/search_suggestions.json');
 
@@ -150,8 +151,8 @@ function getDefaultSuggestions() {
  * @param {number} limit
  * @returns {{ data: Array, meta: object }}
  */
-function getSearchSuggestionsForApi(limit) {
-    const crawled = loadSearchSuggestions();
+async function getSearchSuggestionsForApi(limit) {
+    const crawled = await loadSearchSuggestionsRemote();
     const seen = new Set();
     const data = [];
 
