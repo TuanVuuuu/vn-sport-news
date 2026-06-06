@@ -170,15 +170,19 @@ function getSearchableArticleText(item) {
  */
 function formatArticle(item, categoryId, metadata = {}) {
     const category = getCategoryInfo(categoryId);
-    const channelSource = metadata.channel
-        ? (metadata.channel.generator || metadata.channel.description || '')
+    const channel = metadata.channel || null;
+    const channelSource = channel
+        ? (channel.generator || channel.copyright || '')
         : '';
+    const source = channel?.copyright && !channel?.generator
+        ? (channel.copyright || item.source || '')
+        : (item.source || channelSource || '');
 
     return {
         ...item,
         category_id: item.category_id || category.id,
         category_name: item.category_name || category.name,
-        source: channelSource || item.source || '',
+        source,
         createAt: getCreateAt(item),
     };
 }

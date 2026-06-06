@@ -6,7 +6,7 @@
  *
  * source.scope:
  *   - 'channel': lấy source từ metadata channel (vd. VnExpress → generator)
- *   - 'item':    lấy source từ từng item (vd. Thể Thao 247 → dc:creator)
+ *   - 'item':    lấy source từ từng item (vd. dc:creator)
  *
  * source.fields / fallbackFields:
  *   Danh sách field thử lần lượt. Hỗ trợ:
@@ -35,9 +35,9 @@ const rssProviders = {
         id: 'thethao247',
         name: 'Thể Thao 247',
         source: {
-            scope: 'item',
-            fields: ['dc:creator'],
-            fallbackFields: ['copyright', 'title'],
+            scope: 'channel',
+            fields: ['copyright'],
+            fallbackFields: ['title'],
         },
         thumbnail: {
             fields: ['enclosure.url', 'description.img'],
