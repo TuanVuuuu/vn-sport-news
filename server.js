@@ -15,7 +15,7 @@ const {
     upsertDevice,
     updateDevicePreferences,
     removeDevice,
-} = require('./src/utils/notificationStore');
+} = require('./src/utils/devicesStore');
 const { getPublicSettings } = require('./src/services/notificationService');
 const packageInfo = require('./package.json');
 
@@ -276,7 +276,7 @@ app.get('/api/notifications/settings', (req, res) => {
  * POST /api/devices/register
  * Body: { device_id, fcm_token, platform?, preferences? }
  */
-app.post('/api/devices/register', (req, res) => {
+app.post('/api/devices/register', async (req, res) => {
     const { device_id: deviceId, fcm_token: fcmToken, platform, preferences } = req.body || {};
 
     if (!deviceId || !fcmToken) {
@@ -288,89 +288,109 @@ app.post('/api/devices/register', (req, res) => {
         ? Math.min(maxPerDay, notificationConfig.timeSlots.length)
         : notificationConfig.defaults.maxPerDay;
 
-    const device = upsertDevice({
-        device_id: deviceId,
-        fcm_token: fcmToken,
-        platform: platform || 'unknown',
-        preferences: {
-            enabled: preferences?.enabled !== false,
-            max_per_day: normalizedMaxPerDay,
-            categories: Array.isArray(preferences?.categories) && preferences.categories.length > 0
-                ? preferences.categories
-                : notificationConfig.defaults.categories,
-        },
-    });
+    try {
+        const device = await upsertDevice({
+            device_id: deviceId,
+            fcm_token: fcmToken,
+            platform: platform || 'unknown',
+            preferences: {
+                enabled: preferences?.enabled !== false,
+                max_per_day: normalizedMaxPerDay,
+                categories: Array.isArray(preferences?.categories) && preferences.categories.length > 0
+                    ? preferences.categories
+                    : notificationConfig.defaults.categories,
+            },
+        });
 
-    return res.json(successResponse({ data: device }));
+        return res.json(successResponse({ data: device }));
+    } catch (error) {
+        console.error('[devices] Lỗi register:', error.message);
+        return res.json(errorResponse('Không lưu được thiết bị lên repo data.'));
+    }
 });
 
 /**
  * GET /api/devices/:deviceId/preferences
  */
-app.get('/api/devices/:deviceId/preferences', (req, res) => {
-    const device = getDeviceById(req.params.deviceId);
-    if (!device) {
-        return res.json(errorResponse('Không tìm thấy thiết bị.'));
-    }
+app.get('/api/devices/:deviceId/preferences', async (req, res) => {
+    try {
+        const device = await getDeviceById(req.params.deviceId);
+        if (!device) {
+            return res.json(errorResponse('Không tìm thấy thiết bị.'));
+        }
 
-    return res.json(successResponse({
-        data: {
-            device_id: device.device_id,
-            preferences: device.preferences,
-            updated_at: device.updated_at,
-        },
-    }));
+        return res.json(successResponse({
+            data: {
+                device_id: device.device_id,
+                preferences: device.preferences,
+                updated_at: device.updated_at,
+            },
+        }));
+    } catch (error) {
+        console.error('[devices] Lỗi get preferences:', error.message);
+        return res.json(errorResponse('Không đọc được dữ liệu thiết bị từ repo data.'));
+    }
 });
 
 /**
  * PUT /api/devices/:deviceId/preferences
  * Body: { enabled?, max_per_day?, categories? }
  */
-app.put('/api/devices/:deviceId/preferences', (req, res) => {
-    const device = getDeviceById(req.params.deviceId);
-    if (!device) {
-        return res.json(errorResponse('Không tìm thấy thiết bị. Hãy gọi POST /api/devices/register trước.'));
-    }
-
-    const body = req.body || {};
-    const nextPreferences = { ...device.preferences };
-
-    if (typeof body.enabled === 'boolean') {
-        nextPreferences.enabled = body.enabled;
-    }
-
-    if (body.max_per_day !== undefined) {
-        const maxPerDay = parseInt(body.max_per_day, 10);
-        if (Number.isNaN(maxPerDay) || maxPerDay < 1) {
-            return res.json(errorResponse('max_per_day phải là số nguyên >= 1.'));
+app.put('/api/devices/:deviceId/preferences', async (req, res) => {
+    try {
+        const device = await getDeviceById(req.params.deviceId);
+        if (!device) {
+            return res.json(errorResponse('Không tìm thấy thiết bị. Hãy gọi POST /api/devices/register trước.'));
         }
-        nextPreferences.max_per_day = Math.min(maxPerDay, notificationConfig.timeSlots.length);
-    }
 
-    if (Array.isArray(body.categories)) {
-        nextPreferences.categories = body.categories;
-    }
+        const body = req.body || {};
+        const nextPreferences = { ...device.preferences };
 
-    const updated = updateDevicePreferences(req.params.deviceId, nextPreferences);
-    return res.json(successResponse({
-        data: {
-            device_id: updated.device_id,
-            preferences: updated.preferences,
-            updated_at: updated.updated_at,
-        },
-    }));
+        if (typeof body.enabled === 'boolean') {
+            nextPreferences.enabled = body.enabled;
+        }
+
+        if (body.max_per_day !== undefined) {
+            const maxPerDay = parseInt(body.max_per_day, 10);
+            if (Number.isNaN(maxPerDay) || maxPerDay < 1) {
+                return res.json(errorResponse('max_per_day phải là số nguyên >= 1.'));
+            }
+            nextPreferences.max_per_day = Math.min(maxPerDay, notificationConfig.timeSlots.length);
+        }
+
+        if (Array.isArray(body.categories)) {
+            nextPreferences.categories = body.categories;
+        }
+
+        const updated = await updateDevicePreferences(req.params.deviceId, nextPreferences);
+        return res.json(successResponse({
+            data: {
+                device_id: updated.device_id,
+                preferences: updated.preferences,
+                updated_at: updated.updated_at,
+            },
+        }));
+    } catch (error) {
+        console.error('[devices] Lỗi update preferences:', error.message);
+        return res.json(errorResponse('Không cập nhật được thiết bị trên repo data.'));
+    }
 });
 
 /**
  * DELETE /api/devices/:deviceId
  */
-app.delete('/api/devices/:deviceId', (req, res) => {
-    const removed = removeDevice(req.params.deviceId);
-    if (!removed) {
-        return res.json(errorResponse('Không tìm thấy thiết bị.'));
-    }
+app.delete('/api/devices/:deviceId', async (req, res) => {
+    try {
+        const removed = await removeDevice(req.params.deviceId);
+        if (!removed) {
+            return res.json(errorResponse('Không tìm thấy thiết bị.'));
+        }
 
-    return res.json(successResponse({ data: { device_id: req.params.deviceId, removed: true } }));
+        return res.json(successResponse({ data: { device_id: req.params.deviceId, removed: true } }));
+    } catch (error) {
+        console.error('[devices] Lỗi remove device:', error.message);
+        return res.json(errorResponse('Không xóa được thiết bị trên repo data.'));
+    }
 });
 
 app.listen(port, () => {
