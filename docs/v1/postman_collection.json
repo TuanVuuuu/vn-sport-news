@@ -67,6 +67,16 @@
         "url": "{{baseUrl}}/api/ping"
       },
       "response": []
+    },
+    {
+      "name": "GET /api/football/fixtures - Lịch thi đấu",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "description": "Lấy lịch thi đấu bóng đá từ VnExpress. league_id mặc định 1 (World Cup). Có thể lọc theo date (YYYY-MM-DD) và team_id.",
+        "url": "{{baseUrl}}/api/football/fixtures?league_id=1"
+      },
+      "response": []
     }
   ]
 }

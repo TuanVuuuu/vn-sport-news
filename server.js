@@ -20,6 +20,7 @@ const {
     getPublicSettings,
     sendTestNotification,
 } = require('./src/services/notificationService');
+const { getFixturesForApi } = require('./src/services/footballFixtureService');
 const packageInfo = require('./package.json');
 
 const app = express();
@@ -250,6 +251,37 @@ app.get('/api/ping', (req, res) => {
             data_source: dataRepo.rawBaseUrl,
         },
     }));
+});
+
+/**
+ * GET /api/football/fixtures
+ * Query params:
+ *   - league_id: ID giải đấu (default 1 - World Cup)
+ *   - date:      optional, lọc theo ngày YYYY-MM-DD
+ *   - team_id:   optional, lọc theo đội bóng
+ *
+ * Trả về lịch thi đấu nhóm theo ngày, kèm danh sách ngày và đội để filter trên mobile.
+ */
+app.get('/api/football/fixtures', async (req, res) => {
+    try {
+        const leagueId = parseInt(req.query.league_id, 10) || 1;
+        const teamId = req.query.team_id ? parseInt(req.query.team_id, 10) : null;
+
+        if (req.query.team_id && Number.isNaN(teamId)) {
+            return res.json(errorResponse('team_id phải là số nguyên hợp lệ.'));
+        }
+
+        const data = await getFixturesForApi({
+            leagueId,
+            date: req.query.date || null,
+            teamId,
+        });
+
+        return res.json(successResponse({ data }));
+    } catch (error) {
+        console.error('[API] /api/football/fixtures:', error.message);
+        return res.json(errorResponse('Không thể tải lịch thi đấu từ VnExpress.'));
+    }
 });
 
 /**

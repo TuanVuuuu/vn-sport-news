@@ -1,0 +1,2455 @@
+{
+    "code": 200,
+    "data": {
+        "1": {
+            "data": [
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1531.png",
+                        "team_id": 1531,
+                        "team_name": "Nam Phi",
+                        "team_name_full": "South Africa"
+                    },
+                    "event_date": "2026-06-12T02:00:00+07:00",
+                    "event_timestamp": 1781204400,
+                    "fixture_id": 1489369,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/16.png",
+                        "team_id": 16,
+                        "team_name": "Mexico",
+                        "team_name_full": "Mexico"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "referrence": [
+                        208393
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Azteca, Mexico City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/770.png",
+                        "team_id": 770,
+                        "team_name": "CH Czech",
+                        "team_name_full": "Czech Republic"
+                    },
+                    "event_date": "2026-06-12T09:00:00+07:00",
+                    "event_timestamp": 1781229600,
+                    "fixture_id": 1538999,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/17.png",
+                        "team_id": 17,
+                        "team_name": "Hàn Quốc",
+                        "team_name_full": "South Korea"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Akron, Guadalajara"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1113.png",
+                        "team_id": 1113,
+                        "team_name": "Bosnia & Herz.",
+                        "team_name_full": "Bosnia & Herzegovina"
+                    },
+                    "event_date": "2026-06-13T02:00:00+07:00",
+                    "event_timestamp": 1781290800,
+                    "fixture_id": 1539000,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5529.png",
+                        "team_id": 5529,
+                        "team_name": "Canada",
+                        "team_name_full": "Canada"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BMO Field, Toronto"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2380.png",
+                        "team_id": 2380,
+                        "team_name": "Paraguay",
+                        "team_name_full": "Paraguay"
+                    },
+                    "event_date": "2026-06-13T08:00:00+07:00",
+                    "event_timestamp": 1781312400,
+                    "fixture_id": 1489370,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2384.png",
+                        "team_id": 2384,
+                        "team_name": "Mỹ",
+                        "team_name_full": "USA"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 4,
+                    "referrence": [
+                        1457378,
+                        225399,
+                        150605
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "SoFi Stadium, Los Angeles"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/15.png",
+                        "team_id": 15,
+                        "team_name": "Thụy Sĩ",
+                        "team_name_full": "Switzerland"
+                    },
+                    "event_date": "2026-06-14T02:00:00+07:00",
+                    "event_timestamp": 1781377200,
+                    "fixture_id": 1489373,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1569.png",
+                        "team_id": 1569,
+                        "team_name": "Qatar",
+                        "team_name_full": "Qatar"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "referrence": [
+                        225546
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Levi's Stadium, San Francisco Bay Area"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/31.png",
+                        "team_id": 31,
+                        "team_name": "Morocco",
+                        "team_name_full": "Morocco"
+                    },
+                    "event_date": "2026-06-14T05:00:00+07:00",
+                    "event_timestamp": 1781388000,
+                    "fixture_id": 1489371,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/6.png",
+                        "team_id": 6,
+                        "team_name": "Brazil",
+                        "team_name_full": "Brazil"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 19,
+                    "referrence": [
+                        1012334
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "MetLife Stadium, New York New Jersey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1108.png",
+                        "team_id": 1108,
+                        "team_name": "Scotland",
+                        "team_name_full": "Scotland"
+                    },
+                    "event_date": "2026-06-14T08:00:00+07:00",
+                    "event_timestamp": 1781398800,
+                    "fixture_id": 1489372,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2386.png",
+                        "team_id": 2386,
+                        "team_name": "Haiti",
+                        "team_name_full": "Haiti"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Gillette Stadium, Boston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/777.png",
+                        "team_id": 777,
+                        "team_name": "Thổ Nhĩ Kỳ",
+                        "team_name_full": "Türkiye"
+                    },
+                    "event_date": "2026-06-14T11:00:00+07:00",
+                    "event_timestamp": 1781409600,
+                    "fixture_id": 1539001,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/20.png",
+                        "team_id": 20,
+                        "team_name": "Australia",
+                        "team_name_full": "Australia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 22,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BC Place, Vancouver"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5530.png",
+                        "team_id": 5530,
+                        "team_name": "Curaçao",
+                        "team_name_full": "Curaçao"
+                    },
+                    "event_date": "2026-06-15T00:00:00+07:00",
+                    "event_timestamp": 1781456400,
+                    "fixture_id": 1489374,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/25.png",
+                        "team_id": 25,
+                        "team_name": "Đức",
+                        "team_name_full": "Germany"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 11,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "NRG Stadium, Houston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/12.png",
+                        "team_id": 12,
+                        "team_name": "Nhật Bản",
+                        "team_name_full": "Japan"
+                    },
+                    "event_date": "2026-06-15T03:00:00+07:00",
+                    "event_timestamp": 1781467200,
+                    "fixture_id": 1489376,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1118.png",
+                        "team_id": 1118,
+                        "team_name": "Hà Lan",
+                        "team_name_full": "Netherlands"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 17,
+                    "referrence": [
+                        208416
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "AT&T Stadium, Dallas"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2382.png",
+                        "team_id": 2382,
+                        "team_name": "Ecuador",
+                        "team_name_full": "Ecuador"
+                    },
+                    "event_date": "2026-06-15T06:00:00+07:00",
+                    "event_timestamp": 1781478000,
+                    "fixture_id": 1489375,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1501.png",
+                        "team_id": 1501,
+                        "team_name": "Bờ Biển Ngà",
+                        "team_name_full": "Ivory Coast"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lincoln Financial Field, Philadelphia"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/28.png",
+                        "team_id": 28,
+                        "team_name": "Tunisia",
+                        "team_name_full": "Tunisia"
+                    },
+                    "event_date": "2026-06-15T09:00:00+07:00",
+                    "event_timestamp": 1781488800,
+                    "fixture_id": 1539002,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5.png",
+                        "team_id": 5,
+                        "team_name": "Thụy Điển",
+                        "team_name_full": "Sweden"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 7,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio BBVA, Monterrey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1533.png",
+                        "team_id": 1533,
+                        "team_name": "Cape Verde",
+                        "team_name_full": "Cape Verde Islands"
+                    },
+                    "event_date": "2026-06-15T23:00:00+07:00",
+                    "event_timestamp": 1781539200,
+                    "fixture_id": 1489380,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/9.png",
+                        "team_id": 9,
+                        "team_name": "Tây Ban Nha",
+                        "team_name_full": "Spain"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Mercedes-Benz Stadium, Atlanta"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/32.png",
+                        "team_id": 32,
+                        "team_name": "Ai Cập",
+                        "team_name_full": "Egypt"
+                    },
+                    "event_date": "2026-06-16T02:00:00+07:00",
+                    "event_timestamp": 1781550000,
+                    "fixture_id": 1489377,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1.png",
+                        "team_id": 1,
+                        "team_name": "Bỉ",
+                        "team_name_full": "Belgium"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "referrence": [
+                        958281,
+                        225457
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lumen Field, Seattle"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/7.png",
+                        "team_id": 7,
+                        "team_name": "Uruguay",
+                        "team_name_full": "Uruguay"
+                    },
+                    "event_date": "2026-06-16T05:00:00+07:00",
+                    "event_timestamp": 1781560800,
+                    "fixture_id": 1489379,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/23.png",
+                        "team_id": 23,
+                        "team_name": "Saudi Arabia",
+                        "team_name_full": "Saudi Arabia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 19,
+                    "referrence": [
+                        135795
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Hard Rock Stadium, Miami"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/4673.png",
+                        "team_id": 4673,
+                        "team_name": "New Zealand",
+                        "team_name_full": "New Zealand"
+                    },
+                    "event_date": "2026-06-16T08:00:00+07:00",
+                    "event_timestamp": 1781571600,
+                    "fixture_id": 1489378,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/22.png",
+                        "team_id": 22,
+                        "team_name": "Iran",
+                        "team_name_full": "Iran"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 6,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "SoFi Stadium, Los Angeles"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/13.png",
+                        "team_id": 13,
+                        "team_name": "Senegal",
+                        "team_name_full": "Senegal"
+                    },
+                    "event_date": "2026-06-17T02:00:00+07:00",
+                    "event_timestamp": 1781636400,
+                    "fixture_id": 1489383,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2.png",
+                        "team_id": 2,
+                        "team_name": "Pháp",
+                        "team_name_full": "France"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "MetLife Stadium, New York New Jersey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1090.png",
+                        "team_id": 1090,
+                        "team_name": "Na Uy",
+                        "team_name_full": "Norway"
+                    },
+                    "event_date": "2026-06-17T05:00:00+07:00",
+                    "event_timestamp": 1781647200,
+                    "fixture_id": 1539016,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1567.png",
+                        "team_id": 1567,
+                        "team_name": "Iraq",
+                        "team_name_full": "Iraq"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 12,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Gillette Stadium, Boston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1532.png",
+                        "team_id": 1532,
+                        "team_name": "Algeria",
+                        "team_name_full": "Algeria"
+                    },
+                    "event_date": "2026-06-17T08:00:00+07:00",
+                    "event_timestamp": 1781658000,
+                    "fixture_id": 1489381,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/26.png",
+                        "team_id": 26,
+                        "team_name": "Argentina",
+                        "team_name_full": "Argentina"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 19,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Arrowhead Stadium, Kansas City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1548.png",
+                        "team_id": 1548,
+                        "team_name": "Jordan",
+                        "team_name_full": "Jordan"
+                    },
+                    "event_date": "2026-06-17T11:00:00+07:00",
+                    "event_timestamp": 1781668800,
+                    "fixture_id": 1489382,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/775.png",
+                        "team_id": 775,
+                        "team_name": "Áo",
+                        "team_name_full": "Austria"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Levi's Stadium, San Francisco Bay Area"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1508.png",
+                        "team_id": 1508,
+                        "team_name": "CHDC Congo",
+                        "team_name_full": "Congo DR"
+                    },
+                    "event_date": "2026-06-18T00:00:00+07:00",
+                    "event_timestamp": 1781715600,
+                    "fixture_id": 1539003,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/27.png",
+                        "team_id": 27,
+                        "team_name": "Bồ Đào Nha",
+                        "team_name_full": "Portugal"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "NRG Stadium, Houston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/3.png",
+                        "team_id": 3,
+                        "team_name": "Croatia",
+                        "team_name_full": "Croatia"
+                    },
+                    "event_date": "2026-06-18T03:00:00+07:00",
+                    "event_timestamp": 1781726400,
+                    "fixture_id": 1489384,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/10.png",
+                        "team_id": 10,
+                        "team_name": "Anh",
+                        "team_name_full": "England"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "referrence": [
+                        657678,
+                        132528,
+                        132518,
+                        135774
+                    ],
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "AT&T Stadium, Dallas"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/11.png",
+                        "team_id": 11,
+                        "team_name": "Panama",
+                        "team_name_full": "Panama"
+                    },
+                    "event_date": "2026-06-18T06:00:00+07:00",
+                    "event_timestamp": 1781737200,
+                    "fixture_id": 1489385,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1504.png",
+                        "team_id": 1504,
+                        "team_name": "Ghana",
+                        "team_name_full": "Ghana"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 11,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BMO Field, Toronto"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/8.png",
+                        "team_id": 8,
+                        "team_name": "Colombia",
+                        "team_name_full": "Colombia"
+                    },
+                    "event_date": "2026-06-18T09:00:00+07:00",
+                    "event_timestamp": 1781748000,
+                    "fixture_id": 1489386,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1568.png",
+                        "team_id": 1568,
+                        "team_name": "Uzbekistan",
+                        "team_name_full": "Uzbekistan"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 19,
+                    "round": "Group Stage - 1",
+                    "round_int": 1,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Azteca, Mexico City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1531.png",
+                        "team_id": 1531,
+                        "team_name": "Nam Phi",
+                        "team_name_full": "South Africa"
+                    },
+                    "event_date": "2026-06-18T23:00:00+07:00",
+                    "event_timestamp": 1781798400,
+                    "fixture_id": 1539004,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/770.png",
+                        "team_id": 770,
+                        "team_name": "CH Czech",
+                        "team_name_full": "Czech Republic"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 8,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Mercedes-Benz Stadium, Atlanta"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1113.png",
+                        "team_id": 1113,
+                        "team_name": "Bosnia & Herz.",
+                        "team_name_full": "Bosnia & Herzegovina"
+                    },
+                    "event_date": "2026-06-19T02:00:00+07:00",
+                    "event_timestamp": 1781809200,
+                    "fixture_id": 1539005,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/15.png",
+                        "team_id": 15,
+                        "team_name": "Thụy Sĩ",
+                        "team_name_full": "Switzerland"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 8,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "SoFi Stadium, Los Angeles"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1569.png",
+                        "team_id": 1569,
+                        "team_name": "Qatar",
+                        "team_name_full": "Qatar"
+                    },
+                    "event_date": "2026-06-19T05:00:00+07:00",
+                    "event_timestamp": 1781820000,
+                    "fixture_id": 1489387,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5529.png",
+                        "team_id": 5529,
+                        "team_name": "Canada",
+                        "team_name_full": "Canada"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "referrence": [
+                        942144
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BC Place, Vancouver"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/17.png",
+                        "team_id": 17,
+                        "team_name": "Hàn Quốc",
+                        "team_name_full": "South Korea"
+                    },
+                    "event_date": "2026-06-19T08:00:00+07:00",
+                    "event_timestamp": 1781830800,
+                    "fixture_id": 1489388,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/16.png",
+                        "team_id": 16,
+                        "team_name": "Mexico",
+                        "team_name_full": "Mexico"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "referrence": [
+                        1375500,
+                        644695,
+                        135804
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Akron, Guadalajara"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/20.png",
+                        "team_id": 20,
+                        "team_name": "Australia",
+                        "team_name_full": "Australia"
+                    },
+                    "event_date": "2026-06-20T02:00:00+07:00",
+                    "event_timestamp": 1781895600,
+                    "fixture_id": 1489391,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2384.png",
+                        "team_id": 2384,
+                        "team_name": "Mỹ",
+                        "team_name_full": "USA"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 17,
+                    "referrence": [
+                        1405465
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lumen Field, Seattle"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/31.png",
+                        "team_id": 31,
+                        "team_name": "Morocco",
+                        "team_name_full": "Morocco"
+                    },
+                    "event_date": "2026-06-20T05:00:00+07:00",
+                    "event_timestamp": 1781906400,
+                    "fixture_id": 1489390,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1108.png",
+                        "team_id": 1108,
+                        "team_name": "Scotland",
+                        "team_name_full": "Scotland"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Gillette Stadium, Boston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2386.png",
+                        "team_id": 2386,
+                        "team_name": "Haiti",
+                        "team_name_full": "Haiti"
+                    },
+                    "event_date": "2026-06-20T07:30:00+07:00",
+                    "event_timestamp": 1781915400,
+                    "fixture_id": 1489389,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/6.png",
+                        "team_id": 6,
+                        "team_name": "Brazil",
+                        "team_name_full": "Brazil"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 20,
+                    "referrence": [
+                        150599
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lincoln Financial Field, Philadelphia"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2380.png",
+                        "team_id": 2380,
+                        "team_name": "Paraguay",
+                        "team_name_full": "Paraguay"
+                    },
+                    "event_date": "2026-06-20T10:00:00+07:00",
+                    "event_timestamp": 1781924400,
+                    "fixture_id": 1539006,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/777.png",
+                        "team_id": 777,
+                        "team_name": "Thổ Nhĩ Kỳ",
+                        "team_name_full": "Türkiye"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 8,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Levi's Stadium, San Francisco Bay Area"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5.png",
+                        "team_id": 5,
+                        "team_name": "Thụy Điển",
+                        "team_name_full": "Sweden"
+                    },
+                    "event_date": "2026-06-21T00:00:00+07:00",
+                    "event_timestamp": 1781974800,
+                    "fixture_id": 1539007,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1118.png",
+                        "team_id": 1118,
+                        "team_name": "Hà Lan",
+                        "team_name_full": "Netherlands"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 9,
+                    "referrence": [
+                        256658,
+                        256415
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "NRG Stadium, Houston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1501.png",
+                        "team_id": 1501,
+                        "team_name": "Bờ Biển Ngà",
+                        "team_name_full": "Ivory Coast"
+                    },
+                    "event_date": "2026-06-21T03:00:00+07:00",
+                    "event_timestamp": 1781985600,
+                    "fixture_id": 1489393,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/25.png",
+                        "team_id": 25,
+                        "team_name": "Đức",
+                        "team_name_full": "Germany"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BMO Field, Toronto"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5530.png",
+                        "team_id": 5530,
+                        "team_name": "Curaçao",
+                        "team_name_full": "Curaçao"
+                    },
+                    "event_date": "2026-06-21T07:00:00+07:00",
+                    "event_timestamp": 1782000000,
+                    "fixture_id": 1489392,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2382.png",
+                        "team_id": 2382,
+                        "team_name": "Ecuador",
+                        "team_name_full": "Ecuador"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 12,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Arrowhead Stadium, Kansas City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/12.png",
+                        "team_id": 12,
+                        "team_name": "Nhật Bản",
+                        "team_name_full": "Japan"
+                    },
+                    "event_date": "2026-06-21T11:00:00+07:00",
+                    "event_timestamp": 1782014400,
+                    "fixture_id": 1489394,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/28.png",
+                        "team_id": 28,
+                        "team_name": "Tunisia",
+                        "team_name_full": "Tunisia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "referrence": [
+                        1114143,
+                        869218
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio BBVA, Monterrey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/23.png",
+                        "team_id": 23,
+                        "team_name": "Saudi Arabia",
+                        "team_name_full": "Saudi Arabia"
+                    },
+                    "event_date": "2026-06-21T23:00:00+07:00",
+                    "event_timestamp": 1782057600,
+                    "fixture_id": 1489397,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/9.png",
+                        "team_id": 9,
+                        "team_name": "Tây Ban Nha",
+                        "team_name_full": "Spain"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Mercedes-Benz Stadium, Atlanta"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/22.png",
+                        "team_id": 22,
+                        "team_name": "Iran",
+                        "team_name_full": "Iran"
+                    },
+                    "event_date": "2026-06-22T02:00:00+07:00",
+                    "event_timestamp": 1782068400,
+                    "fixture_id": 1489395,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1.png",
+                        "team_id": 1,
+                        "team_name": "Bỉ",
+                        "team_name_full": "Belgium"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "SoFi Stadium, Los Angeles"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1533.png",
+                        "team_id": 1533,
+                        "team_name": "Cape Verde",
+                        "team_name_full": "Cape Verde Islands"
+                    },
+                    "event_date": "2026-06-22T05:00:00+07:00",
+                    "event_timestamp": 1782079200,
+                    "fixture_id": 1489398,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/7.png",
+                        "team_id": 7,
+                        "team_name": "Uruguay",
+                        "team_name_full": "Uruguay"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Hard Rock Stadium, Miami"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/32.png",
+                        "team_id": 32,
+                        "team_name": "Ai Cập",
+                        "team_name_full": "Egypt"
+                    },
+                    "event_date": "2026-06-22T08:00:00+07:00",
+                    "event_timestamp": 1782090000,
+                    "fixture_id": 1489396,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/4673.png",
+                        "team_id": 4673,
+                        "team_name": "New Zealand",
+                        "team_name_full": "New Zealand"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "referrence": [
+                        1174754
+                    ],
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BC Place, Vancouver"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/775.png",
+                        "team_id": 775,
+                        "team_name": "Áo",
+                        "team_name_full": "Austria"
+                    },
+                    "event_date": "2026-06-23T00:00:00+07:00",
+                    "event_timestamp": 1782147600,
+                    "fixture_id": 1489399,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/26.png",
+                        "team_id": 26,
+                        "team_name": "Argentina",
+                        "team_name_full": "Argentina"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 20,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "AT&T Stadium, Dallas"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1567.png",
+                        "team_id": 1567,
+                        "team_name": "Iraq",
+                        "team_name_full": "Iraq"
+                    },
+                    "event_date": "2026-06-23T04:00:00+07:00",
+                    "event_timestamp": 1782162000,
+                    "fixture_id": 1539017,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2.png",
+                        "team_id": 2,
+                        "team_name": "Pháp",
+                        "team_name_full": "France"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 12,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lincoln Financial Field, Philadelphia"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/13.png",
+                        "team_id": 13,
+                        "team_name": "Senegal",
+                        "team_name_full": "Senegal"
+                    },
+                    "event_date": "2026-06-23T07:00:00+07:00",
+                    "event_timestamp": 1782172800,
+                    "fixture_id": 1489401,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1090.png",
+                        "team_id": 1090,
+                        "team_name": "Na Uy",
+                        "team_name_full": "Norway"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "MetLife Stadium, New York New Jersey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1532.png",
+                        "team_id": 1532,
+                        "team_name": "Algeria",
+                        "team_name_full": "Algeria"
+                    },
+                    "event_date": "2026-06-23T10:00:00+07:00",
+                    "event_timestamp": 1782183600,
+                    "fixture_id": 1489400,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1548.png",
+                        "team_id": 1548,
+                        "team_name": "Jordan",
+                        "team_name_full": "Jordan"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Levi's Stadium, San Francisco Bay Area"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1568.png",
+                        "team_id": 1568,
+                        "team_name": "Uzbekistan",
+                        "team_name_full": "Uzbekistan"
+                    },
+                    "event_date": "2026-06-24T00:00:00+07:00",
+                    "event_timestamp": 1782234000,
+                    "fixture_id": 1489404,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/27.png",
+                        "team_id": 27,
+                        "team_name": "Bồ Đào Nha",
+                        "team_name_full": "Portugal"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 1,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "NRG Stadium, Houston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1504.png",
+                        "team_id": 1504,
+                        "team_name": "Ghana",
+                        "team_name_full": "Ghana"
+                    },
+                    "event_date": "2026-06-24T03:00:00+07:00",
+                    "event_timestamp": 1782244800,
+                    "fixture_id": 1489402,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/10.png",
+                        "team_id": 10,
+                        "team_name": "Anh",
+                        "team_name_full": "England"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Gillette Stadium, Boston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/3.png",
+                        "team_id": 3,
+                        "team_name": "Croatia",
+                        "team_name_full": "Croatia"
+                    },
+                    "event_date": "2026-06-24T06:00:00+07:00",
+                    "event_timestamp": 1782255600,
+                    "fixture_id": 1489403,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/11.png",
+                        "team_id": 11,
+                        "team_name": "Panama",
+                        "team_name_full": "Panama"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BMO Field, Toronto"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1508.png",
+                        "team_id": 1508,
+                        "team_name": "CHDC Congo",
+                        "team_name_full": "Congo DR"
+                    },
+                    "event_date": "2026-06-24T09:00:00+07:00",
+                    "event_timestamp": 1782266400,
+                    "fixture_id": 1539008,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/8.png",
+                        "team_id": 8,
+                        "team_name": "Colombia",
+                        "team_name_full": "Colombia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 25,
+                    "round": "Group Stage - 2",
+                    "round_int": 2,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Akron, Guadalajara"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5529.png",
+                        "team_id": 5529,
+                        "team_name": "Canada",
+                        "team_name_full": "Canada"
+                    },
+                    "event_date": "2026-06-25T02:00:00+07:00",
+                    "event_timestamp": 1782327600,
+                    "fixture_id": 1489408,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/15.png",
+                        "team_id": 15,
+                        "team_name": "Thụy Sĩ",
+                        "team_name_full": "Switzerland"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BC Place, Vancouver"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1569.png",
+                        "team_id": 1569,
+                        "team_name": "Qatar",
+                        "team_name_full": "Qatar"
+                    },
+                    "event_date": "2026-06-25T02:00:00+07:00",
+                    "event_timestamp": 1782327600,
+                    "fixture_id": 1539009,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1113.png",
+                        "team_id": 1113,
+                        "team_name": "Bosnia & Herz.",
+                        "team_name_full": "Bosnia & Herzegovina"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 9,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lumen Field, Seattle"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2386.png",
+                        "team_id": 2386,
+                        "team_name": "Haiti",
+                        "team_name_full": "Haiti"
+                    },
+                    "event_date": "2026-06-25T05:00:00+07:00",
+                    "event_timestamp": 1782338400,
+                    "fixture_id": 1489405,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/31.png",
+                        "team_id": 31,
+                        "team_name": "Morocco",
+                        "team_name_full": "Morocco"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Mercedes-Benz Stadium, Atlanta"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/6.png",
+                        "team_id": 6,
+                        "team_name": "Brazil",
+                        "team_name_full": "Brazil"
+                    },
+                    "event_date": "2026-06-25T05:00:00+07:00",
+                    "event_timestamp": 1782338400,
+                    "fixture_id": 1489406,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1108.png",
+                        "team_id": 1108,
+                        "team_name": "Scotland",
+                        "team_name_full": "Scotland"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 21,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Hard Rock Stadium, Miami"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/16.png",
+                        "team_id": 16,
+                        "team_name": "Mexico",
+                        "team_name_full": "Mexico"
+                    },
+                    "event_date": "2026-06-25T08:00:00+07:00",
+                    "event_timestamp": 1782349200,
+                    "fixture_id": 1539010,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/770.png",
+                        "team_id": 770,
+                        "team_name": "CH Czech",
+                        "team_name_full": "Czech Republic"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 9,
+                    "referrence": [
+                        313511
+                    ],
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Azteca, Mexico City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/17.png",
+                        "team_id": 17,
+                        "team_name": "Hàn Quốc",
+                        "team_name_full": "South Korea"
+                    },
+                    "event_date": "2026-06-25T08:00:00+07:00",
+                    "event_timestamp": 1782349200,
+                    "fixture_id": 1489407,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1531.png",
+                        "team_id": 1531,
+                        "team_name": "Nam Phi",
+                        "team_name_full": "South Africa"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio BBVA, Monterrey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/25.png",
+                        "team_id": 25,
+                        "team_name": "Đức",
+                        "team_name_full": "Germany"
+                    },
+                    "event_date": "2026-06-26T03:00:00+07:00",
+                    "event_timestamp": 1782417600,
+                    "fixture_id": 1489410,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2382.png",
+                        "team_id": 2382,
+                        "team_name": "Ecuador",
+                        "team_name_full": "Ecuador"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "MetLife Stadium, New York New Jersey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1501.png",
+                        "team_id": 1501,
+                        "team_name": "Bờ Biển Ngà",
+                        "team_name_full": "Ivory Coast"
+                    },
+                    "event_date": "2026-06-26T03:00:00+07:00",
+                    "event_timestamp": 1782417600,
+                    "fixture_id": 1489409,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5530.png",
+                        "team_id": 5530,
+                        "team_name": "Curaçao",
+                        "team_name_full": "Curaçao"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 13,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lincoln Financial Field, Philadelphia"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/5.png",
+                        "team_id": 5,
+                        "team_name": "Thụy Điển",
+                        "team_name_full": "Sweden"
+                    },
+                    "event_date": "2026-06-26T06:00:00+07:00",
+                    "event_timestamp": 1782428400,
+                    "fixture_id": 1539011,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/12.png",
+                        "team_id": 12,
+                        "team_name": "Nhật Bản",
+                        "team_name_full": "Japan"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 10,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "AT&T Stadium, Dallas"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1118.png",
+                        "team_id": 1118,
+                        "team_name": "Hà Lan",
+                        "team_name_full": "Netherlands"
+                    },
+                    "event_date": "2026-06-26T06:00:00+07:00",
+                    "event_timestamp": 1782428400,
+                    "fixture_id": 1489412,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/28.png",
+                        "team_id": 28,
+                        "team_name": "Tunisia",
+                        "team_name_full": "Tunisia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Arrowhead Stadium, Kansas City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2384.png",
+                        "team_id": 2384,
+                        "team_name": "Mỹ",
+                        "team_name_full": "USA"
+                    },
+                    "event_date": "2026-06-26T09:00:00+07:00",
+                    "event_timestamp": 1782439200,
+                    "fixture_id": 1539012,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/777.png",
+                        "team_id": 777,
+                        "team_name": "Thổ Nhĩ Kỳ",
+                        "team_name_full": "Türkiye"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 9,
+                    "referrence": [
+                        1360317
+                    ],
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "SoFi Stadium, Los Angeles"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/20.png",
+                        "team_id": 20,
+                        "team_name": "Australia",
+                        "team_name_full": "Australia"
+                    },
+                    "event_date": "2026-06-26T09:00:00+07:00",
+                    "event_timestamp": 1782439200,
+                    "fixture_id": 1489411,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2380.png",
+                        "team_id": 2380,
+                        "team_name": "Paraguay",
+                        "team_name_full": "Paraguay"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 18,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Levi's Stadium, San Francisco Bay Area"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1567.png",
+                        "team_id": 1567,
+                        "team_name": "Iraq",
+                        "team_name_full": "Iraq"
+                    },
+                    "event_date": "2026-06-27T02:00:00+07:00",
+                    "event_timestamp": 1782500400,
+                    "fixture_id": 1539074,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/13.png",
+                        "team_id": 13,
+                        "team_name": "Senegal",
+                        "team_name_full": "Senegal"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 6,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BMO Field, Toronto"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/2.png",
+                        "team_id": 2,
+                        "team_name": "Pháp",
+                        "team_name_full": "France"
+                    },
+                    "event_date": "2026-06-27T02:00:00+07:00",
+                    "event_timestamp": 1782500400,
+                    "fixture_id": 1489416,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1090.png",
+                        "team_id": 1090,
+                        "team_name": "Na Uy",
+                        "team_name_full": "Norway"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 2,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Gillette Stadium, Boston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/9.png",
+                        "team_id": 9,
+                        "team_name": "Tây Ban Nha",
+                        "team_name_full": "Spain"
+                    },
+                    "event_date": "2026-06-27T07:00:00+07:00",
+                    "event_timestamp": 1782518400,
+                    "fixture_id": 1489417,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/7.png",
+                        "team_id": 7,
+                        "team_name": "Uruguay",
+                        "team_name_full": "Uruguay"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 21,
+                    "referrence": [
+                        255352
+                    ],
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Estadio Akron, Guadalajara"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/23.png",
+                        "team_id": 23,
+                        "team_name": "Saudi Arabia",
+                        "team_name_full": "Saudi Arabia"
+                    },
+                    "event_date": "2026-06-27T07:00:00+07:00",
+                    "event_timestamp": 1782518400,
+                    "fixture_id": 1489413,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1533.png",
+                        "team_id": 1533,
+                        "team_name": "Cape Verde",
+                        "team_name_full": "Cape Verde Islands"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "NRG Stadium, Houston"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/22.png",
+                        "team_id": 22,
+                        "team_name": "Iran",
+                        "team_name_full": "Iran"
+                    },
+                    "event_date": "2026-06-27T10:00:00+07:00",
+                    "event_timestamp": 1782529200,
+                    "fixture_id": 1489414,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/32.png",
+                        "team_id": 32,
+                        "team_name": "Ai Cập",
+                        "team_name_full": "Egypt"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lumen Field, Seattle"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1.png",
+                        "team_id": 1,
+                        "team_name": "Bỉ",
+                        "team_name_full": "Belgium"
+                    },
+                    "event_date": "2026-06-27T10:00:00+07:00",
+                    "event_timestamp": 1782529200,
+                    "fixture_id": 1489415,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/4673.png",
+                        "team_id": 4673,
+                        "team_name": "New Zealand",
+                        "team_name_full": "New Zealand"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "referrence": [
+                        598341
+                    ],
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "BC Place, Vancouver"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1504.png",
+                        "team_id": 1504,
+                        "team_name": "Ghana",
+                        "team_name_full": "Ghana"
+                    },
+                    "event_date": "2026-06-28T04:00:00+07:00",
+                    "event_timestamp": 1782594000,
+                    "fixture_id": 1489420,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/3.png",
+                        "team_id": 3,
+                        "team_name": "Croatia",
+                        "team_name_full": "Croatia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Lincoln Financial Field, Philadelphia"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/10.png",
+                        "team_id": 10,
+                        "team_name": "Anh",
+                        "team_name_full": "England"
+                    },
+                    "event_date": "2026-06-28T04:00:00+07:00",
+                    "event_timestamp": 1782594000,
+                    "fixture_id": 1489422,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/11.png",
+                        "team_id": 11,
+                        "team_name": "Panama",
+                        "team_name_full": "Panama"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "referrence": [
+                        135806
+                    ],
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "MetLife Stadium, New York New Jersey"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/27.png",
+                        "team_id": 27,
+                        "team_name": "Bồ Đào Nha",
+                        "team_name_full": "Portugal"
+                    },
+                    "event_date": "2026-06-28T06:30:00+07:00",
+                    "event_timestamp": 1782603000,
+                    "fixture_id": 1489419,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/8.png",
+                        "team_id": 8,
+                        "team_name": "Colombia",
+                        "team_name_full": "Colombia"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 20,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Hard Rock Stadium, Miami"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1568.png",
+                        "team_id": 1568,
+                        "team_name": "Uzbekistan",
+                        "team_name_full": "Uzbekistan"
+                    },
+                    "event_date": "2026-06-28T06:30:00+07:00",
+                    "event_timestamp": 1782603000,
+                    "fixture_id": 1539013,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1508.png",
+                        "team_id": 1508,
+                        "team_name": "CHDC Congo",
+                        "team_name_full": "Congo DR"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 5,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Mercedes-Benz Stadium, Atlanta"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/775.png",
+                        "team_id": 775,
+                        "team_name": "Áo",
+                        "team_name_full": "Austria"
+                    },
+                    "event_date": "2026-06-28T09:00:00+07:00",
+                    "event_timestamp": 1782612000,
+                    "fixture_id": 1489418,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1532.png",
+                        "team_id": 1532,
+                        "team_name": "Algeria",
+                        "team_name_full": "Algeria"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 3,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "Arrowhead Stadium, Kansas City"
+                },
+                {
+                    "away_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/26.png",
+                        "team_id": 26,
+                        "team_name": "Argentina",
+                        "team_name_full": "Argentina"
+                    },
+                    "event_date": "2026-06-28T09:00:00+07:00",
+                    "event_timestamp": 1782612000,
+                    "fixture_id": 1489421,
+                    "goals_away_team": 0,
+                    "goals_home_team": 0,
+                    "home_team": {
+                        "logo": "https://is.vnecdn.net/objects/teams/1548.png",
+                        "team_id": 1548,
+                        "team_name": "Jordan",
+                        "team_name_full": "Jordan"
+                    },
+                    "league": {
+                        "country": "World",
+                        "logo": "https://is.vnecdn.net/objects/leagues/1.png",
+                        "logo_original": "https://media.api-sports.io/football/leagues/1.png",
+                        "name": "World Cup"
+                    },
+                    "league_id": 1,
+                    "position": 21,
+                    "round": "Group Stage - 3",
+                    "round_int": 3,
+                    "score": {},
+                    "status": "Not Started",
+                    "status_short": "NS",
+                    "venue": "AT&T Stadium, Dallas"
+                }
+            ]
+        }
+    }
+}
