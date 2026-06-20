@@ -269,6 +269,57 @@ async function fetchImageBufferViaProxy(url, { timeoutMs = DEFAULT_TIMEOUT_MS, p
     return buffer;
 }
 
+const PUBLIC_IMAGE_PROXIES = [
+    {
+        id: 'duckduckgo',
+        shouldUse: (url) => /cdn-img\.thethao247\.vn/i.test(url),
+        buildUrl: (url) => `https://external-content.duckduckgo.com/iu/?u=${encodeURIComponent(url)}`,
+    },
+];
+
+function isPublicProxyEnabled() {
+    return process.env.BLURHASH_PUBLIC_PROXY !== 'false';
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fetchImageBufferViaPublicProxy(url, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
+    if (!isPublicProxyEnabled()) {
+        throw new Error('public_proxy_disabled');
+    }
+
+    const delayMs = parseInt(process.env.BLURHASH_PUBLIC_PROXY_DELAY_MS, 10) || 150;
+    if (delayMs > 0) {
+        await sleep(delayMs);
+    }
+
+    let lastError = null;
+    for (const proxy of PUBLIC_IMAGE_PROXIES) {
+        if (proxy.shouldUse && !proxy.shouldUse(url)) continue;
+
+        try {
+            const proxyUrl = proxy.buildUrl(url);
+            debugLog('try public proxy', proxy.id, url);
+            const buffer = await requestImageBuffer(
+                proxyUrl,
+                getBrowserHeaders({ Referer: 'https://duckduckgo.com/' }),
+                { timeoutMs: Math.max(timeoutMs, 15000) },
+            );
+            if (isLikelyImageBuffer(buffer)) {
+                return buffer;
+            }
+            lastError = new Error('public_proxy_not_image');
+        } catch (error) {
+            lastError = error;
+            debugLog('public proxy failed', proxy.id, error.response?.status || error.message);
+        }
+    }
+
+    throw lastError || new Error('public_proxy_failed');
+}
+
 async function fetchImageBufferLocal(url, options = {}) {
     const urlCandidates = buildThumbnailUrlCandidates(url);
     let lastError = null;
@@ -276,6 +327,14 @@ async function fetchImageBufferLocal(url, options = {}) {
     for (const candidateUrl of urlCandidates) {
         try {
             return await fetchImageBufferDirect(candidateUrl, options);
+        } catch (error) {
+            lastError = error;
+        }
+    }
+
+    for (const candidateUrl of urlCandidates) {
+        try {
+            return await fetchImageBufferViaPublicProxy(candidateUrl, options);
         } catch (error) {
             lastError = error;
         }

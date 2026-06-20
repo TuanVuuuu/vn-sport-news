@@ -45,6 +45,8 @@ jobs:
           FCM_MAX_PER_DAY: ${{ secrets.FCM_MAX_PER_DAY }}
           BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
           INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
+          BLURHASH_PUBLIC_PROXY: 'true'
+          BLURHASH_PUBLIC_PROXY_DELAY_MS: '150'
         run: node src/index.js
 
       - name: Commit và Push dữ liệu mới

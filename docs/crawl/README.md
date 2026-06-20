@@ -180,14 +180,21 @@ Khuyến nghị tách backfill thành workflow `workflow_dispatch` riêng để 
 
 ### CDN Thể Thao 247 trên GitHub Actions
 
-Category `world-cup`, `vietnam-football` dùng ảnh từ `cdn-img.thethao247.vn`. CDN này **yêu cầu cookie phiên** (lấy từ trang bài `thethao247.vn`) kèm `Referer` mới tải được ảnh. Chỉ gửi Referer hoặc UA trình duyệt là chưa đủ.
+Category `world-cup`, `vietnam-football` dùng ảnh từ `cdn-img.thethao247.vn`. CDN này **yêu cầu cookie phiên** và thường **chặn IP datacenter** (GitHub Actions, Render) dù đã có cookie — log thường thấy `403`.
 
 Luồng tải ảnh thethao247:
 
-1. `GET` trang bài (`item.link`) → lấy `PHPSESSID` từ `Set-Cookie`
-2. `GET` ảnh CDN kèm `Cookie` + `Referer` trang bài → decode → blurhash
+1. `GET` trang bài (`item.link`) → lấy `PHPSESSID`
+2. `GET` ảnh CDN kèm `Cookie` + `Referer`
+3. Nếu CDN trả **403** → fallback qua **DuckDuckGo image proxy** (`external-content.duckduckgo.com`)
+4. (Tuỳ chọn) thử proxy Render nếu có `BLURHASH_FETCH_PROXY_URL`
 
-Nếu GitHub Actions vẫn bị chặn sau bước trên, dùng **proxy qua API server Render**:
+Env liên quan:
+
+- `BLURHASH_PUBLIC_PROXY=true` (mặc định bật, set `false` để tắt)
+- `BLURHASH_PUBLIC_PROXY_DELAY_MS=150` (tránh rate limit khi backfill nhiều ảnh)
+
+Nếu vẫn fail, dùng **proxy qua API server Render** (Render cũng có thể bị CDN chặn trực tiếp):
 
 1. Deploy code có endpoint `GET /api/internal/fetch-image`
 2. Trên Render, set env:

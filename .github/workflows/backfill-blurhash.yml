@@ -58,7 +58,7 @@ jobs:
       - name: Kiểm tra tải ảnh thethao247
         env:
           BLURHASH_DEBUG: 'true'
-          BLURHASH_PROXY_TIMEOUT_MS: '45000'
+          BLURHASH_PUBLIC_PROXY: 'true'
           BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
           INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
         run: |
@@ -70,6 +70,8 @@ jobs:
         env:
           BLURHASH_DEBUG: 'true'
           BLURHASH_PROXY_TIMEOUT_MS: '45000'
+          BLURHASH_PUBLIC_PROXY: 'true'
+          BLURHASH_PUBLIC_PROXY_DELAY_MS: '150'
           BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
           INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
         run: node scripts/backfill-thumbnail-blurhash.js --categories "${{ inputs.categories }}" --concurrency "${{ inputs.concurrency }}" --verbose true
