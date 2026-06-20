@@ -105,6 +105,42 @@ function buildThumbnailUrlCandidates(url) {
     return candidates;
 }
 
+function isThethao247CdnUrl(url) {
+    return /cdn-img\.thethao247\.vn/i.test(String(url || ''));
+}
+
+function isThethao247ArticleUrl(url) {
+    return /thethao247\.vn/i.test(String(url || ''));
+}
+
+function parseSetCookieHeader(setCookieHeader) {
+    if (!setCookieHeader) return '';
+    const values = Array.isArray(setCookieHeader) ? setCookieHeader : [setCookieHeader];
+    return values.map(cookie => String(cookie).split(';')[0]).filter(Boolean).join('; ');
+}
+
+async function fetchThethao247SessionCookies(pageReferer, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
+    if (!isHttpUrl(pageReferer) || !isThethao247ArticleUrl(pageReferer)) {
+        return '';
+    }
+
+    const response = await axios.get(pageReferer, {
+        timeout: timeoutMs,
+        headers: getBrowserHeaders({
+            Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Upgrade-Insecure-Requests': '1',
+        }),
+        httpsAgent: IPV4_HTTPS_AGENT,
+        maxRedirects: 5,
+        validateStatus: status => status >= 200 && status < 400,
+    });
+
+    return parseSetCookieHeader(response.headers['set-cookie']);
+}
+
 function isLikelyImageBuffer(buffer) {
     if (!buffer?.length) return false;
     if (buffer[0] === 0x3c) return false; // HTML
@@ -128,7 +164,11 @@ async function requestImageBuffer(url, headers, { timeoutMs = DEFAULT_TIMEOUT_MS
     return Buffer.from(response.data);
 }
 
-async function fetchImageBufferDirect(url, { timeoutMs = DEFAULT_TIMEOUT_MS, pageReferer = null } = {}) {
+async function fetchImageBufferDirect(url, {
+    timeoutMs = DEFAULT_TIMEOUT_MS,
+    pageReferer = null,
+    cookies = '',
+} = {}) {
     const normalizedUrl = String(url || '').trim();
     const host = (() => {
         try {
@@ -138,7 +178,30 @@ async function fetchImageBufferDirect(url, { timeoutMs = DEFAULT_TIMEOUT_MS, pag
         }
     })();
 
-    const attempts = buildFetchAttempts(host, pageReferer);
+    const attempts = [];
+
+    if (isThethao247CdnUrl(normalizedUrl)) {
+        let sessionCookies = cookies;
+        if (!sessionCookies && pageReferer) {
+            try {
+                sessionCookies = await fetchThethao247SessionCookies(pageReferer, { timeoutMs });
+            } catch (error) {
+                debugLog('thethao247 session failed', pageReferer, error.response?.status || error.message);
+            }
+        }
+
+        if (sessionCookies) {
+            attempts.push({
+                headers: getBrowserHeaders({
+                    Referer: pageReferer || 'https://thethao247.vn/',
+                    Cookie: sessionCookies,
+                    'Sec-Fetch-Site': 'same-site',
+                }),
+            });
+        }
+    }
+
+    attempts.push(...buildFetchAttempts(host, pageReferer));
     let lastError = null;
 
     for (const attempt of attempts) {
@@ -288,6 +351,21 @@ async function attachThumbnailBlurhash(items, {
 
     const limit = createLimiter(Math.max(1, concurrency));
     const urlCache = new Map();
+    const cookieCache = new Map();
+
+    async function getCookiesForItem(link) {
+        if (!isHttpUrl(link) || !isThethao247ArticleUrl(link)) return '';
+        if (cookieCache.has(link)) return cookieCache.get(link);
+
+        try {
+            const cookies = await fetchThethao247SessionCookies(link);
+            cookieCache.set(link, cookies);
+            return cookies;
+        } catch (error) {
+            cookieCache.set(link, '');
+            return '';
+        }
+    }
 
     const tasks = items.map((item, idx) => limit(async () => {
         if (!item || typeof item !== 'object') return;
@@ -305,7 +383,11 @@ async function attachThumbnailBlurhash(items, {
             return;
         }
 
-        const hash = await computeBlurhashFromUrl(url, { pageReferer: item.link || null });
+        const cookies = await getCookiesForItem(item.link || null);
+        const hash = await computeBlurhashFromUrl(url, {
+            pageReferer: item.link || null,
+            cookies,
+        });
         urlCache.set(cacheKey, hash);
         items[idx] = { ...item, thumbnail_blurhash: hash };
     }));
@@ -318,6 +400,7 @@ module.exports = {
     isHttpUrl,
     isLikelyImageBuffer,
     buildThumbnailUrlCandidates,
+    fetchThethao247SessionCookies,
     fetchImageBuffer,
     fetchImageBufferDirect,
     computeBlurhashFromUrl,

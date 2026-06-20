@@ -180,9 +180,14 @@ Khuyến nghị tách backfill thành workflow `workflow_dispatch` riêng để 
 
 ### CDN Thể Thao 247 trên GitHub Actions
 
-Category `world-cup`, `vietnam-football` dùng ảnh từ `cdn-img.thethao247.vn`. CDN này có thể **chặn IP datacenter** (GitHub Actions), trong khi VnExpress (`*.vnecdn.net`) vẫn tải được.
+Category `world-cup`, `vietnam-football` dùng ảnh từ `cdn-img.thethao247.vn`. CDN này **yêu cầu cookie phiên** (lấy từ trang bài `thethao247.vn`) kèm `Referer` mới tải được ảnh. Chỉ gửi Referer hoặc UA trình duyệt là chưa đủ.
 
-Giải pháp: dùng **proxy tải ảnh qua API server Render** (IP thường không bị chặn).
+Luồng tải ảnh thethao247:
+
+1. `GET` trang bài (`item.link`) → lấy `PHPSESSID` từ `Set-Cookie`
+2. `GET` ảnh CDN kèm `Cookie` + `Referer` trang bài → decode → blurhash
+
+Nếu GitHub Actions vẫn bị chặn sau bước trên, dùng **proxy qua API server Render**:
 
 1. Deploy code có endpoint `GET /api/internal/fetch-image`
 2. Trên Render, set env:

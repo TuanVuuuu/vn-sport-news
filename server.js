@@ -560,8 +560,11 @@ app.get('/api/internal/fetch-image', async (req, res) => {
             .set('Cache-Control', 'no-store')
             .send(buffer);
     } catch (error) {
-        console.error('[internal/fetch-image]', error.message);
-        return res.status(502).json(errorResponse('Không tải được ảnh từ nguồn.'));
+        const status = error.response?.status;
+        console.error('[internal/fetch-image]', imageUrl, status || error.message);
+        return res.status(502).json(errorResponse(
+            `Không tải được ảnh từ nguồn (${status || error.message}).`
+        ));
     }
 });
 

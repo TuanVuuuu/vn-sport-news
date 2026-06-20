@@ -19,7 +19,18 @@ async function main() {
         const buffer = await fetchImageBuffer(url, { pageReferer: referer });
         console.log('fetch: OK bytes=', buffer.length);
     } catch (error) {
-        console.error('fetch: FAIL', error.response?.status || error.message);
+        const status = error.response?.status;
+        const body = error.response?.data;
+        let detail = error.message;
+        if (body) {
+            try {
+                const text = Buffer.isBuffer(body) ? body.toString('utf8') : JSON.stringify(body);
+                detail = text.slice(0, 300);
+            } catch {
+                detail = error.message;
+            }
+        }
+        console.error('fetch: FAIL', status || detail);
         process.exitCode = 1;
     }
 
