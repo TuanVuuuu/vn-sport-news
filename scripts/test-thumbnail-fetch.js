@@ -25,9 +25,10 @@ async function main() {
         if (body) {
             try {
                 const text = Buffer.isBuffer(body) ? body.toString('utf8') : JSON.stringify(body);
-                detail = text.slice(0, 300);
+                const parsed = Buffer.isBuffer(body) ? JSON.parse(text) : body;
+                detail = parsed?.body?.message || parsed?.message || text.slice(0, 300);
             } catch {
-                detail = error.message;
+                detail = Buffer.isBuffer(body) ? body.toString('utf8').slice(0, 300) : error.message;
             }
         }
         console.error('fetch: FAIL', status || detail);

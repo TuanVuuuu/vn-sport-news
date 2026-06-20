@@ -22,7 +22,7 @@ const {
 } = require('./src/services/notificationService');
 const { getFixturesForApi } = require('./src/services/footballFixtureService');
 const {
-    fetchImageBufferDirect,
+    fetchImageBufferLocal,
     isHttpUrl,
     isLikelyImageBuffer,
 } = require('./src/services/thumbnailBlurhashService');
@@ -30,6 +30,7 @@ const packageInfo = require('./package.json');
 
 const app = express();
 const port = process.env.PORT || 3005;
+const PROXY_FETCH_TIMEOUT_MS = parseInt(process.env.BLURHASH_PROXY_TIMEOUT_MS, 10) || 45000;
 const HIDDEN_DISCOVER_CATEGORY_IDS = new Set(['featured', 'latest']);
 const HOME_CATEGORY_IDS = new Set(['featured', 'latest', 'sports']);
 
@@ -546,8 +547,9 @@ app.get('/api/internal/fetch-image', async (req, res) => {
     }
 
     try {
-        const buffer = await fetchImageBufferDirect(imageUrl, {
+        const buffer = await fetchImageBufferLocal(imageUrl, {
             pageReferer: req.query.referer || null,
+            timeoutMs: PROXY_FETCH_TIMEOUT_MS,
         });
 
         if (!isLikelyImageBuffer(buffer)) {
@@ -560,11 +562,10 @@ app.get('/api/internal/fetch-image', async (req, res) => {
             .set('Cache-Control', 'no-store')
             .send(buffer);
     } catch (error) {
-        const status = error.response?.status;
-        console.error('[internal/fetch-image]', imageUrl, status || error.message);
-        return res.status(502).json(errorResponse(
-            `Không tải được ảnh từ nguồn (${status || error.message}).`
-        ));
+        const upstreamStatus = error.response?.status;
+        const detail = upstreamStatus || error.message;
+        console.error('[internal/fetch-image]', imageUrl, detail);
+        return res.status(502).json(errorResponse(`Không tải được ảnh từ nguồn (${detail}).`));
     }
 });
 

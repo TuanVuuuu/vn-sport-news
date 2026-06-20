@@ -44,8 +44,21 @@ jobs:
       - name: Cài đặt thư viện
         run: npm install
 
+      - name: Warm up Render API
+        env:
+          BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
+        run: |
+          if [ -n "$BLURHASH_FETCH_PROXY_URL" ]; then
+            BASE="${BLURHASH_FETCH_PROXY_URL%/api/internal/fetch-image*}"
+            echo "Pinging $BASE/api/ping ..."
+            curl -sf "$BASE/api/ping" || true
+            sleep 8
+          fi
+
       - name: Kiểm tra tải ảnh thethao247
         env:
+          BLURHASH_DEBUG: 'true'
+          BLURHASH_PROXY_TIMEOUT_MS: '45000'
           BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
           INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
         run: |
@@ -55,6 +68,8 @@ jobs:
 
       - name: Backfill thumbnail_blurhash
         env:
+          BLURHASH_DEBUG: 'true'
+          BLURHASH_PROXY_TIMEOUT_MS: '45000'
           BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
           INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
         run: node scripts/backfill-thumbnail-blurhash.js --categories "${{ inputs.categories }}" --concurrency "${{ inputs.concurrency }}" --verbose true

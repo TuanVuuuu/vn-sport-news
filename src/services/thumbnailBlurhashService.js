@@ -4,6 +4,7 @@ const sharp = require('sharp');
 const { encode } = require('blurhash');
 
 const DEFAULT_TIMEOUT_MS = parseInt(process.env.BLURHASH_IMAGE_TIMEOUT_MS, 10) || 8000;
+const DEFAULT_PROXY_TIMEOUT_MS = parseInt(process.env.BLURHASH_PROXY_TIMEOUT_MS, 10) || 45000;
 const DEFAULT_CONCURRENCY = Math.max(1, parseInt(process.env.BLURHASH_CONCURRENCY, 10) || 6);
 const BLURHASH_DEBUG = process.env.BLURHASH_DEBUG === 'true';
 
@@ -120,25 +121,45 @@ function parseSetCookieHeader(setCookieHeader) {
 }
 
 async function fetchThethao247SessionCookies(pageReferer, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
-    if (!isHttpUrl(pageReferer) || !isThethao247ArticleUrl(pageReferer)) {
-        return '';
+    const candidates = [];
+    if (isHttpUrl(pageReferer) && isThethao247ArticleUrl(pageReferer)) {
+        candidates.push(pageReferer);
+    }
+    candidates.push('https://thethao247.vn/');
+
+    let lastError = null;
+    for (const pageUrl of candidates) {
+        try {
+            const response = await axios.get(pageUrl, {
+                timeout: timeoutMs,
+                headers: getBrowserHeaders({
+                    Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Sec-Fetch-Dest': 'document',
+                    'Sec-Fetch-Mode': 'navigate',
+                    'Sec-Fetch-Site': pageUrl.endsWith('.vn/') ? 'none' : 'same-origin',
+                    'Upgrade-Insecure-Requests': '1',
+                }),
+                httpsAgent: IPV4_HTTPS_AGENT,
+                maxRedirects: 5,
+                validateStatus: status => status >= 200 && status < 400,
+            });
+
+            const cookies = parseSetCookieHeader(response.headers['set-cookie']);
+            if (cookies) {
+                debugLog('thethao247 session ok', pageUrl, cookies.slice(0, 40));
+                return cookies;
+            }
+        } catch (error) {
+            lastError = error;
+            debugLog('thethao247 session failed', pageUrl, error.response?.status || error.message);
+        }
     }
 
-    const response = await axios.get(pageReferer, {
-        timeout: timeoutMs,
-        headers: getBrowserHeaders({
-            Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'none',
-            'Upgrade-Insecure-Requests': '1',
-        }),
-        httpsAgent: IPV4_HTTPS_AGENT,
-        maxRedirects: 5,
-        validateStatus: status => status >= 200 && status < 400,
-    });
+    if (lastError) {
+        throw lastError;
+    }
 
-    return parseSetCookieHeader(response.headers['set-cookie']);
+    return '';
 }
 
 function isLikelyImageBuffer(buffer) {
@@ -229,7 +250,7 @@ async function fetchImageBufferViaProxy(url, { timeoutMs = DEFAULT_TIMEOUT_MS, p
 
     const response = await axios.get(proxyUrl, {
         responseType: 'arraybuffer',
-        timeout: timeoutMs + 5000,
+        timeout: Math.max(timeoutMs, DEFAULT_PROXY_TIMEOUT_MS),
         params: {
             url,
             ...(pageReferer ? { referer: pageReferer } : {}),
@@ -248,7 +269,7 @@ async function fetchImageBufferViaProxy(url, { timeoutMs = DEFAULT_TIMEOUT_MS, p
     return buffer;
 }
 
-async function fetchImageBuffer(url, options = {}) {
+async function fetchImageBufferLocal(url, options = {}) {
     const urlCandidates = buildThumbnailUrlCandidates(url);
     let lastError = null;
 
@@ -260,15 +281,28 @@ async function fetchImageBuffer(url, options = {}) {
         }
     }
 
-    if (process.env.BLURHASH_FETCH_PROXY_URL) {
-        for (const candidateUrl of urlCandidates) {
-            try {
-                debugLog('try proxy', candidateUrl);
-                return await fetchImageBufferViaProxy(candidateUrl, options);
-            } catch (error) {
-                lastError = error;
-                debugLog('proxy fetch failed', candidateUrl, error.response?.status || error.message);
-            }
+    throw lastError || new Error('fetch_image_failed');
+}
+
+async function fetchImageBuffer(url, options = {}) {
+    try {
+        return await fetchImageBufferLocal(url, options);
+    } catch (directError) {
+        if (!process.env.BLURHASH_FETCH_PROXY_URL) {
+            throw directError;
+        }
+    }
+
+    const urlCandidates = buildThumbnailUrlCandidates(url);
+    let lastError = null;
+
+    for (const candidateUrl of urlCandidates) {
+        try {
+            debugLog('try proxy', candidateUrl);
+            return await fetchImageBufferViaProxy(candidateUrl, options);
+        } catch (error) {
+            lastError = error;
+            debugLog('proxy fetch failed', candidateUrl, error.response?.status || error.message);
         }
     }
 
@@ -402,6 +436,7 @@ module.exports = {
     buildThumbnailUrlCandidates,
     fetchThethao247SessionCookies,
     fetchImageBuffer,
+    fetchImageBufferLocal,
     fetchImageBufferDirect,
     computeBlurhashFromUrl,
     attachThumbnailBlurhash,
