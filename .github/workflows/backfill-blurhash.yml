@@ -44,8 +44,20 @@ jobs:
       - name: Cài đặt thư viện
         run: npm install
 
+      - name: Kiểm tra tải ảnh thethao247
+        env:
+          BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
+          INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
+        run: |
+          node scripts/test-thumbnail-fetch.js \
+            "https://cdn-img.thethao247.vn/resize_180x115/storage/files/btvttqt4/2026/06/19/1-6a3569ddb155a.jpg" \
+            "https://thethao247.vn/world-cup/461-vtv5-vtv6-truc-tiep-bong-da-world-cup-hom-nay-20-06-2026-d424663.html"
+
       - name: Backfill thumbnail_blurhash
-        run: node scripts/backfill-thumbnail-blurhash.js --categories "${{ inputs.categories }}" --concurrency "${{ inputs.concurrency }}"
+        env:
+          BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
+          INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
+        run: node scripts/backfill-thumbnail-blurhash.js --categories "${{ inputs.categories }}" --concurrency "${{ inputs.concurrency }}" --verbose true
 
       - name: Commit và Push dữ liệu mới
         working-directory: data

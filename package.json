@@ -6,7 +6,8 @@
     "start": "node server.js",
     "crawl": "node src/index.js",
     "setup:data": "bash scripts/setup-data-repo.sh",
-    "backfill:blurhash": "node scripts/backfill-thumbnail-blurhash.js"
+    "backfill:blurhash": "node scripts/backfill-thumbnail-blurhash.js",
+    "test:thumbnail-fetch": "node scripts/test-thumbnail-fetch.js"
   },
   "keywords": [],
   "author": "",

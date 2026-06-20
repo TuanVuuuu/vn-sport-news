@@ -43,6 +43,8 @@ jobs:
           FCM_ENABLED: ${{ secrets.FCM_ENABLED }}
           FCM_SERVICE_ACCOUNT_JSON: ${{ secrets.FCM_SERVICE_ACCOUNT_JSON }}
           FCM_MAX_PER_DAY: ${{ secrets.FCM_MAX_PER_DAY }}
+          BLURHASH_FETCH_PROXY_URL: ${{ secrets.BLURHASH_FETCH_PROXY_URL }}
+          INTERNAL_FETCH_SECRET: ${{ secrets.INTERNAL_FETCH_SECRET }}
         run: node src/index.js
 
       - name: Commit và Push dữ liệu mới

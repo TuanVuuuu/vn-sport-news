@@ -178,3 +178,27 @@ Vì storage là append-only, bài cũ sẽ chưa có `thumbnail_blurhash`. Nên 
 
 Khuyến nghị tách backfill thành workflow `workflow_dispatch` riêng để kiểm soát thời gian chạy và tránh làm nặng job crawl hằng ngày.
 
+### CDN Thể Thao 247 trên GitHub Actions
+
+Category `world-cup`, `vietnam-football` dùng ảnh từ `cdn-img.thethao247.vn`. CDN này có thể **chặn IP datacenter** (GitHub Actions), trong khi VnExpress (`*.vnecdn.net`) vẫn tải được.
+
+Giải pháp: dùng **proxy tải ảnh qua API server Render** (IP thường không bị chặn).
+
+1. Deploy code có endpoint `GET /api/internal/fetch-image`
+2. Trên Render, set env:
+   - `INTERNAL_FETCH_SECRET` = chuỗi bí mật bất kỳ
+3. Trên GitHub repo secrets, set:
+   - `INTERNAL_FETCH_SECRET` = cùng giá trị trên
+   - `BLURHASH_FETCH_PROXY_URL` = `https://vn-sport-news-i1l7.onrender.com/api/internal/fetch-image`
+4. Chạy lại workflow **Backfill thumbnail blurhash** hoặc crawler
+
+Kiểm tra nhanh trên CI/local:
+
+```bash
+BLURHASH_FETCH_PROXY_URL=https://vn-sport-news-i1l7.onrender.com/api/internal/fetch-image \
+INTERNAL_FETCH_SECRET=your-secret \
+npm run test:thumbnail-fetch -- \
+  "https://cdn-img.thethao247.vn/resize_180x115/storage/files/btvttqt4/2026/06/19/1-6a3569ddb155a.jpg" \
+  "https://thethao247.vn/world-cup/461-vtv5-vtv6-truc-tiep-bong-da-world-cup-hom-nay-20-06-2026-d424663.html"
+```
+

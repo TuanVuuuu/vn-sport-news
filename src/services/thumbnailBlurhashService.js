@@ -1,9 +1,11 @@
+const https = require('https');
 const axios = require('axios');
 const sharp = require('sharp');
 const { encode } = require('blurhash');
 
 const DEFAULT_TIMEOUT_MS = parseInt(process.env.BLURHASH_IMAGE_TIMEOUT_MS, 10) || 8000;
 const DEFAULT_CONCURRENCY = Math.max(1, parseInt(process.env.BLURHASH_CONCURRENCY, 10) || 6);
+const BLURHASH_DEBUG = process.env.BLURHASH_DEBUG === 'true';
 
 const DEFAULT_TARGET_WIDTH = Math.max(1, parseInt(process.env.BLURHASH_TARGET_WIDTH, 10) || 32);
 const DEFAULT_TARGET_HEIGHT = Math.max(1, parseInt(process.env.BLURHASH_TARGET_HEIGHT, 10) || 18);
@@ -11,10 +13,7 @@ const DEFAULT_TARGET_HEIGHT = Math.max(1, parseInt(process.env.BLURHASH_TARGET_H
 const DEFAULT_COMPONENT_X = Math.min(9, Math.max(1, parseInt(process.env.BLURHASH_COMPONENT_X, 10) || 4));
 const DEFAULT_COMPONENT_Y = Math.min(9, Math.max(1, parseInt(process.env.BLURHASH_COMPONENT_Y, 10) || 3));
 
-function isHttpUrl(value) {
-    if (!value) return false;
-    return /^https?:\/\//i.test(String(value).trim());
-}
+const IPV4_HTTPS_AGENT = new https.Agent({ family: 4, keepAlive: true });
 
 const CDN_FETCH_RULES = [
     {
@@ -29,29 +28,107 @@ const CDN_FETCH_RULES = [
     },
 ];
 
-function buildFetchAttempts(host) {
-    const baseHeaders = {
-        // Một số CDN chặn UA kiểu "crawler/bot". Dùng UA trình duyệt phổ biến để tải thumbnail ổn định.
+function isHttpUrl(value) {
+    if (!value) return false;
+    return /^https?:\/\//i.test(String(value).trim());
+}
+
+function debugLog(...args) {
+    if (BLURHASH_DEBUG) {
+        console.log('[blurhash]', ...args);
+    }
+}
+
+function getBrowserHeaders(extra = {}) {
+    return {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
         Accept: 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
         'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.7,en;q=0.6',
+        'Cache-Control': 'no-cache',
+        Pragma: 'no-cache',
+        'Sec-Fetch-Dest': 'image',
+        'Sec-Fetch-Mode': 'no-cors',
+        'Sec-Fetch-Site': 'cross-site',
+        ...extra,
     };
+}
 
-    const attempts = [{ headers: baseHeaders }];
+function buildFetchAttempts(host, pageReferer = null) {
+    const attempts = [{ headers: getBrowserHeaders() }];
+
     for (const rule of CDN_FETCH_RULES) {
         if (!rule.match.test(host)) continue;
         attempts.push({
-            headers: {
-                ...baseHeaders,
+            headers: getBrowserHeaders({
                 Referer: rule.referer,
                 Origin: rule.origin,
-            },
+                'Sec-Fetch-Site': 'same-site',
+            }),
         });
     }
+
+    if (pageReferer && isHttpUrl(pageReferer)) {
+        let pageOrigin = '';
+        try {
+            pageOrigin = new URL(pageReferer).origin;
+        } catch {
+            pageOrigin = '';
+        }
+
+        attempts.push({
+            headers: getBrowserHeaders({
+                Referer: pageReferer,
+                ...(pageOrigin ? { Origin: pageOrigin, 'Sec-Fetch-Site': 'same-origin' } : {}),
+            }),
+        });
+    }
+
     return attempts;
 }
 
-async function fetchImageBuffer(url, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
+function buildThumbnailUrlCandidates(url) {
+    const normalizedUrl = String(url || '').trim();
+    const candidates = [normalizedUrl];
+    const seen = new Set(candidates);
+
+    function add(candidate) {
+        if (!candidate || seen.has(candidate)) return;
+        seen.add(candidate);
+        candidates.push(candidate);
+    }
+
+    if (/cdn-img\.thethao247\.vn/i.test(normalizedUrl)) {
+        add(normalizedUrl.replace(/resize_\d+x\d+/i, 'resize_180x115'));
+        add(normalizedUrl.replace(/resize_\d+x\d+\//i, ''));
+    }
+
+    return candidates;
+}
+
+function isLikelyImageBuffer(buffer) {
+    if (!buffer?.length) return false;
+    if (buffer[0] === 0x3c) return false; // HTML
+    if (buffer[0] === 0xff && buffer[1] === 0xd8) return true; // JPEG
+    if (buffer[0] === 0x89 && buffer[1] === 0x50) return true; // PNG
+    if (buffer.slice(0, 4).toString('ascii') === 'RIFF') return true; // WEBP
+    if (buffer.slice(0, 3).toString('ascii') === 'GIF') return true; // GIF
+    return buffer.length > 256;
+}
+
+async function requestImageBuffer(url, headers, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
+    const response = await axios.get(url, {
+        responseType: 'arraybuffer',
+        timeout: timeoutMs,
+        headers,
+        httpsAgent: IPV4_HTTPS_AGENT,
+        maxRedirects: 5,
+        validateStatus: status => status >= 200 && status < 300,
+    });
+
+    return Buffer.from(response.data);
+}
+
+async function fetchImageBufferDirect(url, { timeoutMs = DEFAULT_TIMEOUT_MS, pageReferer = null } = {}) {
     const normalizedUrl = String(url || '').trim();
     const host = (() => {
         try {
@@ -61,20 +138,74 @@ async function fetchImageBuffer(url, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
         }
     })();
 
-    const attempts = buildFetchAttempts(host);
-
+    const attempts = buildFetchAttempts(host, pageReferer);
     let lastError = null;
+
     for (const attempt of attempts) {
         try {
-            const response = await axios.get(normalizedUrl, {
-                responseType: 'arraybuffer',
-                timeout: timeoutMs,
-                headers: attempt.headers,
-                validateStatus: status => status >= 200 && status < 300,
-            });
-            return Buffer.from(response.data);
+            const buffer = await requestImageBuffer(normalizedUrl, attempt.headers, { timeoutMs });
+            if (isLikelyImageBuffer(buffer)) {
+                return buffer;
+            }
+            lastError = new Error('response_not_image');
         } catch (error) {
             lastError = error;
+            debugLog('direct fetch failed', normalizedUrl, error.response?.status || error.message);
+        }
+    }
+
+    throw lastError || new Error('fetch_image_failed');
+}
+
+async function fetchImageBufferViaProxy(url, { timeoutMs = DEFAULT_TIMEOUT_MS, pageReferer = null } = {}) {
+    const proxyUrl = process.env.BLURHASH_FETCH_PROXY_URL;
+    const secret = process.env.INTERNAL_FETCH_SECRET;
+    if (!proxyUrl || !secret) {
+        throw new Error('proxy_not_configured');
+    }
+
+    const response = await axios.get(proxyUrl, {
+        responseType: 'arraybuffer',
+        timeout: timeoutMs + 5000,
+        params: {
+            url,
+            ...(pageReferer ? { referer: pageReferer } : {}),
+        },
+        headers: {
+            'X-Internal-Fetch-Secret': secret,
+        },
+        validateStatus: status => status >= 200 && status < 300,
+    });
+
+    const buffer = Buffer.from(response.data);
+    if (!isLikelyImageBuffer(buffer)) {
+        throw new Error('proxy_response_not_image');
+    }
+
+    return buffer;
+}
+
+async function fetchImageBuffer(url, options = {}) {
+    const urlCandidates = buildThumbnailUrlCandidates(url);
+    let lastError = null;
+
+    for (const candidateUrl of urlCandidates) {
+        try {
+            return await fetchImageBufferDirect(candidateUrl, options);
+        } catch (error) {
+            lastError = error;
+        }
+    }
+
+    if (process.env.BLURHASH_FETCH_PROXY_URL) {
+        for (const candidateUrl of urlCandidates) {
+            try {
+                debugLog('try proxy', candidateUrl);
+                return await fetchImageBufferViaProxy(candidateUrl, options);
+            } catch (error) {
+                lastError = error;
+                debugLog('proxy fetch failed', candidateUrl, error.response?.status || error.message);
+            }
         }
     }
 
@@ -109,13 +240,9 @@ async function computeBlurhashFromUrl(url, options = {}) {
 
     try {
         const buffer = await fetchImageBuffer(url, options);
-        if (!buffer?.length) return null;
-
-        const contentLooksLikeHtml = buffer[0] === 0x3c; // '<'
-        if (contentLooksLikeHtml) return null;
-
         return await computeBlurhashFromImageBuffer(buffer, options);
     } catch (error) {
+        debugLog('compute failed', url, error.message);
         return null;
     }
 }
@@ -153,12 +280,6 @@ function createLimiter(concurrency) {
 
 /**
  * Gắn `thumbnail_blurhash` vào danh sách bài viết.
- * - Chỉ xử lý item thiếu field hoặc field rỗng.
- * - Mọi lỗi khi tải/parse ảnh sẽ trả null và không throw.
- *
- * @param {Array<object>} items
- * @param {{ concurrency?: number }} options
- * @returns {Promise<Array<object>>}
  */
 async function attachThumbnailBlurhash(items, {
     concurrency = DEFAULT_CONCURRENCY,
@@ -178,13 +299,14 @@ async function attachThumbnailBlurhash(items, {
             return;
         }
 
-        if (urlCache.has(url)) {
-            items[idx] = { ...item, thumbnail_blurhash: urlCache.get(url) };
+        const cacheKey = `${url}|${item.link || ''}`;
+        if (urlCache.has(cacheKey)) {
+            items[idx] = { ...item, thumbnail_blurhash: urlCache.get(cacheKey) };
             return;
         }
 
-        const hash = await computeBlurhashFromUrl(url);
-        urlCache.set(url, hash);
+        const hash = await computeBlurhashFromUrl(url, { pageReferer: item.link || null });
+        urlCache.set(cacheKey, hash);
         items[idx] = { ...item, thumbnail_blurhash: hash };
     }));
 
@@ -194,7 +316,10 @@ async function attachThumbnailBlurhash(items, {
 
 module.exports = {
     isHttpUrl,
+    isLikelyImageBuffer,
+    buildThumbnailUrlCandidates,
+    fetchImageBuffer,
+    fetchImageBufferDirect,
     computeBlurhashFromUrl,
     attachThumbnailBlurhash,
 };
-

@@ -21,6 +21,11 @@ const {
     sendTestNotification,
 } = require('./src/services/notificationService');
 const { getFixturesForApi } = require('./src/services/footballFixtureService');
+const {
+    fetchImageBufferDirect,
+    isHttpUrl,
+    isLikelyImageBuffer,
+} = require('./src/services/thumbnailBlurhashService');
 const packageInfo = require('./package.json');
 
 const app = express();
@@ -515,6 +520,48 @@ app.delete('/api/devices/:deviceId', async (req, res) => {
     } catch (error) {
         console.error('[devices] Lỗi remove device:', error.message);
         return res.json(errorResponse('Không xóa được thiết bị trên repo data.'));
+    }
+});
+
+/**
+ * GET /api/internal/fetch-image
+ * Proxy tải ảnh cho crawler/backfill trên GitHub Actions (CDN có thể chặn IP datacenter).
+ * Query: url, referer (optional)
+ * Header: X-Internal-Fetch-Secret
+ */
+app.get('/api/internal/fetch-image', async (req, res) => {
+    const secret = process.env.INTERNAL_FETCH_SECRET;
+    if (!secret) {
+        return res.status(503).json(errorResponse('INTERNAL_FETCH_SECRET chưa được cấu hình.'));
+    }
+
+    const provided = req.get('X-Internal-Fetch-Secret');
+    if (provided !== secret) {
+        return res.status(403).json(errorResponse('Không có quyền truy cập.'));
+    }
+
+    const imageUrl = req.query.url;
+    if (!isHttpUrl(imageUrl)) {
+        return res.status(400).json(errorResponse('Thiếu hoặc sai tham số url.'));
+    }
+
+    try {
+        const buffer = await fetchImageBufferDirect(imageUrl, {
+            pageReferer: req.query.referer || null,
+        });
+
+        if (!isLikelyImageBuffer(buffer)) {
+            return res.status(502).json(errorResponse('Phản hồi không phải ảnh hợp lệ.'));
+        }
+
+        return res
+            .status(200)
+            .set('Content-Type', 'application/octet-stream')
+            .set('Cache-Control', 'no-store')
+            .send(buffer);
+    } catch (error) {
+        console.error('[internal/fetch-image]', error.message);
+        return res.status(502).json(errorResponse('Không tải được ảnh từ nguồn.'));
     }
 });
 
