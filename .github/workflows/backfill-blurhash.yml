@@ -1,0 +1,60 @@
+name: Backfill thumbnail blurhash
+
+on:
+  workflow_dispatch:
+    inputs:
+      categories:
+        description: 'Comma-separated category ids or "all"'
+        required: false
+        default: 'all'
+      concurrency:
+        description: 'Number of concurrent image encodes'
+        required: false
+        default: '6'
+
+concurrency:
+  group: backfill-thumbnail-blurhash-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DATA_REPO_OWNER: TuanVuuuu
+  DATA_REPO_NAME: vn-sport-news-data
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.DATA_REPO_OWNER }}/${{ env.DATA_REPO_NAME }}
+          path: data
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+
+      - name: Cài đặt Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Cài đặt thư viện
+        run: npm install
+
+      - name: Backfill thumbnail_blurhash
+        run: node scripts/backfill-thumbnail-blurhash.js --categories "${{ inputs.categories }}" --concurrency "${{ inputs.concurrency }}"
+
+      - name: Commit và Push dữ liệu mới
+        working-directory: data
+        env:
+          DATA_REPO_TOKEN: ${{ secrets.DATA_REPO_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${DATA_REPO_TOKEN}@github.com/${{ env.DATA_REPO_OWNER }}/${{ env.DATA_REPO_NAME }}.git
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Backfill thumbnail_blurhash [skip ci]" && git push)
+

@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "crawl": "node src/index.js",
-    "setup:data": "bash scripts/setup-data-repo.sh"
+    "setup:data": "bash scripts/setup-data-repo.sh",
+    "backfill:blurhash": "node scripts/backfill-thumbnail-blurhash.js"
   },
   "keywords": [],
   "author": "",
@@ -16,10 +17,12 @@
   },
   "dependencies": {
     "axios": "^1.16.1",
+    "blurhash": "^2.0.5",
     "cheerio": "^1.1.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "firebase-admin": "^13.10.0",
+    "sharp": "^0.35.2",
     "xml2js": "^0.6.2"
   }
 }

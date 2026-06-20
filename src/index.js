@@ -4,6 +4,7 @@ const { fetchRSS } = require('./services/rssService');
 const { parseRSS } = require('./services/parseService');
 const { crawlSearchSuggestions } = require('./services/keywordCrawlerService');
 const { notifyFeaturedNews } = require('./services/notificationService');
+const { attachThumbnailBlurhash } = require('./services/thumbnailBlurhashService');
 const {
     ensureDirs,
     loadMetadata,
@@ -40,6 +41,14 @@ async function crawlCategory(category) {
 
     // Sắp xếp tăng dần (cũ -> mới) trước khi Append
     itemsToAdd.sort((a, b) => new Date(a.published_at) - new Date(b.published_at));
+
+    try {
+        itemsToAdd = await attachThumbnailBlurhash(itemsToAdd);
+        const withHash = itemsToAdd.filter(item => item.thumbnail_blurhash).length;
+        console.log(`[${name}] Blurhash: ${withHash}/${itemsToAdd.length} bài có thumbnail_blurhash.`);
+    } catch (err) {
+        console.error(`[${name}] Lỗi tính blurhash:`, err.message);
+    }
 
     appendItems(id, metadata, itemsToAdd);
 
