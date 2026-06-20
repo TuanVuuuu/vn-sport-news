@@ -16,6 +16,41 @@ function isHttpUrl(value) {
     return /^https?:\/\//i.test(String(value).trim());
 }
 
+const CDN_FETCH_RULES = [
+    {
+        match: /vnecdn\.net/i,
+        referer: 'https://vnexpress.net/',
+        origin: 'https://vnexpress.net',
+    },
+    {
+        match: /thethao247\.vn/i,
+        referer: 'https://thethao247.vn/',
+        origin: 'https://thethao247.vn',
+    },
+];
+
+function buildFetchAttempts(host) {
+    const baseHeaders = {
+        // Một số CDN chặn UA kiểu "crawler/bot". Dùng UA trình duyệt phổ biến để tải thumbnail ổn định.
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+        Accept: 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+        'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.7,en;q=0.6',
+    };
+
+    const attempts = [{ headers: baseHeaders }];
+    for (const rule of CDN_FETCH_RULES) {
+        if (!rule.match.test(host)) continue;
+        attempts.push({
+            headers: {
+                ...baseHeaders,
+                Referer: rule.referer,
+                Origin: rule.origin,
+            },
+        });
+    }
+    return attempts;
+}
+
 async function fetchImageBuffer(url, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
     const normalizedUrl = String(url || '').trim();
     const host = (() => {
@@ -26,25 +61,7 @@ async function fetchImageBuffer(url, { timeoutMs = DEFAULT_TIMEOUT_MS } = {}) {
         }
     })();
 
-    const baseHeaders = {
-        // Một số CDN chặn UA kiểu "crawler/bot". Dùng UA trình duyệt phổ biến để tải thumbnail ổn định.
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-        Accept: 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
-        'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.7,en;q=0.6',
-    };
-
-    const attempts = [
-        { headers: baseHeaders },
-        ...(host.includes('vnecdn.net')
-            ? [{
-                headers: {
-                    ...baseHeaders,
-                    Referer: 'https://vnexpress.net/',
-                    Origin: 'https://vnexpress.net',
-                },
-            }]
-            : []),
-    ];
+    const attempts = buildFetchAttempts(host);
 
     let lastError = null;
     for (const attempt of attempts) {
@@ -92,6 +109,11 @@ async function computeBlurhashFromUrl(url, options = {}) {
 
     try {
         const buffer = await fetchImageBuffer(url, options);
+        if (!buffer?.length) return null;
+
+        const contentLooksLikeHtml = buffer[0] === 0x3c; // '<'
+        if (contentLooksLikeHtml) return null;
+
         return await computeBlurhashFromImageBuffer(buffer, options);
     } catch (error) {
         return null;

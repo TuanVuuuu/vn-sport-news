@@ -81,25 +81,37 @@ function resolveTargetCategories(input) {
     return result;
 }
 
-async function backfillChunk(chunkPath, { concurrency }) {
+function needsBlurhash(item) {
+    return item
+        && typeof item === 'object'
+        && !item.thumbnail_blurhash
+        && item.thumbnail_url;
+}
+
+async function backfillChunk(chunkPath, { concurrency, verbose = false }) {
     const items = readJsonArray(chunkPath);
     if (items.length === 0) {
-        return { changed: false, total: 0, filled: 0 };
+        return { changed: false, total: 0, filled: 0, failed: 0 };
     }
 
     const beforeFilled = items.filter(item => item?.thumbnail_blurhash).length;
-    const candidates = items.filter(item => item && typeof item === 'object' && !item.thumbnail_blurhash && item.thumbnail_url);
+    const candidates = items.filter(needsBlurhash);
 
     if (candidates.length === 0) {
-        return { changed: false, total: items.length, filled: beforeFilled };
+        return { changed: false, total: items.length, filled: beforeFilled, failed: 0 };
     }
 
     await attachThumbnailBlurhash(items, { concurrency });
     const afterFilled = items.filter(item => item?.thumbnail_blurhash).length;
-
+    const unresolved = items.filter(item => item?.thumbnail_url && !item.thumbnail_blurhash);
     const changed = afterFilled !== beforeFilled;
     if (changed) {
         writeJsonArray(chunkPath, items);
+    }
+
+    if (verbose && unresolved.length > 0) {
+        const sample = unresolved.slice(0, 2).map(item => item.thumbnail_url);
+        console.log(`  [WARN] ${unresolved.length} ảnh chưa encode được. Ví dụ: ${sample.join(' | ')}`);
     }
 
     return {
@@ -107,6 +119,7 @@ async function backfillChunk(chunkPath, { concurrency }) {
         total: items.length,
         filled: afterFilled,
         newlyFilled: afterFilled - beforeFilled,
+        failed: unresolved.length,
     };
 }
 
@@ -116,6 +129,7 @@ async function main() {
     const categoriesArg = args.get('--categories') || 'all';
     const concurrency = Math.max(1, parseInt(args.get('--concurrency') || '6', 10));
     const dryRun = args.get('--dryRun') === 'true';
+    const verbose = args.get('--verbose') === 'true';
 
     if (!fs.existsSync(dataDir)) {
         console.error(`[ERROR] Không tìm thấy thư mục data: ${dataDir}`);
@@ -129,11 +143,13 @@ async function main() {
     console.log(`- categories: ${targetCategories.join(', ')}`);
     console.log(`- concurrency: ${concurrency}`);
     console.log(`- dryRun: ${dryRun}`);
+    console.log(`- verbose: ${verbose}`);
 
     let changedFiles = 0;
     let totalItems = 0;
     let totalFilled = 0;
     let totalNewlyFilled = 0;
+    let totalFailed = 0;
 
     for (const categoryId of targetCategories) {
         const categoryDir = path.join(dataDir, categoryId);
@@ -157,13 +173,15 @@ async function main() {
                 continue;
             }
 
-            const result = await backfillChunk(chunkPath, { concurrency });
+            const result = await backfillChunk(chunkPath, { concurrency, verbose });
             totalItems += result.total;
             totalFilled += result.filled;
             totalNewlyFilled += result.newlyFilled || 0;
+            totalFailed += result.failed || 0;
 
             const tag = result.changed ? 'UPDATED' : 'OK';
-            console.log(`- ${path.basename(chunkPath)}: ${tag} total=${result.total} filled=${result.filled} +${result.newlyFilled || 0}`);
+            const failedSuffix = result.failed ? ` failed=${result.failed}` : '';
+            console.log(`- ${path.basename(chunkPath)}: ${tag} total=${result.total} filled=${result.filled} +${result.newlyFilled || 0}${failedSuffix}`);
             if (result.changed) changedFiles += 1;
         }
     }
@@ -174,6 +192,7 @@ async function main() {
     console.log(`- newly_filled: ${totalNewlyFilled}`);
     if (!dryRun) {
         console.log(`- changed_files: ${changedFiles}`);
+        console.log(`- failed: ${totalFailed}`);
     }
 }
 
