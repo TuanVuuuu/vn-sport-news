@@ -29,6 +29,25 @@
       "response": []
     },
     {
+      "name": "POST /api/news/by-ids - Lấy tin theo danh sách id",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"ids\": [\n    \"https://vnexpress.net/example-bai-viet-1.html\",\n    \"https://vnexpress.net/example-bai-viet-2.html\"\n  ],\n  \"category\": \"sports\"\n}"
+        },
+        "description": "Lấy danh sách bài viết theo id (guid/link RSS). ids tối đa 50. category tùy chọn — bỏ trống để tìm toàn bộ danh mục. Response giữ thứ tự ids; not_found chứa id không tìm thấy.",
+        "url": "{{baseUrl}}/api/news/by-ids"
+      },
+      "response": []
+    },
+    {
       "name": "GET /api/news/search - Tìm kiếm/lọc tin",
       "request": {
         "method": "GET",

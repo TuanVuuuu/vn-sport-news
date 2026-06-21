@@ -5,6 +5,7 @@ const notificationConfig = require('./src/config/notification');
 const {
     loadMetadata,
     getPaginatedItems,
+    getArticlesByIds,
     searchItems,
     searchItemsAllCategories,
 } = require('./src/utils/apiDataHelper');
@@ -34,6 +35,7 @@ const port = process.env.PORT || 3005;
 const PROXY_FETCH_TIMEOUT_MS = parseInt(process.env.BLURHASH_PROXY_TIMEOUT_MS, 10) || 45000;
 const HIDDEN_DISCOVER_CATEGORY_IDS = new Set(['featured', 'latest']);
 const HOME_CATEGORY_IDS = new Set(['featured', 'latest', 'sports']);
+const MAX_ARTICLES_BY_IDS = 50;
 
 app.use(cors());
 app.use(express.json());
@@ -178,6 +180,41 @@ app.get('/api/news', async (req, res) => {
         }));
     } catch (error) {
         console.error('[API] /api/news:', error.message);
+        return res.json(errorResponse('Không thể tải dữ liệu từ data repo.'));
+    }
+});
+
+/**
+ * POST /api/news/by-ids
+ * Body: { ids: string[], category?: string }
+ */
+app.post('/api/news/by-ids', async (req, res) => {
+    try {
+        const { ids, category: categoryId } = req.body || {};
+        const normalizedIds = Array.isArray(ids)
+            ? ids.map(id => String(id).trim()).filter(Boolean)
+            : [];
+
+        if (normalizedIds.length === 0) {
+            return res.json(errorResponse('Field "ids" bắt buộc và phải là mảng không rỗng.'));
+        }
+        if (normalizedIds.length > MAX_ARTICLES_BY_IDS) {
+            return res.json(errorResponse(`Tối đa ${MAX_ARTICLES_BY_IDS} id mỗi request.`));
+        }
+
+        let categoryList = categories;
+        if (categoryId) {
+            const category = getCategory(categoryId);
+            if (!category) {
+                return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+            }
+            categoryList = [category];
+        }
+
+        const result = await getArticlesByIds(normalizedIds, categoryList);
+        return res.json(successResponse(result));
+    } catch (error) {
+        console.error('[API] /api/news/by-ids:', error.message);
         return res.json(errorResponse('Không thể tải dữ liệu từ data repo.'));
     }
 });

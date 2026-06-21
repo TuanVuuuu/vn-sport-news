@@ -117,6 +117,47 @@ async function searchItemsAllCategories(categoryList, filters, page, size) {
     return paginateSearchResults(filteredItems, page, size);
 }
 
+async function getArticlesByIds(ids, categoryList) {
+    const uniqueIds = [...new Set(ids.filter(Boolean))];
+    if (uniqueIds.length === 0) {
+        return { data: [], not_found: [] };
+    }
+
+    const idSet = new Set(uniqueIds);
+    const foundMap = new Map();
+
+    for (const category of categoryList) {
+        if (foundMap.size === idSet.size) {
+            break;
+        }
+
+        const metadata = await loadMetadata(category.id);
+        if (!metadata || metadata.total_articles === 0) {
+            continue;
+        }
+
+        const allItems = await loadAllItems(category.id, metadata);
+        for (const item of allItems) {
+            if (!idSet.has(item.id)) {
+                continue;
+            }
+
+            const formatted = formatArticle(item, category.id, metadata);
+            const existing = foundMap.get(item.id);
+            if (!existing || new Date(getCreateAt(formatted)) > new Date(getCreateAt(existing))) {
+                foundMap.set(item.id, formatted);
+            }
+        }
+    }
+
+    const data = uniqueIds
+        .filter(id => foundMap.has(id))
+        .map(id => foundMap.get(id));
+    const not_found = uniqueIds.filter(id => !foundMap.has(id));
+
+    return { data, not_found };
+}
+
 async function loadSearchSuggestions() {
     const data = await fetchJson('search_suggestions.json');
     if (!data || typeof data !== 'object') {
@@ -133,6 +174,7 @@ async function loadSearchSuggestions() {
 module.exports = {
     loadMetadata,
     getPaginatedItems,
+    getArticlesByIds,
     searchItems,
     searchItemsAllCategories,
     loadSearchSuggestions,
