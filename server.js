@@ -95,6 +95,49 @@ function errorResponse(message) {
     };
 }
 
+function getDefaultDevicePreferences() {
+    return {
+        enabled: notificationConfig.defaults.enabled,
+        max_per_day: notificationConfig.defaults.maxPerDay,
+        categories: [...notificationConfig.defaults.categories],
+    };
+}
+
+function normalizeMaxPerDay(value) {
+    const maxPerDay = parseInt(value, 10);
+    if (Number.isNaN(maxPerDay) || maxPerDay < 1) {
+        return null;
+    }
+    return Math.min(maxPerDay, notificationConfig.timeSlots.length);
+}
+
+function resolveRegisterPreferences(existingPreferences, incomingPreferences) {
+    const base = existingPreferences
+        ? { ...existingPreferences }
+        : getDefaultDevicePreferences();
+
+    if (!incomingPreferences) {
+        return base;
+    }
+
+    if (typeof incomingPreferences.enabled === 'boolean') {
+        base.enabled = incomingPreferences.enabled;
+    }
+
+    if (incomingPreferences.max_per_day !== undefined) {
+        const normalized = normalizeMaxPerDay(incomingPreferences.max_per_day);
+        if (normalized !== null) {
+            base.max_per_day = normalized;
+        }
+    }
+
+    if (Array.isArray(incomingPreferences.categories) && incomingPreferences.categories.length > 0) {
+        base.categories = incomingPreferences.categories;
+    }
+
+    return base;
+}
+
 /**
  * GET /api/news
  * Query params:
@@ -414,23 +457,14 @@ app.post('/api/devices/register', async (req, res) => {
         return res.json(errorResponse('Thiếu device_id hoặc fcm_token.'));
     }
 
-    const maxPerDay = parseInt(preferences?.max_per_day, 10);
-    const normalizedMaxPerDay = !Number.isNaN(maxPerDay) && maxPerDay > 0
-        ? Math.min(maxPerDay, notificationConfig.timeSlots.length)
-        : notificationConfig.defaults.maxPerDay;
-
     try {
+        const existing = await getDeviceById(deviceId);
+
         const device = await upsertDevice({
             device_id: deviceId,
             fcm_token: fcmToken,
-            platform: platform || 'unknown',
-            preferences: {
-                enabled: preferences?.enabled !== false,
-                max_per_day: normalizedMaxPerDay,
-                categories: Array.isArray(preferences?.categories) && preferences.categories.length > 0
-                    ? preferences.categories
-                    : notificationConfig.defaults.categories,
-            },
+            platform: platform || existing?.platform || 'unknown',
+            preferences: resolveRegisterPreferences(existing?.preferences, preferences),
         });
 
         return res.json(successResponse({ data: device }));
