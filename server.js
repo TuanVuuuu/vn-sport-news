@@ -21,6 +21,7 @@ const {
     sendTestNotification,
 } = require('./src/services/notificationService');
 const { getFixturesForApi } = require('./src/services/footballFixtureService');
+const { submitFeedback } = require('./src/services/feedbackService');
 const {
     fetchImageBufferLocal,
     isHttpUrl,
@@ -538,6 +539,25 @@ app.put('/api/devices/:deviceId/preferences', async (req, res) => {
     } catch (error) {
         console.error('[devices] Lỗi update preferences:', error.message);
         return res.json(errorResponse('Không cập nhật được thiết bị trên repo data.'));
+    }
+});
+
+/**
+ * POST /api/feedback
+ * Body: { type, message, device_id?, platform?, app_version?, os_version?, screen?, context?, contact? }
+ */
+app.post('/api/feedback', async (req, res) => {
+    try {
+        const result = await submitFeedback(req.body || {}, req);
+
+        if (!result.success) {
+            return res.json(errorResponse(result.message));
+        }
+
+        return res.json(successResponse({ data: result.data }));
+    } catch (error) {
+        console.error('[feedback] Lỗi lưu phản hồi:', error.message);
+        return res.json(errorResponse('Không lưu được phản hồi lên repo data.'));
     }
 });
 

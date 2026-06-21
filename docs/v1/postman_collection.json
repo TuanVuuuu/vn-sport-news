@@ -77,6 +77,25 @@
         "url": "{{baseUrl}}/api/football/fixtures?league_id=1"
       },
       "response": []
+    },
+    {
+      "name": "POST /api/feedback - Gửi phản hồi/báo lỗi",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"bug\",\n  \"message\": \"App crash khi mở bài viết có ảnh lớn\",\n  \"device_id\": \"device-uuid\",\n  \"platform\": \"ios\",\n  \"app_version\": \"1.0.0\",\n  \"os_version\": \"iOS 18.2\",\n  \"screen\": \"ArticleDetail\",\n  \"context\": {\n    \"article_id\": \"abc123\",\n    \"category\": \"sports\"\n  },\n  \"contact\": \"user@email.com\"\n}"
+        },
+        "description": "Gửi phản hồi hoặc báo lỗi từ mobile. type: bug | feedback | other. message: 10-2000 ký tự.",
+        "url": "{{baseUrl}}/api/feedback"
+      },
+      "response": []
     }
   ]
 }
