@@ -4,6 +4,7 @@ const categories = require('../config/categories');
 const { defaultSearchSuggestions } = require('../config/searchSuggestions');
 const { loadMetadata, searchItems } = require('./fileHelper');
 const { loadSearchSuggestions: loadSearchSuggestionsRemote } = require('./apiDataHelper');
+const { isReviewing, REVIEW_SEARCH_SUGGESTIONS } = require('./remoteConfigStore');
 
 const SUGGESTIONS_FILE = path.join(__dirname, '../../data/search_suggestions.json');
 
@@ -152,6 +153,21 @@ function getDefaultSuggestions() {
  * @returns {{ data: Array, meta: object }}
  */
 async function getSearchSuggestionsForApi(limit) {
+    if (await isReviewing()) {
+        return {
+            data: REVIEW_SEARCH_SUGGESTIONS.slice(0, limit).map(keyword => ({
+                keyword,
+                link: null,
+                source: 'review',
+            })),
+            meta: {
+                reviewing: true,
+                source_url: null,
+                last_updated: null,
+            },
+        };
+    }
+
     const crawled = await loadSearchSuggestionsRemote();
     const seen = new Set();
     const data = [];
