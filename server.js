@@ -24,6 +24,11 @@ const {
 const { getFixturesForApi } = require('./src/services/footballFixtureService');
 const { submitFeedback } = require('./src/services/feedbackService');
 const {
+    isReviewing,
+    filterCategoriesForReview,
+    isCategoryHiddenDuringReview,
+} = require('./src/utils/remoteConfigStore');
+const {
     fetchImageBufferLocal,
     isHttpUrl,
     isLikelyImageBuffer,
@@ -42,6 +47,31 @@ app.use(express.json());
 
 function getCategory(categoryId) {
     return categories.find(c => c.id === categoryId);
+}
+
+async function getVisibleCategories(options = {}) {
+    const reviewing = await isReviewing();
+    let visibleCategories = filterCategoriesForReview(categories, reviewing);
+
+    if (options.homeOnly) {
+        visibleCategories = visibleCategories.filter(category => HOME_CATEGORY_IDS.has(category.id));
+    }
+
+    return { reviewing, visibleCategories };
+}
+
+async function resolveCategory(categoryId) {
+    const reviewing = await isReviewing();
+
+    if (isCategoryHiddenDuringReview(categoryId, reviewing)) {
+        return { reviewing, category: null };
+    }
+
+    return { reviewing, category: getCategory(categoryId) };
+}
+
+function formatCategoryIds(categoryList) {
+    return categoryList.map(category => category.id).join(', ');
 }
 
 function validateLimit(requestedLimit) {
@@ -163,9 +193,10 @@ app.get('/api/news', async (req, res) => {
         }
         const limit = requestedLimit;
 
-        const category = getCategory(categoryId);
+        const { category } = await resolveCategory(categoryId);
         if (!category) {
-            return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+            const { visibleCategories } = await getVisibleCategories();
+            return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${formatCategoryIds(visibleCategories)}`));
         }
 
         const metadata = await loadMetadata(categoryId);
@@ -202,11 +233,12 @@ app.post('/api/news/by-ids', async (req, res) => {
             return res.json(errorResponse(`Tối đa ${MAX_ARTICLES_BY_IDS} id mỗi request.`));
         }
 
-        let categoryList = categories;
+        let categoryList = (await getVisibleCategories()).visibleCategories;
         if (categoryId) {
-            const category = getCategory(categoryId);
+            const { category } = await resolveCategory(categoryId);
             if (!category) {
-                return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+                const { visibleCategories } = await getVisibleCategories();
+                return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${formatCategoryIds(visibleCategories)}`));
             }
             categoryList = [category];
         }
@@ -252,9 +284,10 @@ app.get('/api/news/search', async (req, res) => {
         };
 
         if (categoryId) {
-            const category = getCategory(categoryId);
+            const { category } = await resolveCategory(categoryId);
             if (!category) {
-                return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${categories.map(c => c.id).join(', ')}`));
+                const { visibleCategories } = await getVisibleCategories();
+                return res.json(errorResponse(`Danh mục "${categoryId}" không tồn tại. Các danh mục hiện có: ${formatCategoryIds(visibleCategories)}`));
             }
 
             const metadata = await loadMetadata(categoryId);
@@ -269,7 +302,8 @@ app.get('/api/news/search', async (req, res) => {
             }));
         }
 
-        const result = await searchItemsAllCategories(categories, filters, page, size);
+        const { visibleCategories } = await getVisibleCategories();
+        const result = await searchItemsAllCategories(visibleCategories, filters, page, size);
         return res.json(successResponse({
             data: result.data,
             pagination: result.pagination,
@@ -307,9 +341,10 @@ app.get('/api/search/suggestions', async (req, res) => {
  */
 app.get('/api/discover', async (req, res) => {
     try {
-        const visibleCategories = categories
+        const { visibleCategories } = await getVisibleCategories();
+        const discoverCategories = visibleCategories
             .filter(category => !HIDDEN_DISCOVER_CATEGORY_IDS.has(category.id));
-        const result = await Promise.all(visibleCategories.map(getDiscoverCategory));
+        const result = await Promise.all(discoverCategories.map(getDiscoverCategory));
         return res.json(successResponse({ data: result }));
     } catch (error) {
         console.error('[API] /api/discover:', error.message);
@@ -351,6 +386,10 @@ app.get('/api/ping', (req, res) => {
  */
 app.get('/api/football/fixtures', async (req, res) => {
     try {
+        if (await isReviewing()) {
+            return res.json(successResponse({ data: null }));
+        }
+
         const leagueId = parseInt(req.query.league_id, 10) || 1;
         const teamId = req.query.team_id ? parseInt(req.query.team_id, 10) : null;
 
@@ -378,12 +417,17 @@ app.get('/api/football/fixtures', async (req, res) => {
  *
  * Returns list of categories. Always status = 1.
  */
-app.get('/api/categories', (req, res) => {
-    const sourceCategories = req.query.type === 'home'
-        ? categories.filter(c => HOME_CATEGORY_IDS.has(c.id))
-        : categories;
-    const result = sourceCategories.map(c => ({ id: c.id, name: c.name }));
-    return res.json(successResponse({ data: result }));
+app.get('/api/categories', async (req, res) => {
+    try {
+        const { visibleCategories } = await getVisibleCategories({
+            homeOnly: req.query.type === 'home',
+        });
+        const result = visibleCategories.map(category => ({ id: category.id, name: category.name }));
+        return res.json(successResponse({ data: result }));
+    } catch (error) {
+        console.error('[API] /api/categories:', error.message);
+        return res.json(errorResponse('Không thể tải cấu hình remote.'));
+    }
 });
 
 /**
